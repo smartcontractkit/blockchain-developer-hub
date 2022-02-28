@@ -1,5 +1,5 @@
 export default {
-  title: "Simple Usage Example",
+  title: "ChainLink Developer Hub",
   description: "A short description goes here.",
   openGraph: {
     type: "website",
