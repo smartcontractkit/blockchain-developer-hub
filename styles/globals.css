@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -11,6 +13,26 @@ a {
   text-decoration: none;
 }
 
+a.active {
+  color: #00639D !important;
+}
+
 * {
   box-sizing: border-box;
+}
+.flex {
+  display: flex;
+}
+.icon-left {
+  margin-right: 11.38px;
+}
+.icon-right {
+  margin-left: 11px;
+}
+/* Global colors */
+
+:root {
+  --primary-color: #00639D;
+  --secondary-color: #191C1D;
+  --border-color: #C4C7C8;
 }

@@ -1,0 +1,61 @@
+@import '../../styles//globals.css';
+
+.link {
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+
+.outline {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: var(--secondary-color);
+  background: #FBFDFE;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.primary {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  background: var(--primary-color);
+  border-radius: 12px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.seconday {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  padding: 16px 24px;
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
