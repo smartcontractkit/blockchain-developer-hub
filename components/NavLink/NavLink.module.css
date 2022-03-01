@@ -1,36 +1,22 @@
 @import '../../styles/globals.css';
 
 .link {
-  border: none;
   color: #000000;
+  padding: unset;
+  border-radius: unset;
 }
 
 .outline {
   background: #FBFDFE;
-  box-sizing: border-box;
   border: 1px solid var(--border-color);
   color: var(--secondary-color);
-  padding: var(--nav-link-padding);
-  border-radius: var(--nav-link-radius);
-  -webkit-border-radius: var(--nav-link-radius);
-  -moz-border-radius: var(--nav-link-radius);
-  -ms-border-radius: var(--nav-link-radius);
-  -o-border-radius: var(--nav-link-radius);
 }
 
 .primary {
-  color: #FFFFFF;
   background: var(--primary-color);
-  padding: var(--nav-link-padding);
-  border-radius: var(--nav-link-radius);
-  -webkit-border-radius: var(--nav-link-radius);
-  -moz-border-radius: var(--nav-link-radius);
-  -ms-border-radius: var(--nav-link-radius);
-  -o-border-radius: var(--nav-link-radius);
 }
 
-.seconday {
-  color: #FFFFFF;
-  padding: var(--nav-link-padding);
+.secondary {
+  border-radius: unset;
   background: var(--secondary-color);
 }

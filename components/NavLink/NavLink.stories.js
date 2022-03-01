@@ -40,7 +40,7 @@ Primary.args = {
 export const Secondary = Template.bind({});
 Secondary.args = {
   to: 'https://thischain.org',
-  type: 'seconday',
+  type: 'secondary',
   icon: 'union.svg',
   iconPos: 'left',
   text: 'All case studies',

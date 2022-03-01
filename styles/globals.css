@@ -4,7 +4,6 @@
   --primary-color: #00639D;
   --secondary-color: #191C1D;
   --border-color: #C4C7C8;
-  --rem-px: ((100% - 2.3rem)/2);
   --nav-link-padding: 1rem 1.5rem;
   --nav-link-radius: 0.75rem;
 }
@@ -13,7 +12,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter',
+  -apple-system,
+  BlinkMacSystemFont,
+  Segoe UI,
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  Fira Sans,
+  Droid Sans,
+  Helvetica Neue,
+  sans-serif;
 }
 
 a {
@@ -22,7 +32,7 @@ a {
 }
 
 a.active {
-  color: #00639D !important;
+  color: #00639D;
 }
 
 * {
@@ -41,7 +51,6 @@ a.active {
   margin-left: 0.6875rem;
 }
 .navLink {
-  font-style: normal;
   font-weight: 600;
   font-size: 0.9375rem;
   line-height: 1rem;
@@ -49,5 +58,8 @@ a.active {
   display: flex;
   align-items: center;
   width: fit-content;
+  color: #FFFFFF;
+  padding: var(--nav-link-padding);
+  border-radius: var(--nav-link-radius);
 }
 
