@@ -1,6 +1,6 @@
-import '../styles/globals.css'
-import { DefaultSeo } from "next-seo";
-import SEO from "../next-seo.config";
+import '../styles/globals.css';
+import { DefaultSeo } from 'next-seo';
+import SEO from '../next-seo.config';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,4 +11,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp
+export default MyApp;
