@@ -12,25 +12,44 @@ export default {
     className: {
       control: 'text',
     },
+    exact: {
+      control: 'boolean'
+    }
   },
 };
 
 const Template = (args) => (
-    <BaseLink {...args}> 
-      <span>Next: Smart Contracts</span>
-      {/* <object
-      className='icon-right'
-        type='image/svg+xml'
-        height="20"
-        width="20"
-        data='/icons/arrow-right.svg'
-      /> */}
-    </BaseLink>
+    <BaseLink {...args} />
 );
 
 export const Default = Template.bind({});
 Default.args = {
   exact: true,
-  href:'/',
+  to:'/',
+  type: 'link',
+  text: 'Blockchain 101'
+}
+export const Primary = Template.bind({});
+Primary.args = {
+  to: 'https://thischain.org',
   type: 'primary',
+  icon: 'map-pointer.svg',
+  iconPos: 'right',
+  text: 'Explore Map'
+}
+export const Secondary = Template.bind({});
+Secondary.args = {
+  to:'https://thischain.org',
+  type: 'seconday',
+  icon: 'union.svg',
+  iconPos: 'left',
+  text: 'All case studies'
+}
+export const Outlined = Template.bind({});
+Outlined.args = {
+  to:'https://thischain.org',
+  type: 'outline',
+  icon: 'arrow-right.svg',
+  iconPos: 'right',
+  text: 'Next: Smart Contracts'
 }
