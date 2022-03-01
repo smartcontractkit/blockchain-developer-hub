@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+  --primary-color: #00639D;
+  --secondary-color: #191C1D;
+  --border-color: #C4C7C8;
+  --rem-px: ((100% - 2.3rem)/2);
+  --nav-link-padding: 1rem 1.5rem;
+  --nav-link-radius: 0.75rem;
+}
 
 html,
 body {
@@ -27,15 +35,19 @@ a.active {
   flex-direction: row-reverse;
 }
 .icon-left {
-  margin-right: 11px;
+  margin-right: 0.6875rem;
 }
 .icon-right {
-  margin-left: 11px;
+  margin-left: 0.6875rem;
 }
-/* Global colors */
+.navLink {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1rem;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
 
-:root {
-  --primary-color: #00639D;
-  --secondary-color: #191C1D;
-  --border-color: #C4C7C8;
-}

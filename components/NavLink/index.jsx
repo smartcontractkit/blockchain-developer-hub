@@ -6,27 +6,17 @@ import PropTypes from 'prop-types'
 
 export default function NavLink({
     to, 
-    exact, 
     type, 
     icon, 
     iconPos, 
-    text, 
+    text,
+    active,
     className, 
   ...props 
   }) {
-  const { pathname } = useRouter();
-  const router = useRouter();
-  console.log(pathname);
-  console.log(router);
-  // const pathname = '/'
-  const isActive = exact && type === 'link' ? pathname === to  : pathname.startsWith(to);
-
-  if (isActive) {
-      className += ' active';
-  }
   return (
     <Link href={to}>
-      <a {...props} className={styles[type] + ' ' + className + ' ' + (iconPos === 'left' ? 'row-reverse': '') }>
+      <a {...props} className={['navLink', styles[type], className, (active && type === 'link' ? 'active':''), (iconPos === 'left' ? 'row-reverse': '')].join(' ')}>
        
         <span>
           { text }
@@ -50,14 +40,14 @@ export default function NavLink({
 
 NavLink.prototype = {
   to: PropTypes.string.isRequired, 
-  exact: PropTypes.bool, 
+  exact: PropTypes.bool,
+  active: PropTypes.bool,
   type:PropTypes.oneOf(['primary', 'seconday', 'outline', 'link']).isRequired, 
   icon: PropTypes.string, 
-  iconPos: PropTypes.string, 
+  iconPos: PropTypes.oneOf(['left', 'right']),
   text: PropTypes.string.isRequired, 
 }
 
 NavLink.defaultProps = {
-  exact: false,
-  className: '',
+  iconPos: 'left',
 }

@@ -10,10 +10,11 @@ export default {
       options: ['primary', 'seconday', 'outline', 'link'],
       require: true
     },
-    className: {
-      control: 'text',
+    iconPos: {
+      control: 'select',
+      options: ['left', 'right']
     },
-    exact: {
+    active: {
       control: 'boolean'
     }
   },
@@ -25,8 +26,8 @@ const Template = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  exact: true,
   to:'/',
+  active: false,
   type: 'link',
   text: 'Blockchain 101'
 }
