@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import Link from 'next/link'
 import styles from './NavLink.module.css'
 import PropTypes from 'prop-types'
@@ -39,8 +38,7 @@ export default function NavLink({
 
 
 NavLink.prototype = {
-  to: PropTypes.string.isRequired, 
-  exact: PropTypes.bool,
+  to: PropTypes.string.isRequired,
   active: PropTypes.bool,
   type:PropTypes.oneOf(['primary', 'seconday', 'outline', 'link']).isRequired, 
   icon: PropTypes.string, 
