@@ -23,8 +23,11 @@ a.active {
 .flex {
   display: flex;
 }
+.row-reverse {
+  flex-direction: row-reverse;
+}
 .icon-left {
-  margin-right: 11.38px;
+  margin-right: 11px;
 }
 .icon-right {
   margin-left: 11px;

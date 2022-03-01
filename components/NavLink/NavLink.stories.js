@@ -1,13 +1,14 @@
 import React from 'react';
-import BaseLink from '.';
+import NavLink from '.';
 
 export default {
-  title: 'component/Base Link',
-  component: BaseLink,
+  title: 'component/Nav Link',
+  component: NavLink,
   argTypes: {
     type: {
       control: 'select',
-      options: ['primary', 'seconday', 'outline', 'link']
+      options: ['primary', 'seconday', 'outline', 'link'],
+      require: true
     },
     className: {
       control: 'text',
@@ -19,7 +20,7 @@ export default {
 };
 
 const Template = (args) => (
-    <BaseLink {...args} />
+    <NavLink {...args} />
 );
 
 export const Default = Template.bind({});
