@@ -1,6 +1,6 @@
 {
   "hooks": {
-    "pre-commit": "lint-staged && npm run validate",
+    "pre-commit": "echo \"[Husky] pre-commit\" && lint-staged && npm run validate",
     "pre-push": "npm run build"
   }
 }
