@@ -7,7 +7,12 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prettier": "prettier --ignore-path .gitignore '**/*.{js,jsx,json,md,mdx}'",
+    "format": "npm run prettier -- --write",
+    "check-format": "npm run prettier -- --check",
+    "validate": "npm run check-format && npm run lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.0.10",
@@ -28,6 +33,11 @@
     "babel-loader": "^8.2.3",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",
-    "eslint-plugin-storybook": "^0.5.7"
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-react": "^7.29.2",
+    "eslint-plugin-storybook": "^0.5.7",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.6.2"
   }
 }
