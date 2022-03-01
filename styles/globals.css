@@ -35,31 +35,8 @@ a.active {
   color: #00639D;
 }
 
-* {
+*{
   box-sizing: border-box;
 }
-.flex {
-  display: flex;
-}
-.row-reverse {
-  flex-direction: row-reverse;
-}
-.icon-left {
-  margin-right: 0.6875rem;
-}
-.icon-right {
-  margin-left: 0.6875rem;
-}
-.navLink {
-  font-weight: 600;
-  font-size: 0.9375rem;
-  line-height: 1rem;
-  letter-spacing: -0.01em;
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  color: #FFFFFF;
-  padding: var(--nav-link-padding);
-  border-radius: var(--nav-link-radius);
-}
+
 

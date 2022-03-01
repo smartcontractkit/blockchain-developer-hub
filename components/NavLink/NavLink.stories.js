@@ -10,7 +10,7 @@ export default {
       options: ['primary', 'seconday', 'outline', 'link'],
       require: true,
     },
-    iconPos: {
+    iconPosition: {
       control: 'select',
       options: ['left', 'right'],
     },
@@ -34,7 +34,7 @@ Primary.args = {
   to: 'https://thischain.org',
   type: 'primary',
   icon: 'map-pointer.svg',
-  iconPos: 'right',
+  iconPosition: 'right',
   text: 'Explore Map',
 };
 export const Secondary = Template.bind({});
@@ -42,7 +42,7 @@ Secondary.args = {
   to: 'https://thischain.org',
   type: 'secondary',
   icon: 'union.svg',
-  iconPos: 'left',
+  iconPosition: 'left',
   text: 'All case studies',
 };
 export const Outlined = Template.bind({});
@@ -50,6 +50,6 @@ Outlined.args = {
   to: 'https://thischain.org',
   type: 'outline',
   icon: 'arrow-right.svg',
-  iconPos: 'right',
+  iconPosition: 'right',
   text: 'Next: Smart Contracts',
 };
