@@ -6,8 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006 -s ./public",
+    "build-storybook": "build-storybook -s public",
     "prettier": "prettier --ignore-path .gitignore '**/*.{js,jsx,json,md,mdx}'",
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --check",
@@ -15,10 +15,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@storybook/addon-docs": "^6.4.19",
     "next": "12.0.10",
     "next-seo": "^5.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "storybook-addon-next-router": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",

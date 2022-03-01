@@ -1,0 +1,48 @@
+@import '../../styles/globals.css';
+
+.navLink {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1rem;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: #FFFFFF;
+  padding: var(--nav-link-padding);
+  border-radius: var(--nav-link-radius);
+}
+
+.link {
+  color: #000000;
+  padding: unset;
+  border-radius: unset;
+}
+
+.outline {
+  background: #FBFDFE;
+  border: 1px solid var(--border-color);
+  color: var(--secondary-color);
+}
+
+.primary {
+  background: var(--primary-color);
+}
+
+.secondary {
+  border-radius: unset;
+  background: var(--secondary-color);
+}
+
+.icon-left {
+  margin-right: 0.6875rem;
+}
+
+.icon-right {
+  margin-left: 0.6875rem;
+}
+
+.iconLeft {
+  flex-direction: row-reverse;
+}
+
