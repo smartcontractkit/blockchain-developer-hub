@@ -8,50 +8,48 @@ export default {
     type: {
       control: 'select',
       options: ['primary', 'seconday', 'outline', 'link'],
-      require: true
+      require: true,
     },
     iconPos: {
       control: 'select',
-      options: ['left', 'right']
+      options: ['left', 'right'],
     },
     active: {
-      control: 'boolean'
-    }
+      control: 'boolean',
+    },
   },
 };
 
-const Template = (args) => (
-    <NavLink {...args} />
-);
+const Template = (args) => <NavLink {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  to:'/',
+  to: '/',
   active: false,
   type: 'link',
-  text: 'Blockchain 101'
-}
+  text: 'Blockchain 101',
+};
 export const Primary = Template.bind({});
 Primary.args = {
   to: 'https://thischain.org',
   type: 'primary',
   icon: 'map-pointer.svg',
   iconPos: 'right',
-  text: 'Explore Map'
-}
+  text: 'Explore Map',
+};
 export const Secondary = Template.bind({});
 Secondary.args = {
-  to:'https://thischain.org',
+  to: 'https://thischain.org',
   type: 'seconday',
   icon: 'union.svg',
   iconPos: 'left',
-  text: 'All case studies'
-}
+  text: 'All case studies',
+};
 export const Outlined = Template.bind({});
 Outlined.args = {
-  to:'https://thischain.org',
+  to: 'https://thischain.org',
   type: 'outline',
   icon: 'arrow-right.svg',
   iconPos: 'right',
-  text: 'Next: Smart Contracts'
-}
+  text: 'Next: Smart Contracts',
+};
