@@ -32,9 +32,11 @@ export default function NavBar() {
     <nav className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.nav_contents}>
-          <Link href="/">
-            <a className={styles.logo}>DevHub</a>
-          </Link>
+          <h1>
+            <Link href="/">
+              <a className={styles.logo}>DevHub</a>
+            </Link>
+          </h1>
 
           <ul className={styles.nav_links}>
             {links.map((res, index) => (
