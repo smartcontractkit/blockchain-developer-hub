@@ -19,17 +19,17 @@
 
 .outline {
   background: #FBFDFE;
-  border: 1px solid var(--border-color);
-  color: var(--secondary-color);
+  border: 1px solid var(--neural-300-color);
+  color: var(--neural-950-color);
 }
 
 .primary {
-  background: var(--primary-color);
+  background: var(--tertiary-700-color);
 }
 
 .secondary {
   border-radius: unset;
-  background: var(--secondary-color);
+  background: var(--neural-950-color);
 }
 
 .icon-left {
