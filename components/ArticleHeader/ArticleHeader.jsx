@@ -5,7 +5,7 @@ import styles from './ArticleHeader.module.css';
 
 function ArticleHeader({ datetime, title, image, author, role }) {
   return (
-    <div>
+    <section>
       <span className={styles.publishDate}>
         Published on <time dateTime={datetime}>{dayjs(datetime).format('MMM D, YYYY')}</time>
       </span>
@@ -13,14 +13,14 @@ function ArticleHeader({ datetime, title, image, author, role }) {
 
       <div className={styles.author}>
         <div className={styles.author__imageContainer}>
-          <Image src={image} height={50} width={50} />
+          <Image src={image} height={50} width={50} alt={`Portrait of ${author}`} />
         </div>
         <div>
-          <h3 className={styles.author__name}>{author}</h3>
+          <h2 className={styles.author__name}>{author}</h2>
           <small className={styles.author__role}>{role}</small>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
