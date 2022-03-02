@@ -33,7 +33,7 @@ a {
 }
 
 a.active {
-  color: #00639D;
+  color: var(--primary-color);
 }
 
 *{

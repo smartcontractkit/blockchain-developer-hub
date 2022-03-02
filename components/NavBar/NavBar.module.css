@@ -13,10 +13,16 @@
 }
 .logo {
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  letter-spacing: -0.03em;
+  color: #000000;
 }
 .nav_links {
   flex: auto;
   justify-content: center;
+  padding: 0;
 }
 
 .nav_links li {
@@ -27,7 +33,34 @@
   display: inline-block;
 }
 
-.nav_links li:not(:last-child)::after {
-  content: url('../../public/icons/keyboard-arrow-right.svg');
-  margin-inline: 1.5rem;
+.nav_links li > a:hover {
+  color: var(--primary-color);
+}
+
+.nav_links li:nth-child(3),
+.nav_links li:nth-child(5)
+{
+  display: none;
+}
+
+.nav_links li:not(:last-child) {
+  margin-inline: 0.9rem;
+}
+
+/* Media Query */
+
+@media (min-width: 1024px) {
+
+  .nav_links li:not(:last-child) {
+    margin-inline: unset;
+  }
+
+  .nav_links li:nth-child(3),
+  .nav_links li:nth-child(5) {
+    display: inline-block;
+  }
+  .nav_links li:not(:last-child)::after {
+    content: url('../../public/icons/keyboard-arrow-right.svg');
+    margin-inline: 1.5rem;
+  }
 }
