@@ -44,7 +44,7 @@
 }
 
 .nav_links li:not(:last-child) {
-  margin-inline: 0.9rem;
+  margin-inline: 0.6rem;
 }
 
 /* Media Query */
