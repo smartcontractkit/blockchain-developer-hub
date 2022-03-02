@@ -1,0 +1,36 @@
+.publishDate {
+  font-size: 0.8em;
+  color: var(--secondary-color-2);
+  font-size: 1rem;
+}
+
+.title {
+  color: var(--secondary-color);
+  letter-spacing: 0.01em;
+}
+
+.author {
+  display: flex;
+  gap: 1rem;
+}
+
+.author__imageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.author__imageContainer img {
+  border-radius: 999px;
+}
+
+.author__name {
+  margin-block-start: 0;
+  margin-block-end: 0.4rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.author__role {
+  color: var(--secondary-color-2);
+  font-size: 1rem;
+}
