@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from './NavLink.module.css';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+import Svg from '../Svg';
 
 export default function NavLink({ to, type, icon, iconPosition, text, active, ...props }) {
   const classes = clsx(styles.navLink, styles[type], {
@@ -13,15 +14,7 @@ export default function NavLink({ to, type, icon, iconPosition, text, active, ..
     <Link href={to}>
       <a {...props} className={classes}>
         <span>{text}</span>
-        {icon && (
-          <object
-            className={styles[`icon-${iconPosition}`]}
-            type="image/svg+xml"
-            height="20"
-            width="20"
-            data={`/icons/${icon}`}
-          />
-        )}
+        {icon && <Svg className={styles[`icon-${iconPosition}`]} height="20" width="20" href={`/icons/${icon}`} />}
       </a>
     </Link>
   );
