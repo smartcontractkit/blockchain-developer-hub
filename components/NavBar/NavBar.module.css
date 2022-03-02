@@ -1,0 +1,33 @@
+.nav {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #C4C7C8;
+}
+.container {
+  margin-inline: auto;
+  max-width: 1440px;
+  padding: 1.5rem 1rem;
+}
+.nav_contents, .nav_links {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  text-decoration: none;
+}
+.nav_links {
+  flex: auto;
+  justify-content: center;
+}
+
+.nav_links li {
+  list-style: none;
+}
+
+.nav_links li > a {
+  display: inline-block;
+}
+
+.nav_links li:not(:last-child)::after {
+  content: url('../../public/icons/keyboard-arrow-right.svg');
+  margin-inline: 1.5rem;
+}

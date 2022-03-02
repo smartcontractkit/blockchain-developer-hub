@@ -37,6 +37,7 @@ a.active {
 
 *{
   box-sizing: border-box;
+  margin: 0;
 }
 
 

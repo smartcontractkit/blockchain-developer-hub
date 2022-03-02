@@ -1,5 +1,5 @@
 import React from 'react';
-import NavLink from '.';
+import NavLink from './NavLink';
 
 export default {
   title: 'component/Nav Link',
