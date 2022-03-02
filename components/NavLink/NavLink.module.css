@@ -7,8 +7,8 @@
   align-items: center;
   width: fit-content;
   color: #FFFFFF;
-  padding: var(--nav-link-padding);
-  border-radius: var(--nav-link-radius);
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
 }
 
 .link {
