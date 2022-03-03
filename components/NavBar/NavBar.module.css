@@ -12,7 +12,7 @@
   align-items: center;
 }
 .nav_contents {
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -25,13 +25,15 @@
   user-select: none;
 }
 .nav_links {
-  flex: 1;
+  flex: 1 0 100%;
   padding: 0;
   margin-top: 0.6rem;
+  overflow-x: auto;
 }
 
 .nav_links li {
   list-style: none;
+  white-space: nowrap;
 }
 
 .nav_links li > a {
@@ -43,13 +45,16 @@
 } */
 
 .nav_links li:not(:last-child) {
-  margin-right: 0.8rem;
+  margin-right: 1rem;
 }
 
 /* Media Query */
 
 @media (min-width: 1024px) {
 
+  .nav_contents {
+    flex-wrap: unset;
+  }
   .nav_links {
     flex: auto;
     justify-content: center;
