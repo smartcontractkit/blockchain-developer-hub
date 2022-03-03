@@ -11,7 +11,15 @@
   letter-spacing: -0.01em;
   margin-top: 0.5rem;
 }
-.author_date {
+
+.tur_card_heading {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 124%;
+  color: #000000;
+}
+
+.tur_card_author_date {
   font-weight: 500;
   line-height: 100%;
   color: var(--neural-600-color);
