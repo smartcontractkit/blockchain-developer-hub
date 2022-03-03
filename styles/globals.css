@@ -25,10 +25,7 @@ a {
   text-decoration: none;
 }
 
-a.active {
-  color: #00639D;
-}
-
 *{
   box-sizing: border-box;
+  margin: 0;
 }

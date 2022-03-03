@@ -16,6 +16,10 @@
   padding: unset;
   border-radius: unset;
 }
+.link:hover,
+.activeLink {
+  color: var(--tertiary-700-color);
+}
 
 .outline {
   background: #FBFDFE;

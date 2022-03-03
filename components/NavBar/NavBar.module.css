@@ -1,0 +1,69 @@
+.nav {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.078);
+}
+.container {
+  margin-inline: auto;
+  max-width: 1440px;
+  padding: 1.5rem 1rem;
+}
+.nav_contents, .nav_links {
+  display: flex;
+  align-items: center;
+}
+.nav_contents {
+  flex-wrap: wrap;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  letter-spacing: -0.03em;
+  color: #000000;
+  user-select: none;
+}
+.nav_links {
+  flex: 1 0 100%;
+  padding: 0;
+  margin-top: 0.6rem;
+  overflow-x: auto;
+}
+
+.nav_links li {
+  list-style: none;
+  white-space: nowrap;
+}
+
+.nav_links li > a {
+  display: inline-block;
+}
+
+
+.nav_links li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* Media Query */
+
+@media (min-width: 1024px) {
+
+  .nav_contents {
+    flex-wrap: unset;
+  }
+  .nav_links {
+    flex: auto;
+    justify-content: center;
+    margin-top: unset;
+  }
+  .nav_links li:not(:last-child) {
+    margin-right: unset;
+  }
+
+  .nav_links li:not(:last-child)::after {
+    content: url('/icons/keyboard-arrow-right.svg');
+    margin-inline: 1.5rem;
+    opacity: 0.2;
+  }
+}
