@@ -4,6 +4,7 @@
   background-color: var(--neural-50-color);
   padding: 1rem;
   border-radius: 0.75rem;
+  cursor: pointer;
 }
 
 .tut_card_content {
