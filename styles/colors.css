@@ -1,0 +1,76 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --primary-50-color: #F6FDFF;
+  --primary-100-color: #D5F6FF;
+  --primary-200-color: #A6EEFF;
+  --primary-300-color: #14D9FA;
+  --primary-400-color: #00BCDA;
+  --primary-500-color: #009FB9;
+  --primary-600-color: #008399;
+  --primary-700-color: #00687A;
+  --primary-800-color: #004E5C;
+  --primary-900-color: #003640;
+  --primary-950-color: #001F26;
+
+  --secondary-50-color: #FFFBF7;
+  --secondary-100-color: #FFF0C6;
+  --secondary-200-color: #FFE07D;
+  --secondary-300-color: #ECC232;
+  --secondary-400-color: #CEA70E;
+  --secondary-500-color: #B08C00;
+  --secondary-600-color: #917400;
+  --secondary-700-color: #745C00;
+  --secondary-800-color: #574400;
+  --secondary-900-color: #3D2F00;
+  --secondary-950-color: #241A00;
+
+  --tertiary-50-color: #FCFCFF;
+  --tertiary-100-color: #E8F2FF;
+  --tertiary-200-color: #CDE5FF;
+  --tertiary-300-color: #96CCFF;
+  --tertiary-400-color: #57B1FC;
+  --tertiary-500-color: #3597DF;
+  --tertiary-600-color: #007CC3;
+  --tertiary-700-color: #00639D;
+  --tertiary-800-color: #004A78;
+  --tertiary-900-color: #003355;
+  --tertiary-950-color: #001D34;
+
+  --error-50-color: #FCFCFC;
+  --error-100-color: #FFEDE9;
+  --error-200-color: #FFDAD4;
+  --error-300-color: #FFB4A9;
+  --error-400-color: #FF897A;
+  --error-500-color: #FF5449;
+  --error-600-color: #DD3730;
+  --error-700-color: #BA1B1B;
+  --error-800-color: #930006;
+  --error-900-color: #680003;
+  --error-950-color: #410001;
+
+  --neural-50-color: #FBFDFE;
+  --neural-100-color: #EFF1F2;
+  --neural-200-color: #E1E3E4;
+  --neural-300-color: #C4C7C8;
+  --neural-400-color: #A9ABAC;
+  --neural-500-color: #8E9192;
+  --neural-600-color: #747778;
+  --neural-700-color: #5C5F60;
+  --neural-800-color: #444748;
+  --neural-900-color: #2E3132;
+  --neural-950-color: #191C1D;
+
+  --neural-variant-50-color: #F6FDFF;
+  --neural-variant-100-color: #E9F2F5;
+  --neural-variant-200-color: #DBE4E7;
+  --neural-variant-300-color: #BFC8CB;
+  --neural-variant-400-color: #A4ADB0;
+  --neural-variant-500-color: #899295;
+  --neural-variant-600-color: #70797C;
+  --neural-variant-700-color: #576063;
+  --neural-variant-800-color: #3F484B;
+  --neural-variant-900-color: #293234;
+  --neural-variant-950-color: #141D1F;
+}
