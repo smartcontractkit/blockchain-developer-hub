@@ -32,10 +32,6 @@ a {
   text-decoration: none;
 }
 
-a.active {
-  color: var(--primary-color);
-}
-
 *{
   box-sizing: border-box;
   margin: 0;

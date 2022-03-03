@@ -1,6 +1,6 @@
 .nav {
   background-color: #FFFFFF;
-  border-bottom: 1px solid #C4C7C8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .container {
   margin-inline: auto;
@@ -11,6 +11,10 @@
   display: flex;
   align-items: center;
 }
+.nav_contents {
+  flex-flow: row wrap;
+}
+
 .logo {
   text-decoration: none;
   font-weight: 600;
@@ -18,11 +22,12 @@
   line-height: 1rem;
   letter-spacing: -0.03em;
   color: #000000;
+  user-select: none;
 }
 .nav_links {
-  flex: auto;
-  justify-content: center;
+  flex: 1;
   padding: 0;
+  margin-top: 0.6rem;
 }
 
 .nav_links li {
@@ -33,32 +38,27 @@
   display: inline-block;
 }
 
-.nav_links li > a:hover {
+/* .nav_links li > a:hover {
   color: var(--primary-color);
-}
-
-.nav_links li:nth-child(3),
-.nav_links li:nth-child(5)
-{
-  display: none;
-}
+} */
 
 .nav_links li:not(:last-child) {
-  margin-inline: 0.6rem;
+  margin-right: 0.8rem;
 }
 
 /* Media Query */
 
 @media (min-width: 1024px) {
 
+  .nav_links {
+    flex: auto;
+    justify-content: center;
+    margin-top: unset;
+  }
   .nav_links li:not(:last-child) {
-    margin-inline: unset;
+    margin-right: unset;
   }
 
-  .nav_links li:nth-child(3),
-  .nav_links li:nth-child(5) {
-    display: inline-block;
-  }
   .nav_links li:not(:last-child)::after {
     content: url('../../public/icons/keyboard-arrow-right.svg');
     margin-inline: 1.5rem;

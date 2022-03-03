@@ -1,2 +1,1 @@
-import NavLink from './NavLink';
-export default NavLink;
+export { default as default } from './NavLink';
