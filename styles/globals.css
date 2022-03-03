@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-:root {
-  --primary-color: #00639D;
-  --secondary-color: #191C1D;
-  --secondary-color-2: #5C5F60;
-  --border-color: #C4C7C8;
-  --nav-link-padding: 1rem 1.5rem;
-  --nav-link-radius: 0.75rem;
-}
+@import './colors.css';
+@import './breakpoints.css';
 
 html,
 body {
@@ -39,5 +32,3 @@ a.active {
 *{
   box-sizing: border-box;
 }
-
-
