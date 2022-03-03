@@ -62,7 +62,9 @@
   }
 
   .nav_links li:not(:last-child)::after {
-    content: url('../../public/icons/keyboard-arrow-right.svg');
+    content: url('/icons/keyboard-arrow-right.svg');
+    /* content: url('../../public/icons/keyboard-arrow-right.svg'); */
     margin-inline: 1.5rem;
+    opacity: 0.2;
   }
 }
