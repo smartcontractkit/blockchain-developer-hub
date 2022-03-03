@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import NavLink from '../NavLink';
+import NavLink from '@/components/NavLink';
 import styles from './NavBar.module.css';
 
 const links = [
