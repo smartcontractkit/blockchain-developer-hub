@@ -16,6 +16,7 @@
   font-weight: 600;
   font-size: 1rem;
   line-height: 124%;
+  margin-top: 0;
   color: var(--black-color);
 }
 
@@ -25,7 +26,7 @@
   color: var(--neural-600-color);
 }
 
-.author_date > span {
+.tur_card_author_date > span {
   margin-inline: 0.2rem;
 }
 
