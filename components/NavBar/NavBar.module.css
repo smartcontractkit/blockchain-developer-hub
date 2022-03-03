@@ -40,9 +40,6 @@
   display: inline-block;
 }
 
-/* .nav_links li > a:hover {
-  color: var(--primary-color);
-} */
 
 .nav_links li:not(:last-child) {
   margin-right: 1rem;
