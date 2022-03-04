@@ -16,7 +16,7 @@ function Card({ variant = 'gray', title, subtitle, description, image, href, onl
 
         {subtitle && <h3 className={styles.subtitle}>{subtitle}</h3>}
 
-        <p className={styles.description}>{description}</p>
+        {description && <p className={styles.description}>{description}</p>}
 
         {level && <div className={styles.level}>{level}</div>}
 
@@ -56,12 +56,12 @@ function Card({ variant = 'gray', title, subtitle, description, image, href, onl
 Card.propTypes = {
   variant: PropTypes.oneOf(['gray', 'light']),
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+  description: PropTypes.string,
   image: PropTypes.string,
   online: PropTypes.bool,
   location: PropTypes.string,
-  date: PropTypes.string.isRequired,
+  date: PropTypes.string,
   prize: PropTypes.string,
   href: PropTypes.string.isRequired,
   level: PropTypes.string,
