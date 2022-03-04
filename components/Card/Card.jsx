@@ -4,15 +4,21 @@ import Image from 'next/image';
 import clsx from 'clsx';
 import Svg from '@/components/Svg';
 
-function Card({ variant = 'gray', title, description, image, href, online, location, date, prize }) {
+function Card({ variant = 'gray', title, subtitle, description, image, href, online, location, date, prize, level }) {
   const classes = clsx(styles.container, { [styles.light]: variant === 'light' });
 
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <div className={classes}>
-        <Image src={image} alt={title} width="200" height="150" className={styles.image} />
+        {image && <Image src={image} alt={title} width="200" height="150" className={styles.image} />}
+
         <h2 className={styles.title}>{title}</h2>
+
+        {subtitle && <h3 className={styles.subtitle}>{subtitle}</h3>}
+
         <p className={styles.description}>{description}</p>
+
+        {level && <div className={styles.level}>{level}</div>}
 
         {prize && (
           <div className={styles.prize}>
@@ -28,9 +34,9 @@ function Card({ variant = 'gray', title, description, image, href, online, locat
               {online ? (
                 <Svg height="20" width="20" href="/icons/online.svg" />
               ) : (
-                <Svg height="20" width="20" href="/icons/location.svg" />
+                location && <Svg height="20" width="20" href="/icons/location.svg" />
               )}
-              {online ? 'Online' : location}
+              {location || 'Online'}
             </span>
           )}
 
@@ -50,9 +56,10 @@ function Card({ variant = 'gray', title, description, image, href, online, locat
 Card.propTypes = {
   variant: PropTypes.oneOf(['gray', 'light']),
   title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  online: PropTypes.bool.isRequired,
+  image: PropTypes.string,
+  online: PropTypes.bool,
   location: PropTypes.string,
   date: PropTypes.string.isRequired,
   prize: PropTypes.string,

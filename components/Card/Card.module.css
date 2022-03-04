@@ -1,7 +1,7 @@
 .container {
   background-color: var(--neural-100-color);
-  border-radius: 0.25rem;
-  padding: 1rem;
+  border-radius: 0.3rem;
+  padding: 0.7rem;
   width: 100%;
   height: 100%;
   font-size: 0.9rem;
@@ -18,6 +18,8 @@
 .title {
   font-size: 1.1rem;
   margin-top: 1rem;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0;
 }
 
 .description {
@@ -31,6 +33,28 @@
   align-items: center;
   gap: 0.5rem;
   margin-top: 1.5rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--neural-600-color);
+  font-weight: 400;
+}
+
+.level {
+  color: var(--tertiary-600-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.level::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  background-color: var(--tertiary-600-color);
+  border-radius: 50%;
 }
 
 .footer {
