@@ -2,11 +2,13 @@ import '../styles/globals.css';
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config';
 import PropTypes from 'prop-types';
+import NavBar from '@/components/NavBar';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo {...SEO} />
+      <NavBar />
       <Component {...pageProps} />
     </>
   );
