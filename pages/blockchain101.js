@@ -1,8 +1,10 @@
+import Layout from '@/components/layout';
+
 function Blockchain101() {
   return (
-    <div>
+    <Layout>
       <h1>Blockchain 101</h1>
-    </div>
+    </Layout>
   );
 }
 

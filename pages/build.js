@@ -1,9 +1,9 @@
-import React from 'react';
+import Layout from '@/components/layout';
 function Build() {
   return (
-    <div>
+    <Layout>
       <h1>Build</h1>
-    </div>
+    </Layout>
   );
 }
 

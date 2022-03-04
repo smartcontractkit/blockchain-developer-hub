@@ -1,9 +1,9 @@
-import React from 'react';
+import Layout from '@/components/layout';
 function Ship() {
   return (
-    <div>
+    <Layout>
       <h1>Ship</h1>
-    </div>
+    </Layout>
   );
 }
 

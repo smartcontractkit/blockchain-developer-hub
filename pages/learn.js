@@ -1,9 +1,9 @@
-import React from 'react';
+import Layout from '@/components/layout';
 function Learn() {
   return (
-    <div>
+    <Layout>
       <h1>Learn</h1>
-    </div>
+    </Layout>
   );
 }
 
