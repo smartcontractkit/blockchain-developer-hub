@@ -1,0 +1,41 @@
+.tut_card {
+  width: 100%;
+  min-height: 74px;
+  background-color: var(--neural-50-color);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.tut_card_content {
+  font-size: 0.875rem;
+  letter-spacing: -0.01em;
+  margin-top: 0.5rem;
+}
+
+.tur_card_heading {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 124%;
+  margin-top: 0;
+  color: var(--black-color);
+}
+
+.tur_card_author_date {
+  font-weight: 500;
+  line-height: 100%;
+  color: var(--neural-600-color);
+}
+
+.tur_card_author_date > span {
+  margin-inline: 0.2rem;
+}
+
+.tut_card_description {
+  line-height: 142%;
+  color: var(--neural-900-color);
+}
+
+.tut_card_gray {
+  background-color: var(--neural-100-color);
+}

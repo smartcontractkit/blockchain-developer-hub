@@ -1,5 +1,5 @@
 .nav {
-  background-color: #FFFFFF;
+  background-color: var(--white-color);
   border-bottom: 1px solid rgba(0, 0, 0, 0.078);
 }
 .container {
@@ -21,7 +21,7 @@
   font-size: 1.5rem;
   line-height: 1rem;
   letter-spacing: -0.03em;
-  color: #000000;
+  color: var(--black-color);
   user-select: none;
 }
 .nav_links {
