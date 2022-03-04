@@ -1,10 +1,5 @@
-import Layout from '@/components/layout';
 function Learn() {
-  return (
-    <Layout>
-      <h1>Learn</h1>
-    </Layout>
-  );
+  return <h1>Learn</h1>;
 }
 
 export default Learn;

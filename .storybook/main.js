@@ -20,6 +20,7 @@ module.exports = {
     config.resolve.alias = {
       ...config.resolve.alias,
       '@/components': path.resolve(__dirname, '../components'),
+      '@/layouts': path.resolve(__dirname, '../layouts'),
       '@/pages': path.resolve(__dirname, '../pages'),
       '@/helpers': path.resolve(__dirname, '../helpers'),
       '@/styles': path.resolve(__dirname, '../styles'),

@@ -1,7 +1,7 @@
 import NavBar from '@/components/NavBar';
 import PropTypes from 'prop-types';
 
-export default function Layout({ children }) {
+export default function DefaultLayout({ children }) {
   return (
     <>
       <NavBar />
@@ -10,6 +10,6 @@ export default function Layout({ children }) {
   );
 }
 
-Layout.propTypes = {
+DefaultLayout.propTypes = {
   children: PropTypes.node,
 };

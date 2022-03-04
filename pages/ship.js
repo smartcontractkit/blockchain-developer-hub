@@ -1,10 +1,5 @@
-import Layout from '@/components/layout';
 function Ship() {
-  return (
-    <Layout>
-      <h1>Ship</h1>
-    </Layout>
-  );
+  return <h1>Ship</h1>;
 }
 
 export default Ship;
