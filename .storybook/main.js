@@ -23,6 +23,7 @@ module.exports = {
       '@/pages': path.resolve(__dirname, '../pages'),
       '@/helpers': path.resolve(__dirname, '../helpers'),
       '@/styles': path.resolve(__dirname, '../styles'),
+      '/icons': path.resolve(__dirname, '../public/icons'),
     };
     return config;
   },

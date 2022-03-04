@@ -8,6 +8,7 @@ export default function NavLink({ to, type, icon, iconPosition, text, active, ..
   const classes = clsx(styles.navLink, styles[type], {
     active: active && type === 'link',
     [styles.iconLeft]: iconPosition === 'left',
+    [styles.activeLink]: active,
   });
 
   return (
