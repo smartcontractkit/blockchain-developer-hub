@@ -1,10 +1,5 @@
-import React from 'react';
 function EcosystemMap() {
-  return (
-    <div>
-      <h1>Ecosystem Map</h1>
-    </div>
-  );
+  return <h1>Ecosystem Map</h1>;
 }
 
 export default EcosystemMap;

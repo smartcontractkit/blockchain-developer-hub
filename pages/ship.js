@@ -1,10 +1,5 @@
-import React from 'react';
 function Ship() {
-  return (
-    <div>
-      <h1>Ship</h1>
-    </div>
-  );
+  return <h1>Ship</h1>;
 }
 
 export default Ship;
