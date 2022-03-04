@@ -6,11 +6,10 @@ import DefaultLayout from '@/layouts/DefaultLayout';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <DefaultLayout>
       <DefaultSeo {...SEO} />
-      <DefaultLayout />
       <Component {...pageProps} />
-    </>
+    </DefaultLayout>
   );
 }
 
