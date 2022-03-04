@@ -4,11 +4,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
 }
 
 .content {
   width: 100%;
+}
+
+.content h1,
+.content p {
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.content h1 {
+  font-weight: bold;
+  font-size: 3.25rem;
+  line-height: 111%;
+  color: var(--neural-950-color);
+}
+
+.content p {
+  font-size: 1.125rem;
+  line-height: 147%;
+  color: var(--neural-800-color);
+  margin: 2rem 0;
+}
+.content > * {
+  margin-inline: auto;
 }
 
 @media (min-width: 1024px) {

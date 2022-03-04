@@ -13,7 +13,15 @@ function EcosystemMap() {
             The ecosystem tools map outlines the entire smart contract developer ecosystem, and all of the tools and
             products smart contract developers may need to rely on.
           </p>
-          <NavLink type="primary" />
+          <NavLink
+            to="https://smartcontractecosystem.com/"
+            type="primary"
+            text="Explore Map"
+            iconPosition="right"
+            icon="map-pointer.svg"
+            target="_blank"
+            rel="noopener noreferrer"
+          />
         </div>
       </main>
     </div>
