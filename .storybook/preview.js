@@ -20,4 +20,21 @@ export const parameters = {
   nextRouter: {
     Provider: RouterContext.Provider,
   },
+  backgrounds: {
+    default: 'white',
+    values: [
+      {
+        name: 'white',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'gray',
+        value: '#EFF1F2',
+      },
+      {
+        name: 'dark',
+        value: '#191C1D',
+      },
+    ],
+  },
 };
