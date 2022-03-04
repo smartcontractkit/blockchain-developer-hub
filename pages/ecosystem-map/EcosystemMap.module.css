@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2rem;
+}
+
+.content {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    width: 44rem;
+  }
+}
