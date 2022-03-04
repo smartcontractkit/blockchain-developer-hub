@@ -1,10 +1,5 @@
-import React from 'react';
 function Learn() {
-  return (
-    <div>
-      <h1>Learn</h1>
-    </div>
-  );
+  return <h1>Learn</h1>;
 }
 
 export default Learn;
