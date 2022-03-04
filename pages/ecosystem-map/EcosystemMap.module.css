@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@
   font-size: 1.125rem;
   line-height: 147%;
   color: var(--neural-800-color);
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
 .content > * {
   margin-inline: auto;
@@ -33,5 +33,8 @@
 @media (min-width: 1024px) {
   .content {
     width: 44rem;
+  }
+  .content p {
+    width: 37.75rem;
   }
 }
