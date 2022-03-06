@@ -1,0 +1,118 @@
+/* Headings */
+
+.h-general {
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  line-height: 108%;
+}
+
+.h-600 {
+  font-size: 4rem;
+  line-height: 106%;
+}
+
+.h-500 {
+  font-size: 3.25rem;
+  line-height: 111%;
+}
+
+.h-400 {
+  font-size: 2.5rem;
+}
+
+.h-300 {
+  font-size: 1.875rem;
+}
+
+.h-200 {
+  font-size: 1.5rem;
+  line-height: 116%;
+}
+
+/* Subtitles */
+
+.subtitle-general {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+}
+.subtitle-01 {
+  font-size: 1.25rem;
+}
+
+.subtitle-02 {
+  font-size: 1.125rem;
+}
+
+/* Body */
+
+.body-general {
+  letter-spacing: -0.01em;
+}
+
+.body-01 {
+  font-size: 1rem;
+}
+
+.body-short-01 {
+  line-height: 124%;
+}
+
+.body-long-01 {
+  line-height: 150%;
+}
+
+.body-02 {
+  font-size: 0.875rem;
+}
+
+.body-short-02 {
+  line-height: 128%;
+}
+
+.body-long-02 {
+  line-height: 142%;
+}
+
+.body-03 {
+  font-size: 0.75rem;
+}
+
+.body-short-03 {
+  line-height: 132%;
+}
+
+.body-long-03 {
+  line-height: 148%;
+}
+
+
+/* Others */
+
+.caption {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+}
+
+.overline {
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.btn-sm {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+}
