@@ -57,6 +57,7 @@
 .body-long-02, 
 .body-short-03,
 .body-long-03 {
+  margin-top: 0.5rem;
   letter-spacing: -0.01em;
 }
 
@@ -112,6 +113,7 @@
   font-size: 0.875rem;
   line-height: 100%;
   letter-spacing: -0.01em;
+  margin-top: 0.5rem;
 }
 
 .overline {
@@ -120,6 +122,7 @@
   line-height: 100%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  margin-top: 0.5rem;
 }
 
 .btn {

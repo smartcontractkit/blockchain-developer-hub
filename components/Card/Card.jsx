@@ -12,22 +12,22 @@ function Card({ variant = 'gray', title, subtitle, description, image, href, onl
       <div className={classes}>
         {image && <Image src={image} alt={title} width="200" height="150" className={styles.image} />}
 
-        <h2 className={styles.title}>{title}</h2>
+        <h2 className={`body-short-01 body-short-01_bold ${styles.title}`}>{title}</h2>
 
-        {subtitle && <h3 className={styles.subtitle}>{subtitle}</h3>}
+        {subtitle && <h3 className={`caption ${styles.subtitle}`}>{subtitle}</h3>}
 
-        {description && <p className={styles.description}>{description}</p>}
+        {description && <p className={`body-long-02 ${styles.description}`}>{description}</p>}
 
-        {level && <div className={styles.level}>{level}</div>}
+        {level && <div className={`caption ${styles.level}`}>{level}</div>}
 
         {prize && (
-          <div className={styles.prize}>
+          <div className={`caption ${styles.prize}`}>
             <Svg height="18" width="18" href="/icons/prize.svg" />
             {prize} in prizes
           </div>
         )}
 
-        <div className={styles.footer}>
+        <div className={`caption ${styles.footer}`}>
           {/* If online = true or location exist */}
           {(online || location) && (
             <span>
