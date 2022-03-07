@@ -47,10 +47,11 @@
 }
 
 .blockchainsContainer {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  justify-content: center;
+  gap: 0rem;
 }
 
 .blockchainCard {
@@ -58,14 +59,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 300px;
+  width: 280px;
+  height: 280px;
   margin: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: var(--neural-100-color);
   padding: 1rem;
-  height: 20rem;
   gap: 4rem;
 }
 
