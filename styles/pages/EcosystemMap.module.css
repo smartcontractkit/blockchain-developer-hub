@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.content h1,
+.content p {
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.content h1 {
+  font-weight: bold;
+  font-size: 3.25rem;
+  line-height: 111%;
+  color: var(--neural-950-color);
+}
+
+.content p {
+  font-size: 1.125rem;
+  line-height: 147%;
+  color: var(--neural-800-color);
+  margin: 2rem auto;
+}
+.content > * {
+  margin-inline: auto;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    width: 44rem;
+  }
+  .content p {
+    width: 37.75rem;
+  }
+}
