@@ -6,7 +6,7 @@
   justify-content: center;
   margin: 6rem auto;
   padding: 1rem;
-  max-width: 1024px;
+  max-width: var(--lg);
 }
 
 .title {
@@ -67,6 +67,7 @@
   background-color: var(--neural-100-color);
   padding: 1rem;
   gap: 4rem;
+  flex-shrink: 0;
 }
 
 .link {
