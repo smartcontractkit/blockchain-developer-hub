@@ -1,6 +1,10 @@
 /* Headings */
 
-.h-general {
+.h-600,
+.h-500,
+.h-400,
+.h-300,
+.h-200 {
   font-weight: bold;
   letter-spacing: -0.02em;
   line-height: 108%;
@@ -31,7 +35,8 @@
 
 /* Subtitles */
 
-.subtitle-general {
+.subtitle-01,
+.subtitle-02 {
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 120%;
@@ -46,11 +51,17 @@
 
 /* Body */
 
-.body-general {
+.body-short-01,
+.body-long-01,
+.body-short-02,
+.body-long-02, 
+.body-short-03,
+.body-long-03 {
   letter-spacing: -0.01em;
 }
 
-.body-01 {
+.body-short-01,
+.body-long-01 {
   font-size: 1rem;
 }
 
@@ -58,11 +69,17 @@
   line-height: 124%;
 }
 
+.body-short-01_bold, 
+.body-short-02_bold {
+  font-weight: 600;
+}
+
 .body-long-01 {
   line-height: 150%;
 }
 
-.body-02 {
+.body-short-02,
+.body-long-02 {
   font-size: 0.875rem;
 }
 
@@ -74,7 +91,8 @@
   line-height: 142%;
 }
 
-.body-03 {
+.body-short-03, 
+.body-long-03 {
   font-size: 0.75rem;
 }
 
