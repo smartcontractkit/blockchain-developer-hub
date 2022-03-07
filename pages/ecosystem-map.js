@@ -1,5 +1,5 @@
 import NavLink from '@/components/NavLink';
-import styles from './EcosystemMap.module.css';
+import styles from '@/styles/pages/EcosystemMap.module.css';
 
 function EcosystemMap() {
   return (
