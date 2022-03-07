@@ -1,5 +1,11 @@
+import LearnHero from '@/sections/LearnHero';
+
 function Learn() {
-  return <h1>Learn</h1>;
+  return (
+    <div>
+      <LearnHero />
+    </div>
+  );
 }
 
 export default Learn;

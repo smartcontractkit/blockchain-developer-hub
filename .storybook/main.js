@@ -22,6 +22,7 @@ module.exports = {
       '@/helpers': path.resolve(__dirname, '../helpers'),
       '@/styles': path.resolve(__dirname, '../styles'),
       '/icons': path.resolve(__dirname, '../public/icons'),
+      '/logos': path.resolve(__dirname, '../public/logos'),
     };
     return config;
   },

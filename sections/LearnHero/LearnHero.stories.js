@@ -1,7 +1,7 @@
 import LearnHero from './LearnHero';
 
 export default {
-  title: 'section/LearnHero',
+  title: 'section/Learn Hero',
   component: LearnHero,
 };
 
