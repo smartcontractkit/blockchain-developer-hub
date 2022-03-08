@@ -1,0 +1,79 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem auto;
+  padding: 1rem;
+  max-width: var(--lg);
+}
+
+.title {
+  font-size: 4rem;
+  max-width: 40rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: var(--neural-950-color);
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--neural-800-color);
+  line-height: 1.5;
+  max-width: 50rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.divider {
+  color: var(--neural-800-color);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.divider::after, .divider::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--neural-200-color);
+}
+
+.blockchainsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  gap: 0rem;
+}
+
+.blockchainCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 280px;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--neural-100-color);
+  padding: 1rem;
+  gap: 4rem;
+  flex-shrink: 0;
+}
+
+.link {
+  color: var(--tertiary-700-color);
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  font-weight: 500;
+}

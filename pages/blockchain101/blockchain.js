@@ -3,23 +3,23 @@ import { serialize } from 'next-mdx-remote/serialize';
 import getPage from '@/helpers/getPage';
 import PropTypes from 'prop-types';
 
-function Ship({ content }) {
+function Blockchain({ content }) {
   return (
     <div>
-      <h1>Ship page with just MD</h1>
+      <h1>Blockchain 101 - Blockchain</h1>
 
       <MDXRemote {...content} />
     </div>
   );
 }
 
-Ship.propTypes = {
+Blockchain.propTypes = {
   content: PropTypes.object.isRequired,
 };
-export default Ship;
+export default Blockchain;
 
 export const getStaticProps = async () => {
-  const page = await getPage('ship.md');
+  const page = await getPage('blockchain101/blockchain.mdx');
   const mdxSource = await serialize(page.content);
   return {
     props: {
