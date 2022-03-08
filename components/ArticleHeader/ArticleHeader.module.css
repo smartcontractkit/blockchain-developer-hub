@@ -7,6 +7,7 @@
 .title {
   color: var(--neural-950-color);
   letter-spacing: 0.01em;
+  margin: 1rem 0;
 }
 
 .author {
