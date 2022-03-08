@@ -52,8 +52,10 @@
 /* Body */
 
 .body-short-01,
+.body-short-01--bold,
 .body-long-01,
 .body-short-02,
+.body-short-02--bold,
 .body-long-02, 
 .body-short-03,
 .body-long-03 {
@@ -62,6 +64,7 @@
 }
 
 .body-short-01,
+.body-short-01--bold,
 .body-long-01 {
   font-size: 1rem;
 }
@@ -70,8 +73,8 @@
   line-height: 124%;
 }
 
-.body-short-01_bold, 
-.body-short-02_bold {
+.body-short-01--bold, 
+.body-short-02--bold {
   font-weight: 600;
 }
 
@@ -80,6 +83,7 @@
 }
 
 .body-short-02,
+.body-short-02--bold,
 .body-long-02 {
   font-size: 0.875rem;
 }

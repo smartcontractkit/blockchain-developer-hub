@@ -56,7 +56,7 @@ const Template = () => (
     <br />
     <br />
 
-    <span className="body-short-01_bold">
+    <span className="body-short-01--bold">
       This is for short paragraphs with no more than 4 lines and is commonly used in components.
     </span>
     <br />
@@ -75,7 +75,7 @@ const Template = () => (
     <br />
     <br />
 
-    <span className="body-short-02_bold">
+    <span className="body-short-02--bold">
       This is for short paragraphs with no more than 4 lines and is commonly used in components.
     </span>
     <br />
