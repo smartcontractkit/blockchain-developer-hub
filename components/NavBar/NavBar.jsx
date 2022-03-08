@@ -5,7 +5,7 @@ import styles from './NavBar.module.css';
 
 const links = [
   {
-    to: '/blockchain101',
+    to: '/blockchain101/blockchain',
     text: 'Blockchain 101',
   },
   {
