@@ -10,7 +10,7 @@
 }
 
 .title {
-  max-width: 40rem;
+  max-width: 37.75rem;
   text-align: center;
   margin-bottom: 4rem;
   color: var(--neural-950-color);
@@ -18,7 +18,7 @@
 
 .description {
   color: var(--neural-800-color);
-  max-width: 50rem;
+  max-width: 37.75rem;
   text-align: center;
   margin-bottom: 2rem;
 }
