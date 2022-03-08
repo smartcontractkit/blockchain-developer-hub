@@ -1,0 +1,137 @@
+resources:
+  - id: evm-chains
+    name: EVM Chains
+    logo: /logos/ethereum.png
+    courses:
+    - title: "XRPL Hackathon: New Year, New NFTs"
+      author: Patrick Collins
+      image: https://picsum.photos/id/237/300/200
+      level: Intermediate
+      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+
+    - title: "Complete DApp - Solidity & React - Blockchain Development"
+      author: Patrick Collins
+      image: https://picsum.photos/id/237/300/200
+      level: Intermediate
+      description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+
+    - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
+      author: Patrick Collins
+      image: https://picsum.photos/id/237/300/200
+      level: Intermediate
+      description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+
+
+    tutorials:
+    - title: "XRPL Hackathon: New Year, New NFTs"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+
+    - title: "Complete DApp - Solidity & React - Blockchain Development"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+
+    - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+
+    - title: "Full Modern React Tutorial"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+
+
+
+  - id: solana
+    name: Solana
+    logo: /logos/solana.png
+    courses:
+    - title: "XRPL Hackathon: New Year, New NFTs"
+      author: Patrick Collins
+      image: https://picsum.photos/id/237/300/200
+      level: Intermediate
+      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+
+    - title: "Complete DApp - Solidity & React - Blockchain Development"
+      author: Patrick Collins
+      image: https://picsum.photos/id/237/300/200
+      level: Intermediate
+      description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+
+    - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
+      author: Patrick Collins
+      image: https://picsum.photos/id/237/300/200
+      level: Intermediate
+      description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+
+
+    tutorials:
+    - title: "XRPL Hackathon: New Year, New NFTs"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+
+    - title: "Complete DApp - Solidity & React - Blockchain Development"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+
+    - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+
+    - title: "Full Modern React Tutorial"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+
+
+
+  - id: terra
+    name: Terra
+    logo: /logos/terra.png
+    courses:
+    - title: "XRPL Hackathon: New Year, New NFTs"
+      author: Patrick Collins
+      image: https://picsum.photos/id/237/300/200
+      level: Intermediate
+      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+
+    - title: "Complete DApp - Solidity & React - Blockchain Development"
+      author: Patrick Collins
+      image: https://picsum.photos/id/237/300/200
+      level: Intermediate
+      description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+
+    - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
+      author: Patrick Collins
+      image: https://picsum.photos/id/237/300/200
+      level: Intermediate
+      description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+
+
+    tutorials:
+    - title: "XRPL Hackathon: New Year, New NFTs"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+
+    - title: "Complete DApp - Solidity & React - Blockchain Development"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+
+    - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+
+    - title: "Full Modern React Tutorial"
+      author: Patrick Collins
+      date: 2022-02-12
+      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+
