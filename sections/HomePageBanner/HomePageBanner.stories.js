@@ -14,7 +14,7 @@ Default.args = {
   overview:
     'Covering the fundamentals of web3 development: from writing Solidity, to minting NFTs, to building full-stack dApps. Bringing you resources from the best in blockchain.',
   label: 'Everything about',
-  link: '#',
+  link: '/',
   linkText: 'Quickstart',
   image: 'https://www.fillmurray.com/640/360',
   imageAlt: 'Banner image',
