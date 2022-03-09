@@ -2,7 +2,7 @@
 title: Introduction to blockchain
 date: '2020-01-01'
 author: James May
-author_image: https://randomuser.me/api/portraits/men/76.jpg
+author_image: /logos/solana.png
 author_role: Software Engineer at Chainlink
 ---
 

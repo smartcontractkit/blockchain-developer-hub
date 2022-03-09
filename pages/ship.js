@@ -5,15 +5,15 @@ import PropTypes from 'prop-types';
 import BlogLayout from '@/layouts/BlogLayout';
 import ArticleHeader from '@/components/ArticleHeader';
 
-function Ship({ content }) {
+function Ship({ data, content }) {
   return (
     <BlogLayout>
       <ArticleHeader
-        title="How to ship your dApp"
-        author="James Bond"
-        role="Software Engineer at Chainlink"
-        image="/logos/solana.png"
-        datetime="2020-01-01"
+        title={data.title}
+        author={data.author}
+        role={data.role}
+        image={data.author_image}
+        datetime={data.datetime}
       />
 
       <MDXRemote {...content} />
@@ -22,6 +22,7 @@ function Ship({ content }) {
 }
 
 Ship.propTypes = {
+  data: PropTypes.object,
   content: PropTypes.object.isRequired,
 };
 export default Ship;
