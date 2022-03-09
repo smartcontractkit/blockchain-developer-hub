@@ -1,0 +1,20 @@
+.container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 2rem auto;
+}
+
+.container h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 2rem auto;
+  color: var(--neural-950-color);
+}
+
+.container p {
+  font-size: 1rem;
+  line-height: 24px;
+  margin-bottom: 1rem;
+  color: var(--neural-800-color);
+}
