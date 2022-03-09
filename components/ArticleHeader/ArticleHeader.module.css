@@ -1,6 +1,7 @@
 .container {
   margin: 4rem auto;
-  padding: 1rem 0;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--neural-200-color);
 }
 
 .publishDate {
