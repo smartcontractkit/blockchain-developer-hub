@@ -15,14 +15,7 @@ function Homepagebanner({ label, title, overview, link, linkText, image, imageAl
         <small className={labelClasses}>{label}</small>
         <h1 className={titleClasses}>{title}</h1>
         <p className={overviewClasses}>{overview}</p>
-        <NavLink
-          to={link}
-          type="primary"
-          text={linkText}
-          icon="map-pointer.svg"
-          target="_blank"
-          rel="noopener noreferrer"
-        />
+        <NavLink to={link} type="primary" text={linkText} icon="map-pointer.svg" />
       </div>
       <div className={styles.imageContainer}>
         <Image src={image} alt={imageAlt} layout="fill" objectFit="cover" />
