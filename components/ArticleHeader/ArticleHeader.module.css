@@ -1,9 +1,16 @@
+.container {
+  margin: 4rem auto;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--neural-200-color);
+}
+
 .publishDate {
   color: var(--neural-700-color);
 }
 
 .title {
   color: var(--neural-950-color);
+  margin: 1rem 0;
 }
 
 .author {

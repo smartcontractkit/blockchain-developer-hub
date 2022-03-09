@@ -11,7 +11,7 @@ function ArticleHeader({ datetime, title, image, author, role }) {
   const titleClasses = clsx('h-400', styles.title);
 
   return (
-    <section>
+    <section className={styles.container}>
       <span className={publishDateClasses}>
         Published on <time dateTime={datetime}>{dayjs(datetime).format('MMM D, YYYY')}</time>
       </span>
