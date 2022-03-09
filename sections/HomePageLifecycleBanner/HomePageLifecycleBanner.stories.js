@@ -13,7 +13,7 @@ Default.args = {
   title: 'Get to know the development cycle',
   overview:
     'The ecosystem tools map outlines the entire smart contract developer ecosystem, and all of the tools and products smart contract developers may need to rely on.',
-  link: 'https://smartcontractecosystem.com/',
+  link: '/',
   linkText: 'Explore Map',
 };
 Default.parameters = {
