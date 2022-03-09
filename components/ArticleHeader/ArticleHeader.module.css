@@ -1,9 +1,15 @@
+.container {
+  margin: 4rem auto;
+  padding: 1rem 0;
+}
+
 .publishDate {
   color: var(--neural-700-color);
 }
 
 .title {
   color: var(--neural-950-color);
+  margin: 1rem 0;
 }
 
 .author {
