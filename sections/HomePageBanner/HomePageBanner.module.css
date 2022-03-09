@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .banner_left {
@@ -34,6 +34,7 @@
   border-radius: 347.1875rem;
   overflow: hidden;
   position: relative;
+  display: none;
 }
 
 @media (min-width: 1024px) {
@@ -48,5 +49,9 @@
   }
   .overview {
     margin-bottom: 3rem;
+  }
+
+  .imageContainer {
+    display: block;
   }
 }
