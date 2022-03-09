@@ -1,13 +1,9 @@
 .publishDate {
-  font-size: 0.8em;
   color: var(--neural-700-color);
-  font-size: 1rem;
 }
 
 .title {
   color: var(--neural-950-color);
-  letter-spacing: 0.01em;
-  margin: 1rem 0;
 }
 
 .author {
@@ -27,11 +23,8 @@
 .author__name {
   margin-block-start: 0;
   margin-block-end: 0.4rem;
-  font-weight: 600;
-  font-size: 1.1rem;
 }
 
 .author__role {
   color: var(--neural-700-color);
-  font-size: 1rem;
 }

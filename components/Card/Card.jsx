@@ -6,28 +6,34 @@ import Svg from '@/components/Svg';
 
 function Card({ variant = 'gray', title, subtitle, description, image, href, online, location, date, prize, level }) {
   const classes = clsx(styles.container, { [styles.light]: variant === 'light' });
+  const titleClasses = clsx('body-short-01--bold', styles.title);
+  const subTitleClasses = clsx('caption', styles.subtitle);
+  const descriptionClasses = clsx('body-long-02', styles.description);
+  const levelClasses = clsx('caption', styles.level);
+  const prizeClasses = clsx('caption', styles.prize);
+  const footerClasses = clsx('caption', styles.footer);
 
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <div className={classes}>
         {image && <Image src={image} alt={title} width="200" height="150" className={styles.image} />}
 
-        <h2 className={styles.title}>{title}</h2>
+        <h2 className={titleClasses}>{title}</h2>
 
-        {subtitle && <h3 className={styles.subtitle}>{subtitle}</h3>}
+        {subtitle && <h3 className={subTitleClasses}>{subtitle}</h3>}
 
-        {description && <p className={styles.description}>{description}</p>}
+        {description && <p className={descriptionClasses}>{description}</p>}
 
-        {level && <div className={styles.level}>{level}</div>}
+        {level && <div className={levelClasses}>{level}</div>}
 
         {prize && (
-          <div className={styles.prize}>
+          <div className={prizeClasses}>
             <Svg height="18" width="18" href="/icons/prize.svg" />
             {prize} in prizes
           </div>
         )}
 
-        <div className={styles.footer}>
+        <div className={footerClasses}>
           {/* If online = true or location exist */}
           {(online || location) && (
             <span>
