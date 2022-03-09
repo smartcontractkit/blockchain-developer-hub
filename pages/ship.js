@@ -22,7 +22,7 @@ function Ship({ data, content }) {
 }
 
 Ship.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.object.isRequired,
   content: PropTypes.object.isRequired,
 };
 export default Ship;
