@@ -11,7 +11,7 @@ function Ship({ data, content }) {
       <ArticleHeader
         title={data.title}
         author={data.author}
-        role={data.role}
+        role={data.author_role}
         image={data.author_image}
         datetime={data.datetime}
       />

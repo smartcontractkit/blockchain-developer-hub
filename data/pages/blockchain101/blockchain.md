@@ -2,7 +2,7 @@
 title: Introduction to blockchain
 date: '2020-01-01'
 author: James May
-author_image: https://randomuser.me/api/portraits/men/76.jpg
+author_image: /demo/profile.jpeg
 author_role: Software Engineer at Chainlink
 
 sidebar_title: Blockchain
@@ -39,7 +39,7 @@ This decentralization enables use-cases that were previously impossible, such as
 finance, and decentralized organizations (DAOs), among a few. This allows developers to build products that provide
 immediate value without having to go through a bureaucratic process of applications, approvals, and general red tape.
 
-Why should I learn it?
+## Why should I learn it?
 
 Blockchain development is underway at most companies, even if just at early research stages. A recent
 [PWC study](https://theblockchainacademy.com/wp-content/uploads/sites/6/2021/04/2021-Global-Blockchain-Employment-Report.pdf)
@@ -47,3 +47,16 @@ shows that 77% of companies developing software are involved with blockchain in 
 demand for jobs in the sector. The same study shows an increased demand for blockchains developers of 6000% in 2020.
 
 ![How far along are companies with blockchain?](/posts/blockchain101/blockchain/image2.png)
+
+Becoming a blockchain developer will not only increase your earning potential (the
+[average blockchain developer salary](https://hired.com/salaries/blockchain-engineer) currently hovers around $203k in
+the US), which provides a better life for you and your family. More importantly, it enables you to participate in the
+most significant technological revolution of our time. Blockchain provides equal access for end-users, creates a fairer
+future, and contributes to the overall improvement of society.
+
+![blockchain developer salaries](/posts/blockchain101/blockchain/image1.png)
+
+Finally, the blockchain space is full of investment opportunities that only a few blockchain developers can take
+advantage of. The opportunities are limitless, from accessing [VC capital](https://smartcontractdb.com/communities) to
+start your own company to accessing [grant program](https://identityreview.com/15-crypto-grants-you-should-know-about/)
+funds to contribute an idea or project to an existing company.
