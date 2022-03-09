@@ -1,0 +1,27 @@
+.container {
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.title {
+  color: var(--neural-950-color);
+  margin-bottom: 1rem;
+}
+
+.overview {
+  color: var(--neural-800-color);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    height: 22.6875rem;
+  }
+  .banner_left {
+    width: 66.75rem;
+  }
+}
