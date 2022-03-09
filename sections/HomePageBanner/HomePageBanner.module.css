@@ -1,0 +1,57 @@
+.container {
+  background-color: var(--secondary-200-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 2rem;
+}
+
+.banner_left {
+   width: 100%;
+   margin-bottom: 2rem;
+}
+
+.label {
+  color: var(--neural-700-color);
+  margin-top: 0;
+}
+
+.title {
+  color: var(--neural-950-color);
+  margin: 0.75rem 0;
+}
+
+.overview {
+  color: var(--neural-800-color);
+   margin-bottom: 1rem;
+}
+
+.imageContainer {
+  background-color: var(--secondary-400-color);
+  width: 32.625rem;
+  height: 19.5rem;
+  border-radius: 347.1875rem;
+  overflow: hidden;
+  position: relative;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    height: 32.375rem;
+  }
+
+  .banner_left {
+    width: 28.1875rem;
+    margin-right: 5.9375rem;
+    margin-bottom: 0;
+  }
+  .overview {
+    margin-bottom: 3rem;
+  }
+
+  .imageContainer {
+    display: block;
+  }
+}
