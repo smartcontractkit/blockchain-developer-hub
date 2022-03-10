@@ -1,4 +1,5 @@
 import LearnCrypto from './LearnCrypto';
+// These data courses and tutorials can be removed when we seolve the yaml error so it can be pull from there to test.
 const courses = {
   overview:
     'Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.',
