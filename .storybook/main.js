@@ -13,6 +13,12 @@ module.exports = {
     builder: 'webpack5',
   },
   webpackFinal: async (config) => {
+    config.module.rules.push({
+      test: /\.ya?ml$/,
+      type: 'json', // Required by Webpack v4
+      use: 'yaml-loader',
+    });
+
     config.resolve.alias = {
       ...config.resolve.alias,
       '@/components': path.resolve(__dirname, '../components'),
