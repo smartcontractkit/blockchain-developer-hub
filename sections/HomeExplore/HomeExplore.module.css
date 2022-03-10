@@ -1,7 +1,7 @@
 .container {
   background-color: var(--neural-100-color);
   padding: 4rem 1rem;
-
+  
 }
 
 .innerContainer {
@@ -12,8 +12,74 @@
 .header {
   display: flex;
   justify-content: space-between;
+  padding-right: 2rem;
 }
 
 .header__left {
+  max-width: var(--sm);
+}
 
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 100%;
+  margin-bottom: 2rem;
+  color: var(--neural-950-color);
+  max-width: 30rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.link {
+  color: var(--tertiary-500-color);
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.tracksLabel {
+  color: var(--neural-500-color);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.body {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+}
+
+.subtitle {
+  color: var(--neural-700-color);
+  display: flex;
+  white-space: nowrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.subtitle::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--neural-400-color);
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.tutorials {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
