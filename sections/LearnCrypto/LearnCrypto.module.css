@@ -1,0 +1,77 @@
+.container {
+ margin-bottom: 2rem;
+ min-height: 100vh;
+}
+
+.headings {
+  font-weight: bold;
+  color: var(--neural-950-color);
+  position: relative;
+}
+
+.headings::before {
+  content: '#';
+  position: absolute;
+  left: -1.5rem;
+  top: 5%;
+  opacity: 0.3;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.overview {
+  color: var(--neural-800-color);
+  margin: 0.5rem 0 2rem;
+  max-width: 36.8125rem;
+}
+
+.mainContent {
+  margin: 2rem auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.tutorial {
+  margin-bottom: 1.5rem;
+}
+.sectionHeading {
+  background-color: var(--neural-50-color);
+  margin: 3rem 0;
+  padding: 3.5rem 2rem;
+}
+.sectionHeadingContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 66.75rem;
+  margin: 0 auto;
+}
+.logoContainer {
+  width: 5.125rem;
+  height: 5.125rem;
+  padding: 0.4375rem;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainContent {
+     width: 66.75rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 21.25rem);
+  }
+}
