@@ -1,0 +1,19 @@
+.container {
+  background-color: var(--neural-100-color);
+  padding: 4rem 1rem;
+
+}
+
+.innerContainer {
+  max-width: var(--xl);
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__left {
+
+}
