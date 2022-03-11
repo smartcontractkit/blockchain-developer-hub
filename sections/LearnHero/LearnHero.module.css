@@ -45,7 +45,7 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-  gap: 0rem;
+  gap: 2.5rem;
 }
 
 .blockchainCard {
@@ -53,9 +53,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 280px;
-  height: 280px;
-  margin: 1rem;
+  width: 300px;
+  height: 300px;
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: var(--neural-100-color);
