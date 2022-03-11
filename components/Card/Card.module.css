@@ -1,10 +1,17 @@
 .container {
   background-color: var(--neural-100-color);
-  border-radius: 0.3rem;
-  padding: 0.7rem;
+  border-radius: 0.75rem;
+  padding: 1rem;
   width: 100%;
   height: 100%;
   font-size: 0.9rem;
+  border: 1px solid var(--neural-100-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.container:hover {
+  border: 1px solid var(--tertiary-400-color);
+  background-color: var(--white-color);
 }
 
 .container.light {
@@ -19,6 +26,12 @@
   margin-top: 1rem;
   margin-block-start: 0.5rem;
   margin-block-end: 0;
+  width: fit-content;
+  transition: all 0.2s ease-in-out;
+}
+
+.title:hover {
+  color: var(--tertiary-600-color);
 }
 
 .description {
