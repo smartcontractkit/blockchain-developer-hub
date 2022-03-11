@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import Card from '@/components/Card';
 import { getRandomItemsFromArray } from '@/helpers/getRandomItemsFromArray';
 import dayjs from 'dayjs';
+import TutorialCard from '@/components/TutorialCard';
 
 function HomeExplore() {
   const courses = learnData.resources.map((resource) => resource.courses.data);
@@ -60,11 +61,11 @@ function HomeExplore() {
             <h3 className={clsx('h-200', styles.subtitle)}>Or check tutorials</h3>
             <div className={styles.tutorials}>
               {randomTutorials.map((tutorial) => (
-                <Card
+                <TutorialCard
                   key={tutorial.title}
-                  variant="light"
-                  title={tutorial.title}
-                  subtitle={`${tutorial.author} | ${dayjs(tutorial.date).format('MMM D, YYYY')}`}
+                  heading={tutorial.title}
+                  author={tutorial.author}
+                  date={dayjs(tutorial.date).format('MMM D, YYYY')}
                 />
               ))}
             </div>
