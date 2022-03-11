@@ -1,8 +1,3 @@
-.container {
- margin-bottom: 2rem;
- min-height: 100vh;
-}
-
 .headings {
   font-weight: bold;
   color: var(--neural-950-color);
@@ -27,7 +22,7 @@
 }
 
 .mainContent {
-  margin: 2rem auto;
+  margin: 3.5rem auto;
 }
 
 .cards {
@@ -35,29 +30,6 @@
   grid-template-columns: 1fr;
   gap: 1.5rem;
   margin-bottom: 3rem;
-}
-
-.tutorial {
-  margin-bottom: 1.5rem;
-}
-.sectionHeading {
-  background-color: var(--neural-50-color);
-  margin: 3rem 0;
-  padding: 3.5rem 2rem;
-}
-.sectionHeadingContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 66.75rem;
-  margin: 0 auto;
-}
-.logoContainer {
-  width: 5.125rem;
-  height: 5.125rem;
-  padding: 0.4375rem;
-  position: relative;
-  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -68,7 +40,7 @@
 
 @media (min-width: 1024px) {
   .mainContent {
-     width: 66.75rem;
+    width: 66.75rem;
   }
 
   .cards {
