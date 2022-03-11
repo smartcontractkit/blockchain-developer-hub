@@ -11,6 +11,7 @@
 
 .container:hover {
   border: 1px solid var(--tertiary-400-color);
+  background-color: var(--white-color);
 }
 
 .container.light {
