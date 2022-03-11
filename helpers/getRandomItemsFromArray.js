@@ -14,7 +14,7 @@ export function getRandomItemsFromArray(array, numItemsToTake) {
   /** @type {Array}  */
   let taken = new Array(arrayLength);
 
-  if (numItemsToTake > arrayLength) throw new RangeError('getRandom: more elements taken than available');
+  if (numItemsToTake > arrayLength) return array;
   while (numItemsToTake--) {
     /** @type {number}  */
     const x = Math.floor(Math.random() * arrayLength);
