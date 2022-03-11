@@ -7,19 +7,19 @@ resources:
       data:
       - title: "XRPL Hackathon: New Year, New NFTs"
         author: Patrick Collins
-        image: /images/learn.jpg
+        image: /demo/learn.jpg
         level: Intermediate
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
       - title: "Complete DApp - Solidity & React - Blockchain Development"
         author: Patrick Collins
-        image: /images/learn.jpg
+        image: /demo/learn.jpg
         level: Intermediate
         description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
 
       - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
         author: Patrick Collins
-        image: /images/learn.jpg
+        image: /demo/learn.jpg
         level: Intermediate
         description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
 
@@ -57,19 +57,19 @@ resources:
       data:
       - title: "XRPL Hackathon: New Year, New NFTs"
         author: Patrick Collins
-        image: /images/learn.jpg
+        image: /demo/learn.jpg
         level: Intermediate
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
       - title: "Complete DApp - Solidity & React - Blockchain Development"
         author: Patrick Collins
-        image: /images/learn.jpg
+        image: /demo/learn.jpg
         level: Intermediate
         description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
 
       - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
         author: Patrick Collins
-        image: /images/learn.jpg
+        image: /demo/learn.jpg
         level: Intermediate
         description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
 
@@ -107,19 +107,19 @@ resources:
       data:
       - title: "XRPL Hackathon: New Year, New NFTs"
         author: Patrick Collins
-        image: /images/learn.jpg
+        image: /demo/learn.jpg
         level: Intermediate
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
       - title: "Complete DApp - Solidity & React - Blockchain Development"
         author: Patrick Collins
-        image: /images/learn.jpg
+        image: /demo/learn.jpg
         level: Intermediate
         description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
 
       - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
         author: Patrick Collins
-        image: /images/learn.jpg
+        image: /demo/learn.jpg
         level: Intermediate
         description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
 
