@@ -1,73 +1,85 @@
 categories:
   - name: Hackathon
-    description: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
+    overview: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
     items:
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       prize: $1,000,000
-      location: online
+      online: true
+      image: /demo/unsplash_8uZPynIu-rQ.png
       date: Feb3 - Mar 17, 2022
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       prize: $1,000,000
-      location: online
+      online: true
+      image: /demo/unsplash_m_7p45JfXQo.png
       date: Feb3 - Mar 17, 2022
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       prize: $1,000,000
       location: Berlin
+      image: /demo/unsplash_8uZPynIu-rQ.png
       date: Feb3 - Mar 17, 2022
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       prize: $1,000,000
       location: London
+      image: /demo/unsplash_m_7p45JfXQo.png
       date: Feb3 - Mar 17, 2022
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       prize: $1,000,000
-      location: online
+      online: true
+      image: /demo/learn.jpg
       date: Feb3 - Mar 17, 2022
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       prize: $1,000,000
-      location: online
+      online: true
+      image: /demo/unsplash_m_7p45JfXQo.png
       date: Feb3 - Mar 17, 2022
 
 
   - name: Workshop
-    description: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
+    overview: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
     items:
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      location: online
+      online: true
+      image: /demo/learn.jpg
       date: Feb3 - Mar 17, 2022
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      location: online
+      online: true
+      image: /demo/unsplash_tMbQpdguDVQ.png
       date: Feb3 - Mar 17, 2022
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       location: Berlin
+      image: /demo/unsplash_8uZPynIu-rQ.png
       date: Feb3 - Mar 17, 2022
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       location: London
+      image: /demo/unsplash_tMbQpdguDVQ.png
       date: Feb3 - Mar 17, 2022
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      location: online
+      online: true
+      image: /demo/learn.jpg
       date: Feb3 - Mar 17, 2022
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      location: online
+      online: true
+      image: /demo/unsplash_tMbQpdguDVQ.png
       date: Feb3 - Mar 17, 2022
