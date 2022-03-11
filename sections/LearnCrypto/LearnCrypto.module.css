@@ -28,6 +28,7 @@
 
 .mainContent {
   margin: 2rem auto;
+  padding-inline: 2rem;
 }
 
 .cards {
