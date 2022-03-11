@@ -1,6 +1,6 @@
 .container {
   background-color: var(--neural-100-color);
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   padding: 1rem;
   width: 100%;
   height: 100%;
