@@ -62,15 +62,3 @@ HomeCourse.args = {
   href: 'https://www.google.com',
   variant: 'light',
 };
-
-export const HomeTutorial = Template.bind({});
-
-HomeTutorial.parameters = {
-  backgrounds: { default: 'gray' },
-};
-
-HomeTutorial.args = {
-  title: 'XRPL Hackathon: New Year, New NFTs',
-  subtitle: 'Patrick Collins | Feb 12, 2022s',
-  variant: 'light',
-};
