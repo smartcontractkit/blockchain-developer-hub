@@ -19,6 +19,7 @@ body {
   Droid Sans,
   Helvetica Neue,
   sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
