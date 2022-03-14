@@ -5,6 +5,8 @@ import Svg from '@/components/Svg';
 
 function HomepageChainlink101() {
   const quoteClasses = clsx('body-short-01--bold', styles.quote);
+  const labelClasses = clsx('body-long-01', styles.label);
+
   const cardItems = [
     {
       title: 'Intorduction to Blockchain',
@@ -16,16 +18,13 @@ function HomepageChainlink101() {
 
   return (
     <div className={styles.container}>
-      <QuoteCard cards={cardItems} card_showIndex={true} textDirection="left">
+      <QuoteCard cards={cardItems} card_showIndex={true} textDirection="right">
         <div className={styles.quote_wrapper}>
-          <span>
-            <Svg height="24" width="16" href="/icons/quote.svg" />
-          </span>
+          <Svg height="30" width="30" href="/icons/quote.svg" />
           <p className={quoteClasses}>
             Demand for Smart Contract development skills is projected to grow 122 % over the next 5 years.
           </p>
-
-          <small>Chainlink</small>
+          <small className={labelClasses}>Chainlink</small>
         </div>
       </QuoteCard>
     </div>

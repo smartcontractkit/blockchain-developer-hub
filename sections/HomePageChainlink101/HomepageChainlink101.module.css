@@ -12,14 +12,18 @@
 .quote_wrapper {
   flex-direction: column;
   align-items: start;
+  color: var(--neural-950-color);
 }
 
 .quote {
   font-weight: 500;
   font-size: 1.875rem;
-  color: var(--neural-950-color);
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.label {
+  font-weight: 400;
 }
 
 @media (min-width: 1024px) {
