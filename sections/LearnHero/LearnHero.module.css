@@ -62,13 +62,11 @@
   gap: 4rem;
   flex-shrink: 0;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .blockchainCard:hover {
-  box-shadow: 0px 1.5px 2.2px rgba(0, 0, 0, 0.024), 0px 3.7px 5.3px rgba(0, 0, 0, 0.028),
-    0px 7px 10px rgba(0, 0, 0, 0.029), 0px 12.5px 17.9px rgba(0, 0, 0, 0.03), 0px 23.4px 33.4px rgba(0, 0, 0, 0.035),
-    0px 56px 80px rgba(0, 0, 0, 0.06);
-  transform: translateY(-0.5rem);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 8px 17px rgba(0, 0, 0, 0.07), 0px 2.92013px 6.20528px rgba(0, 0, 0, 0.0482987), 0px 1.41767px 3.01255px rgba(0, 0, 0, 0.0389404), 0px 0.694968px 1.47681px rgba(0, 0, 0, 0.0310596), 0px 0.274791px 0.583932px rgba(0, 0, 0, 0.0217013);
 }
 
 .link {
