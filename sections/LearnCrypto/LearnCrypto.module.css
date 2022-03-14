@@ -28,6 +28,7 @@
 
 .mainContent {
   margin: 2rem auto;
+  padding-inline: 2rem;
 }
 
 .cards {
@@ -68,10 +69,14 @@
 
 @media (min-width: 1024px) {
   .mainContent {
-     width: 66.75rem;
+     max-width: 66.75rem;
   }
 
   .cards {
-    grid-template-columns: repeat(3, 21.25rem);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sectionHeadingContent{
+    padding-inline: 2rem;
   }
 }
