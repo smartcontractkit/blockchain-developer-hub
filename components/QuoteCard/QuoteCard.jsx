@@ -14,22 +14,20 @@ const Quotecard = ({ textDirection, cards, card_showIndex, children }) => {
   });
 
   return (
-    <div className={styles.container}>
-      <div className={bodyClasses}>
-        <div className={styles.cards}>
-          {cards.map((card, index) => (
-            <CardWithArrow
-              index={index}
-              title={card.title}
-              description={card.description}
-              itemsCount={cards.length}
-              showIndex={card_showIndex}
-              key={index}
-            />
-          ))}
-        </div>
-        <div className={textClasses}>{children}</div>
+    <div className={bodyClasses}>
+      <div className={styles.cards}>
+        {cards.map((card, index) => (
+          <CardWithArrow
+            index={index}
+            title={card.title}
+            description={card.description}
+            itemsCount={cards.length}
+            showIndex={card_showIndex}
+            key={index}
+          />
+        ))}
       </div>
+      <div className={textClasses}>{children}</div>
     </div>
   );
 };

@@ -1,22 +1,19 @@
-.container, .body {
+.body, .cards {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container {
-  background-color: var(--white-color);
-  padding: 2rem;
+
+.body {
+  flex-wrap: wrap;
 }
 
-.body > .right_content {
-  margin-left: 7.1875rem;
-  max-width: 26.9375rem;
+.right_content,
+.left_content {
+  margin-top: 2rem;
+  flex: 1;
 }
 
-.body > .left_content {
-  margin-right: 7.1875rem;
-  max-width: 20.25rem;
-}
 
 .reverse_body {
   flex-direction: row-reverse;
@@ -29,6 +26,24 @@
 
 @media (min-width: 1024px) {
   .body {
+    flex-wrap: nowrap;
     max-width: 66.75rem;
   }
+
+
+  .body > .right_content {
+    margin-left: 7.1875rem;
+    max-width: 26.9375rem;
+  }
+
+.body > .left_content {
+  margin-right: 7.1875rem;
+  max-width: 20.25rem;
+}
+
+.right_content,
+.left_content {
+  margin-top: unset;
+}
+
 }
