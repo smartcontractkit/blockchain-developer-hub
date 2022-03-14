@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import styles from './CardWithArrow.module.css';
-import Svg from '../Svg';
+import Svg from '@/components/Svg';
 
 const CardWithArrow = ({ index, title, description, itemsCount, showIndex }) => {
   const cardClasses = clsx(styles.card, {
@@ -13,11 +13,13 @@ const CardWithArrow = ({ index, title, description, itemsCount, showIndex }) => 
   const titleClasses = clsx('subtitle-01', styles.title);
   const descriptionClasses = clsx('body-long-02', styles.description);
 
+  const indexChecks = (index) => {
+    return index > 9 ? index : `0${index + 1}`;
+  };
+
   return (
     <div className={cardClasses}>
-      {typeof index === 'number' && showIndex && (
-        <small className={indexClasses}>{index > 9 ? index : `0${index + 1}`}</small>
-      )}
+      {showIndex && <small className={indexClasses}>{indexChecks(index)}</small>}
       <h4 className={titleClasses}>{title}</h4>
       {description && <p className={descriptionClasses}> {description} </p>}
       <Svg className={styles.arrow} width="20" height="20" href="/icons/arrow-right.svg" />

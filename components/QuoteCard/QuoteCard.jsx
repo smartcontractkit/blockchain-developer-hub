@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import styles from './QuoteCard.module.css';
-import CardWithArrow from '../CardWithArrow';
+import CardWithArrow from '@/components/CardWithArrow';
 
 const Quotecard = ({ textDirection, cards, card_showIndex, children }) => {
   const bodyClasses = clsx(styles.body, {
