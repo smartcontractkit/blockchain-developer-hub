@@ -1,0 +1,34 @@
+.container, .body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: var(--white-color);
+  padding: 2rem;
+}
+
+.body > .right_content {
+  margin-left: 7.1875rem;
+  max-width: 26.9375rem;
+}
+
+.body > .left_content {
+  margin-right: 7.1875rem;
+  max-width: 20.25rem;
+}
+
+.reverse_body {
+  flex-direction: row-reverse;
+}
+
+
+.cards {
+  flex: 1;
+}
+
+@media (min-width: 1024px) {
+  .body {
+    max-width: 66.75rem;
+  }
+}
