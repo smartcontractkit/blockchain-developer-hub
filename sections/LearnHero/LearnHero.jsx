@@ -2,30 +2,14 @@ import Image from 'next/image';
 import styles from './LearnHero.module.css';
 import Svg from '@/components/Svg';
 import clsx from 'clsx';
-
-const BLOCKCHAINS = [
-  {
-    name: 'EVM Chains',
-    image: '/logos/ethereum.png',
-    href: '#evm-chains',
-  },
-  {
-    name: 'Solana',
-    image: '/logos/solana.png',
-    href: '#solana',
-  },
-  {
-    name: 'Terra',
-    image: '/logos/terra.png',
-    href: '#terra',
-  },
-];
+import data from '@/data/learn.yaml';
 
 function LearnHero() {
   const titleClasses = clsx('h-500', styles.title);
   const descriptionClasses = clsx('body-long-01', styles.description);
   const dividerClasses = clsx('caption', styles.divider);
   const linkClasses = clsx('btn', styles.link);
+  const blockchains = data.resources.map(({ id, name, logo }) => ({ id, name, logo }));
 
   return (
     <div className={styles.container}>
@@ -38,10 +22,10 @@ function LearnHero() {
 
       <div className={dividerClasses}>Select a blockchain to get started</div>
       <div className={styles.blockchainsContainer}>
-        {BLOCKCHAINS.map(({ name, image, href }, index) => (
-          <div className={styles.blockchainCard} key={index}>
-            <Image src={image} alt={name} width={100} height={100} objectFit="contain" />
-            <a href={href} className={linkClasses}>
+        {blockchains.map(({ id, name, logo }) => (
+          <div className={styles.blockchainCard} key={id}>
+            <Image src={logo} alt={name} width={100} height={100} objectFit="contain" />
+            <a href={`#${id}`} className={linkClasses}>
               {name}
               <Svg height="20" width="20" href="/icons/arrow-right-blue.svg" />
             </a>
