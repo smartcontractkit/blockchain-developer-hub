@@ -1,0 +1,33 @@
+.container, .quote_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: var(--white-color);
+  padding: 2rem;
+}
+
+.quote_wrapper {
+  flex-direction: column;
+  align-items: start;
+  color: var(--neural-950-color);
+}
+
+.quote {
+  font-weight: 500;
+  font-size: 1.875rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    height: 28rem;
+  }
+}
