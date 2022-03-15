@@ -2,19 +2,11 @@
   position: relative;
   background-color: var(--neural-100-color);
   min-height: 14rem;
-  width: 15.5625rem;
-  max-width: 21.25rem;
+  width: 100%;
   color: var(--neural-800-color);
   border-radius: 0.75rem;
   padding: 1rem;
   flex: 1;
-}
-.few_cards {
-  margin-right: 1.5rem;
-}
-
-.has_description {
-  width: auto;
 }
 
 .arrow {
@@ -24,7 +16,7 @@
   transform: rotate(-45deg);
 }
 
-.num {
+.subtitle {
   margin-bottom: 0.5rem;
 }
 
@@ -38,4 +30,15 @@
   font-weight: 400;
   margin-top: 0.5rem;
   max-width: 19.25rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 15.5625rem;
+    max-width: 21.25rem;
+  }
+
+  .has_description {
+    width: auto;
+  }
 }

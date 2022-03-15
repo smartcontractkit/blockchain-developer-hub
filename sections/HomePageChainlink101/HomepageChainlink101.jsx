@@ -12,7 +12,7 @@ function HomepageChainlink101() {
 
   return (
     <div className={styles.container}>
-      <QuoteCard cards={cardItems} card_showIndex={true} textDirection="right">
+      <QuoteCard cards={cardItems} textDirection="right">
         <div className={styles.quote_wrapper}>
           <Svg height="30" width="30" href="/icons/quote.svg" />
           <p className={quoteClasses}>

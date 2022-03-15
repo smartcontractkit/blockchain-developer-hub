@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import styles from './QuoteCard.module.css';
 import CardWithArrow from '@/components/CardWithArrow';
+import padNumber from '@/helpers/padNumber';
 
-const Quotecard = ({ textDirection, cards, card_showIndex, children }) => {
+const Quotecard = ({ textDirection, cards, children }) => {
   const bodyClasses = clsx(styles.body, {
     [styles.reverse_body]: textDirection === 'left',
   });
@@ -17,14 +18,7 @@ const Quotecard = ({ textDirection, cards, card_showIndex, children }) => {
     <div className={bodyClasses}>
       <div className={styles.cards}>
         {cards.map((card, index) => (
-          <CardWithArrow
-            index={index}
-            title={card.title}
-            description={card.description}
-            itemsCount={cards.length}
-            showIndex={card_showIndex}
-            key={index}
-          />
+          <CardWithArrow title={card.title} description={card.description} subtitle={padNumber(index, 9)} key={index} />
         ))}
       </div>
       <div className={textClasses}>{children}</div>
@@ -35,7 +29,6 @@ const Quotecard = ({ textDirection, cards, card_showIndex, children }) => {
 Quotecard.propTypes = {
   textDirection: PropTypes.oneOf(['left', 'right']),
   cards: PropTypes.array.isRequired,
-  card_showIndex: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };
 

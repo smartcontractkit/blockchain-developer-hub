@@ -23,5 +23,4 @@ Default.args = {
       title: 'Intorduction to Smart Contracts',
     },
   ],
-  card_showIndex: true,
 };
