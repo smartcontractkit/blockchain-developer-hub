@@ -1,0 +1,50 @@
+.body, .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  flex-wrap: wrap;
+}
+
+.right_content,
+.left_content {
+  margin-top: 2rem;
+  flex: 1;
+}
+
+
+.reverse_body {
+  flex-direction: row-reverse;
+}
+
+
+.cards {
+  flex: 1;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .body {
+    flex-wrap: nowrap;
+    max-width: 66.75rem;
+  }
+
+
+  .body > .right_content {
+    margin-left: 7.1875rem;
+    max-width: 26.9375rem;
+  }
+
+.body > .left_content {
+  margin-right: 7.1875rem;
+  max-width: 20.25rem;
+}
+
+.right_content,
+.left_content {
+  margin-top: unset;
+}
+
+}

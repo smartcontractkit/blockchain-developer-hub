@@ -1,0 +1,44 @@
+.card {
+  position: relative;
+  background-color: var(--neural-100-color);
+  min-height: 14rem;
+  width: 100%;
+  color: var(--neural-800-color);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  transform: rotate(-45deg);
+}
+
+.subtitle {
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-weight: 700;
+  color: var(--neural-950-color);
+  max-width: 13.5625rem;
+}
+
+.description {
+  font-weight: 400;
+  margin-top: 0.5rem;
+  max-width: 19.25rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 15.5625rem;
+    max-width: 21.25rem;
+  }
+
+  .has_description {
+    width: auto;
+  }
+}
