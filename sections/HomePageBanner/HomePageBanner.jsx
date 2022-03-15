@@ -18,7 +18,7 @@ function Homepagebanner({ label, title, overview, link, linkText, image, imageAl
         <NavLink to={link} type="primary" text={linkText} icon="map-pointer.svg" />
       </div>
       <div className={styles.imageContainer}>
-        <Image src={image} alt={imageAlt} layout="fill" objectFit="cover" />
+        {image && <Image src={image} alt={imageAlt} layout="fill" objectFit="cover" />}
       </div>
     </section>
   );

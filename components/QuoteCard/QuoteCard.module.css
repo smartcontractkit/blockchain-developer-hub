@@ -11,7 +11,7 @@
 .right_content,
 .left_content {
   margin-top: 2rem;
-  flex: 1;
+  flex: 1 0 100%;
 }
 
 
@@ -21,7 +21,7 @@
 
 
 .cards {
-  flex: 1;
+  flex: 1 0 100%;
   gap: 1.5rem;
 }
 
@@ -45,6 +45,11 @@
 .right_content,
 .left_content {
   margin-top: unset;
+  flex: 1;
+}
+
+.cards {
+  flex: 1;
 }
 
 }

@@ -1,12 +1,17 @@
 .card {
   position: relative;
   background-color: var(--neural-100-color);
-  min-height: 14rem;
+  min-height: 16rem;
   width: 100%;
   color: var(--neural-800-color);
   border-radius: 0.75rem;
   padding: 1rem;
   flex: 1;
+}
+
+.has_description {
+  width: auto;
+  min-height: 14rem;
 }
 
 .arrow {
@@ -32,13 +37,10 @@
   max-width: 19.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .card {
     width: 15.5625rem;
     max-width: 21.25rem;
   }
 
-  .has_description {
-    width: auto;
-  }
 }

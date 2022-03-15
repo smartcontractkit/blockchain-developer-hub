@@ -1,11 +1,10 @@
 .container {
   background-color: var(--neural-100-color);
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
   
 }
 
 .innerContainer {
-  max-width: var(--xl);
   margin: 0 auto;
 }
 
@@ -98,5 +97,11 @@
 
   .courses {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .innerContainer {
+    max-width: 66.75rem;
   }
 }
