@@ -11,7 +11,7 @@
 .right_content,
 .left_content {
   margin-top: 2rem;
-  flex: 1;
+  flex: 1 0 100%;
 }
 
 
@@ -21,20 +21,20 @@
 
 
 .cards {
-  flex: 1;
+  flex: 1 0 100%;
   gap: 1.5rem;
 }
 
 @media (min-width: 1024px) {
   .body {
     flex-wrap: nowrap;
-    max-width: 66.75rem;
+    max-width: var(--xl);
+    margin: auto;
   }
 
 
   .body > .right_content {
     margin-left: 7.1875rem;
-    max-width: 26.9375rem;
   }
 
 .body > .left_content {
@@ -45,6 +45,11 @@
 .right_content,
 .left_content {
   margin-top: unset;
+  flex: 1;
+}
+
+.cards {
+  flex: 1;
 }
 
 }

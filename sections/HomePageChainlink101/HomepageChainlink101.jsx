@@ -14,7 +14,7 @@ function HomepageChainlink101() {
     <div className={styles.container}>
       <QuoteCard cards={cardItems} textDirection="right">
         <div className={styles.quote_wrapper}>
-          <Svg height="30" width="30" href="/icons/quote.svg" />
+          <Svg height="30" width="20" href="/icons/quote.svg" />
           <p className={quoteClasses}>
             Demand for Smart Contract development skills is projected to grow 122 % over the next 5 years.
           </p>

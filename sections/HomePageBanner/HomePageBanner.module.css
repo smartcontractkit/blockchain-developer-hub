@@ -1,10 +1,15 @@
 .container {
   background-color: var(--secondary-200-color);
+  padding: 2rem;
+}
+
+.banner {
+  margin: 2rem auto;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-flow: row wrap;
-  padding: 2rem;
+  justify-content: space-between;
+  max-width: var(--xl);
 }
 
 .banner_left {
@@ -29,7 +34,8 @@
 
 .imageContainer {
   background-color: var(--secondary-400-color);
-  width: 32.625rem;
+  flex: 1;
+  max-width: 32.625rem;
   height: 19.5rem;
   border-radius: 347.1875rem;
   overflow: hidden;
@@ -42,8 +48,12 @@
     height: 32.375rem;
   }
 
+  .title, .overview {
+     width: 28.1875rem;
+  }
+
   .banner_left {
-    width: 28.1875rem;
+    flex: 1;
     margin-right: 5.9375rem;
     margin-bottom: 0;
   }

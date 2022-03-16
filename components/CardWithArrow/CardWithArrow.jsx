@@ -5,15 +5,12 @@ import styles from './CardWithArrow.module.css';
 import Svg from '@/components/Svg';
 
 const CardWithArrow = ({ title, description, subtitle }) => {
-  const cardClasses = clsx(styles.card, {
-    [styles.has_description]: description,
-  });
   const subtitleClasses = clsx('body-short-02--bold', styles.subtitle);
   const titleClasses = clsx('subtitle-01', styles.title);
   const descriptionClasses = clsx('body-long-02', styles.description);
 
   return (
-    <div className={cardClasses}>
+    <div className={styles.card}>
       {subtitle && <small className={subtitleClasses}>{subtitle}</small>}
       <h4 className={titleClasses}>{title}</h4>
       {description && <p className={descriptionClasses}> {description} </p>}

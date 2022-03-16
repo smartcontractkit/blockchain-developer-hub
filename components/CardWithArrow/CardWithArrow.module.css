@@ -1,7 +1,7 @@
 .card {
   position: relative;
   background-color: var(--neural-100-color);
-  min-height: 14rem;
+  min-height: 16rem;
   width: 100%;
   color: var(--neural-800-color);
   border-radius: 0.75rem;
@@ -30,15 +30,4 @@
   font-weight: 400;
   margin-top: 0.5rem;
   max-width: 19.25rem;
-}
-
-@media (min-width: 768px) {
-  .card {
-    width: 15.5625rem;
-    max-width: 21.25rem;
-  }
-
-  .has_description {
-    width: auto;
-  }
 }

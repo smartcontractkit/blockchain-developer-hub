@@ -40,10 +40,10 @@
 
 @media (min-width: 1024px) {
   .mainContent {
-    width: 66.75rem;
+    max-width: var(--xl);
   }
 
   .cards {
-    grid-template-columns: repeat(3, 21.25rem);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
