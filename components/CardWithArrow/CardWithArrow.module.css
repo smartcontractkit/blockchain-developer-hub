@@ -10,7 +10,6 @@
 }
 
 .has_description {
-  width: auto;
   min-height: 14rem;
 }
 
@@ -41,6 +40,10 @@
   .card {
     width: 15.5625rem;
     max-width: 21.25rem;
+  }
+
+  .has_description {
+    width: auto;
   }
 
 }

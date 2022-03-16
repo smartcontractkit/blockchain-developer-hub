@@ -1,10 +1,15 @@
 .container {
   background-color: var(--secondary-200-color);
+  padding: 2rem;
+}
+
+.banner {
+  margin: 2rem auto;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-flow: row wrap;
-  padding: 2rem;
+  justify-content: space-between;
+  max-width: var(--xl);
 }
 
 .banner_left {
@@ -43,8 +48,12 @@
     height: 32.375rem;
   }
 
+  .title, .overview {
+     width: 28.1875rem;
+  }
+
   .banner_left {
-    width: 28.1875rem;
+    flex: 1;
     margin-right: 5.9375rem;
     margin-bottom: 0;
   }
@@ -55,12 +64,4 @@
   .imageContainer {
     display: block;
   }
-}
-
-@media (min-width: 1280px) {
-   /* 28.625rem */
-
-   .imageContainer {
-     /* width: 32.625rem; */
-   }
 }

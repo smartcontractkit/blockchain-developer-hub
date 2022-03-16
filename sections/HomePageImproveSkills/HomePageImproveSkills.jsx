@@ -4,7 +4,6 @@ import styles from './HomePageImproveSkills.module.css';
 import clsx from 'clsx';
 
 function HomePageImproveSkills() {
-  console.log(buildData);
   return (
     <section className={styles.container}>
       <div>

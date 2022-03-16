@@ -1,6 +1,7 @@
 import HomeExplore from '@/sections/HomeExplore';
 import HomePageBanner from '@/sections/HomePageBanner';
 import HomepageChainlink101 from '@/sections/HomePageChainlink101/HomepageChainlink101';
+import HomePageImproveSkillsStories from '@/sections/HomePageImproveSkills';
 import HomePageLifecycleBanner from '@/sections/HomePageLifecycleBanner';
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         linkText="Explore Map"
         link="/"
       />
+      <HomePageImproveSkillsStories />
     </div>
   );
 }
