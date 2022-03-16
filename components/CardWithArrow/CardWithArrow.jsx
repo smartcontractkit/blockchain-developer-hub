@@ -5,9 +5,7 @@ import styles from './CardWithArrow.module.css';
 import Svg from '@/components/Svg';
 
 const CardWithArrow = ({ title, description, subtitle }) => {
-  const cardClasses = clsx(styles.card, {
-    [styles.has_description]: description,
-  });
+  const cardClasses = clsx(styles.card);
   const subtitleClasses = clsx('body-short-02--bold', styles.subtitle);
   const titleClasses = clsx('subtitle-01', styles.title);
   const descriptionClasses = clsx('body-long-02', styles.description);

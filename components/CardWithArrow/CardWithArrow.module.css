@@ -9,10 +9,6 @@
   flex: 1;
 }
 
-.has_description {
-  min-height: 14rem;
-}
-
 .arrow {
   position: absolute;
   bottom: 0.5rem;
@@ -34,16 +30,4 @@
   font-weight: 400;
   margin-top: 0.5rem;
   max-width: 19.25rem;
-}
-
-@media (min-width: 1024px) {
-  .card {
-    width: 15.5625rem;
-    max-width: 21.25rem;
-  }
-
-  .has_description {
-    width: auto;
-  }
-
 }
