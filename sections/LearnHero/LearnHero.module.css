@@ -6,7 +6,7 @@
   justify-content: center;
   margin: 4.5rem auto;
   padding-inline: 2rem;
-  max-width: 66.75rem;
+  max-width: var(--xl);
 }
 
 .title {
@@ -26,7 +26,7 @@
 .divider {
   color: var(--neural-800-color);
   margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   display: flex;
   width: 100%;
   align-items: center;
