@@ -4,6 +4,8 @@ import HomepageChainlink101 from '@/sections/HomePageChainlink101/HomepageChainl
 import HomePageImproveSkillsStories from '@/sections/HomePageImproveSkills';
 import HomePageLifecycleBanner from '@/sections/HomePageLifecycleBanner';
 
+import styles from '@/styles/pages/HomePage.module.css';
+
 export default function Home() {
   return (
     <div>
@@ -24,6 +26,7 @@ export default function Home() {
         linkText="Explore Map"
         link="/"
       />
+      <div className={styles.sectionholder}></div>
       <HomePageImproveSkillsStories />
     </div>
   );
