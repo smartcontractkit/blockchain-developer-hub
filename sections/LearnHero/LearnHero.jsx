@@ -24,7 +24,7 @@ function LearnHero() {
       <div className={styles.blockchainsContainer}>
         {blockchains.map(({ id, name, logo }) => (
           <div className={styles.blockchainCard} key={id}>
-            <Image src={logo} alt={name} width={100} height={100} objectFit="contain" />
+            <Image src={logo} alt={name} width={144} height={144} objectFit="contain" />
             <a href={`#${id}`} className={linkClasses}>
               {name}
               <Svg height="20" width="20" href="/icons/arrow-right-blue.svg" />

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-function Svg({ href, ...props }) {
-  return <object {...props} type="image/svg+xml" data={href} />;
+function Svg({ href, width, height, ...props }) {
+  return <object {...props} width={width} height={height} type="image/svg+xml" data={href} />;
 }
 
 Svg.propTypes = {
