@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 8rem;
+  max-width: var(--xl);
+  margin: 4rem auto;
+}
+
+.title {
+  color: var(--neural-950-color);
+  bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: var(--neural-800-color)
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  flex: 0.7;
+  height: 16rem;
+}
