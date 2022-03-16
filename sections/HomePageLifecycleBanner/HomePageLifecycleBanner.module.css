@@ -22,6 +22,6 @@
     height: 22.6875rem;
   }
   .banner_left {
-    max-width: 66.75rem;
+    max-width: var(--xl)
   }
 }
