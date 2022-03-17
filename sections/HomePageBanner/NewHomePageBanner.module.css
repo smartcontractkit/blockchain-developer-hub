@@ -9,7 +9,6 @@
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-between;
-  max-width: var(--xl);
   height: 100%;
 }
 
@@ -31,7 +30,7 @@
 
 .title {
   color: var(--neural-950-color);
-  margin: 0.75rem 0;
+  margin-bottom: 2rem;
 }
 
 
@@ -56,6 +55,7 @@
 
 .list {
   padding: unset;
+  margin-bottom: 2rem;
 }
 
 .list li {
@@ -84,5 +84,25 @@
 
   .list {
     width: 24.375rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: unset;
+  }
+
+  .banner_left {
+    transform: translateX(5rem);
+  }
+ 
+}
+@media (min-width: 1476px) {
+  .banner {
+    max-width: var(--xl);
+  }
+
+   .banner_left {
+     transform: unset;
   }
 }
