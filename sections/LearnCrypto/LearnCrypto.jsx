@@ -33,13 +33,14 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
             {courses.overview && <p className={overviewClasses}>{courses.overview}</p>}
             {courses.data && (
               <div className={styles.cards}>
-                {courses.data.map(({ title, author, image, level, description }, index) => (
+                {courses.data.map(({ title, author, image, level, description, href }, index) => (
                   <Card
                     title={title}
                     subtitle={author}
                     description={description}
                     level={level}
                     image={image}
+                    href={href}
                     key={index}
                   />
                 ))}
@@ -54,12 +55,13 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
             {tutorials.overview && <p className={overviewClasses}>{tutorials.overview}</p>}
             {tutorials.data && (
               <div>
-                {tutorials.data.map(({ title, author, date, description }, index) => (
+                {tutorials.data.map(({ title, author, date, description, href }, index) => (
                   <div className={styles.tutorial} key={index}>
                     <TutorialCard
                       heading={title}
                       author={author}
                       date={date}
+                      href={href}
                       variant="gray"
                       description={description}
                     />

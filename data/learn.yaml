@@ -9,18 +9,21 @@ resources:
         author: Patrick Collins
         image: /demo/learn.jpg
         level: Intermediate
+        href: '#'
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
       - title: "Complete DApp - Solidity & React - Blockchain Development"
         author: Patrick Collins
         image: /demo/learn.jpg
         level: Intermediate
+        href: '#'
         description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
 
       - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
         author: Patrick Collins
         image: /demo/learn.jpg
         level: Intermediate
+        href: '#'
         description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
 
 
@@ -30,21 +33,25 @@ resources:
       - title: "XRPL Hackathon: New Year, New NFTs"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
       - title: "Complete DApp - Solidity & React - Blockchain Development"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
 
       - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
 
       - title: "Full Modern React Tutorial"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
 
@@ -59,18 +66,21 @@ resources:
         author: Patrick Collins
         image: /demo/learn.jpg
         level: Intermediate
+        href: '#'
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
       - title: "Complete DApp - Solidity & React - Blockchain Development"
         author: Patrick Collins
         image: /demo/learn.jpg
         level: Intermediate
+        href: '#'
         description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
 
       - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
         author: Patrick Collins
         image: /demo/learn.jpg
         level: Intermediate
+        href: '#'
         description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
 
 
@@ -80,21 +90,25 @@ resources:
       - title: "XRPL Hackathon: New Year, New NFTs"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
       - title: "Complete DApp - Solidity & React - Blockchain Development"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
 
       - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
 
       - title: "Full Modern React Tutorial"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
 
@@ -109,18 +123,21 @@ resources:
         author: Patrick Collins
         image: /demo/learn.jpg
         level: Intermediate
+        href: '#'
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
       - title: "Complete DApp - Solidity & React - Blockchain Development"
         author: Patrick Collins
         image: /demo/learn.jpg
         level: Intermediate
+        href: '#'
         description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
 
       - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
         author: Patrick Collins
         image: /demo/learn.jpg
         level: Intermediate
+        href: '#'
         description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
 
 
@@ -130,20 +147,24 @@ resources:
       - title: "XRPL Hackathon: New Year, New NFTs"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
       - title: "Complete DApp - Solidity & React - Blockchain Development"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
 
       - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
 
       - title: "Full Modern React Tutorial"
         author: Patrick Collins
         date: 2022-02-12
+        href: '#'
         description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
 
