@@ -30,12 +30,12 @@ Choose the right checklist for the change that you're making:
 - [ ] Make sure the linting passes
 - [ ] Added the data in the right `yaml` file
 
-## Page
+## Article
 
 - [ ] Make sure the linting passes
-- [ ] The page includes an author
-- [ ] the page includes an author thubnail
-- [ ] The page has been tested locally and it works
+- [ ] The article includes an author
+- [ ] the article includes an author thubnail
+- [ ] The article has been tested locally and it works
 - [ ] The images have been added to the public folder
 
 © 2022 Chainlink, Inc. Terms Privacy
