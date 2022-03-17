@@ -9,23 +9,19 @@
   margin: 2rem auto;
 }
 
+.container h2,
+.container h3,
+.container h4 {
+ font-weight: 700;
+ margin: 2rem auto;
+  color: var(--neural-950-color);
+}
 .container h2 {
   font-size: 1.8rem;
-  font-weight: 700;
-  margin: 2rem auto;
-  color: var(--neural-950-color);
 }
 
 .container h3 {
   font-size: 1.4rem;
-  font-weight: 700;
-  margin: 2rem auto;
-  color: var(--neural-950-color);
-}
-
-.container h4 {
-  margin: 2rem auto;
-  color: var(--neural-950-color);
 }
 
 .container p {
