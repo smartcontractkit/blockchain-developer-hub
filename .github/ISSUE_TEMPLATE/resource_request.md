@@ -1,7 +1,7 @@
 ---
 name: New resource
 about: Request a new resource
-title: '[Resource]'
+title: '[RESOURCE]'
 labels: resource
 assignees: ''
 ---
