@@ -4,6 +4,7 @@ import getPage from '@/helpers/getPage';
 import PropTypes from 'prop-types';
 import BlogLayout from '@/layouts/BlogLayout';
 import ArticleHeader from '@/components/ArticleHeader';
+import mdxStyles from '@/styles/MDX.module.css';
 
 function Ship({ data, content }) {
   return (
@@ -15,8 +16,9 @@ function Ship({ data, content }) {
         image={data.author_image}
         datetime={data.datetime}
       />
-
-      <MDXRemote {...content} />
+      <div className={mdxStyles.container}>
+        <MDXRemote {...content} />
+      </div>
     </BlogLayout>
   );
 }

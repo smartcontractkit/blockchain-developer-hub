@@ -1,3 +1,7 @@
+.container {
+  color: var(--neural-800-color)
+}
+
 .container img {
   width: 100%;
   height: auto;
@@ -5,16 +9,29 @@
   margin: 2rem auto;
 }
 
+.container h2,
+.container h3,
+.container h4 {
+ font-weight: 700;
+ margin: 2rem auto;
+  color: var(--neural-950-color);
+}
 .container h2 {
   font-size: 1.8rem;
-  font-weight: 700;
-  margin: 2rem auto;
-  color: var(--neural-950-color);
+}
+
+.container h3 {
+  font-size: 1.4rem;
 }
 
 .container p {
   font-size: 1rem;
   line-height: 24px;
   margin-bottom: 1rem;
-  color: var(--neural-800-color);
+}
+
+.container li {
+  font-size: 1rem;
+  line-height: 24px;
+  margin-bottom: 1rem;
 }
