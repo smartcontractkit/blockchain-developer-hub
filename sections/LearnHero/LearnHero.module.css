@@ -62,7 +62,6 @@
   gap: 4rem;
   flex-shrink: 0;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
 }
 
 .blockchainCard:hover {
@@ -79,10 +78,6 @@
   padding: 0.5rem 1rem;
   border-radius: 0.6rem;
   transition: all 0.2s ease-in-out;
-  -webkit-border-radius: 0.6rem;
-  -moz-border-radius: 0.6rem;
-  -ms-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
 }
 
 .link:hover {

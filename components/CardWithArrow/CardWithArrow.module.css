@@ -8,9 +8,6 @@
   padding: 1rem;
   flex: 1;
 }
-.card, .arrow{
-  cursor: pointer;
-}
 
 .arrow {
   position: absolute;

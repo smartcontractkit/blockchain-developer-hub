@@ -15,9 +15,7 @@ const CardWithArrow = ({ title, description, subtitle, href }) => {
         {subtitle && <small className={subtitleClasses}>{subtitle}</small>}
         <h4 className={titleClasses}>{title}</h4>
         {description && <p className={descriptionClasses}> {description} </p>}
-        <a href={href} className={styles.arrow}>
-          <Svg width="20" height="20" href="/icons/arrow-right.svg" />
-        </a>
+        <Svg width="20" height="20" href="/icons/arrow-right.svg" />
       </div>
     </a>
   );
