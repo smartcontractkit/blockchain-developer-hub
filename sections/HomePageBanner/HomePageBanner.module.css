@@ -12,6 +12,10 @@
   max-width: var(--xl);
 }
 
+.title_a {
+  color: var(--neural-variant-600-color)
+}
+
 .banner_left {
    width: 100%;
    margin-bottom: 2rem;

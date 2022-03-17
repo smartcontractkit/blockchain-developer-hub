@@ -1,0 +1,9 @@
+list:
+  - icon: /icons/school.svg
+    text: <strong>Learn the essentials</strong> of smart contract and blockchain development.
+   
+  - icon: /icons/memory.svg
+    text: Get familiar with the <strong>development stack</strong> for major blockchain projects.
+  
+  - icon: /icons/map.svg
+    text: Identify your <strong>ideal journey</strong> to become a blockchain developer.
