@@ -14,7 +14,7 @@ function Blockchain({ data, content }) {
         author={data.author}
         role={data.author_role}
         image={data.author_image}
-        datetime={data.datetime}
+        datetime={data.date}
       />
       <div className={mdxStyles.container}>
         <MDXRemote {...content} />

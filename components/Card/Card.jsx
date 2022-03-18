@@ -3,8 +3,22 @@ import PropTypes from 'prop-types';
 import Image from 'next/image';
 import clsx from 'clsx';
 import Svg from '@/components/Svg';
+import dayjs from 'dayjs';
 
-function Card({ variant = 'gray', title, subtitle, description, image, href, online, location, date, prize, level }) {
+function Card({
+  variant = 'gray',
+  title,
+  subtitle,
+  description,
+  image,
+  href,
+  online,
+  location,
+  start_date,
+  end_date,
+  prize,
+  level,
+}) {
   const classes = clsx(styles.container, { [styles.light]: variant === 'light' });
   const titleClasses = clsx('body-short-01--bold', styles.title);
   const subTitleClasses = clsx('caption', styles.subtitle);
@@ -47,10 +61,12 @@ function Card({ variant = 'gray', title, subtitle, description, image, href, onl
           )}
 
           {/* If date exist */}
-          {date && (
+          {end_date && start_date && (
             <span>
               <Svg height="20" width="20" href="/icons/calender.svg" />
-              {date}
+              {dayjs(start_date).format('MMM D')}
+              &nbsp; - &nbsp;
+              {dayjs(end_date).format('MMM D, YYYY')}
             </span>
           )}
         </div>
@@ -67,7 +83,8 @@ Card.propTypes = {
   image: PropTypes.string,
   online: PropTypes.bool,
   location: PropTypes.string,
-  date: PropTypes.string,
+  start_date: PropTypes.string,
+  end_date: PropTypes.string,
   prize: PropTypes.string,
   href: PropTypes.string.isRequired,
   level: PropTypes.string,
