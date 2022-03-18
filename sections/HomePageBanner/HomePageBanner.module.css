@@ -93,6 +93,10 @@
     height: 44.25rem;
   }
 
+  .banner_left {
+    margin-bottom: 0;
+  }
+
 .banner_left > div {
   margin-right: auto;
   margin-left: auto;
