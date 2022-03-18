@@ -1,11 +1,10 @@
 import NavLink from '@/components/NavLink';
-import PropTypes from 'prop-types';
 import Image from 'next/image';
 import styles from './HomePageBanner.module.css';
 import clsx from 'clsx';
 import Svg from '@/components/Svg';
 
-function HomePageBanner({ link, linkText, image, imageAlt }) {
+function HomePageBanner() {
   const titleClasses = clsx('h-500', styles.title);
 
   return (
@@ -42,26 +41,17 @@ function HomePageBanner({ link, linkText, image, imageAlt }) {
               </li>
             </ul>
 
-            <NavLink to={link} type="primary" text={linkText} icon="map-pointer.svg" />
+            <NavLink to={'/'} type="primary" text={'Quickstart'} icon="map-pointer.svg" />
           </div>
         </div>
         <div className={styles.imageContainer}>
           <div className={styles.image}>
-            {image && <Image src={image} alt={imageAlt} layout="fill" objectFit="contain" />}
+            <Image src={'/demo/banner-right.png'} alt={'Banner image'} layout="fill" objectFit="contain" />
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-HomePageBanner.propTypes = {
-  titleA: PropTypes.string,
-  titleB: PropTypes.string,
-  image: PropTypes.string,
-  link: PropTypes.string,
-  linkText: PropTypes.string,
-  imageAlt: PropTypes.string,
-};
 
 export default HomePageBanner;

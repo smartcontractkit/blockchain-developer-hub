@@ -9,7 +9,7 @@ import styles from '@/styles/pages/HomePage.module.css';
 export default function Home() {
   return (
     <div>
-      <HomePageBanner link="/" linkText="Quickstart" image="/demo/banner-right.png" imageAlt="Banner image" />
+      <HomePageBanner />
       <HomepageChainlink101 />
       <HomeExplore />
       <HomePageLifecycleBanner
