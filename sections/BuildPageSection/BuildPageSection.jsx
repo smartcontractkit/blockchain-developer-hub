@@ -9,10 +9,10 @@ function BuildPageSection({ name, overview, items }) {
 
   return (
     <div className={styles.mainContent}>
-      <h2 className={headingClasses}>{name}</h2>
+      <h1 className={headingClasses}>{name}</h1>
       {overview && <p className={overviewClasses}>{overview}</p>}
       <div className={styles.cards}>
-        {items.map(({ title, prize, image, description, location, online, date }, index) => (
+        {items.map(({ title, prize, image, description, location, online, date, href }, index) => (
           <Card
             title={title}
             prize={prize}
@@ -20,6 +20,7 @@ function BuildPageSection({ name, overview, items }) {
             location={location}
             online={online}
             date={date}
+            href={href}
             image={image}
             key={index}
           />

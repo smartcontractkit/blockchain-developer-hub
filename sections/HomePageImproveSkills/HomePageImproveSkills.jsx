@@ -12,7 +12,7 @@ function HomePageImproveSkills() {
       </div>
       <div className={styles.categories}>
         {buildData.categories.map((category, index) => (
-          <CardWithArrow key={index} title={category.name} description={category.overview} />
+          <CardWithArrow key={index} href={category.href} title={category.name} description={category.overview} />
         ))}
       </div>
     </section>

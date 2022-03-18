@@ -7,6 +7,7 @@
   font-size: 0.9rem;
   border: 1px solid var(--neural-100-color);
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .container:hover {
