@@ -5,7 +5,7 @@ import styles from './HomePageBanner.module.css';
 import clsx from 'clsx';
 import Svg from '@/components/Svg';
 
-function HomePageBanner({ titleA, titleB, link, linkText, image, imageAlt }) {
+function HomePageBanner({ link, linkText, image, imageAlt }) {
   const titleClasses = clsx('h-500', styles.title);
 
   return (
@@ -16,9 +16,9 @@ function HomePageBanner({ titleA, titleB, link, linkText, image, imageAlt }) {
             <h1 className={titleClasses}>
               <p className={styles.title_a}>
                 <span className={styles.arrow}>{'-->'}</span>
-                <span>{titleA}</span>
+                <span>{'Dive into'}</span>
               </p>
-              <p>{titleB}</p>
+              <p>{'smart contract development'}</p>
             </h1>
 
             <ul className={styles.list}>

@@ -6,20 +6,10 @@ import HomePageLifecycleBanner from '@/sections/HomePageLifecycleBanner';
 
 import styles from '@/styles/pages/HomePage.module.css';
 
-// --> Dive into smart contract development
 export default function Home() {
   return (
     <div>
-      <HomePageBanner
-        titleA="Dive into"
-        titleB="smart contract development"
-        overview="Covering the fundamentals of web3 development: from writing Solidity, to minting NFTs, to building full-stack dApps. Bringing you resources from the best in blockchain."
-        label="Everything about"
-        link="/"
-        linkText="Quickstart"
-        image="/demo/banner-right.png"
-        imageAlt="Banner image"
-      />
+      <HomePageBanner link="/" linkText="Quickstart" image="/demo/banner-right.png" imageAlt="Banner image" />
       <HomepageChainlink101 />
       <HomeExplore />
       <HomePageLifecycleBanner
