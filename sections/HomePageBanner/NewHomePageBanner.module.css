@@ -35,7 +35,7 @@
 
 
 .imageContainer {
-  background-color: var(--primary-50-color);
+  background-color: var(--secondary-200-color);
   flex: 1;
   overflow: hidden;
   position: relative;
