@@ -12,36 +12,38 @@ function HomePageBanner({ titleA, titleB, link, linkText, image, imageAlt }) {
     <section className={styles.container}>
       <div className={styles.banner}>
         <div className={styles.banner_left}>
-          <h1 className={titleClasses}>
-            <p className={styles.title_a}>
-              <span className={styles.arrow}>{'-->'}</span>
-              <span>{titleA}</span>
-            </p>
-            <p>{titleB}</p>
-          </h1>
+          <div>
+            <h1 className={titleClasses}>
+              <p className={styles.title_a}>
+                <span className={styles.arrow}>{'-->'}</span>
+                <span>{titleA}</span>
+              </p>
+              <p>{titleB}</p>
+            </h1>
 
-          <ul className={styles.list}>
-            <li className={clsx('body-short-01', styles.list_item)}>
-              <Svg className={styles.list_icon} height="24" width="24" href="/icons/school.svg" />
-              <smal>
-                <strong>Learn the essentials</strong> of smart contract and blockchain development.
-              </smal>
-            </li>
-            <li className={clsx('body-short-01', styles.list_item)}>
-              <Svg className={styles.list_icon} height="24" width="24" href="/icons/memory.svg" />
-              <smal>
-                Get familiar with the <strong>development stack</strong> for major blockchain projects.
-              </smal>
-            </li>
-            <li className={clsx('body-short-01', styles.list_item)}>
-              <Svg className={styles.list_icon} height="24" width="24" href="/icons/map.svg" />
-              <smal>
-                Identify your <strong>ideal journey</strong> to become a blockchain developer.
-              </smal>
-            </li>
-          </ul>
+            <ul className={styles.list}>
+              <li className={clsx('body-short-01', styles.list_item)}>
+                <Svg className={styles.list_icon} height="24" width="24" href="/icons/school.svg" />
+                <smal>
+                  <strong>Learn the essentials</strong> of smart contract and blockchain development.
+                </smal>
+              </li>
+              <li className={clsx('body-short-01', styles.list_item)}>
+                <Svg className={styles.list_icon} height="24" width="24" href="/icons/memory.svg" />
+                <smal>
+                  Get familiar with the <strong>development stack</strong> for major blockchain projects.
+                </smal>
+              </li>
+              <li className={clsx('body-short-01', styles.list_item)}>
+                <Svg className={styles.list_icon} height="24" width="24" href="/icons/map.svg" />
+                <smal>
+                  Identify your <strong>ideal journey</strong> to become a blockchain developer.
+                </smal>
+              </li>
+            </ul>
 
-          <NavLink to={link} type="primary" text={linkText} icon="map-pointer.svg" />
+            <NavLink to={link} type="primary" text={linkText} icon="map-pointer.svg" />
+          </div>
         </div>
         <div className={styles.imageContainer}>
           <div className={styles.image}>

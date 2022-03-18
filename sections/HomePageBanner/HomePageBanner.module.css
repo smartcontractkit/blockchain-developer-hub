@@ -3,7 +3,7 @@
   padding: 0 2rem;
 }
 
-.banner {
+.banner,.banner_left {
   margin: auto;
   display: flex;
   align-items: center;
@@ -24,7 +24,9 @@
 
 .banner_left {
    width: 100%;
+   flex: 1;
    margin-bottom: 2rem;
+   justify-content: center;
 }
 
 
@@ -43,7 +45,7 @@
   height: 100%;
   width: 50vw;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 
@@ -51,9 +53,9 @@
    position: absolute;
    content: "";
    left: 9.625rem;
-   right: 9.625rem;
+   height: 568px;
    top: 4.375rem;
-   bottom: 4.375rem;
+   width: 412px;
    background-color: var(--secondary-400-color);
    border-radius: 347.1875rem;
  }
@@ -63,6 +65,8 @@
   width: 90%;
   max-width: 520px;
   height: 408px;
+  margin-left: 6.1875rem;
+  margin-right: auto;
 }
 
 
@@ -82,29 +86,31 @@
   margin-right: 1.0625rem;
 }
 
+
 @media (min-width: 1024px) {
   .container {
     padding: unset;
     height: 44.25rem;
   }
 
-  .banner_left {
-    flex: 1;
-    transform: translateX(2rem);
-  }
+.banner_left > div {
+  margin-right: auto;
+  margin-left: auto;
+}
  
   .imageContainer {
     display: flex;
   }
 
   .imageContainer:before {
-    left: 5rem;
-    right: 5rem;
-    top: 4rem;
-    bottom: 4rem;
+    left: 3.4rem;
+  }
+
+  .image {
+    margin-left: auto;
   }
   .title {
-    max-width: 32.6875rem;
+    max-width: 28.6875rem;
   }
 
   .list {
@@ -112,36 +118,49 @@
   }
 }
 
-@media (min-width: 1280px) {
-  .container {
-    padding: unset;
+@media (min-width: 1200px) {
+  .banner_left > div {
+    margin-right: 2.5rem;
   }
 
-  .banner_left {
-    transform: translateX(5rem);
+  .title {
+    max-width: 32.6875rem;
   }
+}
+
+@media (min-width: 1280px) {
+
+.banner_left > div {
+  margin-right: 5rem;
+}
 
   .imageContainer:before {
-    left: 9.625rem;
-    right: 9.625rem;
-    top: 4.375rem;
-    bottom: 4.375rem;
+    left: 7.5rem;
   }
  
 }
-@media (min-width: 1476px) {
-  .banner {
-    max-width: var(--xl);
+
+@media (min-width: 1380px) {
+
+  .banner_left > div {
+    margin-right: 7rem;
   }
 
   .imageContainer:before {
-    left: 7rem;
-    right: 7rem;
-    top: 4rem;
-    bottom: 4rem;
+    left: 9.5rem;
   }
 
-   .banner_left {
-     transform: unset;
+}
+@media (min-width: 1476px) {
+  .imageContainer:before {
+    left: 7rem;
   }
+
+  .image {
+    margin-left: 4.1875rem;
+  }
+
+   .banner_left > div {
+     margin-right: 7rem;
+    }
 }
