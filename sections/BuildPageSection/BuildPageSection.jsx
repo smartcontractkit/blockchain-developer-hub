@@ -2,12 +2,10 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import styles from './BuildPageSection.module.css';
 import Card from '@/components/Card';
-import removePastEvent from '@/helpers/removePastEvent';
 
 function BuildPageSection({ name, overview, items }) {
   const headingClasses = clsx('subtitle-01', styles.headings);
   const overviewClasses = clsx('body-long-02', styles.overview);
-  items = removePastEvent(items);
 
   return (
     <div className={styles.mainContent}>
