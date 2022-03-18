@@ -64,6 +64,7 @@ function HomeExplore() {
                 <TutorialCard
                   key={tutorial.title}
                   heading={tutorial.title}
+                  href={tutorial.href}
                   author={tutorial.author}
                   date={dayjs(tutorial.date).format('MMM D, YYYY')}
                 />

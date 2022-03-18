@@ -18,7 +18,13 @@ const Quotecard = ({ textDirection, cards, children }) => {
     <div className={bodyClasses}>
       <div className={styles.cards}>
         {cards.map((card, index) => (
-          <CardWithArrow title={card.title} description={card.description} subtitle={padNumber(index, 9)} key={index} />
+          <CardWithArrow
+            href={card.href}
+            title={card.title}
+            description={card.description}
+            subtitle={padNumber(index, 9)}
+            key={index}
+          />
         ))}
       </div>
       <div className={textClasses}>{children}</div>
