@@ -1,7 +1,7 @@
 import NavLink from '@/components/NavLink';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
-import styles from './HomePageBanner.module.css';
+import styles from './OldHomePageBanner.module.css';
 import clsx from 'clsx';
 
 function Homepagebanner({ label, title, overview, link, linkText, image, imageAlt }) {
