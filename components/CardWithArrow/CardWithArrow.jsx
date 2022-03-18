@@ -10,13 +10,11 @@ const CardWithArrow = ({ title, description, subtitle, href }) => {
   const descriptionClasses = clsx('body-long-02', styles.description);
 
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
-      <div className={styles.card}>
-        {subtitle && <small className={subtitleClasses}>{subtitle}</small>}
-        <h4 className={titleClasses}>{title}</h4>
-        {description && <p className={descriptionClasses}> {description} </p>}
-        <Svg width="20" height="20" href="/icons/arrow-right.svg" />
-      </div>
+    <a href={href} className={styles.card} target="_blank" rel="noopener noreferrer">
+      {subtitle && <small className={subtitleClasses}>{subtitle}</small>}
+      <h4 className={titleClasses}>{title}</h4>
+      {description && <p className={descriptionClasses}> {description} </p>}
+      <Svg className={styles.arrow} width="20" height="20" href="/icons/arrow-right.svg" />
     </a>
   );
 };

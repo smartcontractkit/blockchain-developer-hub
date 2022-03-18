@@ -1,7 +1,6 @@
 import HomeExplore from '@/sections/HomeExplore';
-// import HomePageBanner from '@/sections/HomePageBanner';
-import NewHomepagebanner from '@/sections/HomePageBanner/NewHomePageBanner';
-import HomepageChainlink101 from '@/sections/HomePageChainlink101/HomepageChainlink101';
+import HomePageBanner from '@/sections/HomePageBanner';
+import HomepageChainlink101 from '@/sections/HomePageChainlink101';
 import HomePageImproveSkillsStories from '@/sections/HomePageImproveSkills';
 import HomePageLifecycleBanner from '@/sections/HomePageLifecycleBanner';
 
@@ -11,16 +10,7 @@ import styles from '@/styles/pages/HomePage.module.css';
 export default function Home() {
   return (
     <div>
-      {/* <HomePageBanner
-        title="Smart Contracts Development"
-        overview="Covering the fundamentals of web3 development: from writing Solidity, to minting NFTs, to building full-stack dApps. Bringing you resources from the best in blockchain."
-        label="Everything about"
-        link="/"
-        linkText="Quickstart"
-        image="/demo/unsplash_tMbQpdguDVQ.png"
-        imageAlt="Banner image"
-      /> */}
-      <NewHomepagebanner
+      <HomePageBanner
         titleA="Dive into"
         titleB="smart contract development"
         overview="Covering the fundamentals of web3 development: from writing Solidity, to minting NFTs, to building full-stack dApps. Bringing you resources from the best in blockchain."

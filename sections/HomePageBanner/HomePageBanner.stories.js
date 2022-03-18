@@ -1,4 +1,4 @@
-import Homepagebanner from './HomePageBanner';
+import Homepagebanner from './OldHomePageBannerner';
 
 export default {
   title: 'section/HomePage Banner',
