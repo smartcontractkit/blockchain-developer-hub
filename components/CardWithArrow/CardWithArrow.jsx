@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import styles from './CardWithArrow.module.css';
 import Svg from '@/components/Svg';
+import Link from 'next/link';
 
 const CardWithArrow = ({ title, description, subtitle, href }) => {
   const subtitleClasses = clsx('body-short-02--bold', styles.subtitle);
@@ -10,12 +11,14 @@ const CardWithArrow = ({ title, description, subtitle, href }) => {
   const descriptionClasses = clsx('body-long-02', styles.description);
 
   return (
-    <a href={href} className={styles.card} rel="noopener noreferrer">
-      {subtitle && <small className={subtitleClasses}>{subtitle}</small>}
-      <h4 className={titleClasses}>{title}</h4>
-      {description && <p className={descriptionClasses}> {description} </p>}
-      <Svg className={styles.arrow} width="20" height="20" href="/icons/arrow-right.svg" />
-    </a>
+    <Link href={href}>
+      <a className={styles.card}>
+        {subtitle && <small className={subtitleClasses}>{subtitle}</small>}
+        <h4 className={titleClasses}>{title}</h4>
+        {description && <p className={descriptionClasses}> {description} </p>}
+        <Svg className={styles.arrow} width="20" height="20" href="/icons/arrow-right.svg" />
+      </a>
+    </Link>
   );
 };
 
