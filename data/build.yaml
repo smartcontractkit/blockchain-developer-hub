@@ -9,7 +9,8 @@ categories:
       online: true
       href: '#'
       image: /demo/unsplash_8uZPynIu-rQ.png
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-19 15:00'
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
@@ -17,7 +18,8 @@ categories:
       online: true
       href: '#'
       image: /demo/unsplash_m_7p45JfXQo.png
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-17 16:00'
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
@@ -25,7 +27,8 @@ categories:
       location: Berlin
       href: '#'
       image: /demo/unsplash_8uZPynIu-rQ.png
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-19 16:00'
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
@@ -33,7 +36,8 @@ categories:
       location: London
       href: '#'
       image: /demo/unsplash_m_7p45JfXQo.png
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-17 15:00'
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
@@ -41,7 +45,8 @@ categories:
       online: true
       href: '#'
       image: /demo/learn.jpg
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-19 15:00'
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
@@ -49,7 +54,8 @@ categories:
       online: true
       href: '#'
       image: /demo/unsplash_m_7p45JfXQo.png
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-19 15:00'
 
 
   - name: Workshop
@@ -61,39 +67,45 @@ categories:
       online: true
       href: '#'
       image: /demo/learn.jpg
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-19 15:00'
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       online: true
       href: '#'
       image: /demo/unsplash_tMbQpdguDVQ.png
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-15 16:00'
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       location: Berlin
       href: '#'
       image: /demo/unsplash_8uZPynIu-rQ.png
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-19 16:00'
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       location: London
       href: '#'
       image: /demo/unsplash_tMbQpdguDVQ.png
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-19 6:00'
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       online: true
       href: '#'
       image: /demo/learn.jpg
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-19 15:00'
 
     - title: "XRPL Hackathon: New Year, New NFTs"
       description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
       online: true
       href: '#'
       image: /demo/unsplash_tMbQpdguDVQ.png
-      date: Feb3 - Mar 17, 2022
+      start_date: '2022-03-19 14:00'
+      end_date: '2022-03-19 15:00'
