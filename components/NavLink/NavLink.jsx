@@ -12,7 +12,7 @@ export default function NavLink({ to, type, icon, iconPosition, text, active, ..
   });
 
   return (
-    <Link href={to}>
+    <Link href={to} passHref>
       <a {...props} className={classes}>
         <span>{text}</span>
         {icon && <Svg className={styles[`icon-${iconPosition}`]} height="20" width="20" href={`/icons/${icon}`} />}
