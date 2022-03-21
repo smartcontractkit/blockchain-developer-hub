@@ -10,7 +10,7 @@ const CardWithArrow = ({ title, description, subtitle, href }) => {
   const descriptionClasses = clsx('body-long-02', styles.description);
 
   return (
-    <a href={href} className={styles.card} target="_blank" rel="noopener noreferrer">
+    <a href={href} className={styles.card} rel="noopener noreferrer">
       {subtitle && <small className={subtitleClasses}>{subtitle}</small>}
       <h4 className={titleClasses}>{title}</h4>
       {description && <p className={descriptionClasses}> {description} </p>}

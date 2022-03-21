@@ -1,14 +1,19 @@
 .card {
   position: relative;
   background-color: var(--neural-100-color);
+  border: 1px solid var(--neural-100-color);
   min-height: 16rem;
   width: 100%;
   color: var(--neural-800-color);
   border-radius: 0.75rem;
   padding: 1rem;
   flex: 1;
+  transition: all 0.2s ease-in-out;
 }
-
+.card:hover {
+  border: 1px solid var(--tertiary-400-color);
+  background-color: var(--white-color);
+}
 .arrow {
   position: absolute;
   bottom: 0.5rem;
@@ -24,6 +29,11 @@
   font-weight: 700;
   color: var(--neural-950-color);
   max-width: 13.5625rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.title:hover {
+  color: var(--tertiary-600-color);
 }
 
 .description {

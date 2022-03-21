@@ -6,9 +6,10 @@ import Card from '@/components/Card';
 function BuildPageSection({ name, overview, items }) {
   const headingClasses = clsx('subtitle-01', styles.headings);
   const overviewClasses = clsx('body-long-02', styles.overview);
+  const id = name.toLowerCase();
 
   return (
-    <div className={styles.mainContent}>
+    <div className={styles.mainContent} id={id}>
       <h1 className={headingClasses}>{name}</h1>
       {overview && <p className={overviewClasses}>{overview}</p>}
       <div className={styles.cards}>
