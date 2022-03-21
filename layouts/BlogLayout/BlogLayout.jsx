@@ -16,7 +16,9 @@ function BlogLayout({ children, pages }) {
             <div className={styles.leftSidebar__header}>Getting started</div>
             {pages.map((page) => (
               <Link key={page.slug} href={page.slug} passHref>
-                <a className={clsx(styles.leftSidebar__link, slug === page.slug && styles.active)}>{page.data.title}</a>
+                <a className={clsx('btn', styles.leftSidebar__link, slug === page.slug && styles.active)}>
+                  {page.data.title}
+                </a>
               </Link>
             ))}
           </>
