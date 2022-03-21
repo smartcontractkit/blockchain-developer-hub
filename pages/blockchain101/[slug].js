@@ -5,10 +5,12 @@ import PropTypes from 'prop-types';
 import BlogLayout from '@/layouts/BlogLayout';
 import ArticleHeader from '@/components/ArticleHeader';
 import mdxStyles from '@/styles/MDX.module.css';
+import getPaths from '@/helpers/getPaths';
+import getPagesInfo from '@/helpers/getPagesInfo';
 
-function Blockchain({ data, content }) {
+function Blockchain({ data, content, pagesInfo }) {
   return (
-    <BlogLayout>
+    <BlogLayout pages={pagesInfo}>
       <ArticleHeader
         title={data.title}
         author={data.author}
@@ -26,16 +28,27 @@ function Blockchain({ data, content }) {
 Blockchain.propTypes = {
   data: PropTypes.object.isRequired,
   content: PropTypes.object.isRequired,
+  pagesInfo: PropTypes.array,
 };
 export default Blockchain;
 
-export const getStaticProps = async () => {
-  const page = await getPage('blockchain101/blockchain.md');
+export const getStaticPaths = async () => {
+  const paths = getPaths('blockchain101').map((slug) => ({ params: { slug: slug } }));
+  return {
+    paths: paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps = async ({ params }) => {
+  const page = await getPage(`blockchain101/${params.slug}.md`);
   const mdxSource = await serialize(page.content);
+  const pagesInfo = await getPagesInfo('blockchain101');
   return {
     props: {
       data: page.data,
       content: mdxSource,
+      pagesInfo,
     },
   };
 };
