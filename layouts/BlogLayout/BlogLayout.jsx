@@ -11,13 +11,16 @@ function BlogLayout({ children, pages }) {
   return (
     <div className={styles.container}>
       <div className={styles.leftSidebar}>
-        <div className={styles.leftSidebar__header}>Getting started</div>
-        {pages &&
-          pages.map((page) => (
-            <Link key={page.slug} href={page.slug} passHref>
-              <a className={clsx(styles.leftSidebar__link, slug === page.slug && styles.active)}>{page.data.title}</a>
-            </Link>
-          ))}
+        {pages && (
+          <>
+            <div className={styles.leftSidebar__header}>Getting started</div>
+            {pages.map((page) => (
+              <Link key={page.slug} href={page.slug} passHref>
+                <a className={clsx(styles.leftSidebar__link, slug === page.slug && styles.active)}>{page.data.title}</a>
+              </Link>
+            ))}
+          </>
+        )}
       </div>
       <div className={styles.content}>{children}</div>
       <div className={styles.rightSidebar}></div>
