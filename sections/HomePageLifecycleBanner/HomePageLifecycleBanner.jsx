@@ -5,7 +5,7 @@ import ExploreMapBanner from '@/components/ExploreMapBanner';
 function HomePageLifecycleBanner({ title, overview }) {
   return (
     <section className={styles.container}>
-      <div className={styles.banner_left}>
+      <div className={styles.content}>
         <ExploreMapBanner title={title} description={overview} isHomePage={true} />
       </div>
     </section>

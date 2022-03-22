@@ -11,7 +11,7 @@
   .container {
     height: 22.6875rem;
   }
-  .banner_left {
+  .content {
     max-width: var(--lg)
   }
 }
