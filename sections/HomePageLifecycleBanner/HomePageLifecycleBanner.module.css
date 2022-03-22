@@ -6,22 +6,12 @@
   padding: 2rem;
 }
 
-.title {
-  color: var(--neural-950-color);
-  margin-bottom: 1rem;
-}
-
-.overview {
-  color: var(--neural-800-color);
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
 
 @media (min-width: 1024px) {
   .container {
     height: 22.6875rem;
   }
-  .banner_left {
-    max-width: var(--xl)
+  .content {
+    max-width: var(--lg)
   }
 }

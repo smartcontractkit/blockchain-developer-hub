@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.title {
+  color: var(--neural-950-color);
+}
+
+.description {
+  margin: 2rem auto;
+  color: var(--neural-800-color);
+  font-size: 1.125rem;
+  line-height: 147%;
+}
