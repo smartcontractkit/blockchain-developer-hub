@@ -6,7 +6,7 @@ import styles from './NavBar.module.css';
 const links = [
   {
     to: '/blockchain101/blockchain',
-    text: 'Blockchain 101',
+    text: 'Why Blockchain',
   },
   {
     to: '/learn',
@@ -14,7 +14,7 @@ const links = [
   },
   {
     to: '/ecosystem-map',
-    text: 'Ecosystem Map',
+    text: 'Ecosystem',
   },
   {
     to: '/build',

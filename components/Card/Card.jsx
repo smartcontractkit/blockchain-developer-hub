@@ -1,6 +1,5 @@
 import styles from './Card.module.css';
 import PropTypes from 'prop-types';
-import Image from 'next/image';
 import clsx from 'clsx';
 import Svg from '@/components/Svg';
 import dayjs from 'dayjs';
@@ -30,7 +29,7 @@ function Card({
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <div className={classes}>
-        {image && <Image src={image} alt={title} width="200" height="150" className={styles.image} />}
+        {image && <img src={image} alt={title} width="200" height="150" className={styles.image} />}
 
         <h2 className={titleClasses}>{title}</h2>
 

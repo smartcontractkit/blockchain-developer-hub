@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import Image from 'next/image';
-
 import Card from '@/components/Card';
 import TutorialCard from '@/components/TutorialCard';
 import styles from './LearnCrypto.module.css';
@@ -12,26 +10,21 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
 
   return (
     <div id={id} className={styles.container}>
-      {/* Todo: Header styling */}
       <div className={styles.sectionHeading}>
         <div className={styles.sectionHeadingContent}>
           <div>
             <h1>{name}</h1>
           </div>
-          <div className={styles.logoContainer}>
-            <Image src={logo} alt={logoAlt} layout="fill" objectFit="contain" />
-          </div>
+          <img src={logo} alt={logoAlt} className={styles.logo} />
         </div>
       </div>
-
-      {/* Todo: Body contents */}
 
       <div className={styles.mainContent}>
         {courses && (
           <div>
             <h2 className={headingClasses}>Courses</h2>
             {courses.overview && <p className={overviewClasses}>{courses.overview}</p>}
-            {courses.data && (
+            {courses.data ? (
               <div className={styles.cards}>
                 {courses.data.map(({ title, author, image, level, description, href }, index) => (
                   <Card
@@ -45,6 +38,8 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
                   />
                 ))}
               </div>
+            ) : (
+              <div className={styles.commingSoon}>Content comming soon...</div>
             )}
           </div>
         )}
@@ -53,7 +48,7 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
           <div>
             <h2 className={headingClasses}>Tutorials</h2>
             {tutorials.overview && <p className={overviewClasses}>{tutorials.overview}</p>}
-            {tutorials.data && (
+            {tutorials.data ? (
               <div>
                 {tutorials.data.map(({ title, author, date, description, href }, index) => (
                   <div className={styles.tutorial} key={index}>
@@ -68,6 +63,8 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
                   </div>
                 ))}
               </div>
+            ) : (
+              <div className={styles.commingSoon}>Content comming soon...</div>
             )}
           </div>
         )}
