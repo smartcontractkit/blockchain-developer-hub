@@ -14,8 +14,12 @@ export default function TutorialCard({ heading, author, date, description, varia
         <h3 className={heading_classes}>{heading}</h3>
         <p className={author_date_classes}>
           <small>{author}</small>
-          <span>|</span>
-          <small>{date}</small>
+          {date && (
+            <>
+              <span>|</span>
+              <small>{date}</small>
+            </>
+          )}
         </p>
         {description && <p className={description_classes}>{description}</p>}
       </div>
