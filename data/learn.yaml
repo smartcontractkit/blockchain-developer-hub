@@ -5,54 +5,52 @@ resources:
     courses:
       overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
       data:
-      - title: "XRPL Hackathon: New Year, New NFTs"
-        author: Patrick Collins
-        image: /demo/learn.jpg
-        level: Intermediate
-        href: '#'
-        description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+      - title: "Deploy your first smart contract"
+        author: Chainlink
+        image: "https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5fa2e075cfcf344baa0e9063_chainlink-open-graph-images_home%20(with%20illustration).png"
+        level: Easy
+        href: https://docs.chain.link/docs/deploy-your-first-contract/
+        description: You can write your first smart contract and run it in your browser without any knowledge about Ethereum or blockchains.
 
-      - title: "Complete DApp - Solidity & React - Blockchain Development"
-        author: Patrick Collins
-        image: /demo/learn.jpg
-        level: Intermediate
-        href: '#'
-        description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+      - title: "Hello World smart contract for beginners"
+        author: Ethereum
+        image: https://ethereum.org/static/bf78b49d7e23b88a7eea934225b0cf96/1548e/enterprise-eth.png 
+        level: Easy
+        href: 'https://ethereum.org/en/developers/tutorials/hello-world-smart-contract/'
+        description: If you are new to blockchain development and don't know where to start, or if you just want to understand how to deploy and interact with smart contracts
 
-      - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
-        author: Patrick Collins
-        image: /demo/learn.jpg
-        level: Intermediate
-        href: '#'
-        description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+      - title: "Learn to Code Blockchain DApps By Building Simple Games"
+        author: CrazyZombies
+        image: https://cryptozombies.io/course/static/image/preview-zombie.png
+        level: Easy
+        href: 'https://cryptozombies.io/'
+        description: an interactive school that teaches you all things technical about blockchains.
 
 
     tutorials:
       overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
       data:
-      - title: "XRPL Hackathon: New Year, New NFTs"
+      - title: "How To Create NFTs With Solidity"
         author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+        date: 2021-03-02
+        href: 'https://betterprogramming.pub/how-to-create-nfts-with-solidity-4fa1398eb70a'
+        description: A glorious guide to building and creating NFTs, the ERC-721 standard for creating collectibles, art, and any type of unique asset on-chain.
 
-      - title: "Complete DApp - Solidity & React - Blockchain Development"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+      - title: "Ethereum Developer Onboarding"
+        author: ConsenSys
+        href: 'https://consensys.net/developers/onboarding-step-1/'
+        description: In step 1 of our 3-step Ethereum developer onboarding, you'll get set up with MetaMask, connect to a testnet, and send your first transaction on the Ethereum blockchain.
 
-      - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+      - title: "Chainlink Academy"
+        author: Chainlink
+        href: 'https://www.chainlink.education/'
+        description: Learn to program with Chainlink Academy. Chainlink's decentralized oracle network provides reliable, tamper-proof inputs and outputs for complex smart contracts on any blockchain.
 
-      - title: "Full Modern React Tutorial"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+      - title: "Solidity, Blockchain, and Smart Contract Course - Beginner to Expert Python Tutorial"
+        author: Freecodecamp
+        date: 2021-09-09
+        href: 'https://www.freecodecamp.org/news/learn-solidity-blockchain-and-smart-contracts-in-a-free/'
+        description: This course will give you a full introduction into all of the core concepts in blockchain, smart contracts, solidity, NFTs/ERC721s, ERC20s, Coding Decentralized Finance (DeFi), python and solidity, Chainlink, Ethereum, upgradable smart contracts, and full stack blockchain development.
 
 
 
@@ -62,54 +60,51 @@ resources:
     courses:
       overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
       data:
-      - title: "XRPL Hackathon: New Year, New NFTs"
-        author: Patrick Collins
-        image: /demo/learn.jpg
-        level: Intermediate
-        href: '#'
-        description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+      - title: "How to Build and Deploy a Solana Smart Contract"
+        author: Chainlink
+        image: https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5fa2e075cfcf344baa0e9063_chainlink-open-graph-images_home%20(with%20illustration).png
+        level: Easy
+        href: 'https://blog.chain.link/how-to-build-and-deploy-a-solana-smart-contract/'
+        description: If you want to learn how to develop Solana smart contracts and programs, then you've come to the right place. 
 
-      - title: "Complete DApp - Solidity & React - Blockchain Development"
-        author: Patrick Collins
-        image: /demo/learn.jpg
-        level: Intermediate
-        href: '#'
-        description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+      - title: "Solana Tutorial | Building Smart Contracts & dApps"
+        author: James Bachini
+        image: https://i.ytimg.com/vi/qNIhClYDjR8/hqdefault.jpg
+        level: Easy
+        href: https://jamesbachini.com/solana-tutorial/#getting-started-with-solana
+        description: a step by step process of setting up a development environment for Solana, writing and deploying smart contracts
 
-      - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
-        author: Patrick Collins
-        image: /demo/learn.jpg
-        level: Intermediate
-        href: '#'
-        description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+      - title: An Introduction to Building on the Solana Network
+        author: Kelvin Kirima
+        image: https://hackernoon.com/_next/image?url=https%3A%2F%2Fcdn.hackernoon.com%2Fimages%2FxJq6KzZlkHOHXwVsDaxTQRCkHG92-zw028fz.png&w=3840&q=75
+        level: Easy
+        href: https://hackernoon.com/an-introduction-to-building-on-the-solana-network
+        description: This tutorial will take you from zero to one in building on the Solana network.
 
 
     tutorials:
       overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
       data:
-      - title: "XRPL Hackathon: New Year, New NFTs"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+      - title: Create Solana dApp from Scratch
+        author: Lorisleiva
+        href: https://lorisleiva.com/create-a-solana-dapp-from-scratch
+        description: In this series, we'll implement a simplified version of Twitter as a Solana dApp (decentralised application). We'll write our own program and use it in a custom VueJS app.
 
-      - title: "Complete DApp - Solidity & React - Blockchain Development"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+      - title: Create Your Own Token and NFT on Solana
+        author: ZappyCode
+        href: https://zappycode.com/tutorials/create-your-own-token-and-nft-on-solana
+        description: A beginner friendly guide to making your own tokens and NFTs on Solana
 
-      - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+      - title: Start on Solana
+        author: startonsolana.com
+        href: https://www.startonsolana.com/
+        description: Learn how to build on the world's fastest blockchain and start contributing to ecosystem projects right away!
 
-      - title: "Full Modern React Tutorial"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+      - title: "The Complete Guide to Full Stack Solana Development with React, Anchor, Rust, and Phantom"
+        author: Nader Dabit
+        date: 2021-09-15
+        href: https://dev.to/edge-and-node/the-complete-guide-to-full-stack-solana-development-with-react-anchor-rust-and-phantom-3291
+        description: Building Full Stack dapps with React, Solana, Anchor, and Phantom wallet.
 
 
 
@@ -119,52 +114,49 @@ resources:
     courses:
       overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
       data:
-      - title: "XRPL Hackathon: New Year, New NFTs"
-        author: Patrick Collins
-        image: /demo/learn.jpg
-        level: Intermediate
-        href: '#'
-        description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+      - title: Terra Development Basics
+        author: Terra Bites
+        image: https://i.ytimg.com/vi/BXHU5kLVlY8/hqdefault.jpg
+        level: Easy
+        href: https://youtube.com/playlist?list=PL-1j57N4qfImfGH_WpOyZdLr1xDpNJdWS
+        description: We walk you through getting your development environment set up and explore how to build Terra smart contracts and front ends.
 
-      - title: "Complete DApp - Solidity & React - Blockchain Development"
-        author: Patrick Collins
-        image: /demo/learn.jpg
-        level: Intermediate
-        href: '#'
+      - title: "CosmWasm Contracts"
+        author: Terra Academy
+        image: https://import.cdn.thinkific.com/526184%2Fcustom_site_themes%2Fid%2FyQ41rv6vTAqFIX0qwhn7_cosmwasm%20hero.png?width=1920
+        level: Easy
+        href: https://academy.terra.money/
         description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
 
-      - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
-        author: Patrick Collins
-        image: /demo/learn.jpg
-        level: Intermediate
-        href: '#'
-        description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+      - title: Write your first Terra smart contract
+        author: Figment Learn
+        image: https://global-uploads.webflow.com/61112eff0f3a419ae57a77d8/6194a1fc1d34aa71fc4d78b8_Screen%20Shot%202021-11-17%20at%201.30.45%20AM.png
+        level: Easy
+        href: https://learn.figment.io/tutorials/write-your-first-terra-smart-contract
+        description: Learn how to write a Terra smart contract
 
 
     tutorials:
       overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
       data:
-      - title: "XRPL Hackathon: New Year, New NFTs"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+      - title: "Terra Basics: Luna"
+        author: Learn Terra
+        href: https://learnterra.io/luna/
+        description: Luna is the native stalking token of the Terra network and is the foundational asset for the entire ecosystem.
 
-      - title: "Complete DApp - Solidity & React - Blockchain Development"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+      - title: Interacting with a Terra smart contract
+        author: Figment Learn
+        href: https://learn.figment.io/tutorials/interacting-with-a-terra-smart-contract
+        description: Learn how to interact with your own Terra smart contracts
 
-      - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+      - title: "Terra DeFi for Beginners: Join the Financial Revolution"
+        author: Shano Collantes
+        href: https://www.udemy.com/course/terra-defi-for-beginners-join-the-financial-revolution/
+        description: Terra DeFi offers some of the best rates of return
 
-      - title: "Full Modern React Tutorial"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+      - title: Terra Luna - Python Guide
+        author: Igor Radovanovic
+        date: 2022-03-07
+        href: https://algotrading101.com/learn/terra-luna-python-guide/
+        description: A detailed guide on interacting with the Terra blockchain with Python
 

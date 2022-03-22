@@ -53,12 +53,22 @@
   max-width: var(--xl);
   margin: 0 auto;
 }
-.logoContainer {
-  width: 5.125rem;
-  height: 5.125rem;
-  padding: 0.4375rem;
-  position: relative;
-  overflow: hidden;
+
+.logo {
+  width: 5.5rem;
+  height: 5.5rem;
+  object-fit: contain;
+}
+
+.commingSoon {
+  color: var(--neural-700-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 50vh;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
