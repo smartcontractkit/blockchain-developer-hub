@@ -11,11 +11,11 @@ import TutorialCard from '@/components/TutorialCard';
 function HomeExplore() {
   const courses = learnData.resources.map((resource) => resource.courses.data);
   const coursesArray = [].concat(...courses);
-  const randomCourses = getRandomItemsFromArray(coursesArray, 4);
+  const randomCourses = getRandomItemsFromArray(coursesArray, 2);
 
   const tutorials = learnData.resources.map((resource) => resource.tutorials.data);
   const tutorialsArray = [].concat(...tutorials);
-  const randomTutorials = getRandomItemsFromArray(tutorialsArray, 4);
+  const randomTutorials = getRandomItemsFromArray(tutorialsArray, 3);
 
   return (
     <section className={styles.container}>
