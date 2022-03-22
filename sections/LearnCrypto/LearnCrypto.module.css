@@ -53,13 +53,14 @@
   max-width: var(--xl);
   margin: 0 auto;
 }
-.logoContainer {
-  width: 5.125rem;
-  height: 5.125rem;
-  padding: 0.4375rem;
-  position: relative;
-  overflow: hidden;
+
+.logo {
+  width: 5.5rem;
+  height: 5.5rem;
+  object-fit: contain;
 }
+
+
 
 @media (min-width: 768px) {
   .cards {

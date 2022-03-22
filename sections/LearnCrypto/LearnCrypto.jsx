@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import Image from 'next/image';
-
 import Card from '@/components/Card';
 import TutorialCard from '@/components/TutorialCard';
 import styles from './LearnCrypto.module.css';
@@ -18,9 +16,7 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
           <div>
             <h1>{name}</h1>
           </div>
-          <div className={styles.logoContainer}>
-            <Image src={logo} alt={logoAlt} layout="fill" objectFit="contain" />
-          </div>
+          <img src={logo} alt={logoAlt} className={styles.logo} />
         </div>
       </div>
 
