@@ -1,15 +1,19 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import styles from './LearnHero.module.css';
 import Svg from '@/components/Svg';
 import clsx from 'clsx';
 import data from '@/data/learn.yaml';
 
 function LearnHero() {
+  const router = useRouter();
   const titleClasses = clsx('h-500', styles.title);
   const descriptionClasses = clsx('body-long-01', styles.description);
   const dividerClasses = clsx('caption', styles.divider);
   const linkClasses = clsx('btn', styles.link);
   const blockchains = data.resources.map(({ id, name, logo }) => ({ id, name, logo }));
+
+  const scrollIntoView = (id) => router.push(`/learn#${id}`);
 
   return (
     <div className={styles.container}>
@@ -23,7 +27,7 @@ function LearnHero() {
       <div className={dividerClasses}>Select a blockchain to get started</div>
       <div className={styles.blockchainsContainer}>
         {blockchains.map(({ id, name, logo }) => (
-          <div className={styles.blockchainCard} key={id}>
+          <div onClick={() => scrollIntoView(id)} className={styles.blockchainCard} key={id}>
             <Image src={logo} alt={name} width={144} height={144} objectFit="contain" />
             <a href={`#${id}`} className={linkClasses}>
               {name}
