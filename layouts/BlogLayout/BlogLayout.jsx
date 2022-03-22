@@ -24,7 +24,9 @@ function BlogLayout({ children, pages }) {
           </>
         )}
       </div>
-      <div className={styles.content}>{children}</div>
+      <div className={styles.content_wrapper}>
+        <div className={styles.content}>{children}</div>
+      </div>
       <div className={styles.rightSidebar}></div>
     </div>
   );
