@@ -28,6 +28,12 @@ const links = [
 
 export default function NavBar() {
   const { pathname } = useRouter();
+  const isActive = (path, to) => {
+    if (path.split('/')[1] === to.split('/')[1]) {
+      return true;
+    }
+    return false;
+  };
   return (
     <nav className={styles.nav}>
       <div className={styles.container}>
@@ -39,7 +45,7 @@ export default function NavBar() {
           <ul className={styles.nav_links}>
             {links.map((res, index) => (
               <li key={index}>
-                <NavLink text={res.text} to={res.to} type="link" active={pathname === res.to} />
+                <NavLink text={res.text} to={res.to} type="link" active={isActive(pathname, res.to)} />
               </li>
             ))}
           </ul>
