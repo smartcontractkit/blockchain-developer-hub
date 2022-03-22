@@ -1,23 +1,14 @@
-import NavLink from '@/components/NavLink';
+import ExploreMapBanner from '@/components/ExploreMapBanner';
 import styles from '@/styles/pages/EcosystemMap.module.css';
 
 function EcosystemMap() {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1>The Smart Contract Ecosystem Map</h1>
-        <p>
-          The ecosystem tools map outlines the entire smart contract developer ecosystem, and all of the tools and
-          products smart contract developers may need to rely on.
-        </p>
-        <NavLink
-          to="https://smartcontractecosystem.com/"
-          type="primary"
-          text="Explore Map"
-          iconPosition="right"
-          icon="map-pointer.svg"
-          target="_blank"
-          rel="noopener noreferrer"
+        <ExploreMapBanner
+          title="The Smart Contract Ecosystem Map"
+          description="The ecosystem tools map outlines the entire smart contract developer ecosystem, and all of the tools andproducts smart contract developers may need to rely on."
+          isHomePage={false}
         />
       </div>
     </section>

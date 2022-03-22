@@ -7,25 +7,6 @@
   padding-inline: 1rem;
 }
 
-.content h1,
-.content p {
-  text-align: center;
-  letter-spacing: -0.02em;
-}
-
-.content h1 {
-  font-weight: bold;
-  font-size: 3.25rem;
-  line-height: 111%;
-  color: var(--neural-950-color);
-}
-
-.content p {
-  font-size: 1.125rem;
-  line-height: 147%;
-  color: var(--neural-800-color);
-  margin: 2rem auto;
-}
 .content > * {
   margin-inline: auto;
 }
