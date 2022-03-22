@@ -1,6 +1,6 @@
 categories:
   - name: Hackathon
-    href: '#'
+    href: '/build#hackathon'
     overview: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
     items:
     - title: "XRPL Hackathon: New Year, New NFTs"
@@ -59,7 +59,7 @@ categories:
 
 
   - name: Workshop
-    href: '#'
+    href: '/build#workshop'
     overview: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
     items:
     - title: "XRPL Hackathon: New Year, New NFTs"

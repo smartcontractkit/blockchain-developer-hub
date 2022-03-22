@@ -2,9 +2,11 @@
   width: 100%;
   min-height: 74px;
   background-color: var(--neural-50-color);
+  border: 1px solid var(--neural-50-color);
   padding: 1rem;
   border-radius: 0.75rem;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .tut_card_content {
@@ -14,6 +16,11 @@
 .tur_card_heading {
   margin-top: 0;
   color: var(--black-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.tur_card_heading:hover {
+  color: var(--tertiary-600-color);
 }
 
 .tur_card_author_date {
@@ -31,4 +38,10 @@
 
 .tut_card_gray {
   background-color: var(--neural-100-color);
+  border: 1px solid var(--neural-100-color);
+}
+
+.tut_card:hover {
+  border: 1px solid var(--tertiary-400-color);
+  background-color: var(--white-color);
 }

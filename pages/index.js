@@ -16,7 +16,7 @@ export default function Home() {
         title="Get to know the development cycle"
         overview="The ecosystem tools map outlines the entire smart contract developer ecosystem, and all of the tools and products smart contract developers may need to rely on."
         linkText="Explore Map"
-        link="/"
+        link="https://smartcontractecosystem.com/"
       />
       <div className={styles.sectionholder}></div>
       <HomePageImproveSkillsStories />
