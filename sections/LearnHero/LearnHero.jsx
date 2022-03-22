@@ -23,13 +23,13 @@ function LearnHero() {
       <div className={dividerClasses}>Select a blockchain to get started</div>
       <div className={styles.blockchainsContainer}>
         {blockchains.map(({ id, name, logo }) => (
-          <div className={styles.blockchainCard} key={id}>
+          <a href={`#${id}`} className={styles.blockchainCard} key={id}>
             <Image src={logo} alt={name} width={144} height={144} objectFit="contain" />
-            <a href={`#${id}`} className={linkClasses}>
+            <span className={linkClasses}>
               {name}
               <Svg height="20" width="20" href="/icons/arrow-right-blue.svg" />
-            </a>
-          </div>
+            </span>
+          </a>
         ))}
       </div>
     </div>
