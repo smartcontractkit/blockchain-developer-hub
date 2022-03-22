@@ -12,47 +12,45 @@ resources:
         href: https://docs.chain.link/docs/deploy-your-first-contract/
         description: You can write your first smart contract and run it in your browser without any knowledge about Ethereum or blockchains.
 
-      - title: "Complete DApp - Solidity & React - Blockchain Development"
-        author: Patrick Collins
-        image: /demo/learn.jpg
-        level: Intermediate
-        href: '#'
-        description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+      - title: "Hello World smart contract for beginners"
+        author: Ethereum
+        image: https://ethereum.org/static/bf78b49d7e23b88a7eea934225b0cf96/1548e/enterprise-eth.png 
+        level: Easy
+        href: 'https://ethereum.org/en/developers/tutorials/hello-world-smart-contract/'
+        description: If you are new to blockchain development and don't know where to start, or if you just want to understand how to deploy and interact with smart contracts
 
-      - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
-        author: Patrick Collins
-        image: /demo/learn.jpg
-        level: Intermediate
-        href: '#'
-        description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+      - title: "Learn to Code Blockchain DApps By Building Simple Games"
+        author: CrazyZombies
+        image: https://cryptozombies.io/course/static/image/preview-zombie.png
+        level: Easy
+        href: 'https://cryptozombies.io/'
+        description: an interactive school that teaches you all things technical about blockchains.
 
 
     tutorials:
       overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
       data:
-      - title: "XRPL Hackathon: New Year, New NFTs"
+      - title: "How To Create NFTs With Solidity"
         author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+        date: 2021-03-02
+        href: 'https://betterprogramming.pub/how-to-create-nfts-with-solidity-4fa1398eb70a'
+        description: A glorious guide to building and creating NFTs, the ERC-721 standard for creating collectibles, art, and any type of unique asset on-chain.
 
-      - title: "Complete DApp - Solidity & React - Blockchain Development"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
+      - title: "Ethereum Developer Onboarding"
+        author: ConsenSys
+        href: 'https://consensys.net/developers/onboarding-step-1/'
+        description: In step 1 of our 3-step Ethereum developer onboarding, you'll get set up with MetaMask, connect to a testnet, and send your first transaction on the Ethereum blockchain.
 
-      - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
+      - title: "Chainlink Academy"
+        author: Chainlink
+        href: 'https://www.chainlink.education/'
+        description: Learn to program with Chainlink Academy. Chainlink's decentralized oracle network provides reliable, tamper-proof inputs and outputs for complex smart contracts on any blockchain.
 
-      - title: "Full Modern React Tutorial"
-        author: Patrick Collins
-        date: 2022-02-12
-        href: '#'
-        description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+      - title: "Solidity, Blockchain, and Smart Contract Course - Beginner to Expert Python Tutorial"
+        author: Freecodecamp
+        date: 2021-09-09
+        href: 'https://www.freecodecamp.org/news/learn-solidity-blockchain-and-smart-contracts-in-a-free/'
+        description: This course will give you a full introduction into all of the core concepts in blockchain, smart contracts, solidity, NFTs/ERC721s, ERC20s, Coding Decentralized Finance (DeFi), python and solidity, Chainlink, Ethereum, upgradable smart contracts, and full stack blockchain development.
 
 
 
