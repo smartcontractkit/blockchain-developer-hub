@@ -6,7 +6,7 @@ author_image: /demo/profile.jpeg
 author_role: Software Engineer at Chainlink
 
 sidebar_title: Blockchain
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 A smart contract is a tamper-proof program that runs on a blockchain network when certain predefined conditions are
