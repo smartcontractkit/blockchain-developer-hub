@@ -9,13 +9,13 @@ function BlogLayout({ children, pages }) {
   const router = useRouter();
   const { slug } = router.query;
 
-  const sortedPages = pages.sort((a, b) => a.data.sidebar_position - b.data.sidebar_position);
+  const sortedPages = pages?.sort((a, b) => a.data.sidebar_position - b.data.sidebar_position);
 
-  const current_sidebar_position = pages.find((page) => page.slug === slug).data.sidebar_position;
+  const current_sidebar_position = pages?.find((page) => page.slug === slug).data.sidebar_position;
 
-  const prev_page = sortedPages.find((page) => page.data.sidebar_position === current_sidebar_position - 1);
+  const prev_page = sortedPages?.find((page) => page.data.sidebar_position === current_sidebar_position - 1);
 
-  const next_page = sortedPages.find((page) => page.data.sidebar_position === current_sidebar_position + 1);
+  const next_page = sortedPages?.find((page) => page.data.sidebar_position === current_sidebar_position + 1);
 
   return (
     <div className={styles.container}>
