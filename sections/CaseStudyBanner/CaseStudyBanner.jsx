@@ -20,9 +20,7 @@ export default function CaseStudyBanner() {
           <div className={styles.actions}>
             <NavLink to={'#'} target="_blank" rel="noopener noreferrer" type="primary" text={'Learn more'} />
             <NavLink
-              to={'#'}
-              target="_blank"
-              rel="noopener noreferrer"
+              to={'/build#casestudies'}
               type="secondary"
               text={'All case studies'}
               iconPosition="left"
