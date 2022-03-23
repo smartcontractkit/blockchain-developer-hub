@@ -28,7 +28,7 @@
   background: var(--tertiary-700-color);
 }
 
-.primary:hover {
+.primary:hover, .secondary:hover, .outline:hover {
   filter: brightness(1.1);
 }
 
