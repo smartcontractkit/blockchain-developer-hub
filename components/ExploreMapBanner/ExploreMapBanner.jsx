@@ -12,15 +12,28 @@ export default function ExploreMapBanner({ isHomePage, title, description }) {
     <div className={styles.container}>
       {isHomePage ? <h2 className={titleClasses}>{title}</h2> : <h1 className={titleClasses}>{title}</h1>}
       <p className={descriptionClasses}>{description}</p>
-      <NavLink
-        to={'https://smartcontractecosystem.com/'}
-        target="_blank"
-        rel="noopener noreferrer"
-        type="primary"
-        text={'Explore Map'}
-        iconPosition="right"
-        icon="map-pointer.svg"
-      />
+      <div className={styles.btns}>
+        <NavLink
+          to={'https://smartcontractecosystem.com/'}
+          target="_blank"
+          rel="noopener noreferrer"
+          type="primary"
+          text={'Explore Map'}
+          iconPosition="right"
+          icon="map-pointer.svg"
+        />
+        {!isHomePage && (
+          <NavLink
+            to={'https://developer-roadmap-1.vercel.app/blockchain'}
+            target="_blank"
+            rel="noopener noreferrer"
+            type="outline"
+            text={'Roadmap'}
+            iconPosition="right"
+            icon="map.svg"
+          />
+        )}
+      </div>
     </div>
   );
 }
