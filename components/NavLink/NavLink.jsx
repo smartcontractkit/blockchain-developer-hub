@@ -24,7 +24,7 @@ export default function NavLink({ to, type, icon, iconPosition, text, active, ..
 NavLink.propTypes = {
   to: PropTypes.string.isRequired,
   active: PropTypes.bool,
-  type: PropTypes.oneOf(['primary', 'seconday', 'outline', 'link']).isRequired,
+  type: PropTypes.oneOf(['primary', 'secondary', 'outline', 'link']).isRequired,
   icon: PropTypes.string,
   iconPosition: PropTypes.oneOf(['left', 'right']),
   text: PropTypes.string.isRequired,

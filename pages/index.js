@@ -1,10 +1,9 @@
+import CaseStudyBanner from '@/sections/CaseStudyBanner';
 import HomeExplore from '@/sections/HomeExplore';
 import HomePageBanner from '@/sections/HomePageBanner';
 import HomepageChainlink101 from '@/sections/HomePageChainlink101';
 import HomePageImproveSkillsStories from '@/sections/HomePageImproveSkills';
 import HomePageLifecycleBanner from '@/sections/HomePageLifecycleBanner';
-
-import styles from '@/styles/pages/HomePage.module.css';
 
 export default function Home() {
   return (
@@ -18,7 +17,7 @@ export default function Home() {
         linkText="Explore Map"
         link="https://smartcontractecosystem.com/"
       />
-      <div className={styles.sectionholder}></div>
+      <CaseStudyBanner />
       <HomePageImproveSkillsStories />
     </div>
   );
