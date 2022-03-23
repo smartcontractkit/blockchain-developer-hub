@@ -13,6 +13,7 @@ function Card({
   href,
   online,
   location,
+  on_demand,
   start_date,
   end_date,
   prize,
@@ -60,13 +61,15 @@ function Card({
           )}
 
           {/* If date exist */}
-          {end_date && start_date && (
+          {end_date && start_date ? (
             <span>
               <Svg height="20" width="20" href="/icons/calender.svg" />
               {dayjs(start_date).format('MMM D')}
               &nbsp; - &nbsp;
               {dayjs(end_date).format('MMM D, YYYY')}
             </span>
+          ) : (
+            <span>{on_demand}</span>
           )}
         </div>
       </div>
@@ -82,6 +85,7 @@ Card.propTypes = {
   image: PropTypes.string,
   online: PropTypes.bool,
   location: PropTypes.string,
+  on_demand: PropTypes.string,
   start_date: PropTypes.string,
   end_date: PropTypes.string,
   prize: PropTypes.string,
