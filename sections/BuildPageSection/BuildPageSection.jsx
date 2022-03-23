@@ -14,14 +14,14 @@ function BuildPageSection({ name, overview, items }) {
       {overview && <p className={overviewClasses}>{overview}</p>}
       <div className={styles.cards}>
         {items.map(
-          ({ title, prize, image, description, location, online, on_demand, start_date, end_date, href }, index) => (
+          ({ title, prize, image, description, location, online, onDemand, start_date, end_date, href }, index) => (
             <Card
               title={title}
               prize={prize}
               description={description}
               location={location}
               online={online}
-              on_demand={on_demand}
+              onDemand={onDemand}
               start_date={start_date}
               end_date={end_date}
               href={href}

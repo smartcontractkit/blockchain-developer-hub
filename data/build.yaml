@@ -73,13 +73,13 @@ categories:
       description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
       online: true
       href: 'https://www.udemy.com/course/blockchain-developer/'
-      on_demand: On demand
+      onDemand: true
 
     - title: "Smart Contract Developer Bootcamp 2021"
       description: Learn how to write smart contracts in Solidity, and connect them to real-world data in pre-recorded, instructor-led sessions with Chainlink Developer Advocates.
       online: true
       href: 'https://chain.link/bootcamp/bootcamp-2021-on-demand'
-      on_demand: On demand
+      onDemand: true
   
   - name: Case Studies
     href: '/build#casestudy'
