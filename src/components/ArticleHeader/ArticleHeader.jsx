@@ -36,9 +36,9 @@ function ArticleHeader({ datetime, title, image, author, role }) {
 ArticleHeader.propTypes = {
   datetime: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  role: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  author: PropTypes.string,
+  role: PropTypes.string,
+  image: PropTypes.string,
 };
 
 export default ArticleHeader;
