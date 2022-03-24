@@ -13,11 +13,11 @@ function LearnHero() {
 
   return (
     <div className={styles.container}>
-      <h1 className={titleClasses}>Learn how to code smart contracts.</h1>
+      <h1 className={titleClasses}>Learn how to create smart contracts.</h1>
 
       <p className={descriptionClasses}>
         Smart contracts are digital contracts stored on a blockchain that are automatically executed when predetermined
-        terms and conditions are met
+        conditions are met
       </p>
 
       <div className={dividerClasses}>Select a blockchain to get started</div>
