@@ -15,10 +15,8 @@ function HomepageChainlink101() {
       <QuoteCard cards={cardItems} textDirection="right">
         <div className={styles.quote_wrapper}>
           <Svg height="30" width="20" href="/icons/quote.svg" />
-          <p className={quoteClasses}>
-            Demand for Smart Contract development skills is projected to grow 122 % over the next 5 years.
-          </p>
-          <small className={labelClasses}>Chainlink</small>
+          <p className={quoteClasses}>Blockchain skills are rated in the first place in fastest-growing skills of 2020 with an increase of 6000%</p>
+          <small className={labelClasses}>blockchainjobs.com</small>
         </div>
       </QuoteCard>
     </div>

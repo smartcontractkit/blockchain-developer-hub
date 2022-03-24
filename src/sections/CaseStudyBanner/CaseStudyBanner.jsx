@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import clsx from 'clsx';
 import NavLink from '@/components/NavLink';
 import styles from './CaseStudyBanner.module.css';
@@ -7,18 +6,29 @@ export default function CaseStudyBanner() {
   return (
     <div className={styles.container}>
       <div className={styles.content_wrapper}>
-        <div className={styles.image}>
-          <Image src={'/demo/casestudy.png'} alt={'Case study Banner image'} layout="fill" objectFit="cover" />
-        </div>
+        <img
+          src="https://cdn.consensys.net/uploads/2021/09/16181652/damien-1.7923f061-958x460.png"
+          alt="Case study Banner image"
+          className={styles.image}
+        />
+
         <div className={styles.info}>
-          <span className={clsx('caption', styles.subtitle)}>Gaming</span>
-          <h3 className={clsx('h-300', styles.title)}>Check how Horizon Games utilizing power of blockchain</h3>
+          <span className={clsx('caption', styles.subtitle)}>NFTs</span>
+          <h3 className={clsx('h-300', styles.title)}>
+            The Currency: Engineering a seamless experience to allocate, mint, and distribute the NFTs
+          </h3>
           <p className={clsx('body-long-01', styles.overview)}>
-            Horizon Games partnered with Infura to battle-test SkyWeaver’s gaming system in order to ensure robust
-            functionality and facilitate widespread adoption.
+            32,492 Collectors from over 130 countries applied to purchase 67,023 NFTs of &apos;The Currency&apos;,
+            Damien Hirst&apos;s first NFT collection.
           </p>
           <div className={styles.actions}>
-            <NavLink to={'#'} target="_blank" rel="noopener noreferrer" type="primary" text={'Learn more'} />
+            <NavLink
+              to="https://consensys.net/blog/nft/over-32000-users-from-130-countries-applied-to-purchase-damien-hirsts-nfts-on-the-palm-network/"
+              target="_blank"
+              rel="noopener noreferrer"
+              type="primary"
+              text={'Learn more'}
+            />
             <NavLink
               to={'/build#casestudies'}
               type="secondary"

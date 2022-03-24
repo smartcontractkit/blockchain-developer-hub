@@ -124,7 +124,7 @@
 
 @media (min-width: 1200px) {
   .banner_left > div {
-    margin-right: 2.5rem;
+    margin-right: 1rem;
   }
 
   .title {
@@ -133,11 +133,6 @@
 }
 
 @media (min-width: 1280px) {
-
-.banner_left > div {
-  margin-right: 5rem;
-}
-
   .imageContainer:before {
     left: 7.5rem;
   }
@@ -145,16 +140,12 @@
 }
 
 @media (min-width: 1380px) {
-
-  .banner_left > div {
-    margin-right: 7rem;
-  }
-
   .imageContainer:before {
     left: 9.5rem;
   }
 
 }
+
 @media (min-width: 1476px) {
   .imageContainer:before {
     left: 7rem;
@@ -163,8 +154,4 @@
   .image {
     margin-left: 4.1875rem;
   }
-
-   .banner_left > div {
-     margin-right: 7rem;
-    }
 }
