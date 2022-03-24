@@ -1,6 +1,6 @@
 items:
-  - title: Intorduction to Blockchain
+  - title: Why Blockhain?
     href: 'blockchain101/blockchain'
 
-  - title: Intorduction to Smart Contracts
+  - title: Intro to Smart Contracts
     href: 'blockchain101/smart-contracts'
