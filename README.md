@@ -1,5 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DevHub
+
+Your roadmap to start web3 and blockchain development is here.
+
+## Contribute to the content
+
+All of the content files are located in `./data` folder
+
+- Add new blockchain learning material to the `./data/learn.yaml`
+- Add new build material to the `./data/build.yaml`
+- Add new articles as markdown files to the `./data/pages` folder
+
+## Contribute to the website
+
+All the source code is located in `./src` folder
+
+- Add new components to the `./src/components` folder
+- Add new pages to the `./src/pages` folder
+- Add new styles to the `./src/styles` folder
+- Add new sections to the `./src/sections` folder
+- Add new layouts to the `./src/layouts` folder
 
 ## Getting Started
 

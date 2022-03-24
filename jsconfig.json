@@ -2,13 +2,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/layouts/*": ["layouts/*"],
-      "@/components/*": ["components/*"],
+      "@/layouts/*": ["src/layouts/*"],
+      "@/components/*": ["src/components/*"],
       "@/data/*": ["data/*"],
-      "@/sections/*": ["sections/*"],
-      "@/pages/*": ["pages/*"],
-      "@/helpers/*": ["helpers/*"],
-      "@/styles/*": ["styles/*"]
+      "@/sections/*": ["src/sections/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/helpers/*": ["src/helpers/*"],
+      "@/styles/*": ["src/styles/*"]
     }
   }
 }
