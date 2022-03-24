@@ -1,3 +1,4 @@
+import React from 'react';
 import CardWithArrow from '@/components/CardWithArrow';
 import buildData from '@/data/build.yaml';
 import styles from './HomePageImproveSkills.module.css';
@@ -14,11 +15,11 @@ function HomePageImproveSkills() {
       </div>
       <div className={styles.categories}>
         {buildData.categories.map((category, index) => (
-          <>
+          <React.Fragment key={index}>
             {data.indexOf(category.name) > -1 && (
               <CardWithArrow key={index} href={category.href} title={category.name} description={category.overview} />
             )}
-          </>
+          </React.Fragment>
         ))}
       </div>
     </section>
