@@ -1,5 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DevHub
+
+Your roadmap to start web3 and blockchain development is here.
+
+## Contribute to the content
+
+All of the content files are located in `./data` folder
+
+- Add new blockchain learning material to the `./data/learn.yaml`
+- Add new build material to the `./data/build.yaml`
+- Add new articles as markdown files to the `./data/pages` folder
+
+## Contribute to the website
+
+All the source code is located in `./src` folder
+
+- Add new components to the `./src/components` folder
+- Add new pages to the `./src/pages` folder
+- Add new styles to the `./src/styles` folder
+- Add new sections to the `./src/sections` folder
+- Add new layouts to the `./src/layouts` folder
 
 ## Getting Started
 
@@ -13,13 +32,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as
-[API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+You can start editing the page by modifying `src/pages/index.js`. The page auto-updates as you edit the file.
 
 ## Learn More
 
