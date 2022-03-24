@@ -13,7 +13,7 @@ function Card({
   href,
   online,
   location,
-  onDemand,
+  on_demand,
   start_date,
   end_date,
   prize,
@@ -62,7 +62,7 @@ function Card({
           )}
 
           {/* If date exist and ensure both date and u=on demand don't exist at the same time */}
-          {hasDate && !onDemand && (
+          {hasDate && !on_demand && (
             <span>
               <Svg height="20" width="20" href="/icons/calender.svg" />
               {dayjs(start_date).format('MMM D')}
@@ -70,7 +70,7 @@ function Card({
               {dayjs(end_date).format('MMM D, YYYY')}
             </span>
           )}
-          {onDemand && !hasDate && <span>{'On Demand'}</span>}
+          {on_demand && !hasDate && <span>{'On Demand'}</span>}
         </div>
       </div>
     </a>
@@ -85,7 +85,7 @@ Card.propTypes = {
   image: PropTypes.string,
   online: PropTypes.bool,
   location: PropTypes.string,
-  onDemand: PropTypes.bool,
+  on_demand: PropTypes.bool,
   start_date: PropTypes.string,
   end_date: PropTypes.string,
   prize: PropTypes.string,
