@@ -9,6 +9,7 @@ function ArticleHeader({ datetime, title, image, author, role }) {
   const authorNameClasses = clsx('body-short-01--bold', styles.author__name);
   const authorRoleClasses = clsx('body-short-02', styles.author__role);
   const titleClasses = clsx('h-400', styles.title);
+  const hasAuthorInfo = author && image && role;
 
   return (
     <section className={styles.container}>
@@ -17,15 +18,17 @@ function ArticleHeader({ datetime, title, image, author, role }) {
       </span>
       <h1 className={titleClasses}>{title}</h1>
 
-      <div className={styles.author}>
-        <div className={styles.author__imageContainer}>
-          <Image src={image} height={50} width={50} alt={`Portrait of ${author}`} />
+      {hasAuthorInfo && (
+        <div className={styles.author}>
+          <div className={styles.author__imageContainer}>
+            <Image src={image} height={50} width={50} alt={`Portrait of ${author}`} />
+          </div>
+          <div>
+            <h2 className={authorNameClasses}>{author}</h2>
+            <small className={authorRoleClasses}>{role}</small>
+          </div>
         </div>
-        <div>
-          <h2 className={authorNameClasses}>{author}</h2>
-          <small className={authorRoleClasses}>{role}</small>
-        </div>
-      </div>
+      )}
     </section>
   );
 }
@@ -33,9 +36,9 @@ function ArticleHeader({ datetime, title, image, author, role }) {
 ArticleHeader.propTypes = {
   datetime: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  role: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  author: PropTypes.string,
+  role: PropTypes.string,
+  image: PropTypes.string,
 };
 
 export default ArticleHeader;

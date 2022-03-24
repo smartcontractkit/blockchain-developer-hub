@@ -1,9 +1,6 @@
 ---
 title: Smart Contracts
 date: '2020-01-01'
-author: James May
-author_image: /demo/profile.jpeg
-author_role: Software Engineer at Chainlink
 
 sidebar_title: Blockchain
 sidebar_position: 2
