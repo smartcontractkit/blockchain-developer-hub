@@ -13,6 +13,7 @@ function Card({
   href,
   online,
   location,
+  on_demand,
   start_date,
   end_date,
   prize,
@@ -25,6 +26,7 @@ function Card({
   const levelClasses = clsx('caption', styles.level);
   const prizeClasses = clsx('caption', styles.prize);
   const footerClasses = clsx('caption', styles.footer);
+  const hasDate = end_date && start_date;
 
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
@@ -59,8 +61,8 @@ function Card({
             </span>
           )}
 
-          {/* If date exist */}
-          {end_date && start_date && (
+          {/* If date exist and ensure both date and u=on demand don't exist at the same time */}
+          {hasDate && !on_demand && (
             <span>
               <Svg height="20" width="20" href="/icons/calender.svg" />
               {dayjs(start_date).format('MMM D')}
@@ -68,6 +70,7 @@ function Card({
               {dayjs(end_date).format('MMM D, YYYY')}
             </span>
           )}
+          {on_demand && !hasDate && <span>{'On Demand'}</span>}
         </div>
       </div>
     </a>
@@ -82,6 +85,7 @@ Card.propTypes = {
   image: PropTypes.string,
   online: PropTypes.bool,
   location: PropTypes.string,
+  on_demand: PropTypes.bool,
   start_date: PropTypes.string,
   end_date: PropTypes.string,
   prize: PropTypes.string,

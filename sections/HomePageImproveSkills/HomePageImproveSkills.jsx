@@ -4,6 +4,8 @@ import styles from './HomePageImproveSkills.module.css';
 import clsx from 'clsx';
 
 function HomePageImproveSkills() {
+  const data = ['Hackathon', 'Workshop'];
+
   return (
     <section className={styles.container}>
       <div>
@@ -12,7 +14,11 @@ function HomePageImproveSkills() {
       </div>
       <div className={styles.categories}>
         {buildData.categories.map((category, index) => (
-          <CardWithArrow key={index} href={category.href} title={category.name} description={category.overview} />
+          <>
+            {data.indexOf(category.name) > -1 && (
+              <CardWithArrow key={index} href={category.href} title={category.name} description={category.overview} />
+            )}
+          </>
         ))}
       </div>
     </section>

@@ -3,109 +3,99 @@ categories:
     href: '/build#hackathon'
     overview: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
     items:
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      prize: $1,000,000
+    - title: "Chainlink Spring Hackathon"
+      description: Join us for the biggest Chainlink hackathon yet. Build the next generation of Web3 applications alongside thousands of developers, creators, artists, and mentors.
+      prize: $300,000
       online: true
-      href: '#'
-      image: /demo/unsplash_8uZPynIu-rQ.png
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-19 15:00'
+      href: 'https://chain.link/hackathon'
+      image: https://assets-global.website-files.com/5f6b7190899f41fb70882d08/622f40480f0959f1eaae81f8_hackathon-spring-2022-hero-block.svg
+      start_date: '2022-04-22'
+      end_date: '2022-05-27'
 
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      prize: $1,000,000
+    - title: "Hedera22: Hello Smart Contracts"
+      description: Build the next game-changing decentralized application with scalable Solidity Smart Contracts on Hedera.
+      prize: $522,500
       online: true
-      href: '#'
-      image: /demo/unsplash_m_7p45JfXQo.png
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-17 16:00'
+      href: 'https://hedera22.devpost.com/'
+      image: https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/864/185/datas/medium.png
+      start_date: '2022-03-31'
+      end_date: '2022-05-16'
 
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      prize: $1,000,000
-      location: Berlin
-      href: '#'
-      image: /demo/unsplash_8uZPynIu-rQ.png
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-19 16:00'
-
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      prize: $1,000,000
-      location: London
-      href: '#'
-      image: /demo/unsplash_m_7p45JfXQo.png
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-17 15:00'
-
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      prize: $1,000,000
+    - title: "MIT Bitcoin Expo 2022 - Breaking Through Hackathon + Pitch Contest"
+      description: Welcoming Hackers, Developers and Entrepreneurs from Around the Globe.
+      prize: $28,000
       online: true
-      href: '#'
-      image: /demo/learn.jpg
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-19 15:00'
+      href: 'https://mitbitcoin.devpost.com/'
+      image: https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/827/146/datas/medium.png
+      start_date: '2022-05-06'
+      end_date: '2022-05-08'
 
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      prize: $1,000,000
+    - title: "DeFi The Conventional"
+      description: Unleash the full potential of decentralized tech.
+      prize: $12,000
       online: true
-      href: '#'
-      image: /demo/unsplash_m_7p45JfXQo.png
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-19 15:00'
+      href: 'https://terrahackathon.com'
+      image: https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/836/591/datas/medium.png
+      start_date: '2022-03-25'
+      end_date: '2022-03-27'
+
+    - title: "ETHAmsterdam"
+      description: A Web3 hackathon for the Web2 world. Join us to build on Web3 for the first time.
+      prize: $TBD
+      location: Amsterdam
+      href: 'https://amsterdam.ethglobal.com/'
+      image: https://cryptoevents.global/wp-content/uploads/eth-amsterdam-2022.jpg
+      start_date: '2022-04-22'
+      end_date: '2022-04-24'
+
+    - title: "Boba, Bundlr & Arweave Hackathon"
+      description: It's Hackathon Season! Our first Hackathon of 2022 Boba Bundlr Arweave $15,000 USD worth of WAGMI Tokens
+      prize: $15,000
+      online: true
+      href: 'https://gitcoin.co/hackathon/bba-hack/onboard'
+      image: https://pbs.twimg.com/media/FOYnmKcUYAEfzen.jpg
+      start_date: '2022-03-30'
+      end_date: '2022-04-13'
 
 
   - name: Workshop
     href: '/build#workshop'
     overview: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
     items:
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+    - title: "Chainlink Solana Bootcamp"
+      description: Learn how to create, deploy, and interact with smart contracts on Solana in live, instructor-led sessions with Chainlink developer advocates.
       online: true
-      href: '#'
-      image: /demo/learn.jpg
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-19 15:00'
+      href: 'https://chain.link/bootcamp/solana-2022'
+      start_date: '2022-03-31'
+      end_date: '2022-04-03'
 
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+    - title: "Ethereum Blockchain Developer Bootcamp With Solidity (2022)"
+      description: Become An Ethereum Blockchain Developer With One Course. Master Solidity, Web3.JS, Truffle, Metamask, Remix & More!
       online: true
-      href: '#'
-      image: /demo/unsplash_tMbQpdguDVQ.png
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-15 16:00'
+      href: 'https://www.udemy.com/course/blockchain-developer/'
+      on_demand: true
 
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      location: Berlin
-      href: '#'
-      image: /demo/unsplash_8uZPynIu-rQ.png
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-19 16:00'
-
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      location: London
-      href: '#'
-      image: /demo/unsplash_tMbQpdguDVQ.png
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-19 6:00'
-
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
+    - title: "Smart Contract Developer Bootcamp 2021"
+      description: Learn how to write smart contracts in Solidity, and connect them to real-world data in pre-recorded, instructor-led sessions with Chainlink Developer Advocates.
       online: true
-      href: '#'
-      image: /demo/learn.jpg
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-19 15:00'
+      href: 'https://chain.link/bootcamp/bootcamp-2021-on-demand'
+      on_demand: true
+  
+  - name: Case Studies
+    href: '/build#casestudy'
+    overview: Learn why and how other developers have used the web to create amazing web experiences for their users.
+    items:
+    - title: "The Currency: Engineering a seamless experience to allocate, mint, and distribute the NFTs"
+      description: 32,492 Collectors from over 130 countries applied to purchase 67,023 NFTs of ‘The Currency,’ Damien Hirst’s first NFT collection.
+      href: 'https://consensys.net/blog/nft/over-32000-users-from-130-countries-applied-to-purchase-damien-hirsts-nfts-on-the-palm-network/'
+      image: 'https://cdn.consensys.net/uploads/2021/09/16181652/damien-1.7923f061-958x460.png'
+    
+    - title: "How Ampleforth Uses Chainlink to Decentralize Its Rebasing Mechanism"
+      description: AMPL is the first rebasing currency and a key DeFi building block for denominating stable contracts. The AMPL protocol adjusts total supply daily based on market conditions, transferring volatility from price to supply.
+      href: 'https://chain.link/case-studies/ampleforth'
+      image: 'https://assets-global.website-files.com/5f6b7190899f41fb70882d08/614d9a8eeba8822d8d60bc20_casestudy-card-aampleforth.png'
 
-    - title: "XRPL Hackathon: New Year, New NFTs"
-      description: Build an app for open source collaboration on maps of problems through crowdsourcing and crowdfunding.
-      online: true
-      href: '#'
-      image: /demo/unsplash_tMbQpdguDVQ.png
-      start_date: '2022-03-19 14:00'
-      end_date: '2022-03-19 15:00'
+    - title: "Blockchain in food supply chain visibility"
+      description: How blockchain has moved beyond cryptocurrencies and is being deployed to enhance visibility and trust in supply chains
+      href: 'https://www.emerald.com/insight/content/doi/10.1108/SCM-08-2019-0300/full/html'
+      image: 'https://www.emeraldgrouppublishing.com/themes/custom/emerald_publishing/assets/svg/emerald-publishing-logo.svg'

@@ -6,27 +6,30 @@ import Card from '@/components/Card';
 function BuildPageSection({ name, overview, items }) {
   const headingClasses = clsx('subtitle-01', styles.headings);
   const overviewClasses = clsx('body-long-02', styles.overview);
-  const id = name.toLowerCase();
+  const id = name.replace(' ', '').toLowerCase();
 
   return (
     <div className={styles.mainContent} id={id}>
       <h1 className={headingClasses}>{name}</h1>
       {overview && <p className={overviewClasses}>{overview}</p>}
       <div className={styles.cards}>
-        {items.map(({ title, prize, image, description, location, online, start_date, end_date, href }, index) => (
-          <Card
-            title={title}
-            prize={prize}
-            description={description}
-            location={location}
-            online={online}
-            start_date={start_date}
-            end_date={end_date}
-            href={href}
-            image={image}
-            key={index}
-          />
-        ))}
+        {items.map(
+          ({ title, prize, image, description, location, online, on_demand, start_date, end_date, href }, index) => (
+            <Card
+              title={title}
+              prize={prize}
+              description={description}
+              location={location}
+              online={online}
+              on_demand={on_demand}
+              start_date={start_date}
+              end_date={end_date}
+              href={href}
+              image={image}
+              key={index}
+            />
+          )
+        )}
       </div>
     </div>
   );
