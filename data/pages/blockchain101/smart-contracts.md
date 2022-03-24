@@ -20,7 +20,7 @@ controlled by a central administrator and are not vulnerable to single points of
 applied to multi-party digital agreements, smart contract applications can reduce counterparty risk, increase
 efficiency, lower costs, and provide new levels of transparency into processes.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZE2HxTmxfrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZE2HxTmxfrI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 ## History of Smart Contracts
 
