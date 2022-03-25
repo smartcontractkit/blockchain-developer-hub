@@ -1,6 +1,5 @@
 ---
 title: Smart Contracts
-date: '2020-01-01'
 
 sidebar_title: Blockchain
 sidebar_position: 2
