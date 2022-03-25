@@ -7,6 +7,7 @@ import ArticleHeader from '@/components/ArticleHeader';
 import mdxStyles from '@/styles/MDX.module.css';
 import getPaths from '@/helpers/getPaths';
 import getPagesInfo from '@/helpers/getPagesInfo';
+import remarkGfm from 'remark-gfm';
 
 function Blockchain({ data, content, pagesInfo }) {
   return (
@@ -42,7 +43,11 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const page = await getPage(`blockchain101/${params.slug}.md`);
-  const mdxSource = await serialize(page.content);
+  const mdxSource = await serialize(page.content, {
+    mdxOptions: {
+      remarkPlugins: [remarkGfm],
+    },
+  });
   const pagesInfo = await getPagesInfo('blockchain101');
   return {
     props: {

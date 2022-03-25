@@ -13,6 +13,7 @@ WithNumber.args = {
   subtitle: '01',
   title: 'Intorduction to Blockchain',
   description: '',
+  href: '#',
 };
 
 export const WithoutNumber = Template.bind({});
@@ -22,4 +23,5 @@ WithoutNumber.args = {
   title: 'Intorduction to Blockchain',
   description:
     'Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.',
+  href: '#',
 };

@@ -1,5 +1,5 @@
 import { RouterContext } from 'next/dist/shared/lib/router-context';
-import '../styles/globals.css';
+import '../src/styles/globals.css';
 import * as NextImage from 'next/image';
 
 const OriginalNextImage = NextImage.default;

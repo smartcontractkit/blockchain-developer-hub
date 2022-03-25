@@ -49,6 +49,14 @@ export default function NavBar() {
               </li>
             ))}
           </ul>
+          <a
+            href="https://github.com/thisdot/blockchain-developer-hub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.githublogo}
+          >
+            <img src="/icons/github-logo.svg" width="24" height="24" alt="github logo" />
+          </a>
         </div>
       </div>
     </nav>

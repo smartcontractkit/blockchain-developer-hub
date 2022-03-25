@@ -13,10 +13,12 @@ const CardWithArrow = ({ title, description, subtitle, href, target }) => {
   return (
     <Link href={href} passHref>
       <a target={target} className={styles.card}>
-        {subtitle && <small className={subtitleClasses}>{subtitle}</small>}
-        <h4 className={titleClasses}>{title}</h4>
-        {description && <p className={descriptionClasses}> {description} </p>}
-        <Svg className={styles.arrow} width="20" height="20" href="/icons/arrow-right.svg" />
+        <div className={styles.card__inner}>
+          {subtitle && <small className={subtitleClasses}>{subtitle}</small>}
+          <h4 className={titleClasses}>{title}</h4>
+          {description && <p className={descriptionClasses}> {description} </p>}
+          <Svg className={styles.arrow} width="20" height="20" href="/icons/arrow-right.svg" />
+        </div>
       </a>
     </Link>
   );

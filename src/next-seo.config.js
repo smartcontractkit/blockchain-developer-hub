@@ -1,5 +1,5 @@
 export default {
-  title: 'ChainLink Developer Hub',
+  title: 'Developer Hub',
   description: 'A short description goes here.',
   openGraph: {
     type: 'website',

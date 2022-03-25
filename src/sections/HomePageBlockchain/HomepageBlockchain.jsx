@@ -1,14 +1,14 @@
 import clsx from 'clsx';
 import QuoteCard from '@/components/QuoteCard';
-import styles from './HomepageChainlink101.module.css';
+import styles from './HomepageBlockchain.module.css';
 import Svg from '@/components/Svg';
-import data from '@/data/homechainlink.yaml';
+import data from '@/data/home.yaml';
 
-function HomepageChainlink101() {
+function HomepageBlockchain() {
   const quoteClasses = clsx('body-short-01--bold', styles.quote);
   const labelClasses = clsx('body-long-01', styles.label);
 
-  const cardItems = data.items;
+  const cardItems = data.hero.featured_articles;
 
   return (
     <div className={styles.container}>
@@ -25,4 +25,4 @@ function HomepageChainlink101() {
   );
 }
 
-export default HomepageChainlink101;
+export default HomepageBlockchain;
