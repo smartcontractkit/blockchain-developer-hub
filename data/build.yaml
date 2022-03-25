@@ -1,6 +1,6 @@
 categories:
-  - name: Hackathon
-    href: '/build#hackathon'
+  - name: Hackathons
+    href: '/build#hackathons'
     overview: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
     items:
     - title: "Chainlink Spring Hackathon"
@@ -58,8 +58,8 @@ categories:
       end_date: '2022-04-13'
 
 
-  - name: Workshop
-    href: '/build#workshop'
+  - name: Workshops
+    href: '/build#workshops'
     overview: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
     items:
     - title: "Chainlink Solana Bootcamp"
