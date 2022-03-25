@@ -41,7 +41,7 @@ function HomePageBanner() {
               </li>
             </ul>
 
-            <NavLink to={'/learn'} type="primary" text="Get Started" icon="map-pointer.svg" />
+            <NavLink to={'/learn'} type="primary" text="Get Started" />
           </div>
         </div>
         <div className={styles.imageContainer}>
