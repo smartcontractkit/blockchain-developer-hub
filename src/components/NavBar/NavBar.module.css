@@ -5,7 +5,8 @@
 .container {
   margin-inline: auto;
   max-width: 1440px;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem;
+  position: relative;
 }
 .nav_contents, .nav_links {
   display: flex;
@@ -43,6 +44,13 @@
 
 .nav_links li:not(:last-child) {
   margin-right: 1rem;
+}
+
+.githublogo {
+  position: absolute;
+  right: 1rem;
+  top: 30%;
+  z-index: 10;
 }
 
 /* Media Query */
