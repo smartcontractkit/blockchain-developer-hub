@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--white-color);
+  background-color: var(--secondary-200-color);
   padding: 0 2rem;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .title_a {
-  color: var(--neural-variant-600-color);
+  color: var(--secondary-600-color);
   font-feature-settings: "calt";
 }
 
@@ -37,7 +37,6 @@
 
 
 .imageContainer {
-  background-color: var(--secondary-200-color);
   flex: 1;
   overflow: hidden;
   position: relative;
@@ -56,7 +55,7 @@
    height: 568px;
    top: 4.375rem;
    width: 412px;
-   background-color: var(--secondary-400-color);
+   background-color: var(--secondary-300-color);
    border-radius: 347.1875rem;
  }
 
