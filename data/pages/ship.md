@@ -1,8 +1,6 @@
 ---
-title: Introduction to blockchain
+title: Shipping your first dApp
 ---
-
-## Shipping your first dApp
 
 By now you are likely to have consumed some of the content from the learn section or maybe even have participated in
 your first hackathon. Participating in workshops is great, but taking the first step towards building your first dApp
