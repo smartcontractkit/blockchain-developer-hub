@@ -8,7 +8,7 @@ By now you are likely to have consumed some of the content from the learn sectio
 
 Why now? The world is slowly realizing the importance and benefits of permissionless data, that is, data that is not owned by a few large players, but rather decentralized and transparent. While it’s still early in the blockchain development world, building applications is the best way we can ensure the community and ecosystem moves forward, and for you to participate in the great innovation of web3.
 
-#### Here are some pointers to keep in mind:
+### Here are some pointers to keep in mind:
 
 * Play to your strengths: If you are particularly skilled in one area, focus on that. For example, if you are backend-focused and don’t have a ton of frontend experience, choose tools that have out-of-box boilerplate templates, such as Moralis. This will help you iterate faster and ship sooner. You can brush up on other skills later.
 
@@ -22,13 +22,95 @@ Before choosing the stack for your project, in addition to your specific strengt
 
 For smart-contract coding, you should choose the language you feel most comfortable with. Use this reference to get started.
 
-| \-                   | EVM Chains                                                                                                                                                                                              | Solana                                                                                                                                                                                                             | Terra                                                                                                                                                                                                                          |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Language             | \[Solidity\](https://docs.soliditylang.org/en/v0.8.13/) (based on javascript)                                                                                                                           | \[Rust\](https://www.rust-lang.org/)<br>\[C\](https://www.iso.org/standard/74528.html)<br>\[C++\](https://isocpp.org/)                                                                                             | \[Rust\](https://www.rust-lang.org/)                                                                                                                                                                                           |
-| Common frameworks    | \[Hardhat\](https://hardhat.org/) (javascript)<br>\[Brownie\](https://eth-brownie.readthedocs.io/en/stable/index.html) (python)                                                                         | \[Anchor\](https://book.anchor-lang.com/)                                                                                                                                                                          | \[Terra.js\](https://terra-money.github.io/terra.js/) (javascript)<br>\[Terra.py\](https://github.com/terra-money/terra.py) (python)<br>\[Cosmos SDK\](https://v1.cosmos.network/sdk)                                          |
-| Storage              | \[IPFS\](https://ipfs.io/)<br>\[AWS\](https://aws.amazon.com/s3/)<br>\[Azure\](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)<br>\[GCP\](https://cloud.google.com/storage) | \[Arweave\](https://www.arweave.org/)<br>\[AWS\](https://aws.amazon.com/s3/)<br>\[Azure\](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)<br>\[GCP\](https://cloud.google.com/storage) | \[Terra FCD\](https://github.com/terra-money/fcd)<br>\[AWS\](https://aws.amazon.com/s3/)<br>\[Azure\](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)<br>\[GCP\](https://cloud.google.com/storage) |
-| Popular starter kits | \[Moralis\](https://moralis.io/)                                                                                                                                                                        | \[dapp-scaffold\](https://github.com/solana-labs/dapp-scaffold)                                                                                                                                                    | \[Terrain\](https://github.com/iboss-ptk/terrain)                                                                                                                                                                              |
-| Common frontends     | \[Angular\](https://angular.io/)<br>\[Chakra UI\](https://chakra-ui.com/)<br>\[React\](https://reactjs.org/)<br>\[Vue\](https://vuejs.org/)                                                             | \[Angular\](https://angular.io/)<br>\[Chakra UI\](https://chakra-ui.com/)<br>\[React\](https://reactjs.org/)<br>\[Vue\](https://vuejs.org/)                                                                        | \[Angular\](https://angular.io/)<br>\[Chakra UI\](https://chakra-ui.com/)<br>\[React\](https://reactjs.org/)<br>\[Vue\](https://vuejs.org/)                                                                                    |
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>EVM Chains</th>
+            <th>Solana</th>
+            <th>Terra</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>**Language**</td>
+            <td>
+                [Solidity](https://docs.soliditylang.org/en/v0.8.13/) - (based on javascript)
+            </td>
+            <td>
+                [Rust](https://www.rust-lang.org/)\
+                [C](https://www.iso.org/standard/74528.html)\
+                [C++](https://isocpp.org/)
+            </td>
+            <td>
+                [Rust](https://www.rust-lang.org/)
+            </td>
+        </tr>
+        <tr>
+            <td>**Common frameworks**</td>
+            <td>
+                [Hardhat](https://hardhat.org/) - (javascript)\
+                [Brownie](https://eth-brownie.readthedocs.io/en/stable/index.html) - (python)
+            </td>
+            <td>
+                [Anchor](https://book.anchor-lang.com/)
+            </td>
+            <td>
+                [Terra.js](https://terra-money.github.io/terra.js/) - (javascript)\
+                [Terra.py](https://github.com/terra-money/terra.py) - (python)\
+                [Cosmos SDK](https://v1.cosmos.network/sdk)
+            </td>
+        </tr>
+        <tr>
+            <td>**Storage**</td>
+            <td>
+                [IPFS](https://ipfs.io/)\
+                [AWS](https://aws.amazon.com/s3/)\
+                [Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)\
+                [GCP](https://cloud.google.com/storage)
+            </td>
+            <td>
+                [Arweave](https://www.arweave.org/)\
+                [AWS](https://aws.amazon.com/s3/)\
+                [Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)\
+                [GCP](https://cloud.google.com/storage)
+            </td>
+            <td>
+                [Terra FCD](https://github.com/terra-money/fcd)\
+                [AWS](https://aws.amazon.com/s3/)\
+                [Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)\
+                [GCP](https://cloud.google.com/storage)
+            </td>
+        </tr>
+        <tr>
+            <td>**Popular starter kits**</td>
+            <td>[Moralis](https://moralis.io/)</td>
+            <td>[dapp-scaffold](https://github.com/solana-labs/dapp-scaffold)</td>
+            <td>[Terrain](https://github.com/iboss-ptk/terrain)</td>
+        </tr>
+        <tr>
+            <td>**Common frontends**</td>
+            <td>
+                [Angular](https://angular.io/)\
+                [Chakra UI](https://chakra-ui.com/)\
+                [React](https://reactjs.org/)\
+                [Vue](https://vuejs.org/)
+            </td>
+            <td>
+                [Angular](https://angular.io/)\
+                [Chakra UI](https://chakra-ui.com/)\
+                [React](https://reactjs.org/)\
+                [Vue](https://vuejs.org/)
+            </td>
+            <td>
+                [Angular](https://angular.io/)\
+                [Chakra UI](https://chakra-ui.com/)\
+                [React](https://reactjs.org/)\
+                [Vue](https://vuejs.org/)
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Security
 
