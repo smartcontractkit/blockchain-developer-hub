@@ -14,7 +14,9 @@ export default function ExploreMapBanner({ isHomePage, title, description }) {
       <p className={descriptionClasses}>{description}</p>
       <div className={styles.btns}>
         <NavLink
-          to={'https://smartcontractecosystem.com/'}
+          to={
+            'https://www.figma.com/proto/U6iAHSsDlqoJfOaNwRigeO/Ecosystem-Tools-Map?page-id=0%3A1&node-id=2%3A1242&viewport=264%2C48%2C0.68&scaling=scale-down'
+          }
           target="_blank"
           rel="noopener noreferrer"
           type="primary"
