@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import BlogLayout from '@/layouts/BlogLayout';
 import ArticleHeader from '@/components/ArticleHeader';
 import mdxStyles from '@/styles/MDX.module.css';
+import remarkGfm from 'remark-gfm';
 
 function Ship({ data, content }) {
   return (
@@ -31,7 +32,11 @@ export default Ship;
 
 export const getStaticProps = async () => {
   const page = await getPage('ship.md');
-  const mdxSource = await serialize(page.content);
+  const mdxSource = await serialize(page.content, {
+    mdxOptions: {
+      remarkPlugins: [remarkGfm],
+    },
+  });
   return {
     props: {
       data: page.data,
