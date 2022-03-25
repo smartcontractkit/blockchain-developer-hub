@@ -41,7 +41,7 @@ function HomePageBanner() {
               </li>
             </ul>
 
-            <NavLink to={'/blockchain101'} type="primary" text="Get Started" />
+            <NavLink to={'/blockchain101/blockchain'} type="primary" text="Get Started" />
           </div>
         </div>
         <div className={styles.imageContainer}>
