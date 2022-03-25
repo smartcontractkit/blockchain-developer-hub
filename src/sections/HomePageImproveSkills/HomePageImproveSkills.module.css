@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 8rem;
+  grid-gap: 3rem;
   max-width: var(--xl);
   margin: 4rem auto;
   padding-inline: 2rem;
@@ -29,5 +29,6 @@
 @media (min-width: 1024px) {
   .container {
     grid-template-columns: 1fr 2fr;
+    grid-gap: 8rem;
   }
 }
