@@ -39,7 +39,7 @@ export default function NavBar() {
       <div className={styles.container}>
         <div className={styles.nav_contents}>
           <Link href="/">
-            <a className={styles.logo}>DevHub</a>
+            <a className={styles.logo}>Blockchain Developer Hub</a>
           </Link>
 
           <ul className={styles.nav_links}>
