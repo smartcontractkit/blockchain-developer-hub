@@ -1,7 +1,7 @@
 import CaseStudyBanner from '@/sections/CaseStudyBanner';
 import HomeExplore from '@/sections/HomeExplore';
 import HomePageBanner from '@/sections/HomePageBanner';
-import HomepageChainlink101 from '@/sections/HomePageChainlink101';
+import HomepageBlockchain from '@/sections/HomePageBlockchain';
 import HomePageImproveSkillsStories from '@/sections/HomePageImproveSkills';
 import HomePageLifecycleBanner from '@/sections/HomePageLifecycleBanner';
 
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <HomePageBanner />
-      <HomepageChainlink101 />
+      <HomepageBlockchain />
       <HomeExplore />
       <HomePageLifecycleBanner
         title="Get to know the development cycle"
