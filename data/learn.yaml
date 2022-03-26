@@ -8,21 +8,21 @@ resources:
       - title: "Deploy your first smart contract"
         author: Chainlink
         image: "https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5fa2e075cfcf344baa0e9063_chainlink-open-graph-images_home%20(with%20illustration).png"
-        level: Easy
+        level: Beginner
         href: https://docs.chain.link/docs/deploy-your-first-contract/
         description: You can write your first smart contract and run it in your browser without any knowledge about Ethereum or blockchains.
 
       - title: "Hello World smart contract for beginners"
         author: Ethereum
         image: https://ethereum.org/static/bf78b49d7e23b88a7eea934225b0cf96/1548e/enterprise-eth.png 
-        level: Easy
+        level: Beginner
         href: 'https://ethereum.org/en/developers/tutorials/hello-world-smart-contract/'
         description: If you are new to blockchain development and don't know where to start, or if you just want to understand how to deploy and interact with smart contracts
 
       - title: "Learn to Code Blockchain DApps By Building Simple Games"
-        author: CrazyZombies
+        author: Crypto Zombies
         image: https://cryptozombies.io/course/static/image/preview-zombie.png
-        level: Easy
+        level: Beginner
         href: 'https://cryptozombies.io/'
         description: an interactive school that teaches you all things technical about blockchains.
 
@@ -63,21 +63,21 @@ resources:
       - title: "How to Build and Deploy a Solana Smart Contract"
         author: Chainlink
         image: https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5fa2e075cfcf344baa0e9063_chainlink-open-graph-images_home%20(with%20illustration).png
-        level: Easy
+        level: Beginner
         href: 'https://blog.chain.link/how-to-build-and-deploy-a-solana-smart-contract/'
         description: If you want to learn how to develop Solana smart contracts and programs, then you've come to the right place. 
 
       - title: "Solana Tutorial | Building Smart Contracts & dApps"
         author: James Bachini
         image: https://i.ytimg.com/vi/qNIhClYDjR8/hqdefault.jpg
-        level: Easy
+        level: Beginner
         href: https://jamesbachini.com/solana-tutorial/#getting-started-with-solana
         description: a step by step process of setting up a development environment for Solana, writing and deploying smart contracts
 
       - title: An Introduction to Building on the Solana Network
         author: Kelvin Kirima
         image: https://hackernoon.com/_next/image?url=https%3A%2F%2Fcdn.hackernoon.com%2Fimages%2FxJq6KzZlkHOHXwVsDaxTQRCkHG92-zw028fz.png&w=3840&q=75
-        level: Easy
+        level: Beginner
         href: https://hackernoon.com/an-introduction-to-building-on-the-solana-network
         description: This tutorial will take you from zero to one in building on the Solana network.
 
@@ -117,21 +117,21 @@ resources:
       - title: Terra Development Basics
         author: Terra Bites
         image: https://i.ytimg.com/vi/BXHU5kLVlY8/hqdefault.jpg
-        level: Easy
+        level: Beginner
         href: https://youtube.com/playlist?list=PL-1j57N4qfImfGH_WpOyZdLr1xDpNJdWS
         description: We walk you through getting your development environment set up and explore how to build Terra smart contracts and front ends.
 
       - title: "CosmWasm Contracts"
         author: Terra Academy
         image: https://import.cdn.thinkific.com/526184%2Fcustom_site_themes%2Fid%2FyQ41rv6vTAqFIX0qwhn7_cosmwasm%20hero.png?width=1920
-        level: Easy
+        level: Beginner
         href: https://academy.terra.money/
         description: Master DApp Development - Smart Contracts - Solidity, Web3, React, Mocha, Ethereum Blockchain Programming for Front-end
 
       - title: Write your first Terra smart contract
         author: Figment Learn
         image: https://global-uploads.webflow.com/61112eff0f3a419ae57a77d8/6194a1fc1d34aa71fc4d78b8_Screen%20Shot%202021-11-17%20at%201.30.45%20AM.png
-        level: Easy
+        level: Beginner
         href: https://learn.figment.io/tutorials/write-your-first-terra-smart-contract
         description: Learn how to write a Terra smart contract
 
