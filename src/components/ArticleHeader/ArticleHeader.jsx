@@ -13,9 +13,11 @@ function ArticleHeader({ datetime, title, image, author, role }) {
 
   return (
     <section className={styles.container}>
-      <span className={publishDateClasses}>
-        Published on <time dateTime={datetime}>{dayjs(datetime).format('MMM D, YYYY')}</time>
-      </span>
+      {datetime && (
+        <span className={publishDateClasses}>
+          Published on <time dateTime={datetime}>{dayjs(datetime).format('MMM D, YYYY')}</time>
+        </span>
+      )}
       <h1 className={titleClasses}>{title}</h1>
 
       {hasAuthorInfo && (
@@ -34,7 +36,7 @@ function ArticleHeader({ datetime, title, image, author, role }) {
 }
 
 ArticleHeader.propTypes = {
-  datetime: PropTypes.string.isRequired,
+  datetime: PropTypes.string,
   title: PropTypes.string.isRequired,
   author: PropTypes.string,
   role: PropTypes.string,
