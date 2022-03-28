@@ -6,7 +6,7 @@ resources:
       overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
       data:
       - title: "Deploy your first smart contract"
-        author: Chainlink
+        author: Terra Academy
         image: "https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5fa2e075cfcf344baa0e9063_chainlink-open-graph-images_home%20(with%20illustration).png"
         level: Beginner
         href: https://docs.chain.link/docs/deploy-your-first-contract/
