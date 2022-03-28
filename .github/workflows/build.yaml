@@ -1,8 +1,12 @@
-name: Build
-on: [push]
+name: CD
+
 jobs:
-  Build:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: npm install
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 17
+      - run: npm ci
       - run: npm run build
