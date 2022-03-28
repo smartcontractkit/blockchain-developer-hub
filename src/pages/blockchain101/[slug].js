@@ -8,6 +8,7 @@ import mdxStyles from '@/styles/MDX.module.css';
 import getPaths from '@/helpers/getPaths';
 import getPagesInfo from '@/helpers/getPagesInfo';
 import remarkGfm from 'remark-gfm';
+import rehypeSlug from 'rehype-slug';
 
 function Blockchain({ data, content, pagesInfo }) {
   return (
@@ -46,6 +47,7 @@ export const getStaticProps = async ({ params }) => {
   const mdxSource = await serialize(page.content, {
     mdxOptions: {
       remarkPlugins: [remarkGfm],
+      rehypePlugins: [rehypeSlug],
     },
   });
   const pagesInfo = await getPagesInfo('blockchain101');

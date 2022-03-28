@@ -6,6 +6,7 @@ import BlogLayout from '@/layouts/BlogLayout';
 import ArticleHeader from '@/components/ArticleHeader';
 import mdxStyles from '@/styles/MDX.module.css';
 import remarkGfm from 'remark-gfm';
+import rehypeSlug from 'rehype-slug';
 
 function Ship({ data, content }) {
   return (
@@ -35,6 +36,7 @@ export const getStaticProps = async () => {
   const mdxSource = await serialize(page.content, {
     mdxOptions: {
       remarkPlugins: [remarkGfm],
+      rehypePlugins: [rehypeSlug],
     },
   });
   return {
