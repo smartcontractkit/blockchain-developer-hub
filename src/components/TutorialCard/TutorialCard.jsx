@@ -31,7 +31,7 @@ TutorialCard.propTypes = {
   heading: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
+  date: PropTypes.string,
   description: PropTypes.string,
   variant: PropTypes.oneOf(['default', 'gray']),
 };
