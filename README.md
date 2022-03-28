@@ -1,4 +1,4 @@
-# Blockchain Devleoper Hub
+# Blockchain Developer Hub
 
 Your roadmap to start web3 and blockchain development is here.
 
