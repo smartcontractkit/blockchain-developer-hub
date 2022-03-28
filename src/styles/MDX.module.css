@@ -65,3 +65,14 @@
 .container thead {
   border-bottom: 2px solid var(--neural-200-color);
 }
+
+/* Hyperlinks */
+
+.container a {
+  color: var(--tertiary-700-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.container a:hover, .container a:active, .container a:visited {
+  text-decoration: underline;
+}
