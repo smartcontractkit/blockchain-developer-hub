@@ -44,6 +44,14 @@ To learn more about Next.js, take a look at the following resources:
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions
 are welcome!
 
+## Table Support
+
+To learn more about how to make table supported look at:
+
+- [remarkGfm](https://www.npmjs.com/package/remark-gfm) - Install remark Gfm
+- [How to integrate it with serialize](https://githubhot.com/repo/hashicorp/next-mdx-remote/issues/229) - see how its
+  integrated with serialize
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the
