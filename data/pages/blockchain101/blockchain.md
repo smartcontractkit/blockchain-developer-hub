@@ -1,6 +1,5 @@
 ---
 title: Introduction to blockchain
-date: '2022-02-12'
 
 sidebar_title: Blockchain
 sidebar_position: 1
