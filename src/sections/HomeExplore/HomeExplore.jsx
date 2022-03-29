@@ -14,21 +14,16 @@ function HomeExplore() {
   const [randomTutorials, setRandomTutorials] = useState([]);
 
   useEffect(() => {
-    let mounted = true;
-    if (mounted) {
-      const courses = learnData.resources.map((resource) => resource.courses.data);
-      const coursesArray = [].concat(...courses);
-      const randomCourses = getRandomItemsFromArray(coursesArray, 2);
+    const courses = learnData.resources.map((resource) => resource.courses.data);
+    const coursesArray = [].concat(...courses);
+    const randomCourses = getRandomItemsFromArray(coursesArray, 2);
 
-      const tutorials = learnData.resources.map((resource) => resource.tutorials.data);
-      const tutorialsArray = [].concat(...tutorials);
-      const randomTutorials = getRandomItemsFromArray(tutorialsArray, 3);
+    const tutorials = learnData.resources.map((resource) => resource.tutorials.data);
+    const tutorialsArray = [].concat(...tutorials);
+    const randomTutorials = getRandomItemsFromArray(tutorialsArray, 3);
 
-      setRandomCourses(randomCourses);
-      setRandomTutorials(randomTutorials);
-    }
-
-    return () => (mounted = false);
+    setRandomCourses(randomCourses);
+    setRandomTutorials(randomTutorials);
   }, []);
 
   return (
