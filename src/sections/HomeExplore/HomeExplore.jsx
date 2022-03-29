@@ -1,21 +1,30 @@
-import styles from './HomeExplore.module.css';
+import React, { useEffect, useState } from 'react';
+import dayjs from 'dayjs';
+import clsx from 'clsx';
 import Link from 'next/link';
 import learnData from '@/data/learn.yaml';
-import Svg from '@/components/Svg';
-import clsx from 'clsx';
-import Card from '@/components/Card';
 import { getRandomItemsFromArray } from '@/helpers/getRandomItemsFromArray';
-import dayjs from 'dayjs';
+import styles from './HomeExplore.module.css';
 import TutorialCard from '@/components/TutorialCard';
+import Card from '@/components/Card';
+import Svg from '@/components/Svg';
 
 function HomeExplore() {
-  const courses = learnData.resources.map((resource) => resource.courses.data);
-  const coursesArray = [].concat(...courses);
-  const randomCourses = getRandomItemsFromArray(coursesArray, 2);
+  const [randomCourses, setRandomCourses] = useState([]);
+  const [randomTutorials, setRandomTutorials] = useState([]);
 
-  const tutorials = learnData.resources.map((resource) => resource.tutorials.data);
-  const tutorialsArray = [].concat(...tutorials);
-  const randomTutorials = getRandomItemsFromArray(tutorialsArray, 3);
+  useEffect(() => {
+    const courses = learnData.resources.map((resource) => resource.courses.data);
+    const coursesArray = [].concat(...courses);
+    const randomCourses = getRandomItemsFromArray(coursesArray, 2);
+
+    const tutorials = learnData.resources.map((resource) => resource.tutorials.data);
+    const tutorialsArray = [].concat(...tutorials);
+    const randomTutorials = getRandomItemsFromArray(tutorialsArray, 3);
+
+    setRandomCourses(randomCourses);
+    setRandomTutorials(randomTutorials);
+  }, []);
 
   return (
     <section className={styles.container}>
