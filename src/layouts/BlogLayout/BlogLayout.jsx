@@ -47,20 +47,17 @@ function BlogLayout({ children, pages }) {
 
     if (headingsElements.length) setActiveHeading(headingsElements[0]);
 
-    document.addEventListener('scroll', () => {
+    const handleScroll = () => {
       const activeHeadingElement = headingsElements.find((heading) => elementInViewport(heading));
       if (activeHeadingElement) setActiveHeading(activeHeadingElement);
-    });
+    };
+
+    document.addEventListener('scroll', handleScroll);
 
     return () => {
-      document.removeEventListener('scroll', () => {
-        const activeHeadingElement = headingsElements.find((heading) => elementInViewport(heading));
-        setActiveHeading(activeHeadingElement);
-      });
+      document.removeEventListener('scroll', handleScroll);
     };
   }, [children]);
-
-  useEffect(() => console.log(activeHeading), [activeHeading]);
 
   return (
     <div className={styles.container}>
