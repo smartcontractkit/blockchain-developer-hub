@@ -24,11 +24,8 @@ function BlogLayout({ children, pages }) {
           <>
             <div className={styles.leftSidebar__header}>Getting started</div>
             {sortedPages.map((page) => (
-              <Link key={page.slug} href={page.slug} passHref>
-                <a className={clsx('btn', styles.leftSidebar__link, slug === page.slug && styles.active)}>
-                  {page.data.title}
-                </a>
-              </Link>
+              <Link key={page.slug} href={page.slug} passHref><a className={clsx('btn', styles.leftSidebar__link, slug === page.slug && styles.active)}>
+                  {page.data.title}</a> </Link>
             ))}
           </>
         )}
