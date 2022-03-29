@@ -42,23 +42,23 @@ function BlogLayout({ children, pages }) {
   const next_page = sortedPages?.find((page) => page.data.sidebar_position === current_sidebar_position + 1);
 
   useEffect(() => {
-    const headingsElements = document.querySelectorAll('h2');
-    setHeadings(Array.from(headingsElements));
+    const headingsElements = Array.from(document.querySelectorAll('h2'));
+    setHeadings(headingsElements);
+
+    if (headingsElements.length) setActiveHeading(headingsElements[0]);
 
     document.addEventListener('scroll', () => {
-      const activeHeadingElement = headings.find((heading) => elementInViewport(heading));
-      setActiveHeading(activeHeadingElement);
+      const activeHeadingElement = headingsElements.find((heading) => elementInViewport(heading));
+      if (activeHeadingElement) setActiveHeading(activeHeadingElement);
     });
 
     return () => {
       document.removeEventListener('scroll', () => {
-        const activeHeadingElement = headings.find((heading) => elementInViewport(heading));
+        const activeHeadingElement = headingsElements.find((heading) => elementInViewport(heading));
         setActiveHeading(activeHeadingElement);
       });
     };
   }, [children]);
-
-  useEffect(() => {}, [headings]);
 
   useEffect(() => console.log(activeHeading), [activeHeading]);
 
@@ -79,7 +79,9 @@ function BlogLayout({ children, pages }) {
         )}
       </div>
       <div className={styles.content_wrapper}>
-        <div className={styles.content}>{children}</div>
+        <div className={styles.content} id="blog-content">
+          {children}
+        </div>
         <div className={styles.footer}>
           <div>
             {prev_page && (
@@ -109,7 +111,13 @@ function BlogLayout({ children, pages }) {
         <div className={styles.sidebar__header}>On this page</div>
         {headings.map((heading) => (
           <Link key={heading.id} href={`#${heading.id}`} passHref>
-            <a className={clsx('caption', styles.rightSidebar__link, styles.active)}>{heading.innerHTML}</a>
+            <a
+              className={clsx('caption', styles.rightSidebar__link, {
+                [styles.active]: activeHeading && heading.id === activeHeading.id,
+              })}
+            >
+              {heading.innerHTML}
+            </a>
           </Link>
         ))}
       </div>
