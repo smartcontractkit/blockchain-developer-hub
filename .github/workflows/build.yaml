@@ -9,4 +9,5 @@ jobs:
         with:
           node-version: 17
       - run: npm ci
+      - run: npm run validate
       - run: npm run build
