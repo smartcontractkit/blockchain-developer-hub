@@ -20,6 +20,7 @@ body {
   Helvetica Neue,
   sans-serif;
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
 a {
