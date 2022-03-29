@@ -83,6 +83,18 @@ function BlogLayout({ children, pages }) {
               />
             )}
           </div>
+
+          {!next_page && (
+            <div>
+              <NavLink
+                icon="arrow-right.svg"
+                type="outline"
+                iconPosition="right"
+                text={`Next: Go to Learn`}
+                to={'/learn'}
+              />
+            </div>
+          )}
         </div>
       </div>
       <div className={styles.rightSidebar}>
