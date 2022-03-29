@@ -1,3 +1,4 @@
+import PagePagination from '@/components/PagePagination';
 import data from '@/data/build.yaml';
 import removePastEvent from '@/helpers/removePastEvent';
 import BuildPageSection from '@/sections/BuildPageSection';
@@ -9,6 +10,7 @@ function Build() {
       {categories.map(({ name, overview, items }, index) => (
         <BuildPageSection key={index} name={name} overview={overview} items={removePastEvent(items)} />
       ))}
+      <PagePagination text="Go to Ship" link="/ship" />
     </div>
   );
 }
