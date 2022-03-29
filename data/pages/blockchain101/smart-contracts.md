@@ -5,6 +5,8 @@ sidebar_title: Blockchain
 sidebar_position: 2
 ---
 
+## Introduction
+
 A smart contract is a tamper-proof program that runs on a blockchain network when certain predefined conditions are
 satisfied.
 
