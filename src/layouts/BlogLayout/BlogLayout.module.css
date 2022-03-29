@@ -5,13 +5,13 @@
   padding-bottom: 2rem;
 }
 
-.leftSidebar {
+.leftSidebar, .rightSidebar {
   display: none;
   flex-direction: column;
   margin: 2rem 2rem;
 }
 
-.leftSidebar__header {
+.sidebar__header {
   color: var(--neural-700-color);
   margin-bottom: 1rem;
   font-size: 0.85rem;
@@ -29,9 +29,23 @@
   background-color: var(--tertiary-100-color);
 }
 
+.rightSidebar__link {
+  color: var(--neural-500-color);
+  padding: 0.6rem 0.8rem;
+  border-left: 2px solid var(--neural-100-color);
+  margin: 0;
+}
+
+.rightSidebar__link.active {
+  color: var(--neural-950-color);
+  border-left: 2px solid var(--tertiary-500-color);
+}
+
 .content {
   margin: auto;
   width: 100%;
+  height: 80vh;
+  overflow: scroll;
 }
 .content_wrapper {
   padding-inline: 2rem;
@@ -56,7 +70,7 @@
     grid-template-columns: 1fr 3fr 1fr;
   }
 
-  .leftSidebar {
+  .leftSidebar, .rightSidebar {
     display: flex;
   }
 
