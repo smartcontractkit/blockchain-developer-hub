@@ -5,26 +5,7 @@ import { useRouter } from 'next/router';
 import clsx from 'clsx';
 import NavLink from '@/components/NavLink';
 import { useEffect, useState } from 'react';
-
-function elementInViewport(el) {
-  let top = el.offsetTop;
-  let left = el.offsetLeft;
-  let width = el.offsetWidth;
-  let height = el.offsetHeight;
-
-  while (el.offsetParent) {
-    el = el.offsetParent;
-    top += el.offsetTop;
-    left += el.offsetLeft;
-  }
-
-  return (
-    top >= window.pageYOffset &&
-    left >= window.pageXOffset &&
-    top + height <= window.pageYOffset + window.innerHeight &&
-    left + width <= window.pageXOffset + window.innerWidth
-  );
-}
+import isElementVisable from '@/helpers/isElementVisable';
 
 function BlogLayout({ children, pages }) {
   const [headings, setHeadings] = useState([]);
@@ -48,7 +29,7 @@ function BlogLayout({ children, pages }) {
     if (headingsElements.length) setActiveHeading(headingsElements[0]);
 
     const handleScroll = () => {
-      const activeHeadingElement = headingsElements.find((heading) => elementInViewport(heading));
+      const activeHeadingElement = headingsElements.find((heading) => isElementVisable(heading));
       if (activeHeadingElement) setActiveHeading(activeHeadingElement);
     };
 
