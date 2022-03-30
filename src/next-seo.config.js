@@ -1,23 +1,18 @@
 export default {
   title: 'Blockchain Developer Hub',
-  description: 'A short description goes here.',
+  description: 'Dive into blockchain and smart contract development.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://chainlink-developer-hub.vercel.app/',
+    url: 'https://smartcontract.com/',
     site_name: 'Blockchain Developer Hub',
     images: [
       {
-        url: 'https://chainlink-developer-hub.vercel.app/images/og-image.png',
+        url: 'https://blockchain-developer-hub.vercel.app/images/og-image.png',
         width: 800,
         height: 600,
         alt: 'Blockchain Developer Hub',
       },
     ],
-  },
-  twitter: {
-    handle: '@handle',
-    site: '@site',
-    cardType: 'summary_large_image',
   },
 };
