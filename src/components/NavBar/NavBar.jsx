@@ -50,7 +50,7 @@ export default function NavBar() {
             ))}
           </ul>
           <a
-            href="https://github.com/thisdot/blockchain-developer-hub"
+            href="https://github.com/smartcontractkit/blockchain-developer-hub"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.githublogo}
