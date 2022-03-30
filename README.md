@@ -2,6 +2,8 @@
 
 Your roadmap to start web3 and blockchain development is here.
 
+**https://smartcontracthub.dev/**
+
 ## Contribute to the content
 
 All of the content files are located in `./data` folder
