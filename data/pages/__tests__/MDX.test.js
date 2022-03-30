@@ -5,7 +5,7 @@ describe('MDX content', () => {
   const blockchain101files = fs.readdirSync(path.join(`data/pages/blockchain101`));
   const files = ['ship.md', ...blockchain101files.map((filename) => `blockchain101/${filename}`)];
 
-  test.each(files)(`%s has a heading`, (file) => {
+  test.each(files)(`%s does not have a h1`, (file) => {
     const filePath = path.join(`data/pages/${file}`);
     const content = fs.readFileSync(filePath, 'utf8');
 

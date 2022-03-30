@@ -9,7 +9,7 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook -s public",
-    "prettier": "prettier --ignore-path .gitignore '**/*.{js,jsx,json,md,mdx}'",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,json,md,mdx}\"",
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --check",
     "validate": "npm run check-format && npm run lint && npm run test",
