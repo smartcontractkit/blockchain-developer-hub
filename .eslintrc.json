@@ -1,6 +1,6 @@
 {
   "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:react/recommended", "eslint-config-prettier"],
-  "plugins": ["unused-imports"],
+  "plugins": ["unused-imports", "jest"],
   "rules": {
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
