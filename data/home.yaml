@@ -1,6 +1,6 @@
 hero:
   featured_articles:
-    - title: Why Blockhain?
+    - title: Why Blockchain?
       href: 'blockchain101/blockchain'
 
     - title: Intro to Smart Contracts
