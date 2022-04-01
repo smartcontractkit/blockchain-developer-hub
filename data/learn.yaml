@@ -52,6 +52,11 @@ resources:
         href: 'https://www.freecodecamp.org/news/learn-solidity-blockchain-and-smart-contracts-in-a-free/'
         description: This course will give you a full introduction into all of the core concepts in blockchain, smart contracts, solidity, NFTs/ERC721s, ERC20s, Coding Decentralized Finance (DeFi), python and solidity, Chainlink, Ethereum, upgradable smart contracts, and full stack blockchain development.
 
+      - title: "EthereumDev"
+        author: Jdourlens
+        href: 'https://ethereumdev.io'
+        description: The complete guide to develop on Ethereum blockchain.
+
 
 
   - id: solana
