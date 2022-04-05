@@ -28,6 +28,7 @@ module.exports = {
       '@/pages': path.resolve(__dirname, '../src/pages'),
       '@/helpers': path.resolve(__dirname, '../src/helpers'),
       '@/styles': path.resolve(__dirname, '../src/styles'),
+      '@/hooks': path.resolve(__dirname, '../src/hooks'),
       '/icons': path.resolve(__dirname, '../public/icons'),
       '/logos': path.resolve(__dirname, '../public/logos'),
     };
