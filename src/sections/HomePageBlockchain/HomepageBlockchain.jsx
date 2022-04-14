@@ -16,7 +16,7 @@ function HomepageBlockchain() {
         <div className={styles.quote_wrapper}>
           <Svg height="30" width="20" href="/icons/quote.svg" />
           <p className={quoteClasses}>
-            Blockchain skills are rated in the first place in fastest-growing skills of 2020 with an increase of 6000%
+            Blockchain development skills are rated as the fastest-growing in-demand skills of 2020, with an increase of 6000%
           </p>
           <small className={labelClasses}>blockchainjobs.com</small>
         </div>

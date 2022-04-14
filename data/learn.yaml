@@ -147,16 +147,16 @@ resources:
       - title: Interacting with a Terra smart contract
         author: Figment Learn
         href: https://learn.figment.io/tutorials/interacting-with-a-terra-smart-contract
-        description: Learn how to interact with your own Terra smart contracts
+        description: Learn how to interact with Terra smart contracts.
 
       - title: "Terra DeFi for Beginners: Join the Financial Revolution"
         author: Shano Collantes
         href: https://www.udemy.com/course/terra-defi-for-beginners-join-the-financial-revolution/
-        description: Terra DeFi offers some of the best rates of return
+        description: Join the financial revolution.
 
       - title: Terra Luna - Python Guide
         author: Igor Radovanovic
         date: 2022-03-07
         href: https://algotrading101.com/learn/terra-luna-python-guide/
-        description: A detailed guide on interacting with the Terra blockchain with Python
+        description: A detailed guide on interacting with the Terra blockchain with Python.
 
