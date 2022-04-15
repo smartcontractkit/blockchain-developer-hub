@@ -15,7 +15,7 @@ By decentralizing data, we no longer rely on trust in centralized intermediaries
 
 For a good primer about what blockchain technology is, check out this **Simply Explained** video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=SSo_EIwHSd4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SSo_EIwHSd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Why is blockchain technology so important?
 
