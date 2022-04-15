@@ -2,9 +2,13 @@
 title: Shipping your first dApp
 ---
 
-By now, you are likely to have consumed some of the content from the Learn section, or maybe even participated in your first hackathon. Participating in workshops is great, but taking the leap to building your first dApp can be difficult. 
+By now, you are likely to have consumed some of the content from the Learn section, or maybe even participated in your
+first hackathon. Participating in workshops is great, but taking the leap to building your first dApp can be difficult.
 
-Why now? The world is slowly realizing the importance and benefits of permissionless data—that is, data that is not owned by a few large players, but is rather decentralized and transparent. While it’s still early in the world of blockchain development, building applications is the best way we can help the community and ecosystem move forward, and give you the chance to participate in Web3.
+Why now? The world is slowly realizing the importance and benefits of permissionless data—that is, data that is not
+owned by a few large players, but is rather decentralized and transparent. While it’s still early in the world of
+blockchain development, building applications is the best way we can help the community and ecosystem move forward, and
+give you the chance to participate in Web3.
 
 ### Here are some pointers to keep in mind:
 
@@ -19,8 +23,9 @@ Why now? The world is slowly realizing the importance and benefits of permission
 - **Use boring solutions**. Dan McKinley has some wise words for us in his
   [Choose Boring Technology](https://mcfunley.com/choose-boring-technology) post. If you come across a problem while
   building your dApp, it’s likely that others before you have come across it and have found a solution that works well.
-  To iterate faster, choose those solutions. The [Ecosystem Map](https://www.figma.com/proto/U6iAHSsDlqoJfOaNwRigeO/Ecosystem-Tools-Map?page-id=0%3A1&node-id=2%3A1242&viewport=264%2C48%2C0.68&scaling=scale-down) is a great place to learn about all the products in the
-  blockchain space.
+  To iterate faster, choose those solutions. The
+  [Ecosystem Map](https://www.figma.com/proto/U6iAHSsDlqoJfOaNwRigeO/Ecosystem-Tools-Map?page-id=0%3A1&node-id=2%3A1242&viewport=264%2C48%2C0.68&scaling=scale-down)
+  is a great place to learn about all the products in the blockchain space.
 
 ## Stack
 
@@ -28,8 +33,8 @@ Before choosing the stack for your project, in addition to your specific strengt
 consider important factors such as community size, support, and documentation. Generally, you will want to choose the
 stack that allows you to iterate and ship faster. You can focus on optimizations later.
 
-For smart-contract coding, you should choose the language you feel most comfortable with. Use this reference table to get
-started.
+For smart-contract coding, you should choose the language you feel most comfortable with. Use this reference table to
+get started.
 
 <table>
     <thead>
@@ -134,7 +139,9 @@ security flaws. This is the nature of the immutability of the blockchain. Once a
 attacker cannot be recovered by its original holders. As of this writing, over $1.85 billion USD has been extracted by
 attackers across blockchains.
 
-As is the case with any software workflow, you must ensure that your smart contracts are tested thoroughly in both development and test environments (testnets), but in addition, you must be aware of common attack types and the solutions and best practices that can be used to mitigate attacks and help you deploy secure smart contracts.
+As is the case with any software workflow, you must ensure that your smart contracts are tested thoroughly in both
+development and test environments (testnets), but in addition, you must be aware of common attack types and the
+solutions and best practices that can be used to mitigate attacks and help you deploy secure smart contracts.
 
 In addition to the tools listed in the ecosystem map, it’s important to be familiar with the most common attack types.
 These include;
@@ -149,8 +156,8 @@ Get familiar with these attacks and read more at the
 ## Auditing
 
 While security starts with the first line of code written by developers, having a third party audit your smart contracts
-prior to shipping them is always a good idea. While this is not a replacement for development best
-practices, it has become a must before deploying to a mainnet.
+prior to shipping them is always a good idea. While this is not a replacement for development best practices, it has
+become a must before deploying to a mainnet.
 
 Some of the most popular auditing teams include
 
