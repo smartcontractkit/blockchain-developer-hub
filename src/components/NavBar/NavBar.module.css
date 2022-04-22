@@ -5,7 +5,7 @@
 .container {
   margin-inline: auto;
   max-width: 1440px;
-  padding: 1rem;
+  padding: 1.2rem 1rem;
   position: relative;
 }
 
@@ -25,10 +25,6 @@
   right: 0;
   background-color: var(--white-color);
   transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
 }
 
 .nav_contents, .nav_links.visible {
@@ -38,7 +34,7 @@
 .mobile_menu_overlay {
   content: "";
   position: fixed;
-  top: 55px;
+  top: 63px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -48,11 +44,10 @@
   display: block;
 }
 .nav_links.visible {
-  top: 55px;
+  top: 63px;
   flex-direction: column;
   align-items: start;
   padding: 1rem;
-  border-top: 1px solid var(--neural-300-color);
   z-index: 4;
 }
 
