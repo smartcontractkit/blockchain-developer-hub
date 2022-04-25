@@ -47,8 +47,8 @@
   top: 63px;
   flex-direction: column;
   align-items: start;
-  padding: 1rem;
-  z-index: 4;
+  padding: 3rem 1.5rem 1rem;
+  z-index: 1;
 }
 
 .nav_contents {
@@ -100,6 +100,14 @@
   .nav_contents {
     flex-wrap: unset;
   }
+
+  .nav_links.visible {
+    display: flex;
+    flex-direction: row;
+    top: unset;
+    padding: unset;
+  }
+
   .nav_links {
     display: flex;
     position: relative;
@@ -107,10 +115,9 @@
     justify-content: center;
     margin-top: unset;
     top: unset;
+    right: unset;
+    left: unset;
     flex-direction: row;
-  }
-  .nav_links.visible {
-    display: none;
   }
 
   .nav_links li {
