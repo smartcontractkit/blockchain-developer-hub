@@ -27,9 +27,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-.nav_contents, .nav_links.visible {
+.nav_contents, .nav_links.mobile {
   display: flex;
-  align-items: center;
 }
 .mobile_menu_overlay {
   content: "";
@@ -43,7 +42,7 @@
   z-index: 0;
   display: block;
 }
-.nav_links.visible {
+.nav_links.mobile {
   top: 63px;
   flex-direction: column;
   align-items: start;
@@ -52,6 +51,7 @@
 }
 
 .nav_contents {
+  align-items: center;
   flex-wrap: wrap;
 }
 .nav_links li {
@@ -101,8 +101,7 @@
     flex-wrap: unset;
   }
 
-  .nav_links.visible {
-    display: flex;
+  .nav_links.mobile {
     flex-direction: row;
     top: unset;
     padding: unset;

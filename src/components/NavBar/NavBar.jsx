@@ -50,10 +50,12 @@ export default function NavBar() {
             <img src={`/icons/${showNavLinks ? 'close.png' : 'menu.png'}`} alt="menu icon" />
           </button>
           <Link href="/">
-            <a className={styles.logo}>Blockchain Developer Hub</a>
+            <a className={styles.logo} onClick={() => toggleMenuLink(false)}>
+              Blockchain Developer Hub
+            </a>
           </Link>
 
-          <ul className={clsx(styles.nav_links, { [styles.visible]: showNavLinks })}>
+          <ul className={clsx(styles.nav_links, { [styles.mobile]: showNavLinks })}>
             {links.map((res, index) => (
               <li key={index} onClick={() => toggleMenuLink(false)}>
                 <NavLink text={res.text} to={res.to} type="link" active={isActive(pathname, res.to)} />
