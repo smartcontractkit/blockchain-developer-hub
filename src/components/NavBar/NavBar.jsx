@@ -47,7 +47,7 @@ export default function NavBar() {
         <div className={clsx({ [styles.mobile_menu_overlay]: showNavLinks })} onClick={() => toggleMenuLink(false)} />
         <div className={styles.nav_contents}>
           <button className={styles.menu_btn} onClick={() => toggleMenuLink(!showNavLinks)}>
-            <img src={`/icons/${showNavLinks ? 'close.png' : 'menu.png'}`} atl="menu icon" />
+            <img src={`/icons/${showNavLinks ? 'close.png' : 'menu.png'}`} alt="menu icon" />
           </button>
           <Link href="/">
             <a className={styles.logo}>Blockchain Developer Hub</a>
