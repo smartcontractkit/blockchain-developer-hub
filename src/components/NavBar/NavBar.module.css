@@ -39,7 +39,7 @@
   right: 0;
   background-color: var(--neural-950-color);
   opacity: 0.8;
-  z-index: 0;
+  z-index: 1;
   display: block;
 }
 .nav_links.mobile {
