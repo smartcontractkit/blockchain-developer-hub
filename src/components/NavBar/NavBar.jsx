@@ -4,6 +4,7 @@ import NavLink from '@/components/NavLink';
 import styles from './NavBar.module.css';
 import clsx from 'clsx';
 import { useState } from 'react';
+import Overlay from '@/components/Overlay';
 
 const links = [
   {
@@ -44,7 +45,7 @@ export default function NavBar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.container}>
-        <div className={clsx({ [styles.mobile_menu_overlay]: showNavLinks })} onClick={() => toggleMenuLink(false)} />
+        <Overlay showOverlay={showNavLinks} toggleMenu={toggleMenuLink} />
         <div className={styles.nav_contents}>
           <button className={styles.menu_btn} onClick={() => toggleMenuLink(!showNavLinks)}>
             <img src={`/icons/${showNavLinks ? 'close.png' : 'menu.png'}`} alt="menu icon" />

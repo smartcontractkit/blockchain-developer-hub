@@ -30,18 +30,7 @@
 .nav_contents, .nav_links.mobile {
   display: flex;
 }
-.mobile_menu_overlay {
-  content: "";
-  position: fixed;
-  top: 63px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--neural-950-color);
-  opacity: 0.8;
-  z-index: 1;
-  display: block;
-}
+
 .nav_links.mobile {
   top: 63px;
   flex-direction: column;
@@ -93,7 +82,7 @@
   }
 
 
-  .mobile_menu_overlay, .menu_btn {
+  .menu_btn {
     display: none;
   }
 
