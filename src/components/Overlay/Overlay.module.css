@@ -10,6 +10,9 @@
   z-index: 1;
   display: block;
 }
+.mobile_menu_overlay.overview {
+  top: 0;
+}
 
 @media (min-width: 1024px) {
   .mobile_menu_overlay {
