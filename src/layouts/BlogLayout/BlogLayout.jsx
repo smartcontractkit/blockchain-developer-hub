@@ -6,10 +6,12 @@ import clsx from 'clsx';
 import NavLink from '@/components/NavLink';
 import { useEffect, useState } from 'react';
 import isElementVisable from '@/helpers/isElementVisable';
+import Overlay from '@/components/Overlay';
 
 function BlogLayout({ children, pages }) {
   const [headings, setHeadings] = useState([]);
   const [activeHeading, setActiveHeading] = useState(null);
+  const [articleOverview, setArticleOverview] = useState(false);
 
   const router = useRouter();
   const { slug } = router.query;
@@ -111,6 +113,13 @@ function BlogLayout({ children, pages }) {
           </Link>
         ))}
       </div>
+      <Overlay showOverlay={articleOverview} toggleMenu={() => {}} />
+      {pages && (
+        <button className={clsx(styles.overview_mobile_btn, 'btn')} onClick={() => setArticleOverview(true)}>
+          <span>Articles overview</span>
+          <img src="/icons/dropdown-blue.svg" alt="dropdown icon" />
+        </button>
+      )}
     </div>
   );
 }

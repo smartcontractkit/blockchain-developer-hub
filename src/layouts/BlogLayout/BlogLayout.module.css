@@ -58,6 +58,25 @@
   flex-direction: column;
 }
 
+.overview_mobile_btn {
+  position: fixed;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3.5rem;
+  background-color: var(--tertiary-50-color);
+  border: none;
+  box-shadow: 0px -8px 32px rgba(0, 0, 0, 0.04), inset 0px 1px 0px rgba(0, 0, 0, 0.08);
+  color: var(--tertiary-700-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview_mobile_btn > img {
+  margin-left: 1rem;
+}
+
 @media ( min-width: 768px) {
   .footer {
     flex-direction: row;
@@ -91,6 +110,10 @@
   .content {
     width: var(--md);
     grid-area: maincontent;
+  }
+
+  .overview_mobile_btn {
+    display: none;
   }
 }
   
