@@ -39,7 +39,6 @@ export default function NavBar() {
     return false;
   };
   const toggleMenuLink = (value) => {
-    document.body.style.overflow = value ? 'hidden' : 'auto';
     setShowNavLinks(value);
   };
   return (
