@@ -17,9 +17,8 @@ export default function EcosystemAccordion({ title, subtitle, description, expan
       onClick={toggleAccordion}
     >
       <div>
-        <div>
-          <span>{subtitle}</span>
-          <h2>{title}</h2>
+        <div className={styles.heading}>
+          <span>{subtitle}</span>-<h2>{title}</h2>
         </div>
         <p>{description}</p>
       </div>
