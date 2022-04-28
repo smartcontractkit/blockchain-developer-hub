@@ -6,6 +6,15 @@ import { useState } from 'react';
 
 function EcosystemMap() {
   const [expanded, setExpanded] = useState('');
+  // const data = [
+  //   {
+  //     id: '',
+  //     url: '',
+  //     title: '',
+  //     subtitle: '',
+  //     description: ''
+  //   }
+  // ]
   return (
     <section className={styles.container}>
       <div className={styles.content}>
