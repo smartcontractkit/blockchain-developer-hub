@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import NavLink from '@/components/NavLink';
 import styles from './NavBar.module.css';
 import clsx from 'clsx';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Overlay from '@/components/Overlay';
 
 const links = [
@@ -30,6 +30,7 @@ const links = [
 ];
 
 export default function NavBar() {
+  const bodyRef = useRef();
   const [showNavLinks, setShowNavLinks] = useState(false);
   const { pathname } = useRouter();
   const isActive = (path, to) => {
@@ -39,9 +40,13 @@ export default function NavBar() {
     return false;
   };
   const toggleMenuLink = (value) => {
-    document.body.style.overflow = value ? 'hidden' : 'auto';
+    bodyRef.current.style.overflow = value ? 'hidden' : 'auto';
     setShowNavLinks(value);
   };
+
+  useEffect(() => {
+    bodyRef.current = document.body;
+  }, []);
   return (
     <nav className={styles.nav}>
       <div className={styles.container}>
