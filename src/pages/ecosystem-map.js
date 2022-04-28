@@ -7,7 +7,7 @@ function EcosystemMap() {
       <div className={styles.content}>
         <ExploreMapBanner
           title="The Smart Contract Ecosystem"
-          description="The landscape for smart contract developers consists of multiple related tools and technologies. Explore the ecosystem map to get familiar with the tooling landscape. Then view the Blockchain developer roadmap to learn how to become a blockchain developer."
+          description="The landscape for smart contract developers consists of multiple related tools and technologies."
           isHomePage={false}
         />
       </div>
