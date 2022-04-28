@@ -7,11 +7,13 @@ import NavLink from '@/components/NavLink';
 import { useEffect, useState } from 'react';
 import isElementVisable from '@/helpers/isElementVisable';
 import Overlay from '@/components/Overlay';
+import FloatingButton from '@/components/FloatingButton';
 
 function BlogLayout({ children, pages }) {
   const [headings, setHeadings] = useState([]);
   const [activeHeading, setActiveHeading] = useState(null);
   const [articleOverview, setArticleOverview] = useState(false);
+  const [chapterseOverview, setChaptersOverview] = useState(false);
 
   const router = useRouter();
   const { slug } = router.query;
@@ -24,8 +26,9 @@ function BlogLayout({ children, pages }) {
 
   const next_page = sortedPages?.find((page) => page.data.sidebar_position === current_sidebar_position + 1);
 
-  const toggleArticleMenu = (value) => {
+  const toggleOptions = (value) => {
     setArticleOverview(value);
+    setChaptersOverview(value);
   };
 
   useEffect(() => {
@@ -48,13 +51,9 @@ function BlogLayout({ children, pages }) {
 
   return (
     <>
-      <Overlay showOverlay={articleOverview} isOverview={true} toggleMenu={toggleArticleMenu} />
-      {pages && (
-        <button className={clsx(styles.overview_mobile_btn, 'btn')} onClick={() => setArticleOverview(true)}>
-          <span>Articles overview</span>
-          <img src="/icons/dropdown-blue.svg" alt="dropdown icon" />
-        </button>
-      )}
+      <Overlay showOverlay={articleOverview || chapterseOverview} isOverview={true} toggleMenu={toggleOptions} />
+      {headings.length && <FloatingButton title="chapters" triggerPanel={setChaptersOverview} />}
+      {pages && <FloatingButton title="articles" triggerPanel={setArticleOverview} />}
       <div className={styles.container}>
         <div className={clsx(styles.leftSidebar, { [styles.mobile]: articleOverview })}>
           {pages && (
@@ -63,7 +62,7 @@ function BlogLayout({ children, pages }) {
               {sortedPages.map((page) => (
                 <Link key={page.slug} href={page.slug} passHref>
                   <a
-                    onClick={() => toggleArticleMenu(false)}
+                    onClick={() => toggleOptions(false)}
                     className={clsx('btn', styles.leftSidebar__link, slug === page.slug && styles.active)}
                   >
                     {page.data.title}
@@ -72,6 +71,21 @@ function BlogLayout({ children, pages }) {
               ))}
             </>
           )}
+        </div>
+        <div className={clsx(styles.rightSidebar, { [styles.mobile]: chapterseOverview })}>
+          <div className={styles.sidebar__header}>On this page</div>
+          {headings.map((heading) => (
+            <Link key={heading.id} href={`#${heading.id}`} passHref>
+              <a
+                onClick={() => toggleOptions(false)}
+                className={clsx('caption', styles.rightSidebar__link, {
+                  [styles.active]: activeHeading && heading.id === activeHeading.id,
+                })}
+              >
+                {heading.innerHTML}
+              </a>
+            </Link>
+          ))}
         </div>
         <div className={styles.content_wrapper}>
           <div className={styles.content} id="blog-content">
@@ -113,20 +127,6 @@ function BlogLayout({ children, pages }) {
               </div>
             )}
           </div>
-        </div>
-        <div className={styles.rightSidebar}>
-          <div className={styles.sidebar__header}>On this page</div>
-          {headings.map((heading) => (
-            <Link key={heading.id} href={`#${heading.id}`} passHref>
-              <a
-                className={clsx('caption', styles.rightSidebar__link, {
-                  [styles.active]: activeHeading && heading.id === activeHeading.id,
-                })}
-              >
-                {heading.innerHTML}
-              </a>
-            </Link>
-          ))}
         </div>
       </div>
     </>
