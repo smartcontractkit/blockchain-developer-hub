@@ -1,0 +1,29 @@
+.accordion {
+  background-color: var(--neural-100-color);
+  border-radius: 0.75rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 2rem;
+  max-height: 7.5rem;
+  width: 100%;
+}
+
+.accordion.expand {
+  overflow: auto;
+  max-height: 1000px;
+}
+
+.content {
+  margin-top: 1rem;
+  height: 100vh;
+}
+
+
+/* Media Query */
+
+@media (min-width: 1024px) {
+  .accordion {
+    width: 75%;
+  }
+}

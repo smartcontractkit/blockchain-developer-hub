@@ -3,6 +3,7 @@
   min-height: 85vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding-inline: 1rem;
 }

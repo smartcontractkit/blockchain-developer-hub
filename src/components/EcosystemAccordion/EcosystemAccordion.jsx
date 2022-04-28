@@ -9,19 +9,20 @@ export default function EcosystemAccordion({ expanded, id, children, expandToggl
   };
 
   return (
-    <div>
-      <button
-        aria-expanded={expanded}
-        aria-controls={`${id}-preview`}
-        id={`${id}-accordionid`}
-        onClick={toggleAccordion}
-      ></button>
+    <div
+      className={clsx(styles.accordion, { [styles.expand]: expanded })}
+      aria-expanded={expanded}
+      aria-controls={`${id}-preview`}
+      id={`${id}-accordionid`}
+      onClick={toggleAccordion}
+    >
+      <div></div>
 
       <div
         role="region"
         id={`${id}-preview`}
         aria-labelledby={`${id}-accordionid`}
-        className={clsx(styles.panel, { [styles.active]: expanded })}
+        className={styles.content}
         hidden={!expanded}
       >
         {children}

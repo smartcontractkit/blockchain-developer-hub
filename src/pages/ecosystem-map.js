@@ -1,7 +1,11 @@
+import AccordionContent from '@/components/AccordionContent';
+import EcosystemAccordion from '@/components/EcosystemAccordion';
 import ExploreMapBanner from '@/components/ExploreMapBanner';
 import styles from '@/styles/pages/EcosystemMap.module.css';
+import { useState } from 'react';
 
 function EcosystemMap() {
+  const [expanded, setExpanded] = useState('');
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -11,6 +15,9 @@ function EcosystemMap() {
           isHomePage={false}
         />
       </div>
+      <EcosystemAccordion expanded={expanded === 'id'} id="id" expandToggle={setExpanded}>
+        <AccordionContent />
+      </EcosystemAccordion>
     </section>
   );
 }

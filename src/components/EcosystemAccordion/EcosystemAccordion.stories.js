@@ -1,4 +1,5 @@
 import EcosystemAccordion from './EcosystemAccordion';
+import AccordionContent from '../AccordionContent';
 
 export default {
   title: 'component/Ecosystem Accordion',
@@ -7,7 +8,7 @@ export default {
 
 const Template = (args) => (
   <EcosystemAccordion {...args}>
-    <p>My contents here</p>
+    <AccordionContent />
   </EcosystemAccordion>
 );
 
