@@ -9,18 +9,22 @@ export default function EcosystemAccordion({ title, subtitle, description, expan
   };
 
   return (
-    <div
+    <button
       className={clsx(styles.accordion, { [styles.expand]: expanded })}
       aria-expanded={expanded}
       aria-controls={`${id}-preview`}
       id={`${id}-accordionid`}
       onClick={toggleAccordion}
     >
-      <div>
-        <div className={styles.heading}>
-          <span>{subtitle}</span>-<h2>{title}</h2>
+      <div className={styles.text_content}>
+        <div>
+          <h2 className={clsx('subtitle-01', styles.heading)}>
+            <span>{subtitle}</span>-<span className={styles.title}>{title}</span>
+          </h2>
+          <p className={clsx('body-short-01', styles.description)}>{description}</p>
         </div>
-        <p>{description}</p>
+
+        <img src={`/icons/${expanded ? 'open-accordion.svg' : 'close-accordion.svg'}`} alt="accordion icon" />
       </div>
 
       <div
@@ -32,7 +36,7 @@ export default function EcosystemAccordion({ title, subtitle, description, expan
       >
         {children}
       </div>
-    </div>
+    </button>
   );
 }
 
