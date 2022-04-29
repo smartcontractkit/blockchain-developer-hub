@@ -21,7 +21,6 @@ export default function AccordionContent({ url, title, expanded }) {
           title={title}
           frameBorder="0"
           role="region"
-          onLoadStart={() => setLoading(false)}
           onLoad={() => setLoading(false)}
         />
       )}

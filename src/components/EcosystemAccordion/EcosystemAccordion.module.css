@@ -45,10 +45,3 @@
   color: var(--neural-800-color);
   font-weight: 400;
 }
-/* Media Query */
-
-@media (min-width: 1024px) {
-  .accordion {
-    /* width: 75%; */
-  }
-}

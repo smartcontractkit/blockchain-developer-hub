@@ -3,25 +3,10 @@ import EcosystemAccordion from '@/components/EcosystemAccordion';
 import ExploreMapBanner from '@/components/ExploreMapBanner';
 import styles from '@/styles/pages/EcosystemMap.module.css';
 import { useState } from 'react';
+import accordionData from '@/data/ecosystem-accordion.yaml';
 
 function EcosystemMap() {
   const [expanded, setExpanded] = useState('');
-  const accordionData = [
-    {
-      id: 'ecosystem-map',
-      url: 'https://blockchain-ecosystem-map-this-dot-labs-chainlink.vercel.app/',
-      title: 'Ecosystem Map',
-      subtitle: '01',
-      description: 'Explore the ecosystem map to get familiar with the tooling landscape.',
-    },
-    {
-      id: 'roadmap',
-      url: 'https://developer-roadmap-1.vercel.app/blockchain',
-      title: 'Roadmap',
-      subtitle: '02',
-      description: 'View the Blockchain developer roadmap to learn how to become a blockchain developer.',
-    },
-  ];
 
   const toggleAccordion = (id) => {
     setExpanded(expanded && expanded === id ? null : id);
