@@ -5,34 +5,45 @@
 .container {
   margin-inline: auto;
   max-width: 1440px;
-  padding: 1.5rem;
+  padding: 1.2rem 1rem;
   position: relative;
-}
-.nav_contents, .nav_links {
-  display: flex;
-  align-items: center;
-}
-.nav_contents {
-  flex-wrap: wrap;
 }
 
 .logo {
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1rem;
   letter-spacing: -0.03em;
   color: var(--black-color);
   user-select: none;
 }
 .nav_links {
-  flex: 1 0 100%;
-  padding: 0;
-  margin-top: 0.6rem;
-  overflow-x: auto;
+  position: fixed;
+  top: 63px;
+  left: 0;
+  right: 0;
+  background-color: var(--white-color);
+  display: none;
 }
 
+.nav_contents, .nav_links.mobile {
+  display: flex;
+}
+
+.nav_links.mobile {
+  flex-direction: column;
+  align-items: start;
+  padding: 3rem 1.5rem 1rem;
+  z-index: 1;
+}
+
+.nav_contents {
+  align-items: center;
+  flex-wrap: wrap;
+}
 .nav_links li {
+  margin-bottom: 1.875rem;
   list-style: none;
   white-space: nowrap;
 }
@@ -42,31 +53,67 @@
 }
 
 
-.nav_links li:not(:last-child) {
-  margin-right: 1rem;
-}
-
 .githublogo {
   position: absolute;
   right: 1rem;
   top: 30%;
   z-index: 10;
+  display: none;
+}
+
+.menu_btn {
+  display: flex;
+  background: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.8rem;
+  cursor: pointer;
 }
 
 /* Media Query */
 
 @media (min-width: 1024px) {
 
+  .container {
+    padding: 1.5rem;
+  }
+
+
+  .menu_btn {
+    display: none;
+  }
+
   .nav_contents {
     flex-wrap: unset;
   }
+
+  .nav_links.mobile {
+    flex-direction: row;
+    top: unset;
+    padding: unset;
+  }
+
   .nav_links {
+    display: flex;
+    position: relative;
     flex: auto;
     justify-content: center;
     margin-top: unset;
+    top: unset;
+    right: unset;
+    left: unset;
+    flex-direction: row;
   }
-  .nav_links li:not(:last-child) {
-    margin-right: unset;
+
+  .nav_links li {
+    margin-bottom: unset;
+  }
+
+  .logo {
+    font-size: 1.5rem;
   }
 
   .nav_links li:not(:last-child)::after {
@@ -74,4 +121,9 @@
     margin-inline: 1.5rem;
     opacity: 0.2;
   }
+
+  .githublogo {
+    display: block;
+  }
+
 }
