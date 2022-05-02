@@ -36,6 +36,14 @@ stack that allows you to iterate and ship faster. You can focus on optimizations
 For smart-contract coding, you should choose the language you feel most comfortable with. Use this reference table to
 get started.
 
+|                          | EVM Chains | Solana | Terra |
+| :----------------------- | :--------: | :----: | :---- |
+| **Language**             |            |        |       |
+| **Common frameworks**    |            |        |       |
+| **Storage**              |            |        |       |
+| **Popular starter kits** |            |        |       |
+| **Common frontends**     |            |        |       |
+
 <table>
     <thead>
         <tr>
