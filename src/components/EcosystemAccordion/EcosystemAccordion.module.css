@@ -1,0 +1,47 @@
+.accordion {
+  background-color: var(--neural-100-color);
+  border-radius: 0.75rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 1.5rem;
+  max-height: 7.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: none;
+}
+
+.accordion.expand {
+  overflow: auto;
+  max-height: 100%;
+}
+
+.text_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  margin-top: 2rem;
+  height: 100vh;
+  margin-bottom: 6rem;
+  position: relative;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  color: var(--neural-600-color);
+}
+
+
+.title {
+  color: var(--neural-950-color);
+}
+
+.description {
+  color: var(--neural-800-color);
+  font-weight: 400;
+}

@@ -1,0 +1,28 @@
+.iframe {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #70797C;
+  border-radius: 0.75rem;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.visit_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: var(--tertiary-700-color);
+  margin: 2rem auto;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: fit-content;
+}
+
+.visit_page > img {
+  margin-left: 0.75rem;
+}
