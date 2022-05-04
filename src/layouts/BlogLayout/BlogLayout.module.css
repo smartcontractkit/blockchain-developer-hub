@@ -11,7 +11,7 @@
   position: fixed;
   flex-direction: column;
   margin: 2rem 2rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .leftSidebar {
