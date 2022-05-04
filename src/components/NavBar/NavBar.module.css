@@ -46,6 +46,11 @@
   margin-bottom: 1.875rem;
   list-style: none;
   white-space: nowrap;
+  display: none;
+}
+
+.nav_links.mobile li{
+    display: block;
 }
 
 .nav_links li > a {
@@ -109,6 +114,7 @@
   }
 
   .nav_links li {
+    display: block;
     margin-bottom: unset;
   }
 

@@ -18,4 +18,16 @@
   .mobile_menu_overlay {
     display: none;
   }
+
+  .mobile_menu_overlay.overview {
+      top: 0;
+      display: block;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .mobile_menu_overlay.overview {
+      display: none;
+  }
 }
