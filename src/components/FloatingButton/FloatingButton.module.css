@@ -1,0 +1,45 @@
+
+
+.articles_overview_mobile_btn, 
+.chapters_overview_mobile_btn 
+ {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 3.5rem;
+  background-color: var(--tertiary-50-color);
+  border: none;
+  color: var(--tertiary-700-color);
+  box-shadow: 0px -8px 32px rgba(0, 0, 0, 0.04), inset 0px 1px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.articles_overview_mobile_btn {
+  bottom: -1px;
+}
+
+.chapters_overview_mobile_btn {
+  top: -1px;
+  position: sticky;
+  width: 100%;
+  box-shadow: 0px -8px 32px rgba(0, 0, 0, 0.04), inset 0px -3px 0px rgba(0, 0, 0, 0.08);
+}
+
+.articles_overview_mobile_btn > img, 
+.chapters_overview_mobile_btn > img 
+{
+  margin-left: 1rem;
+}
+
+.chapters_overview_mobile_btn > img {
+  transform: rotate(180deg);
+}
+@media (min-width: 1280px) {
+.articles_overview_mobile_btn, 
+.chapters_overview_mobile_btn {
+    display: none;
+  }
+}
