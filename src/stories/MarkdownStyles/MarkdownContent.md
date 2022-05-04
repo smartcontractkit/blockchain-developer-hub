@@ -1,37 +1,4 @@
----
-title: Shipping your first dApp
----
-
-By now, you are likely to have consumed some of the content from the Learn section, or maybe even participated in your
-first hackathon. Participating in workshops is great, but taking the leap to building your first dApp can be difficult.
-
-Why now? The world is slowly realizing the importance and benefits of permissionless data—that is, data that is not
-owned by a few large players, but is rather decentralized and transparent. While it’s still early in the world of
-blockchain development, building applications is the best way we can help the community and ecosystem move forward, and
-give you the chance to participate in Web3.
-
-### Here are some pointers to keep in mind:
-
-- **Play to your strengths**. If you are particularly skilled in one area, focus on that. For example, if you are
-  backend-focused and don’t have a ton of frontend experience, choose tools that have out-of-box boilerplate templates,
-  such as Moralis. This will help you iterate faster and ship sooner. You can brush up on other skills later.
-
-- **Build your team**. If you are participating in an event, seek out teammates in the event’s forums. Like you, other
-  participants will look for complimentary skills to strengthen their efforts. If you are building outside of an event,
-  create a project roster to attract others. Places like [devpost](https://devpost.com/software) are great for this.
-
-- **Use boring solutions**. Dan McKinley has some wise words for us in his
-  [Choose Boring Technology](https://mcfunley.com/choose-boring-technology) post. If you come across a problem while
-  building your dApp, it’s likely that others before you have come across it and have found a solution that works well.
-  To iterate faster, choose those solutions. The
-  [Ecosystem Map](https://www.figma.com/proto/U6iAHSsDlqoJfOaNwRigeO/Ecosystem-Tools-Map?page-id=0%3A1&node-id=2%3A1242&viewport=264%2C48%2C0.68&scaling=scale-down)
-  is a great place to learn about all the products in the blockchain space.
-
-## Stack
-
-Before choosing the stack for your project, in addition to your specific strengths and end-goals, you will also want to
-consider important factors such as community size, support, and documentation. Generally, you will want to choose the
-stack that allows you to iterate and ship faster. You can focus on optimizations later.
+## This is markdown styles story
 
 For smart-contract coding, you should choose the language you feel most comfortable with. Use this reference table to
 get started.
@@ -45,17 +12,6 @@ get started.
 | **Common frontends**     | [Angular](https://angular.io/)<br /> [Chakra UI](https://chakra-ui.com/)<br /> [React](https://reactjs.org/)<br /> [Vue](https://vuejs.org/)                                                             | [Angular](https://angular.io/)<br /> [Chakra UI](https://chakra-ui.com/)<br /> [React](https://reactjs.org/)<br /> [Vue](https://vuejs.org/)                                                                        | [Angular](https://angular.io/)<br /> [Chakra UI](https://chakra-ui.com/)<br /> [React](https://reactjs.org/)<br /> [Vue](https://vuejs.org/)                                                                                    |
 
 ## Security
-
-Smart contracts (regardless of the specific blockchain they are on) are extremely flexible. They have the ability to
-hold large amounts of value (often millions of billions of USD) and execute immutable code. There are countless
-advantages from both the transparency and decentralization of the system, however, the high value held by these
-contracts also attracts countless attacks. Attackers look to profit both from the vulnerabilities found in smart
-contracts as well as the blockchains they run on.
-
-Smart contracts are different from other software programs in that once created, they cannot be changed to patch
-security flaws. This is the nature of the immutability of the blockchain. Once attacks occur, value extracted by the
-attacker cannot be recovered by its original holders. As of this writing, over $1.85 billion USD has been extracted by
-attackers across blockchains.
 
 As is the case with any software workflow, you must ensure that your smart contracts are tested thoroughly in both
 development and test environments (testnets), but in addition, you must be aware of common attack types and the
@@ -104,3 +60,21 @@ started with a simple idea and built a full-fledged dapp.
   with one transaction and of a decentralised off-chain public feed of solar energy production data for all to use
 
 Find even more inspiration over at [Devpost](https://devpost.com/software/built-with/blockchain).
+
+```javascript
+export default (num, size) => {
+  return num > size ? num : `0${num + 1}`;
+};
+```
+
+> By now, you are likely to have consumed some of the content from the Learn section, or maybe even participated in your
+> first hackathon. Participating in workshops is great, but taking the leap to building your first dApp can be
+> difficult.
+
+[More markdown syntax](https://www.markdownguide.org/extended-syntax/)
+
+- Simple
+- Perfect
+- Complex
+
+![How far along are companies with blockchain?](/posts/blockchain101/blockchain/image2.png)

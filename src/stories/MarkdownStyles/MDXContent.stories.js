@@ -1,14 +1,13 @@
-import mdxContent from './anynewfile.json';
 import styles from '@/styles/MDX.module.css';
-import { MDXRemote } from 'next-mdx-remote';
+import MdxContent from './MarkdownContent.md';
 
 export default {
-  title: 'Markdown/Test',
+  title: 'Mdx/ without mdx file style',
 };
 
 const Template = () => (
   <div className={styles.container}>
-    <MDXRemote {...mdxContent} />
+    <MdxContent />
   </div>
 );
 

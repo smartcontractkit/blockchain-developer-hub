@@ -2,52 +2,12 @@ import { Meta } from '@storybook/addon-docs/blocks';
 import { Canvas, Story } from '@storybook/addon-docs';
 
 import styles from '@/styles/MDX.module.css';
+import MdxContent from './MarkdownContent.md';
 
-<Meta title="Markdowns/styles" />
+<Meta title="Markdown/ Content Styles" />
 
 <div id={styles.container_story}>
 
-## This is markdown styles story
-
-```javascript
-export default (num, size) => {
-  return num > size ? num : `0${num + 1}`;
-};
-```
-
-| Syntax    | Description | Test Text   |
-| :-------- | :---------- | :---------- |
-| Header    | Title       | Here's this |
-| Paragraph | Text        | And more    |
-
-> By now, you are likely to have consumed some of the content from the Learn section, or maybe even participated in your
-> first hackathon. Participating in workshops is great, but taking the leap to building your first dApp can be
-> difficult.
-
-[More markdown syntax](https://www.markdownguide.org/extended-syntax/)
-
-- Simple
-- Perfect
-- Complex
-
-## Examples and Inspiration
-
-If you’ve made it all the way here, you are likely thinking about what to build. Here are some great projects that
-started with a simple idea and built a full-fledged dapp.
-
-- [**Rupya**](https://devfolio.co/submissions/rupya-776b) - Zero collateral lending platform with a focus on seamless
-  lending for agriculture. 🧑🏽‍🌾
-- [**NUSIC: NFT Music Bonds**](https://devpost.com/software/nusic-nft-music-oracle) - Royalty bearing NFT music bonds,
-  powered by a streaming data oracle network.
-- [**Crypto Adventure**](https://github.com/otaiga/CryptoAdventure) - Choose Your Own Adventure (CYOA) game platform
-  written to take advantage of Web3.
-- [**SavePanther**](https://showcase.ethglobal.com/roadtoweb3/savepanther) - Mint exclusive NFT collectibles for raising
-  funds to protect endangered panthers.
-- [**Meta Capsule**](https://showcase.ethglobal.com/buildquest/meta-capsule-x30ba) - Infrastructure for fashionb rands
-  and merchandisers interested in bringing their physical collection to life in the metaverse.
-- [**Soleil**](https://devpost.com/software/soleil) - A way to incentivise both growths of the entire solar industry
-  with one transaction and of a decentralised off-chain public feed of solar energy production data for all to use
-
-![How far along are companies with blockchain?](/posts/blockchain101/blockchain/image2.png)
+<MdxContent />
 
 </div>
