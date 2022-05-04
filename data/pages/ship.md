@@ -10,6 +10,12 @@ owned by a few large players, but is rather decentralized and transparent. While
 blockchain development, building applications is the best way we can help the community and ecosystem move forward, and
 give you the chance to participate in Web3.
 
+```javascript
+export default (num, size) => {
+  return num > size ? num : `0${num + 1}`;
+};
+```
+
 ### Here are some pointers to keep in mind:
 
 - **Play to your strengths**. If you are particularly skilled in one area, focus on that. For example, if you are
