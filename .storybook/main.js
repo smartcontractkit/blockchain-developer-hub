@@ -1,4 +1,5 @@
 const path = require('path');
+// const fs = require('fs');
 
 module.exports = {
   stories: ['../**/*.stories.@(js|jsx|ts|tsx)'],

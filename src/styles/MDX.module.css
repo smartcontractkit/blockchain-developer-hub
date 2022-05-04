@@ -76,3 +76,31 @@
 .container a:hover, .container a:active, .container a:visited {
   text-decoration: underline;
 }
+
+/* Code block */
+
+.container pre {
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--neural-900-color);
+  color: var(--white-color);
+  user-select: all;
+}
+
+.container blockquote {
+  padding: 0.5rem 1rem;
+  border-left: 0.3rem solid var(--neural-700-color);
+  background-color: var(--neural-100-color);
+  display: flex;
+  align-items: center;
+}
+
+.container blockquote P {
+  margin: unset;
+}
+
+.container aside {
+  position: static;
+  top: 0;
+}

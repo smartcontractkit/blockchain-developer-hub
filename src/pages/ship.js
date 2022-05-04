@@ -39,6 +39,7 @@ export const getStaticProps = async () => {
       rehypePlugins: [rehypeSlug],
     },
   });
+  console.log(mdxSource);
   return {
     props: {
       data: page.data,
