@@ -9,7 +9,6 @@ import rehypeSlug from 'rehype-slug';
 import styles from '@/styles/MDX.module.css';
 
 function Ship({ data, content }) {
-  console.log(content);
   return (
     <BlogLayout>
       <ArticleHeader
