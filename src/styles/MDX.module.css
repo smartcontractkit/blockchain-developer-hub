@@ -1,5 +1,6 @@
 .container {
-  color: var(--neural-800-color)
+  color: var(--neural-800-color);
+  margin: 0 auto;
 }
 
 .container img {
@@ -12,7 +13,7 @@
 
 .container h2,
 .container h3,
-.container h4 {
+.container h4{
  font-weight: 700;
  margin: 2rem auto;
   color: var(--neural-950-color);
@@ -25,10 +26,23 @@
   font-size: 1.4rem;
 }
 
-.container p {
+.container p{
   font-size: 1rem;
   line-height: 24px;
   margin-bottom: 1rem;
+}
+
+.container p code {
+  color: var(--secondary-300-color);
+}
+
+.container hr {
+  margin: 1rem 0;
+}
+
+
+.container ul {
+  margin: 1rem 0;
 }
 
 .container li {
@@ -52,15 +66,20 @@
   table-layout: fixed;
 }
 
-.container th {
+.container tr th {
   text-align: left;
   padding: 1rem;
   border: 1px solid var(--neural-200-color);
 }
 
-.container td {
+.container tr td {
   padding: 1rem;
   border: 1px solid var(--neural-200-color);
+}
+
+.container tr {
+  background-color: unset;
+  border-top: unset;
 }
 
 .container thead {
@@ -75,4 +94,45 @@
 
 .container a:hover, .container a:active, .container a:visited {
   text-decoration: underline;
+}
+
+/* Code block */
+
+.container pre {
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--neural-900-color);
+  user-select: all;
+}
+
+.container pre > div {
+  border: none;
+}
+
+.container pre code {
+  color: var(--white-color);
+}
+
+.container blockquote {
+  padding: 0.5rem 1rem;
+  border-left: 0.3rem solid var(--neural-700-color);
+  background-color: var(--neural-100-color);
+  display: flex;
+  align-items: center;
+  margin: 0.5rem auto;
+}
+
+.container blockquote P {
+  margin: unset;
+}
+
+.container aside {
+  position: static;
+  top: 0;
+}
+
+.container p mark {
+ color: var(--white-color);
+ background-color: var(--secondary-300-color);
 }

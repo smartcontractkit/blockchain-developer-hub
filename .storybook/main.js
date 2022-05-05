@@ -1,12 +1,21 @@
 const path = require('path');
 
 module.exports = {
-  stories: ['../**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../**/*.stories.@(js|jsx|ts|tsx|mdx)'],
   addons: [
     '@storybook/addon-links',
-    '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     'storybook-addon-next-router',
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        configureJSX: true,
+        babelOptions: {},
+        sourceLoaderOptions: null,
+        transcludeMarkdown: true,
+      },
+    },
+    '@storybook/addon-essentials',
   ],
   framework: '@storybook/react',
   core: {

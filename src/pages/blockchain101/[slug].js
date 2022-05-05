@@ -4,7 +4,7 @@ import getPage from '@/helpers/getPage';
 import PropTypes from 'prop-types';
 import BlogLayout from '@/layouts/BlogLayout';
 import ArticleHeader from '@/components/ArticleHeader';
-import mdxStyles from '@/styles/MDX.module.css';
+import styles from '@/styles/MDX.module.css';
 import getPaths from '@/helpers/getPaths';
 import getPagesInfo from '@/helpers/getPagesInfo';
 import remarkGfm from 'remark-gfm';
@@ -20,7 +20,7 @@ function Blockchain({ data, content, pagesInfo }) {
         image={data.author_image}
         datetime={data.date}
       />
-      <div className={mdxStyles.container}>
+      <div className={styles.container}>
         <MDXRemote {...content} />
       </div>
     </BlogLayout>

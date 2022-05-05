@@ -4,9 +4,9 @@ import getPage from '@/helpers/getPage';
 import PropTypes from 'prop-types';
 import BlogLayout from '@/layouts/BlogLayout';
 import ArticleHeader from '@/components/ArticleHeader';
-import mdxStyles from '@/styles/MDX.module.css';
 import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';
+import styles from '@/styles/MDX.module.css';
 
 function Ship({ data, content }) {
   return (
@@ -18,7 +18,7 @@ function Ship({ data, content }) {
         image={data.author_image}
         datetime={data.date}
       />
-      <div className={mdxStyles.container}>
+      <div className={styles.container}>
         <MDXRemote {...content} />
       </div>
     </BlogLayout>

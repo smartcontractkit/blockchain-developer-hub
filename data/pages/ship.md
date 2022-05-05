@@ -36,95 +36,13 @@ stack that allows you to iterate and ship faster. You can focus on optimizations
 For smart-contract coding, you should choose the language you feel most comfortable with. Use this reference table to
 get started.
 
-<table>
-    <thead>
-        <tr>
-            <th></th>
-            <th>EVM Chains</th>
-            <th>Solana</th>
-            <th>Terra</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>**Language**</td>
-            <td>
-                [Solidity](https://docs.soliditylang.org/en/v0.8.13/) - (based on javascript)
-            </td>
-            <td>
-                [Rust](https://www.rust-lang.org/)\
-                [C](https://www.iso.org/standard/74528.html)\
-                [C++](https://isocpp.org/)
-            </td>
-            <td>
-                [Rust](https://www.rust-lang.org/)
-            </td>
-        </tr>
-        <tr>
-            <td>**Common frameworks**</td>
-            <td>
-                [Hardhat](https://hardhat.org/) - (javascript)\
-                [Brownie](https://eth-brownie.readthedocs.io/en/stable/index.html) - (python)
-            </td>
-            <td>
-                [Anchor](https://book.anchor-lang.com/)
-            </td>
-            <td>
-                [Terra.js](https://terra-money.github.io/terra.js/) - (javascript)\
-                [Terra.py](https://github.com/terra-money/terra.py) - (python)\
-                [Cosmos SDK](https://v1.cosmos.network/sdk)
-            </td>
-        </tr>
-        <tr>
-            <td>**Storage**</td>
-            <td>
-                [IPFS](https://ipfs.io/)\
-                [AWS](https://aws.amazon.com/s3/)\
-                [Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)\
-                [GCP](https://cloud.google.com/storage)
-            </td>
-            <td>
-                [Arweave](https://www.arweave.org/)\
-                [AWS](https://aws.amazon.com/s3/)\
-                [Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)\
-                [GCP](https://cloud.google.com/storage)
-            </td>
-            <td>
-                [Terra FCD](https://github.com/terra-money/fcd)\
-                [AWS](https://aws.amazon.com/s3/)\
-                [Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)\
-                [GCP](https://cloud.google.com/storage)
-            </td>
-        </tr>
-        <tr>
-            <td>**Popular starter kits**</td>
-            <td>[Moralis](https://moralis.io/)</td>
-            <td>[dapp-scaffold](https://github.com/solana-labs/dapp-scaffold)</td>
-            <td>[Terrain](https://github.com/iboss-ptk/terrain)</td>
-        </tr>
-        <tr>
-            <td>**Common frontends**</td>
-            <td>
-                [Angular](https://angular.io/)\
-                [Chakra UI](https://chakra-ui.com/)\
-                [React](https://reactjs.org/)\
-                [Vue](https://vuejs.org/)
-            </td>
-            <td>
-                [Angular](https://angular.io/)\
-                [Chakra UI](https://chakra-ui.com/)\
-                [React](https://reactjs.org/)\
-                [Vue](https://vuejs.org/)
-            </td>
-            <td>
-                [Angular](https://angular.io/)\
-                [Chakra UI](https://chakra-ui.com/)\
-                [React](https://reactjs.org/)\
-                [Vue](https://vuejs.org/)
-            </td>
-        </tr>
-    </tbody>
-</table>
+|                          | EVM Chains                                                                                                                                                                                               | Solana                                                                                                                                                                                                              | Terra                                                                                                                                                                                                                           |
+| :----------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Language**             | [Solidity](https://docs.soliditylang.org/en/v0.8.13/) - (based on javascript)                                                                                                                            | [Rust](https://www.rust-lang.org/)<br /> [C](https://www.iso.org/standard/74528.html)<br /> [C++](https://isocpp.org/)                                                                                              | [Rust](https://www.rust-lang.org/)                                                                                                                                                                                              |
+| **Common frameworks**    | [Hardhat](https://hardhat.org/) - (javascript)<br /> [Brownie](https://eth-brownie.readthedocs.io/en/stable/index.html) - (python)                                                                       | [Anchor](https://book.anchor-lang.com/)                                                                                                                                                                             | [Terra.js](https://terra-money.github.io/terra.js/) - (javascript)<br /> [Terra.py](https://github.com/terra-money/terra.py) - (python)<br /> [Cosmos SDK](https://v1.cosmos.network/sdk)                                       |
+| **Storage**              | [IPFS](https://ipfs.io/)<br /> [AWS](https://aws.amazon.com/s3/)<br /> [Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)<br /> [GCP](https://cloud.google.com/storage) | [Arweave](https://www.arweave.org/)<br /> [AWS](https://aws.amazon.com/s3/)<br /> [Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)<br /> [GCP](https://cloud.google.com/storage) | [Terra FCD](https://github.com/terra-money/fcd)<br /> [AWS](https://aws.amazon.com/s3/)<br /> [Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)<br /> [GCP](https://cloud.google.com/storage) |
+| **Popular starter kits** | [Moralis](https://moralis.io/)                                                                                                                                                                           | [dapp-scaffold](https://github.com/solana-labs/dapp-scaffold)                                                                                                                                                       | [Terrain](https://github.com/iboss-ptk/terrain)                                                                                                                                                                                 |
+| **Common frontends**     | [Angular](https://angular.io/)<br /> [Chakra UI](https://chakra-ui.com/)<br /> [React](https://reactjs.org/)<br /> [Vue](https://vuejs.org/)                                                             | [Angular](https://angular.io/)<br /> [Chakra UI](https://chakra-ui.com/)<br /> [React](https://reactjs.org/)<br /> [Vue](https://vuejs.org/)                                                                        | [Angular](https://angular.io/)<br /> [Chakra UI](https://chakra-ui.com/)<br /> [React](https://reactjs.org/)<br /> [Vue](https://vuejs.org/)                                                                                    |
 
 ## Security
 
