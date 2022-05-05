@@ -32,6 +32,19 @@
   margin-bottom: 1rem;
 }
 
+.container p code {
+  color: var(--secondary-300-color);
+}
+
+.container hr {
+  margin: 1rem 0;
+}
+
+
+.container ul {
+  margin: 1rem 0;
+}
+
 .container li {
   font-size: 1rem;
   line-height: 24px;

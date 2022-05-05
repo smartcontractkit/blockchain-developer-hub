@@ -13,7 +13,7 @@ get started.
 
 ## Security
 
-As is the case with any software workflow, you must ensure that your smart contracts are tested thoroughly in both
+As is the `case` with any software workflow, you must ensure that your smart contracts are tested thoroughly in both
 development and test environments (testnets), but in addition, you must be aware of common attack types and the
 solutions and best practices that can be used to mitigate attacks and help you deploy secure smart contracts.
 
@@ -23,6 +23,7 @@ These include;
 - Re-entrancy
 - Source of randomness
 - Oracle manipulation
+  - Test nested
 
 Get familiar with these attacks and read more at the
 [Consensys Smart Contract Known Attacks](https://consensys.github.io/smart-contract-best-practices/attacks/) page.
@@ -60,6 +61,8 @@ started with a simple idea and built a full-fledged dapp.
   with one transaction and of a decentralised off-chain public feed of solar energy production data for all to use
 
 Find even more inspiration over at [Devpost](https://devpost.com/software/built-with/blockchain).
+
+---
 
 ```javascript
 export default (num, size) => {
