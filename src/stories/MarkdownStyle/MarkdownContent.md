@@ -62,6 +62,12 @@ started with a simple idea and built a full-fledged dapp.
 
 Find even more inspiration over at [Devpost](https://devpost.com/software/built-with/blockchain).
 
+- [x] Write the press release
+- [x] Update the website
+- [x] Contact the media
+
+I need to highlight these <mark>very important words</mark>
+
 ---
 
 ```javascript

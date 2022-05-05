@@ -131,3 +131,8 @@
   position: static;
   top: 0;
 }
+
+.container p mark {
+ color: var(--white-color);
+ background-color: var(--secondary-300-color);
+}

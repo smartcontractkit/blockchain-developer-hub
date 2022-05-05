@@ -32,3 +32,9 @@ a {
   box-sizing: border-box;
   margin: 0;
 }
+
+
+ul.contains-task-list {
+  padding: 0;
+  list-style: none;
+}
