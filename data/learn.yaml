@@ -3,7 +3,7 @@ resources:
     name: EVM Chains
     logo: /logos/ethereum.png
     courses:
-      overview: "Acquire new knowledge and skills in a variety of ways, from engaging video lectures."
+      overview: "Acquire new knowledge and skills in a variety of ways, from engaging video and written lectures."
       data:
       - title: "Deploy your first smart contract"
         author: Chainlink
@@ -28,7 +28,7 @@ resources:
 
 
     tutorials:
-      overview: "A self design instructional tool that provides the same degree of concept-teaching, interactivity, and active collaborative."
+      overview: "A step by step guide to help you easily understand and enhance your skills."
       data:
       - title: "How To Create NFTs With Solidity"
         author: Patrick Collins
@@ -58,7 +58,7 @@ resources:
     name: Solana
     logo: /logos/solana.png
     courses:
-      overview: "Acquire new knowledge and skills in a variety of ways, from engaging video lectures."
+      overview: "Acquire new knowledge and skills in a variety of ways, from engaging video and written lectures."
       data:
       - title: "How to Build and Deploy a Solana Smart Contract"
         author: Chainlink
@@ -83,7 +83,7 @@ resources:
 
 
     tutorials:
-      overview: "A self design instructional tool that provides the same degree of concept-teaching, interactivity, and active collaborative."
+      overview: "A step by step guide to help you easily understand and enhance your skills."
       data:
       - title: Create Solana dApp from Scratch
         author: Lorisleiva
@@ -112,7 +112,7 @@ resources:
     name: Terra
     logo: /logos/terra.png
     courses:
-      overview: "Acquire new knowledge and skills in a variety of ways, from engaging video lectures."
+      overview: "Acquire new knowledge and skills in a variety of ways, from engaging video and written lectures."
       data:
       - title: Terra Development Basics
         author: Terra Bites
@@ -137,7 +137,7 @@ resources:
 
 
     tutorials:
-      overview: "A self design instructional tool that provides the same degree of concept-teaching, interactivity, and active collaborative."
+      overview: "A step by step guide to help you easily understand and enhance your skills."
       data:
       - title: "Terra Basics: Luna"
         author: Learn Terra
