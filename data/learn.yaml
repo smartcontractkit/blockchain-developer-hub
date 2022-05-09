@@ -3,7 +3,7 @@ resources:
     name: EVM Chains
     logo: /logos/ethereum.png
     courses:
-      overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
+      overview: "Acquire new knowledge and skills in a variety of ways, from engaging video lectures."
       data:
       - title: "Deploy your first smart contract"
         author: Chainlink
@@ -28,7 +28,7 @@ resources:
 
 
     tutorials:
-      overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
+      overview: "A self design instructional tool that provides the same degree of concept-teaching, interactivity, and active collaborative."
       data:
       - title: "How To Create NFTs With Solidity"
         author: Patrick Collins
@@ -58,7 +58,7 @@ resources:
     name: Solana
     logo: /logos/solana.png
     courses:
-      overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
+      overview: "Acquire new knowledge and skills in a variety of ways, from engaging video lectures."
       data:
       - title: "How to Build and Deploy a Solana Smart Contract"
         author: Chainlink
@@ -83,7 +83,7 @@ resources:
 
 
     tutorials:
-      overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
+      overview: "A self design instructional tool that provides the same degree of concept-teaching, interactivity, and active collaborative."
       data:
       - title: Create Solana dApp from Scratch
         author: Lorisleiva
@@ -112,7 +112,7 @@ resources:
     name: Terra
     logo: /logos/terra.png
     courses:
-      overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
+      overview: "Acquire new knowledge and skills in a variety of ways, from engaging video lectures."
       data:
       - title: Terra Development Basics
         author: Terra Bites
@@ -137,7 +137,7 @@ resources:
 
 
     tutorials:
-      overview: "Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons."
+      overview: "A self design instructional tool that provides the same degree of concept-teaching, interactivity, and active collaborative."
       data:
       - title: "Terra Basics: Luna"
         author: Learn Terra
