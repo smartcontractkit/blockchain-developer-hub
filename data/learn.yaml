@@ -3,7 +3,7 @@ resources:
     name: EVM Chains
     logo: /logos/ethereum.png
     courses:
-      overview: "Acquire new knowledge and skills in a variety of ways, from engaging video and written lectures."
+      overview: "Introductory short form content to help you get up and running quickly. Deploy contracts and see them in action."
       data:
       - title: "Deploy your first smart contract"
         author: Chainlink
@@ -28,7 +28,7 @@ resources:
 
 
     tutorials:
-      overview: "A step by step guide to help you easily understand and enhance your skills."
+      overview: "In-depth guides to learn and interact with specific parts of the ecosystem and blockchain technology stack."
       data:
       - title: "How To Create NFTs With Solidity"
         author: Patrick Collins
