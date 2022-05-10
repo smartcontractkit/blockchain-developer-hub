@@ -31,7 +31,21 @@ function Card({
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <div className={classes}>
-        {image && <img src={image} alt={title} width="200" height="150" className={styles.image} />}
+        {image && (
+          <div className={styles.header}>
+            <img src={image} alt={title} width="200" height="150" className={styles.image} />
+            <button
+              className={styles.shareBtn}
+              onClick={(e) => {
+                e.preventDefault();
+                alert('Hello');
+              }}
+            >
+              <Svg height="20" width="20" href="/icons/share.svg" />
+              Share
+            </button>
+          </div>
+        )}
 
         <h2 className={titleClasses}>{title}</h2>
 

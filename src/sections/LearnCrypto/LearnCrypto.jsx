@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Card from '@/components/Card';
 import TutorialCard from '@/components/TutorialCard';
 import styles from './LearnCrypto.module.css';
+import Modal from '@/components/Modal';
 
 function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
   const headingClasses = clsx('subtitle-01', styles.headings);
@@ -69,6 +70,7 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
           </div>
         )}
       </div>
+      {/* <Modal /> */}
     </div>
   );
 }

@@ -3,6 +3,7 @@ import data from '@/data/learn.yaml';
 import LearnCrypto from '@/sections/LearnCrypto';
 import styles from '@/styles/pages/LearnPage.module.css';
 import PagePagination from '@/components/PagePagination';
+import Modal from '@/components/Modal';
 
 function Learn() {
   const { resources } = data;
@@ -23,6 +24,7 @@ function Learn() {
         ))}
       </section>
       <PagePagination text="Go to Ecosystem" link="/ecosystem-map" />
+      <Modal />
     </div>
   );
 }
