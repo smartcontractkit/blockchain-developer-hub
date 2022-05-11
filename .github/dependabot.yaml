@@ -1,0 +1,30 @@
+version: 2
+updates: 
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      # Going to start with a high interval, and then tone it back
+      interval: "monthly"
+    ignore: 
+
+      # Storybook updates should all happen in unison, same as above we ignore
+      # all but one as a reminder.
+      - dependency-name: "@storybook/addon-actions"
+      - dependency-name: "@storybook/addon-essentials"
+      - dependency-name: "@storybook/addon-interactions"
+      - dependency-name: "@storybook/addon-links"
+      - dependency-name: "@storybook/builder-webpack5"
+      - dependency-name: "@storybook/manager-webpack5"
+      - dependency-name: "@storybook/testing-library"
+
+
+      # We ignore everything that hasn't yet been upgrade, this way we will
+      # only get the _freshest_ of new packages to consider upgrading
+      - dependency-name: "@storybook/addon-docs"
+      - dependency-name: "dayjs"
+      - dependency-name: "gray-matter"
+      - dependency-name: "next-mdx-remote"
+      - dependency-name: "react-gtm-module"
+      - dependency-name: "rehype-slug"
+      - dependency-name: "remark-gfm"
+      - dependency-name: "storybook-addon-next-router"
