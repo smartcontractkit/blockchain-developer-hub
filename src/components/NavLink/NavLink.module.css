@@ -21,6 +21,7 @@
   background: #FBFDFE;
   border: 1px solid var(--neural-300-color);
   color: var(--neural-950-color);
+  justify-content: center;
 }
 
 .primary {
@@ -49,3 +50,8 @@
   flex-direction: row-reverse;
 }
 
+@media ( min-width: 768px) { 
+  .outline {
+    width: fit-content;
+  }
+}

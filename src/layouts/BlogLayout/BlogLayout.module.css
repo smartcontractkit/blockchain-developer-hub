@@ -97,9 +97,27 @@
   flex-direction: column;
 }
 
+.footer > div {
+  margin-bottom: .5rem;
+  width: 100%;
+}
+
+.footer > div > a {
+  width: 100%;
+}
+
 @media ( min-width: 768px) {
   .footer {
     flex-direction: row;
+  }
+
+  .footer > div {
+    margin-bottom: unset;
+    width: unset;
+  }
+
+  .footer > div > a {
+    width: fit-content;
   }
 }
 
