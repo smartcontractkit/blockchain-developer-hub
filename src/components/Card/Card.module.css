@@ -20,8 +20,12 @@
 }
 
 .image {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
   border-radius: 0.5rem;
   object-fit: cover;
+  aspect-ratio: 2/1;
 }
 
 .title {

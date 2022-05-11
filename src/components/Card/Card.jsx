@@ -27,6 +27,7 @@ function Card({
   const prizeClasses = clsx('caption', styles.prize);
   const footerClasses = clsx('caption', styles.footer);
   const hasDate = end_date && start_date;
+  const showFooter = online || location || on_demand || hasDate;
 
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
@@ -48,30 +49,32 @@ function Card({
           </div>
         )}
 
-        <div className={footerClasses}>
-          {/* If online = true or location exist */}
-          {(online || location) && (
-            <span>
-              {online ? (
-                <Svg height="20" width="20" href="/icons/online.svg" />
-              ) : (
-                location && <Svg height="20" width="20" href="/icons/location.svg" />
-              )}
-              {location || 'Online'}
-            </span>
-          )}
+        {showFooter && (
+          <div className={footerClasses}>
+            {/* If online = true or location exist */}
+            {(online || location) && (
+              <span>
+                {online ? (
+                  <Svg height="20" width="20" href="/icons/online.svg" />
+                ) : (
+                  location && <Svg height="20" width="20" href="/icons/location.svg" />
+                )}
+                {location || 'Online'}
+              </span>
+            )}
 
-          {/* If date exist and ensure both date and u=on demand don't exist at the same time */}
-          {hasDate && !on_demand && (
-            <span>
-              <Svg height="20" width="20" href="/icons/calender.svg" />
-              {dayjs(start_date).format('MMM D')}
-              &nbsp; - &nbsp;
-              {dayjs(end_date).format('MMM D, YYYY')}
-            </span>
-          )}
-          {on_demand && !hasDate && <span>{'On Demand'}</span>}
-        </div>
+            {/* If date exist and ensure both date and u=on demand don't exist at the same time */}
+            {hasDate && !on_demand && (
+              <span>
+                <Svg height="20" width="20" href="/icons/calender.svg" />
+                {dayjs(start_date).format('MMM D')}
+                &nbsp; - &nbsp;
+                {dayjs(end_date).format('MMM D, YYYY')}
+              </span>
+            )}
+            {on_demand && !hasDate && <span>{'On Demand'}</span>}
+          </div>
+        )}
       </div>
     </a>
   );
