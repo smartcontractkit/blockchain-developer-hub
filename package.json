@@ -19,6 +19,7 @@
     "@storybook/addon-docs": "^6.5.0-beta.7",
     "dayjs": "^1.10.8",
     "gray-matter": "^4.0.3",
+    "jest-environment-jsdom": "^28.1.0",
     "next": "12.1.6",
     "next-mdx-remote": "^4.0.0",
     "next-seo": "^5.1.0",
@@ -52,7 +53,7 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.5.1",
+    "jest": "^28.1.0",
     "prettier": "^2.5.1",
     "typescript": "^4.6.2",
     "yaml-loader": "^0.8.0"
