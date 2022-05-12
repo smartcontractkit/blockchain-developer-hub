@@ -44,7 +44,7 @@
     "@testing-library/react": "^12.1.4",
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.3",
-    "eslint": "8.8.0",
+    "eslint": "8.15.0",
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-jest": "^26.1.3",
