@@ -24,7 +24,7 @@ module.exports = {
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.ya?ml$/,
-      type: 'json', // Required by Webpack v4
+      // type: 'json', // Required by Webpack v4
       use: 'yaml-loader',
     });
 
