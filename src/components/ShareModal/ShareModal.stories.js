@@ -10,5 +10,6 @@ const Template = (args) => <ShareModal {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  title: 'articles',
+  onClose: null,
+  url: 'https://www.google.com',
 };
