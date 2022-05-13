@@ -2,11 +2,13 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import styles from './BuildPageSection.module.css';
 import Card from '@/components/Card';
-
+import ShareModal from '@/components/ShareModal';
+import { useState } from 'react';
 function BuildPageSection({ name, overview, items }) {
   const headingClasses = clsx('subtitle-01', styles.headings);
   const overviewClasses = clsx('body-long-02', styles.overview);
   const id = name.replace(' ', '').toLowerCase();
+  const [shareItem, setShareItem] = useState(null);
 
   return (
     <div className={styles.mainContent} id={id}>
@@ -27,10 +29,12 @@ function BuildPageSection({ name, overview, items }) {
               href={href}
               image={image}
               key={index}
+              onShare={() => setShareItem(href)}
             />
           )
         )}
       </div>
+      {shareItem && <ShareModal url={shareItem} onClose={() => setShareItem(null)} />}
     </div>
   );
 }
