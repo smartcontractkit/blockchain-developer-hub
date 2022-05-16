@@ -72,7 +72,7 @@ function Card({
                 {dayjs(end_date).format('MMM D, YYYY')}
               </span>
             )}
-            {on_demand && !hasDate && <span>{'On Demand'}</span>}
+            {on_demand && !hasDate && <span>{'On-demand'}</span>}
           </div>
         )}
       </div>
