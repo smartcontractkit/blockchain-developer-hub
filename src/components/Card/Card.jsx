@@ -43,7 +43,7 @@ function Card({
                   onShare();
                 }}
               >
-                <Svg height="20" width="20" href="/icons/share.svg" />
+                <img src="/icons/share.svg" />
                 Share
               </button>
             )}
