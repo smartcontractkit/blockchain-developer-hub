@@ -1,4 +1,4 @@
-import ExploreMapBanner from './ExploreMapBanner';
+import ExploreMapBanner from './OldExploreMapBanner';
 
 export default {
   title: 'title/Explore Map Banner',
