@@ -28,6 +28,24 @@
   aspect-ratio: 2/1;
 }
 
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.shareBtn {
+  background-color: transparent;
+  border: none;
+  color: var(--tertiary-700-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
 .title {
   margin-top: 1rem;
   margin-block-start: 0.5rem;

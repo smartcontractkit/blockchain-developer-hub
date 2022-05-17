@@ -18,6 +18,7 @@ function Card({
   end_date,
   prize,
   level,
+  onShare,
 }) {
   const classes = clsx(styles.container, { [styles.light]: variant === 'light' });
   const titleClasses = clsx('body-short-01--bold', styles.title);
@@ -32,7 +33,23 @@ function Card({
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <div className={classes}>
-        {image && <img src={image} alt={title} width="200" height="150" className={styles.image} />}
+        {image && (
+          <div className={styles.header}>
+            <img src={image} alt={title} width="200" height="150" className={styles.image} />
+            {onShare && (
+              <button
+                className={styles.shareBtn}
+                onClick={(e) => {
+                  e.preventDefault();
+                  onShare();
+                }}
+              >
+                <img src="/icons/share.svg" alt="Share" />
+                Share
+              </button>
+            )}
+          </div>
+        )}
 
         <h2 className={titleClasses}>{title}</h2>
 
@@ -94,6 +111,7 @@ Card.propTypes = {
   prize: PropTypes.string,
   href: PropTypes.string.isRequired,
   level: PropTypes.string,
+  onShare: PropTypes.func,
 };
 
 export default Card;

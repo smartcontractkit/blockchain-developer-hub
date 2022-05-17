@@ -3,10 +3,12 @@ import clsx from 'clsx';
 import Card from '@/components/Card';
 import TutorialCard from '@/components/TutorialCard';
 import styles from './LearnCrypto.module.css';
-
+import ShareModal from '@/components/ShareModal';
+import { useState } from 'react';
 function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
   const headingClasses = clsx('subtitle-01', styles.headings);
   const overviewClasses = clsx('body-long-02', styles.overview);
+  const [shareItem, setShareItem] = useState(null);
 
   return (
     <div id={id} className={styles.container}>
@@ -35,6 +37,7 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
                     image={image}
                     href={href}
                     key={index}
+                    onShare={() => setShareItem(href)}
                   />
                 ))}
               </div>
@@ -69,6 +72,7 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
           </div>
         )}
       </div>
+      {shareItem && <ShareModal url={shareItem} onClose={() => setShareItem(null)} />}
     </div>
   );
 }

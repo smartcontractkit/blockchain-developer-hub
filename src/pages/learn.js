@@ -6,6 +6,7 @@ import PagePagination from '@/components/PagePagination';
 
 function Learn() {
   const { resources } = data;
+
   return (
     <div className={styles.container}>
       <LearnHero />

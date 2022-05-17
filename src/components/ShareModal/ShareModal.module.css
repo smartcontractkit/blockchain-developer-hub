@@ -1,0 +1,99 @@
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: white;
+    width: 30rem;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    position: relative;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    color: var(--neural-950-color);
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.content p {
+    color: var(--neural-800-color);
+    margin-top: 0.25rem;
+}
+
+.closeBtn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.7rem;
+    cursor: pointer;
+}
+
+.socialMedia {
+    display: flex;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.socialMedia__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: var(--neural-500-color);
+}
+
+.socialMedia__item__image {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neural-100-color);
+    border-radius: 0.5rem;
+}
+
+.socialMedia__item_image img {
+    object-fit: contain;
+    
+}
+
+.copyContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.copyContainer input {
+    flex: 1;
+    font-size: 0.875rem;
+    color: var(--neural-500-color);
+    border: 1px solid var(--neural-300-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.copyContainer button {
+    background-color: white;
+    border: none;
+    color: var(--tertiary-700-color);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
