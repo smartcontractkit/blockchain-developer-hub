@@ -1,1 +1,1 @@
-export { default as default } from './OldExploreMapBanner';
+export { default as default } from './ExploreMapBannerWithoutAccordion';
