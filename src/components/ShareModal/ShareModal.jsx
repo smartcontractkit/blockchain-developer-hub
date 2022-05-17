@@ -21,7 +21,7 @@ const SOCIAL_MEDIA = [
   },
   {
     name: 'LinkedIn',
-    icon: '/logos/linkedin.png',
+    icon: '/logos/linkedIn.png',
     url: 'https://www.linkedin.com/shareArticle?url=',
   },
 ];
