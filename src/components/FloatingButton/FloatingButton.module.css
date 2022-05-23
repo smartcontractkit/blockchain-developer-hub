@@ -22,7 +22,7 @@
 }
 
 .chapters_overview_mobile_btn {
-  top: -1px;
+  top: 60px;
   position: sticky;
   width: 100%;
   box-shadow: 0px -8px 32px rgba(0, 0, 0, 0.04), inset 0px -3px 0px rgba(0, 0, 0, 0.08);

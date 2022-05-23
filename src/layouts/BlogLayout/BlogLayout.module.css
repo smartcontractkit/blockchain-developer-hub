@@ -41,7 +41,7 @@
 }
 
 .rightSidebar.mobile {
-  top: -1px;
+  top: 3.8rem;
 }
 
 .sidebar__header {
@@ -149,7 +149,7 @@
   .rightSidebar.mobile {
     display: flex;
     position: sticky;
-    top: 2rem;
+    top: 6.25rem;
     max-height: 100vh;
   }
 
