@@ -29,7 +29,6 @@ export default async function handler(req, res) {
       }),
     })
       .then((response) => {
-        res.status(response.status).send(response.json());
         if (response.status === 200) {
           /*
            * The code below has been generated automatically by Github Copilot.
