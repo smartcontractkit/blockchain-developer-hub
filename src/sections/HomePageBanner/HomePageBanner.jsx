@@ -30,7 +30,8 @@ function HomePageBanner() {
               <li className={clsx('body-short-01', styles.list_item)}>
                 <Svg className={styles.list_icon} height="24" width="24" href="/icons/memory.svg" />
                 <small>
-                  <strong>Get familiar</strong> with the tools and resources you need to start building your own project.
+                  <strong>Get familiar</strong> with the tools and resources you need to start building your own
+                  project.
                 </small>
               </li>
               <li className={clsx('body-short-01', styles.list_item)}>
