@@ -1,7 +1,7 @@
 categories:
   - name: Hackathons
     href: '/build#hackathons'
-    overview: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
+    overview: Competing in both in-person and online hackathons offers opportunities for you to learn blockchain development and win amazing prizes.
     items:
     - title: "Chainlink Spring Hackathon"
       description: Join us for the biggest Chainlink hackathon yet. Build the next generation of Web3 applications alongside thousands of developers, creators, artists, and mentors.
@@ -60,7 +60,7 @@ categories:
 
   - name: Workshops
     href: '/build#workshops'
-    overview: Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing prizes through both in-person and online virtual hackathons.
+    overview: Workshops allow you to learn the ins and outs of blockchain development alongside experienced blockchain developers, artists, and mentors.
     items:
     - title: "Chainlink Solana Bootcamp"
       description: Learn how to create, deploy, and interact with smart contracts on Solana in live, instructor-led sessions with Chainlink developer advocates.
