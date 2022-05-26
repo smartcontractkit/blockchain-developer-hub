@@ -8,7 +8,7 @@ first hackathon. Participating in workshops is great, but taking the leap to bui
 Why now? The world is slowly realizing the importance and benefits of permissionless data—that is, data that is not
 owned by a few large players, but is rather decentralized and transparent. While it’s still early in the world of
 blockchain development, building applications is the best way we can help the community and ecosystem move forward, and
-zgive you the chance to participate in Web3.
+give you the chance to participate in Web3.
 
 ### Here are some pointers to keep in mind:
 
