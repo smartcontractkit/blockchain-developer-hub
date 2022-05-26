@@ -43,6 +43,7 @@ BuildPageSection.propTypes = {
   name: PropTypes.string.isRequired,
   overview: PropTypes.string.isRequired,
   items: PropTypes.array,
+  href: PropTypes.string.isRequired,
 };
 
 BuildPageSection.DefaultProp = {

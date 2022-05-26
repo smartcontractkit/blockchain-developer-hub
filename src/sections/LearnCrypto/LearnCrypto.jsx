@@ -23,7 +23,7 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
 
       <div className={styles.mainContent}>
         {courses && (
-          <div>
+          <div id={`${id}-courses`}>
             <h3 className={headingClasses}>Courses</h3>
             {courses.overview && <p className={overviewClasses}>{courses.overview}</p>}
             {courses.data ? (
@@ -48,7 +48,7 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
         )}
 
         {tutorials && (
-          <div>
+          <div id={`${id}-tutorials`}>
             <h3 className={headingClasses}>Tutorials</h3>
             {tutorials.overview && <p className={overviewClasses}>{tutorials.overview}</p>}
             {tutorials.data ? (
