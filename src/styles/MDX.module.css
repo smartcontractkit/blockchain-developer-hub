@@ -66,10 +66,6 @@
   border-collapse: collapse;
 }
 
-.container tr td[align="left"] {
-   white-space: nowrap;
-}
-
 .container tr th {
   text-align: left;
   padding: 1rem;
@@ -77,7 +73,6 @@
 }
 
 .container tr td {
-  /* white-space: nowrap; */
   padding: 1rem;
   border: 1px solid var(--neural-200-color);
 }

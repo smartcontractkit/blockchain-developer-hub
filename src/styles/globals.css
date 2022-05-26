@@ -40,6 +40,14 @@ ul.contains-task-list {
 }
 
 div.table-wrapper {
-  max-width: 80vw;
+  width: 85vw;
   overflow-x: scroll;
+}
+
+
+@media (min-width: 526px) {
+  div.table-wrapper {
+    width: 100%;
+     overflow-x: hidden;
+  }
 }
