@@ -7,12 +7,13 @@
   font-weight: bold;
   color: var(--neural-950-color);
   position: relative;
+  transform: translateX(1.2rem);
 }
 
 .headings::before {
   content: '#';
   position: absolute;
-  left: -1.5rem;
+  left: -1.2rem;
   top: 5%;
   opacity: 0.3;
   color: inherit;
@@ -88,5 +89,16 @@
 
   .sectionHeadingContent{
     padding-inline: 2rem;
+  }
+}
+
+
+@media (min-width: 1300px) {
+
+  .headings {
+    transform: translateX(0);
+  }
+  .headings::before {
+    left: -1.5rem;
   }
 }
