@@ -92,7 +92,7 @@
   }
 
   .blockchainsContainer {
-    justify-content: start;
+    justify-content: center;
     flex-wrap: nowrap;
   }
 }
@@ -100,10 +100,6 @@
 @media (min-width: 1024px) {
   .blockchainCard {
     width: 340px;
-    flex: 1;
-  }
-
-  .blockchainsContainer {
-    flex-wrap: nowrap;
+    flex: unset;
   }
 }
