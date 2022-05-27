@@ -38,3 +38,16 @@ ul.contains-task-list {
   padding: 0;
   list-style: none;
 }
+
+div.table-wrapper {
+  width: 85vw;
+  overflow-x: scroll;
+}
+
+
+@media (min-width: 526px) {
+  div.table-wrapper {
+    width: 100%;
+     overflow-x: hidden;
+  }
+}

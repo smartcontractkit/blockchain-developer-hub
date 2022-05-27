@@ -60,10 +60,10 @@
 
 .container table {
   width: 100%;
+  border-spacing: 0;
   margin: 2rem auto;
   border: 1px solid var(--neural-200-color);
   border-collapse: collapse;
-  table-layout: fixed;
 }
 
 .container tr th {

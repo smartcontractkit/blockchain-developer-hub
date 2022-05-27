@@ -34,7 +34,9 @@ consider important factors such as community size, support, and documentation. G
 stack that allows you to iterate and ship faster. You can focus on optimizations later.
 
 For smart-contract coding, you should choose the language you feel most comfortable with. Use this reference table to
-get started.
+get started. markdown: extra: true
+
+<div className="table-wrapper" markdown="1">
 
 |                          | EVM Chains                                                                                                                                                                                               | Solana                                                                                                                                                                                                              | Terra                                                                                                                                                                                                                           |
 | :----------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -44,6 +46,7 @@ get started.
 | **Popular starter kits** | [Moralis](https://moralis.io/)                                                                                                                                                                           | [dapp-scaffold](https://github.com/solana-labs/dapp-scaffold)                                                                                                                                                       | [Terrain](https://github.com/iboss-ptk/terrain)                                                                                                                                                                                 |
 | **Common frontends**     | [Angular](https://angular.io/)<br /> [Chakra UI](https://chakra-ui.com/)<br /> [React](https://reactjs.org/)<br /> [Vue](https://vuejs.org/)                                                             | [Angular](https://angular.io/)<br /> [Chakra UI](https://chakra-ui.com/)<br /> [React](https://reactjs.org/)<br /> [Vue](https://vuejs.org/)                                                                        | [Angular](https://angular.io/)<br /> [Chakra UI](https://chakra-ui.com/)<br /> [React](https://reactjs.org/)<br /> [Vue](https://vuejs.org/)                                                                                    |
 
+</div>
 ## Security
 
 Smart contracts (regardless of the specific blockchain they are on) are extremely flexible. They have the ability to
