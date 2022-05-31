@@ -5,17 +5,6 @@
   transform: translateX(1.2rem);
 }
 
-.headings::before {
-  content: '#';
-  position: absolute;
-  left: -1.2rem;
-  top: 5%;
-  opacity: 0.3;
-  color: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
 .overview {
   color: var(--neural-800-color);
   margin: 0.5rem 0 3rem;
@@ -55,8 +44,5 @@
 
   .headings {
     transform: translateX(0);
-  }
-  .headings::before {
-    left: -1.5rem;
   }
 }
