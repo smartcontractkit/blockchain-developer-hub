@@ -9,6 +9,7 @@ import getPaths from '@/helpers/getPaths';
 import getPagesInfo from '@/helpers/getPagesInfo';
 import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';
+import BlogCustomComponent from '@/components/BlogCustomComponent';
 
 function Blockchain({ data, content, pagesInfo }) {
   return (
@@ -21,7 +22,7 @@ function Blockchain({ data, content, pagesInfo }) {
         datetime={data.date}
       />
       <div className={styles.container}>
-        <MDXRemote {...content} />
+        <MDXRemote components={BlogCustomComponent} {...content} />
       </div>
     </BlogLayout>
   );
