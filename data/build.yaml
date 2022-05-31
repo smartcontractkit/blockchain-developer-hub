@@ -82,7 +82,7 @@ categories:
       on_demand: true
   
   - name: Case Studies
-    href: '/build#casestudy'
+    href: '/build#casestudies'
     overview: Learn why and how other developers have used the web to create amazing web experiences for their users.
     items:
     - title: "The Currency: Engineering a seamless experience to allocate, mint, and distribute the NFTs"

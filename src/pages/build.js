@@ -7,8 +7,8 @@ function Build() {
   const { categories } = data;
   return (
     <div className={styles.container}>
-      {categories.map(({ name, overview, items }, index) => (
-        <BuildPageSection key={index} name={name} overview={overview} items={removePastEvent(items)} />
+      {categories.map(({ name, overview, items, href }, index) => (
+        <BuildPageSection key={index} name={name} overview={overview} href={href} items={removePastEvent(items)} />
       ))}
       <PagePagination text="Go to Ship" link="/ship" />
     </div>

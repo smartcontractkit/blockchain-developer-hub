@@ -4,7 +4,8 @@ import styles from './BuildPageSection.module.css';
 import Card from '@/components/Card';
 import ShareModal from '@/components/ShareModal';
 import { useState } from 'react';
-function BuildPageSection({ name, overview, items }) {
+import HeadingHash from '@/components/HeadingHash';
+function BuildPageSection({ name, overview, items, href }) {
   const headingClasses = clsx('subtitle-01', styles.headings);
   const overviewClasses = clsx('body-long-02', styles.overview);
   const id = name.replace(' ', '').toLowerCase();
@@ -12,7 +13,10 @@ function BuildPageSection({ name, overview, items }) {
 
   return (
     <div className={styles.mainContent} id={id}>
-      <h1 className={headingClasses}>{name}</h1>
+      <h1 className={headingClasses}>
+        <HeadingHash to={href} />
+        {name}
+      </h1>
       {overview && <p className={overviewClasses}>{overview}</p>}
       <div className={styles.cards}>
         {items.map(
@@ -43,6 +47,7 @@ BuildPageSection.propTypes = {
   name: PropTypes.string.isRequired,
   overview: PropTypes.string.isRequired,
   items: PropTypes.array,
+  href: PropTypes.string.isRequired,
 };
 
 BuildPageSection.DefaultProp = {

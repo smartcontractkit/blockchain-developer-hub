@@ -1,0 +1,16 @@
+.heading_hash {
+  content: '#';
+  position: absolute;
+  left: -1.2rem;
+  top: 5%;
+  opacity: 0.3;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@media (min-width: 1300px) {
+  .heading_hash {
+    left: -1.5rem;
+  }
+}
