@@ -50,17 +50,6 @@
   object-fit: contain;
 }
 
-.commingSoon {
-  color: var(--neural-700-color);
-  font-size: 1.5rem;
-  font-weight: 600;
-  height: 50vh;
-  margin-bottom: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (min-width: 768px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);

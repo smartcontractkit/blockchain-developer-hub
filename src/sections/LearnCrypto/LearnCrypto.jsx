@@ -5,7 +5,9 @@ import TutorialCard from '@/components/TutorialCard';
 import styles from './LearnCrypto.module.css';
 import ShareModal from '@/components/ShareModal';
 import { useState } from 'react';
+import NoItemPlaceholder from '@/components/NoItemPlaceholder';
 import HeadingHash from '@/components/HeadingHash';
+
 function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
   const headingClasses = clsx('subtitle-01', styles.headings);
   const overviewClasses = clsx('body-long-02', styles.overview);
@@ -46,7 +48,7 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
                 ))}
               </div>
             ) : (
-              <div className={styles.commingSoon}>Content comming soon...</div>
+              <NoItemPlaceholder />
             )}
           </div>
         )}
@@ -74,7 +76,7 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
                 ))}
               </div>
             ) : (
-              <div className={styles.commingSoon}>Content comming soon...</div>
+              <NoItemPlaceholder />
             )}
           </div>
         )}
