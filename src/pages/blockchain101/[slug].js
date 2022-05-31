@@ -9,6 +9,28 @@ import getPaths from '@/helpers/getPaths';
 import getPagesInfo from '@/helpers/getPagesInfo';
 import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';
+import Link from 'next/link';
+
+const CustomH2 = ({ id, ...rest }) => {
+  if (id) {
+    return (
+      <Link href={`#${id}`}>
+        <a>
+          <h2 {...rest} />
+        </a>
+      </Link>
+    );
+  }
+  return <h1 {...rest} />;
+};
+
+const components = {
+  h2: CustomH2,
+};
+
+CustomH2.propTypes = {
+  id: PropTypes.string,
+};
 
 function Blockchain({ data, content, pagesInfo }) {
   return (
@@ -21,7 +43,7 @@ function Blockchain({ data, content, pagesInfo }) {
         datetime={data.date}
       />
       <div className={styles.container}>
-        <MDXRemote {...content} />
+        <MDXRemote components={components} {...content} />
       </div>
     </BlogLayout>
   );
