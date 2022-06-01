@@ -35,7 +35,7 @@ function Card({
       <div className={classes}>
         {image && (
           <div className={styles.header}>
-            <img src={image} alt={title} width="200" height="150" className={styles.image} />
+            <img src={image} alt="" width="200" height="150" className={styles.image} />
             {onShare && (
               <button
                 className={styles.shareBtn}
