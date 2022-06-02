@@ -5,14 +5,13 @@ import { useRouter } from 'next/router';
 import clsx from 'clsx';
 import NavLink from '@/components/NavLink';
 import { useEffect, useState } from 'react';
-import isElementVisable from '@/helpers/isElementVisable';
 import Overlay from '@/components/Overlay';
 import FloatingButton from '@/components/FloatingButton';
-import { StateProvider } from 'src/context/StateProvider';
+import { StateProvider, useStateValue } from 'src/context/StateProvider';
 
 function BlogLayout({ children, pages }) {
   const [headings, setHeadings] = useState([]);
-  const [activeHeading, setActiveHeading] = useState(null);
+  const [{ visible }] = useStateValue();
   const [articleOverview, setArticleOverview] = useState(false);
   const [chapterseOverview, setChaptersOverview] = useState(false);
 
@@ -35,19 +34,6 @@ function BlogLayout({ children, pages }) {
   useEffect(() => {
     const headingsElements = Array.from(document.querySelectorAll('h2'));
     setHeadings(headingsElements);
-
-    if (headingsElements.length) setActiveHeading(headingsElements[0]);
-
-    const handleScroll = () => {
-      const activeHeadingElement = headingsElements.find((heading) => isElementVisable(heading));
-      if (activeHeadingElement) setActiveHeading(activeHeadingElement);
-    };
-
-    document.addEventListener('scroll', handleScroll);
-
-    return () => {
-      document.removeEventListener('scroll', handleScroll);
-    };
   }, [children]);
 
   return (
@@ -80,7 +66,7 @@ function BlogLayout({ children, pages }) {
               <a
                 onClick={() => toggleOptions(false)}
                 className={clsx('caption', styles.rightSidebar__link, {
-                  [styles.active]: activeHeading && heading.id === activeHeading.id,
+                  [styles.active]: visible.length && heading.id === visible[0],
                 })}
               >
                 {heading.innerHTML}
