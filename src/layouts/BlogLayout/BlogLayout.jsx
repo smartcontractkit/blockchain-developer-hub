@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import isElementVisable from '@/helpers/isElementVisable';
 import Overlay from '@/components/Overlay';
 import FloatingButton from '@/components/FloatingButton';
+import { StateProvider } from 'src/context/StateProvider';
 
 function BlogLayout({ children, pages }) {
   const [headings, setHeadings] = useState([]);
@@ -50,7 +51,7 @@ function BlogLayout({ children, pages }) {
   }, [children]);
 
   return (
-    <>
+    <StateProvider>
       <Overlay showOverlay={articleOverview || chapterseOverview} isOverview={true} toggleMenu={toggleOptions} />
       {headings.length && <FloatingButton title="chapters" triggerPanel={setChaptersOverview} />}
       {pages && <FloatingButton title="articles" triggerPanel={setArticleOverview} />}
@@ -129,7 +130,7 @@ function BlogLayout({ children, pages }) {
           </div>
         </div>
       </div>
-    </>
+    </StateProvider>
   );
 }
 
