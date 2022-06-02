@@ -1,19 +1,27 @@
 import { useEffect } from 'react';
-import useIntersection from '@/helpers/useIntersection';
 import { useStateValue } from '@/context/StateProvider';
 import { SET_NOT_VISIBLE, SET_VISIBLE } from '@/context/types';
+import useIntersectionObserver from './useIntersectionObserver';
+// import useScrollDirection from './useScrollDirection';
 
 export default function useToggleVisibility(ref) {
   const [{ visible }, dispatch] = useStateValue();
-  const isVisible = useIntersection(ref);
+  const isVisible = useIntersectionObserver(ref);
+  //  const { scrolledUp } = useScrollDirection();
 
   useEffect(() => {
     const id = ref.current.id;
     if (isVisible) {
       dispatch({ type: SET_VISIBLE, payload: id });
     } else {
-      dispatch({ type: SET_NOT_VISIBLE, payload: id });
+      if (visible.length > 1 && visible[0] === !id) {
+        dispatch({ type: SET_NOT_VISIBLE, payload: id });
+      }
     }
-    return () => dispatch({ type: SET_NOT_VISIBLE, payload: id });
+    return () => {
+      if (visible.length > 1 && visible[0] === !id) {
+        dispatch({ type: SET_NOT_VISIBLE, payload: id });
+      }
+    };
   }, [visible.length, isVisible]);
 }
