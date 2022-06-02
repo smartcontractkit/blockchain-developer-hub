@@ -7,11 +7,11 @@ import NavLink from '@/components/NavLink';
 import { useEffect, useState } from 'react';
 import Overlay from '@/components/Overlay';
 import FloatingButton from '@/components/FloatingButton';
-import { StateProvider, useStateValue } from 'src/context/StateProvider';
+import { StateProvider } from 'src/context/StateProvider';
+import ChapterOverviewLinks from './ChapterOverviewLinks';
 
 function BlogLayout({ children, pages }) {
   const [headings, setHeadings] = useState([]);
-  const [{ visible }] = useStateValue();
   const [articleOverview, setArticleOverview] = useState(false);
   const [chapterseOverview, setChaptersOverview] = useState(false);
 
@@ -61,18 +61,7 @@ function BlogLayout({ children, pages }) {
         </div>
         <div className={clsx(styles.rightSidebar, { [styles.mobile]: chapterseOverview })}>
           <div className={styles.sidebar__header}>On this page</div>
-          {headings.map((heading) => (
-            <Link key={heading.id} href={`#${heading.id}`} passHref>
-              <a
-                onClick={() => toggleOptions(false)}
-                className={clsx('caption', styles.rightSidebar__link, {
-                  [styles.active]: visible.length && heading.id === visible[0],
-                })}
-              >
-                {heading.innerHTML}
-              </a>
-            </Link>
-          ))}
+          <ChapterOverviewLinks headings={headings} toggleOptions={toggleOptions} />
         </div>
         <div className={styles.content_wrapper}>
           <div className={styles.content} id="blog-content">
