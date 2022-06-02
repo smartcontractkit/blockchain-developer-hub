@@ -7,7 +7,7 @@
   right: 0;
   background-color: var(--neural-950-color);
   opacity: 0.8;
-  z-index: 1;
+  z-index: 2;
   display: block;
 }
 .mobile_menu_overlay.overview {
