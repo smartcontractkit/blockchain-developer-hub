@@ -4,7 +4,9 @@ import styles from './BuildPageSection.module.css';
 import Card from '@/components/Card';
 import ShareModal from '@/components/ShareModal';
 import { useState } from 'react';
+import NoItemPlaceholder from '@/components/NoItemPlaceholder';
 import HeadingHash from '@/components/HeadingHash';
+
 function BuildPageSection({ name, overview, items, href }) {
   const headingClasses = clsx('subtitle-01', styles.headings);
   const overviewClasses = clsx('body-long-02', styles.overview);
@@ -18,26 +20,30 @@ function BuildPageSection({ name, overview, items, href }) {
         {name}
       </h1>
       {overview && <p className={overviewClasses}>{overview}</p>}
-      <div className={styles.cards}>
-        {items.map(
-          ({ title, prize, image, description, location, online, on_demand, start_date, end_date, href }, index) => (
-            <Card
-              title={title}
-              prize={prize}
-              description={description}
-              location={location}
-              online={online}
-              on_demand={on_demand}
-              start_date={start_date}
-              end_date={end_date}
-              href={href}
-              image={image}
-              key={index}
-              onShare={() => setShareItem(href)}
-            />
-          )
-        )}
-      </div>
+      {items.length ? (
+        <div className={styles.cards}>
+          {items.map(
+            ({ title, prize, image, description, location, online, on_demand, start_date, end_date, href }, index) => (
+              <Card
+                title={title}
+                prize={prize}
+                description={description}
+                location={location}
+                online={online}
+                on_demand={on_demand}
+                start_date={start_date}
+                end_date={end_date}
+                href={href}
+                image={image}
+                key={index}
+                onShare={() => setShareItem(href)}
+              />
+            )
+          )}
+        </div>
+      ) : (
+        <NoItemPlaceholder />
+      )}
       {shareItem && <ShareModal url={shareItem} onClose={() => setShareItem(null)} />}
     </div>
   );
