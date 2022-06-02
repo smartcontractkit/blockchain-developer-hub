@@ -5,10 +5,11 @@ import styles from './BlogLayout.module.css';
 import Link from 'next/link';
 import { useStateValue } from 'src/context/StateProvider';
 
-export default function ChapterOverviewLinks({ headings, toggleOptions }) {
+export default function ChapterOverview({ headings, chapterseOverview, toggleOptions }) {
   const [{ visible }] = useStateValue();
   return (
-    <>
+    <div className={clsx(styles.rightSidebar, { [styles.mobile]: chapterseOverview })}>
+      <div className={styles.sidebar__header}>On this page</div>
       {headings.map((heading) => (
         <Link key={heading.id} href={`#${heading.id}`} passHref>
           <a
@@ -21,11 +22,12 @@ export default function ChapterOverviewLinks({ headings, toggleOptions }) {
           </a>
         </Link>
       ))}
-    </>
+    </div>
   );
 }
 
-ChapterOverviewLinks.propTypes = {
+ChapterOverview.propTypes = {
   headings: PropTypes.array.isRequired,
   toggleOptions: PropTypes.func.isRequired,
+  chapterseOverview: PropTypes.bool.isRequired,
 };

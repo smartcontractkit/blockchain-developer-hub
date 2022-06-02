@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import Overlay from '@/components/Overlay';
 import FloatingButton from '@/components/FloatingButton';
 import { StateProvider } from 'src/context/StateProvider';
-import ChapterOverviewLinks from './ChapterOverviewLinks';
+import ChapterOverview from './ChapterOverview';
 
 function BlogLayout({ children, pages }) {
   const [headings, setHeadings] = useState([]);
@@ -59,10 +59,7 @@ function BlogLayout({ children, pages }) {
             </>
           )}
         </div>
-        <div className={clsx(styles.rightSidebar, { [styles.mobile]: chapterseOverview })}>
-          <div className={styles.sidebar__header}>On this page</div>
-          <ChapterOverviewLinks headings={headings} toggleOptions={toggleOptions} />
-        </div>
+        <ChapterOverview headings={headings} chapterseOverview={chapterseOverview} toggleOptions={toggleOptions} />
         <div className={styles.content_wrapper}>
           <div className={styles.content} id="blog-content">
             {children}
