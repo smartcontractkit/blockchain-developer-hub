@@ -27,7 +27,7 @@ function LearnHero() {
             <Image src={logo} alt={name} width={144} height={144} objectFit="contain" />
             <span className={linkClasses}>
               {name}
-              <Svg height="20" width="20" href="/icons/arrow-right-blue.svg" />
+              <Svg height="20" width="20" href="/icons/arrow-right-blue.svg" title="arrow right blue icon" />
             </span>
           </a>
         ))}

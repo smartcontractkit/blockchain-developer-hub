@@ -11,11 +11,21 @@ export default function NavLink({ to, type, icon, iconPosition, text, active, ..
     [styles.activeLink]: active,
   });
 
+  const iconsName = icon?.split('.')[0];
+
   return (
     <Link href={to} passHref>
       <a {...props} className={classes}>
         <span>{text}</span>
-        {icon && <Svg className={styles[`icon-${iconPosition}`]} height="20" width="20" href={`/icons/${icon}`} />}
+        {icon && (
+          <Svg
+            className={styles[`icon-${iconPosition}`]}
+            height="20"
+            width="20"
+            href={`/icons/${icon}`}
+            title={iconsName}
+          />
+        )}
       </a>
     </Link>
   );

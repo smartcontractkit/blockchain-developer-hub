@@ -14,7 +14,7 @@ function HomepageBlockchain() {
     <div className={styles.container}>
       <QuoteCard cards={cardItems} textDirection="right">
         <div className={styles.quote_wrapper}>
-          <Svg height="30" width="20" href="/icons/quote.svg" />
+          <Svg height="30" width="20" href="/icons/quote.svg" title="quote icon" />
           <p className={quoteClasses}>
             Blockchain development skills are rated as the fastest-growing in-demand skills of 2020, with an increase of
             6000%
