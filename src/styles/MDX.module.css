@@ -60,10 +60,10 @@
 
 .container table {
   width: 100%;
+  border-spacing: 0;
   margin: 2rem auto;
   border: 1px solid var(--neural-200-color);
   border-collapse: collapse;
-  table-layout: fixed;
 }
 
 .container tr th {
@@ -135,4 +135,34 @@
 .container p mark {
  color: var(--white-color);
  background-color: var(--secondary-300-color);
+}
+
+.blog_heading { 
+  position: relative;
+  /* transform: translateX(1.2rem); */
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--neural-950-color);
+}
+
+
+a.blog_heading:link {
+  text-decoration: none;
+}
+
+.blog_heading::before {
+  content: '#';
+  position: absolute;
+  left: -1.5rem;
+  top: 2%;
+  opacity: 0.3;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  transition: all 0.2s ease-in-out;
+  z-index: 0;
+}
+
+.blog_heading:hover::before{
+  opacity: 0.7;
 }

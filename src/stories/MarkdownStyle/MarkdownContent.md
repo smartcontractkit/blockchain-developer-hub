@@ -3,13 +3,13 @@
 For smart-contract coding, you should choose the language you feel most comfortable with. Use this reference table to
 get started.
 
-|                          | EVM Chains                                                                    | Solana                                                        | Terra                                                              |
-| :----------------------- | :---------------------------------------------------------------------------- | :------------------------------------------------------------ | :----------------------------------------------------------------- |
-| **Language**             | [Solidity](https://docs.soliditylang.org/en/v0.8.13/) - (based on javascript) | [Rust](https://www.rust-lang.org/)                            | [Rust](https://www.rust-lang.org/)                                 |
-| **Common frameworks**    | [Hardhat](https://hardhat.org/) - (javascript)                                | [Anchor](https://book.anchor-lang.com/)                       | [Terra.js](https://terra-money.github.io/terra.js/) - (javascript) |
-| **Storage**              | [IPFS](https://ipfs.io/)                                                      | [Arweave](https://www.arweave.org/)                           | [Terra FCD](https://github.com/terra-money/fcd)                    |
-| **Popular starter kits** | [Moralis](https://moralis.io/)                                                | [dapp-scaffold](https://github.com/solana-labs/dapp-scaffold) | [Terrain](https://github.com/iboss-ptk/terrain)                    |
-| **Common frontends**     | [Angular](https://angular.io/)                                                | [Angular](https://angular.io/)                                | [Angular](https://angular.io/)                                     |
+|                          | EVM Chains                                                                    | Solana                                                        |
+| :----------------------- | :---------------------------------------------------------------------------- | :------------------------------------------------------------ |
+| **Language**             | [Solidity](https://docs.soliditylang.org/en/v0.8.13/) - (based on javascript) | [Rust](https://www.rust-lang.org/)                            |
+| **Common frameworks**    | [Hardhat](https://hardhat.org/) - (javascript)                                | [Anchor](https://book.anchor-lang.com/)                       |
+| **Storage**              | [IPFS](https://ipfs.io/)                                                      | [Arweave](https://www.arweave.org/)                           |
+| **Popular starter kits** | [Moralis](https://moralis.io/)                                                | [dapp-scaffold](https://github.com/solana-labs/dapp-scaffold) |
+| **Common frontends**     | [Angular](https://angular.io/)                                                | [Angular](https://angular.io/)                                |
 
 ## Security
 

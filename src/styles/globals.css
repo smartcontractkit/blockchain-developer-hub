@@ -20,7 +20,7 @@ body {
   Helvetica Neue,
   sans-serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
+  scroll-padding-top: 6rem;
 }
 
 a {
@@ -37,4 +37,17 @@ a {
 ul.contains-task-list {
   padding: 0;
   list-style: none;
+}
+
+div.table-wrapper {
+  width: 85vw;
+  overflow-x: scroll;
+}
+
+
+@media (min-width: 526px) {
+  div.table-wrapper {
+    width: 100%;
+     overflow-x: hidden;
+  }
 }

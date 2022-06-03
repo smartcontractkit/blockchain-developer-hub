@@ -1,5 +1,5 @@
 - id: 'ecosystem-map'
-  url: 'https://blockchain-ecosystem-map-this-dot-labs-chainlink.vercel.app/'
+  url: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FU6iAHSsDlqoJfOaNwRigeO%2FEcosystem-Tools-Map%3Fpage-id%3D0%253A1%26node-id%3D2%253A1241%26viewport%3D264%252C48%252C0.68%26scaling%3Dscale-down-width'
   title: 'Ecosystem Map'
   subtitle: '01'
   description: 'Explore the ecosystem map to get familiar with the tooling landscape.'

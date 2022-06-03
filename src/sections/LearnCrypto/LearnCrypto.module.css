@@ -7,17 +7,7 @@
   font-weight: bold;
   color: var(--neural-950-color);
   position: relative;
-}
-
-.headings::before {
-  content: '#';
-  position: absolute;
-  left: -1.5rem;
-  top: 5%;
-  opacity: 0.3;
-  color: inherit;
-  font-size: inherit;
-  font-weight: inherit;
+  transform: translateX(1.2rem);
 }
 
 .overview {
@@ -60,17 +50,6 @@
   object-fit: contain;
 }
 
-.commingSoon {
-  color: var(--neural-700-color);
-  font-size: 1.5rem;
-  font-weight: 600;
-  height: 50vh;
-  margin-bottom: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (min-width: 768px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
@@ -88,5 +67,12 @@
 
   .sectionHeadingContent{
     padding-inline: 2rem;
+  }
+}
+
+
+@media (min-width: 1300px) {
+  .headings {
+    transform: translateX(0);
   }
 }

@@ -54,6 +54,17 @@ To learn more about how to make table supported look at:
 - [How to integrate it with serialize](https://githubhot.com/repo/hashicorp/next-mdx-remote/issues/229) - see how its
   integrated with serialize
 
+**Important**: When adding a markdown for table, its important to put in a div with className `table-wrapper`, this
+helps with the responsiveness of the table.
+
+_Example_ :
+
+```markdown
+<div className='table-wrapper' markdown='1'>
+  <!-- Table markdown here -->
+</div>
+```
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the
