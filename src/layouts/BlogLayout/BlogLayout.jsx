@@ -32,7 +32,14 @@ function BlogLayout({ children, pages }) {
   };
 
   useEffect(() => {
-    const headingsElements = Array.from(document.querySelectorAll('h2'));
+    let headingsElements = Array.from(document.querySelectorAll('h2'));
+    headingsElements = headingsElements.map((heading) => {
+      return {
+        id: heading.id,
+        innerHTML: heading.innerHTML,
+      };
+    });
+
     setHeadings(headingsElements);
   }, [children]);
 

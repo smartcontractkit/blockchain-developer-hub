@@ -1,7 +1,8 @@
-import { SET_VISIBLE, SET_NOT_VISIBLE } from './types';
+import { SET_VISIBLE, SET_NOT_VISIBLE, SET_BLOG_HEADINGS } from './types';
 
 export const initialState = {
   visible: [],
+  blogHeadings: null,
 };
 
 const addVisible = (array, value) => {
@@ -31,6 +32,11 @@ function reducer(state, action) {
       return {
         ...state,
         visible: removeVisible(state.visible, action.payload),
+      };
+    case SET_BLOG_HEADINGS:
+      return {
+        ...state,
+        blogHeadings: action.payload,
       };
     default:
       return state;
