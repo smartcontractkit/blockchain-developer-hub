@@ -61,7 +61,7 @@ function Card({
 
         {prize && (
           <div className={prizeClasses}>
-            <Svg height="18" width="18" href="/icons/prize.svg" />
+            <Svg height="18" width="18" href="/icons/prize.svg" title="prize icon" />
             {prize} in prizes
           </div>
         )}
@@ -72,9 +72,9 @@ function Card({
             {(online || location) && (
               <span>
                 {online ? (
-                  <Svg height="20" width="20" href="/icons/online.svg" />
+                  <Svg height="20" width="20" href="/icons/online.svg" title="online icon" />
                 ) : (
-                  location && <Svg height="20" width="20" href="/icons/location.svg" />
+                  location && <Svg height="20" width="20" href="/icons/location.svg" title="location icon" />
                 )}
                 {location || 'Online'}
               </span>
@@ -83,7 +83,7 @@ function Card({
             {/* If date exist and ensure both date and u=on demand don't exist at the same time */}
             {hasDate && !on_demand && (
               <span>
-                <Svg height="20" width="20" href="/icons/calender.svg" />
+                <Svg height="20" width="20" href="/icons/calender.svg" title="calender icon" />
                 {dayjs(start_date).format('MMM D')}
                 &nbsp; - &nbsp;
                 {dayjs(end_date).format('MMM D, YYYY')}
