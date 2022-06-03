@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
+  z-index: 1;
 }
 
 .articles_overview_mobile_btn {
