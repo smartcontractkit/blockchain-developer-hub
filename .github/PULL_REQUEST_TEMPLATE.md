@@ -37,5 +37,3 @@ Choose the right checklist for the change that you're making:
 - [ ] the article includes an author thubnail
 - [ ] The article has been tested locally and it works
 - [ ] The images have been added to the public folder
-
-© 2022 Chainlink, Inc. Terms Privacy
