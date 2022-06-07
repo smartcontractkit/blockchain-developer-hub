@@ -151,7 +151,7 @@ categories:
         description:
           Designed to bring the student body and technology community together. This event features fun, collaborative
           challenges focused on education.
-        prize: $0
+        prize: $TBD
         online: true
         href: 'https://cunyvirtualhackathon.devpost.com/?ref_feature=challenge&ref_medium=discover'
         image: '/images/hackathons/cuny-hack.png'
@@ -171,7 +171,7 @@ categories:
         description:
           Do you believe in making the next generation of the internet as “green” as possible? Come and hack
           sustainable, environmentally friendly tools at the Sustainable Blockchain Hackathon.
-        prize: $0
+        prize: $TBD
         online: true
         href: 'https://gitcoin.co/hackathon/sustainable/onboard'
         image: https://c.gitcoin.co/sustainablelogo.png
@@ -192,7 +192,7 @@ categories:
 
       - title: 'Hack FS'
         description: Build the foundation for the decentralized web. A Hackathon by ETHGlobal and Protocol Labs.
-        prize: $0
+        prize: $TBD
         online: true
         href: 'https://fs.ethglobal.com/'
         image: '/images/hackathons/hack-fs.png'
