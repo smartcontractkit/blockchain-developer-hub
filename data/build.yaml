@@ -5,6 +5,15 @@ categories:
       Competing offers opportunities to learn blockchain development online and gives you the potential to win amazing
       prizes through both in-person and online virtual hackathons.
     items:
+      - title: 'Polygon Hackathon'
+        description: Dive into Web3 this summer and build a new dApp with Polygon
+        prize: $500,000
+        online: true
+        href: 'https://buidlit.polygon.technology/'
+        image: '/images/hackathons/polygon-hackathon.png'
+        start_date: '2022-06-15'
+        end_date: '2022-08-01'
+
       - title: 'Chainlink Spring Hackathon'
         description:
           Join us for the biggest Chainlink hackathon yet. Build the next generation of Web3 applications alongside
