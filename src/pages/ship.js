@@ -7,6 +7,7 @@ import ArticleHeader from '@/components/ArticleHeader';
 import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';
 import styles from '@/styles/MDX.module.css';
+import BlogCustomComponents from '@/components/BlogCustomComponents';
 
 function Ship({ data, content }) {
   return (
@@ -19,7 +20,7 @@ function Ship({ data, content }) {
         datetime={data.date}
       />
       <div className={styles.container}>
-        <MDXRemote {...content} />
+        <MDXRemote components={BlogCustomComponents} {...content} />
       </div>
     </BlogLayout>
   );

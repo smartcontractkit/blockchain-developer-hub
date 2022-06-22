@@ -5,6 +5,9 @@ import TutorialCard from '@/components/TutorialCard';
 import styles from './LearnCrypto.module.css';
 import ShareModal from '@/components/ShareModal';
 import { useState } from 'react';
+import NoItemPlaceholder from '@/components/NoItemPlaceholder';
+import HeadingHash from '@/components/HeadingHash';
+
 function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
   const headingClasses = clsx('subtitle-01', styles.headings);
   const overviewClasses = clsx('body-long-02', styles.overview);
@@ -23,8 +26,11 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
 
       <div className={styles.mainContent}>
         {courses && (
-          <div>
-            <h3 className={headingClasses}>Courses</h3>
+          <div id={`${id}-courses`}>
+            <h3 className={headingClasses}>
+              <HeadingHash to={courses.href} />
+              Courses
+            </h3>
             {courses.overview && <p className={overviewClasses}>{courses.overview}</p>}
             {courses.data ? (
               <div className={styles.cards}>
@@ -42,14 +48,17 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
                 ))}
               </div>
             ) : (
-              <div className={styles.commingSoon}>Content comming soon...</div>
+              <NoItemPlaceholder />
             )}
           </div>
         )}
 
         {tutorials && (
-          <div>
-            <h3 className={headingClasses}>Tutorials</h3>
+          <div id={`${id}-tutorials`}>
+            <h3 className={headingClasses}>
+              <HeadingHash to={tutorials.href} />
+              Tutorials
+            </h3>
             {tutorials.overview && <p className={overviewClasses}>{tutorials.overview}</p>}
             {tutorials.data ? (
               <div>
@@ -67,7 +76,7 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
                 ))}
               </div>
             ) : (
-              <div className={styles.commingSoon}>Content comming soon...</div>
+              <NoItemPlaceholder />
             )}
           </div>
         )}

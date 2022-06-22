@@ -42,7 +42,13 @@ function HomeExplore() {
               {learnData.resources.map((resource) => (
                 <Link href={`/learn#${resource.id}`} key={resource.name} passHref>
                   <a className={styles.link}>
-                    <Svg height="20" width="20" href="/icons/arrow-right-lightblue.svg" /> {resource.name}
+                    <Svg
+                      height="20"
+                      width="20"
+                      href="/icons/arrow-right-lightblue.svg"
+                      title="arrow right lightblue icon"
+                    />{' '}
+                    {resource.name}
                   </a>
                 </Link>
               ))}

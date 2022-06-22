@@ -1,0 +1,8 @@
+.commingSoon {
+  color: var(--neural-700-color);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
