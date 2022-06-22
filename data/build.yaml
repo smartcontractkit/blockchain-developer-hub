@@ -219,6 +219,125 @@ categories:
         start_date: '2022-06-24'
         end_date: '2022-06-26'
 
+  - name: Events
+    href: '/build#events'
+    overview:
+      Conferences, meet & greets and a lot more. Get in direct contact with the leaders of the industry, meet people and
+      learn a lot!
+    items:
+      - title: 'ETH Community Conference 5'
+        description:
+          The Ethereum Community Conference (EthCC) is the largest annual European Ethereum event focused on technology
+          and community. Three intense days of conferences, networking and learning.
+        location: Paris - France
+        online: false
+        href: 'https://ethcc.io/'
+        image: '/images/events/eth-conference.png'
+        start_date: '2022-07-19'
+        end_date: '2022-07-21'
+
+      - title: 'IC3 Blockchain Camp 2022'
+        description:
+          Join us for the 7th Annual IC3 Blockchain Camp! This 7-day experience will be hosted in-person on the Cornell
+          Campus in Ithaca, NY. Our Camp technical committee of Surya Bakshi, Tyler Kell and Patrick McCorry is
+          preparing another immersive coding and learning experience.
+        location: Ithaca - New York
+        online: false
+        href: 'https://www.initc3.org/events/2022-08-01-ic3-blockchain-camp-2022'
+        image: '/images/events/ic3-blockchain.png'
+        start_date: '2022-08-01'
+        end_date: '2022-08-07'
+
+      - title: 'Usenix Security Symposium'
+        description:
+          The USENIX Security Symposium brings together researchers, practitioners, system administrators, system
+          programmers, and others interested in the latest advances in the security and privacy of computer systems and
+          networks.
+        location: Boston - MA
+        online: true
+        href: 'https://www.usenix.org/conference/usenixsecurity22'
+        image: '/images/events/usenix-event.png'
+        start_date: '2022-08-10'
+        end_date: '2022-08-12'
+
+      - title: 'Messari Mainnet'
+        description: Mainnet is an immersive, agenda-setting summit held annually by Messari
+        location: New York - USA
+        online: false
+        href: 'https://mainnet.events/'
+        image: '/images/events/messari-mainnet.png'
+        start_date: '2022-09-21'
+        end_date: '2022-09-23'
+
+      - title: 'Token 2049'
+        description:
+          TOKEN2049 is the premier crypto event, organized annually in Singapore and London, where founders and
+          executives of leading Web3 companies share their view on the market.
+        location: Singapore
+        online: false
+        href: 'https://www.token2049.com/'
+        image: '/images/events/token-2049.jpg'
+        start_date: '2022-09-28'
+        end_date: '2022-09-29'
+
+      - title: 'SmartCon 2022'
+        description:
+          Register for this two-day conference where you’ll learn about the latest Web3 developments directly from
+          researchers, developers, and founders at the forefront of blockchain innovation.
+        location: New York - USA
+        online: true
+        href: 'https://smartcon.chain.link/'
+        image: '/images/events/smartcon-2022.png'
+        start_date: '2022-09-28'
+        end_date: '2022-09-29'
+
+      - title: 'GopherCon'
+        description:
+          GopherCon is an annual conference which began in 2014 and is dedicated to the Go programming language. It is
+          organized by a community-driven group of developers who wish to promote the use of Go, the formation of an
+          inclusive and supportive Go community, and the education of Go developers.
+        location: Chicago - IL
+        online: true
+        href: 'https://www.gophercon.com/'
+        image: '/images/events/gopher-con.png'
+        start_date: '2022-10-06'
+        end_date: '2022-10-08'
+
+      - title: 'DevCon'
+        description:
+          Devcon is an intensive introduction for new Ethereum explorers, a global family reunion for those already a
+          part of our ecosystem, and a source of energy and creativity for all.
+        location: Bogotá - Colombia
+        online: false
+        href: 'https://www.gophercon.com/'
+        image: '/images/events/devcon-2022.png'
+        start_date: '2022-10-11'
+        end_date: '2022-10-14'
+
+      - title: 'Break Point 2022'
+        description:
+          The Solana ecosystem gathered in Lisbon in 2021 for the first-ever, real-life, worldwide celebration -
+          Breakpoint. It was where the builders, enthusiasts, and dreamers making the future came to work, learn, and
+          play.
+        location: Lisbon - Portugal
+        online: false
+        href: 'https://solana.com/breakpoint'
+        image: '/images/events/solana-breakpoint.png'
+        start_date: '2022-11-04'
+        end_date: '2022-11-07'
+
+      - title: 'ACM CCS 2022'
+        description:
+          The ACM Conference on Computer and Communications Security (CCS) is the flagship annual conference of the
+          Special Interest Group on Security, Audit and Control (SIGSAC) of the Association for Computing Machinery
+          (ACM).
+        location: Los Angeles - CA
+        online: true
+        href: 'https://www.sigsac.org/ccs/CCS2022/'
+        image: '/images/events/acm-ccs.png'
+        start_date: '2022-11-07'
+        end_date: '2022-11-11'
+
   - name: Workshops
     href: '/build#workshops'
     overview:
