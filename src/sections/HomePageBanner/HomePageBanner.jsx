@@ -24,19 +24,20 @@ function HomePageBanner() {
               <li className={clsx('body-short-01', styles.list_item)}>
                 <Svg className={styles.list_icon} height="24" width="24" href="/icons/school.svg" title="school icon" />
                 <small>
-                  <strong>Learn the essentials</strong> of smart contract and blockchain development.
+                  <strong>Learn the essentials</strong> of blockchain and smart contract development.
                 </small>
               </li>
               <li className={clsx('body-short-01', styles.list_item)}>
                 <Svg className={styles.list_icon} height="24" width="24" href="/icons/memory.svg" title="memory icon" />
                 <small>
-                  Get familiar with the <strong>development stack</strong> for major blockchain projects.
+                  <strong>Get familiar</strong> with the tools and resources you need to start building your own
+                  project.
                 </small>
               </li>
               <li className={clsx('body-short-01', styles.list_item)}>
                 <Svg className={styles.list_icon} height="24" width="24" href="/icons/map.svg" title="map icon" />
                 <small>
-                  Identify your <strong>ideal journey</strong> to become a blockchain developer.
+                  <strong>Lay the foundations</strong> for your journey to becoming a blockchain developer.
                 </small>
               </li>
             </ul>
