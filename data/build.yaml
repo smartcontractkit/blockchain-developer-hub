@@ -1,7 +1,9 @@
 categories:
   - name: Hackathons
     href: '/build#hackathons'
-    overview: Competing in both in-person and online hackathons offers opportunities for you to learn blockchain development and win amazing prizes.
+    overview:
+      Competing in both in-person and online hackathons offers opportunities for you to learn blockchain development and
+      win amazing prizes.
     items:
       - title: 'Polygon Hackathon'
         description: Dive into Web3 this summer and build a new dApp with Polygon
@@ -217,6 +219,53 @@ categories:
         start_date: '2022-06-24'
         end_date: '2022-06-26'
 
+      - title: 'Scrypto Lending Challenge'
+        description: Explore Scrypto and Build a Lending dApp
+        prize: $10,000
+        online: true
+        href: 'https://scrypto-lending.devpost.com/'
+        image: '/images/hackathons/scrypto-challenge.png'
+        start_date: '2022-07-17'
+        end_date: '2022-07-18'
+
+      - title: 'Web3 Infinity Hackathon'
+        description: Decentralize the Data, Empower the World!
+        prize: $105,000
+        online: true
+        href: 'https://web3infinityhackathon.devpost.com/'
+        image: '/images/hackathons/web3-infinity.png'
+        start_date: '2022-07-01'
+        end_date: '2022-07-22'
+
+      - title: 'Ripple CBDC Innovate'
+        description:
+          Build or update a fintech or payments solution that utilizes CBDC and is capable of being run on the XRP
+          Ledger.
+        prize: $47,000
+        online: true
+        href: 'https://ripplecbdc.devpost.com/'
+        image: '/images/hackathons/ripple-hackathon.png'
+        start_date: '2022-06-27'
+        end_date: '2022-08-25'
+
+      - title: 'BlockET'
+        description: A 2-day competitive technical and journalistic blog writing event presented by IET-VIT.
+        prize: $400.0
+        online: true
+        href: 'https://blocket.devpost.com/'
+        image: '/images/hackathons/blockET.png'
+        start_date: '2022-07-09'
+        end_date: '2022-07-10'
+
+      - title: 'EthCC Hack 2022'
+        description: Hacking away in the City of Light towards Regen Summer
+        prize: TBD
+        online: true
+        href: 'https://ethcchack2022.devpost.com/'
+        image: '/images/hackathons/ethcc-hack.png'
+        start_date: '2022-07-22'
+        end_date: '2022-07-24'
+
   - name: Events
     href: '/build#events'
     overview:
@@ -338,7 +387,9 @@ categories:
 
   - name: Workshops
     href: '/build#workshops'
-    overview: Workshops allow you to learn the ins and outs of blockchain development alongside experienced blockchain developers, artists, and mentors.
+    overview:
+      Workshops allow you to learn the ins and outs of blockchain development alongside experienced blockchain
+      developers, artists, and mentors.
     items:
       - title: 'Chainlink Solana Bootcamp'
         description:
