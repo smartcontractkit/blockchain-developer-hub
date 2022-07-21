@@ -1,7 +1,4 @@
 :root {
-  --white: #ffffff;
-  --black: #000000;
-
   --bg: #0E1212;
 
   --light-04: #FFFFFF0A;
@@ -57,6 +54,23 @@
 
   --pink-gradient-40: linear-gradient(90deg, rgba(255, 66, 224, 0.4) 0%, rgba(94, 13, 135, 0.4) 100%);
   --pink-gradient-100:  linear-gradient(90deg, #FF42E0 0%, #5E0D87 100%);
+
+  /* Old design Colors starts here */
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --primary-50-color: #F6FDFF;
+  --primary-100-color: #D5F6FF;
+  --primary-200-color: #A6EEFF;
+  --primary-300-color: #14D9FA;
+  --primary-400-color: #00BCDA;
+  --primary-500-color: #009FB9;
+  --primary-600-color: #008399;
+  --primary-700-color: #00687A;
+  --primary-800-color: #004E5C;
+  --primary-900-color: #003640;
+  --primary-950-color: #001F26;
 
   --secondary-50-color: #FFFBF7;
   --secondary-100-color: #FFF0C6;
@@ -117,4 +131,6 @@
   --neural-variant-800-color: #3F484B;
   --neural-variant-900-color: #293234;
   --neural-variant-950-color: #141D1F;
+
+  /* Old design Colors ends here */
 }
