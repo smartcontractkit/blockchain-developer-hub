@@ -1,4 +1,10 @@
 :root {
+  --white: #ffffff;
+  --white-40: rgba(255, 255, 255, 0.04);
+  --white-80: rgba(255, 255, 255, 0.08);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --black: #000000;
+
   --bg: #0E1212;
 
   --light-04: #FFFFFF0A;
@@ -56,9 +62,6 @@
   --pink-gradient-100:  linear-gradient(90deg, #FF42E0 0%, #5E0D87 100%);
 
   /* Old design Colors starts here */
-
-  --white-color: #ffffff;
-  --black-color: #000000;
 
   --primary-50-color: #F6FDFF;
   --primary-100-color: #D5F6FF;
