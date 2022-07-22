@@ -11,8 +11,6 @@ export default function DefaultLayout({ children }) {
         <link rel="icon" type="image/png" sizes="192x192" href="/images/android-chrome-192x192.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5" />
       </Head>
       <NavBar />
       <main>{children}</main>
