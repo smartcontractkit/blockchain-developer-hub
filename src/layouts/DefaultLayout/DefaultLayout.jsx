@@ -1,8 +1,23 @@
 import NavBar from '@/components/NavBar';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
+import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
 
 export default function DefaultLayout({ children }) {
+  const { pathname } = useRouter();
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const defaultNavbarPathNames = {
+      home: '/',
+    };
+    if (pathname === defaultNavbarPathNames.home) {
+      setIsSticky(false);
+    } else {
+      setIsSticky(true);
+    }
+    return () => setIsSticky(true);
+  }, [pathname]);
   return (
     <>
       <Head>
@@ -12,7 +27,7 @@ export default function DefaultLayout({ children }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
       </Head>
-      <NavBar />
+      <NavBar isSticky={isSticky} />
       <main>{children}</main>
     </>
   );

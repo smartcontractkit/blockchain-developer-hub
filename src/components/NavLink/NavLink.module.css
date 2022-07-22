@@ -8,9 +8,10 @@
 }
 
 .link {
-  color: #000000;
+  color: var(--green-200);
   padding: unset;
   border-radius: unset;
+  text-transform: uppercase;
 }
 .link:hover,
 .activeLink {
