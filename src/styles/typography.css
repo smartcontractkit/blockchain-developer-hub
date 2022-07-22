@@ -58,10 +58,6 @@
   font-size: 1.440rem;
 }
 
-/* .h-100 {
-  font-size: 1.200rem;
-} */
-
 /* Subtitles */
 
 .subtitle-bold {
@@ -81,8 +77,9 @@
   line-height: 1.28em;
 }
 
+.text-lg--long,
 .text-lg--short,
-.text-lg--short {
+.text-lg--short-semi {
   font-size: 1rem;
 }
 
@@ -112,7 +109,9 @@
 }
 /* Caption */
 
-.caption--semi-bold {
+.caption--semi-bold,
+.text-md--short-semi,
+.text-lg--short-semi {
   font-weight: 600;
 }
 

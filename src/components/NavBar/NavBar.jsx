@@ -3,13 +3,14 @@ import { useRouter } from 'next/router';
 import NavLink from '@/components/NavLink';
 import styles from './NavBar.module.css';
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
 import { useState, useRef, useEffect } from 'react';
 import Overlay from '@/components/Overlay';
 
 const links = [
   {
     to: '/blockchain101/blockchain',
-    text: 'Why Blockchain',
+    text: 'Blockchain 101',
   },
   {
     to: '/learn',
@@ -29,7 +30,7 @@ const links = [
   },
 ];
 
-export default function NavBar() {
+export default function NavBar({ isSticky }) {
   const bodyRef = useRef();
   const [showNavLinks, setShowNavLinks] = useState(false);
   const { pathname } = useRouter();
@@ -48,7 +49,7 @@ export default function NavBar() {
     bodyRef.current = document.body;
   }, []);
   return (
-    <nav className={styles.nav}>
+    <nav className={clsx(styles.nav, { [styles.skicky]: isSticky })}>
       <div className={styles.container}>
         <Overlay showOverlay={showNavLinks} toggleMenu={toggleMenuLink} />
         <div className={styles.nav_contents}>
@@ -57,7 +58,12 @@ export default function NavBar() {
           </button>
           <Link href="/">
             <a className={styles.logo} onClick={() => toggleMenuLink(false)}>
-              Blockchain Developer Hub
+              <img src="/images/favicon-32x32.png" alt="blockchain logo" />
+              <span className="text-lg--short-semi">
+                blockchain
+                <br />
+                education
+              </span>
             </a>
           </Link>
 
@@ -74,10 +80,19 @@ export default function NavBar() {
             rel="noopener noreferrer"
             className={styles.githublogo}
           >
-            <img src="/icons/github-logo.svg" width="24" height="24" alt="github logo" />
+            <span className="btn--extra-bold">Contribute</span>
+            <img src="/icons/github.svg" width="24" height="24" alt="github logo" />
           </a>
         </div>
       </div>
     </nav>
   );
 }
+
+NavBar.propTypes = {
+  isSticky: PropTypes.bool,
+};
+
+NavBar.defaultProps = {
+  isSticky: false,
+};

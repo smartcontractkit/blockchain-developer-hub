@@ -1,10 +1,17 @@
 .nav {
-  background-color: var(--white-color);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.078);
+  background-color: transparent;
+  backdrop-filter: blur(96px);
+  width: 100%;
+}
+
+.nav.skicky{
+  background-color: var(--black-50);
   position: sticky;
   top: 0;
+  border-bottom: 1px solid var(--primary-700);
   z-index: 9999;
 }
+
 .container {
   margin-inline: auto;
   max-width: 1440px;
@@ -13,20 +20,26 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1rem;
   letter-spacing: -0.03em;
-  color: var(--black-color);
+  color: var(--primary-50);
   user-select: none;
 }
+.logo img {
+  margin-right: 0.5rem;
+}
+
 .nav_links {
+  background-color: var(--bg);
   position: fixed;
   top: 63px;
   left: 0;
   right: 0;
-  background-color: var(--white-color);
   display: none;
 }
 
@@ -38,7 +51,7 @@
   flex-direction: column;
   align-items: start;
   padding: 3rem 1.5rem 1rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav_contents {
@@ -67,6 +80,20 @@
   top: 30%;
   z-index: 10;
   display: none;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background-color: var(--white-80);
+  border: 1px solid var(--primary-700);
+  backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  width: 137px;
+  height: 40px;
+  text-transform: uppercase;
+}
+
+.githublogo img {
+  margin-left: 0.2rem;
 }
 
 .menu_btn {
@@ -96,6 +123,7 @@
 
   .nav_contents {
     flex-wrap: unset;
+    justify-content: center;
   }
 
   .nav_links.mobile {
@@ -107,13 +135,14 @@
   .nav_links {
     display: flex;
     position: relative;
-    flex: auto;
     justify-content: center;
     margin-top: unset;
     top: unset;
     right: unset;
     left: unset;
     flex-direction: row;
+    margin-inline: 13rem;
+    background-color: transparent;
   }
 
   .nav_links li {
@@ -127,12 +156,12 @@
 
   .nav_links li:not(:last-child)::after {
     content: url('/icons/keyboard-arrow-right.svg');
-    margin-inline: 1.5rem;
+    margin-inline: 1.2rem;
     opacity: 0.2;
   }
 
   .githublogo {
-    display: block;
+    display: flex;
   }
 
 }
