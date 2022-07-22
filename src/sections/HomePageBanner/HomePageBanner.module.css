@@ -1,17 +1,56 @@
 .container {
-  background-image: url(/images/hero-bg.png);
+  background-image:  var(--bg-gradient), url(/images/hero-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: content-box;
-  padding: 0 2rem;
+  transform: translateY(-5rem);
+}
+.contents {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  padding: 11rem 2rem 4rem;
 }
 
 .heading {
-  
+  color: var(--white);
+  width: 100%;
+  max-width: 42rem;
+}
+
+.smart_text {
+  background: var(--green-gradient-100);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contracts_text {
+  background: var(--green-gradient-100);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  color: var(--primary-300);
+  margin: 1.5rem 0 3rem;
+  width: 100%;
+  max-width: 32.625rem;
+}
+
+.contents a,
+.contents a:hover {
+  color: var(--dark-green-700);
+}
+.contents a {
+  background: var(--white);
+  border-radius: 2.5rem;
+  width: 100%;
+  max-width: 201px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 18px 22px rgba(255, 255, 255, 0.08), 0px 7.51997px 9.19107px rgba(255, 255, 255, 0.0575083), 0px 4.02054px 4.91399px rgba(255, 255, 255, 0.0476886), 0px 2.25388px 2.75474px rgba(255, 255, 255, 0.04), 0px 1.19702px 1.46302px rgba(255, 255, 255, 0.0323114), 0px 0.498106px 0.608796px rgba(255, 255, 255, 0.0224916);
 }
