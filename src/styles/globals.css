@@ -26,7 +26,10 @@ body {
   margin: 0;
   font-family: var(--font-family-manrope);
   scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+}
+
+body {
+  background: var(--bg);
 }
 
 a {
