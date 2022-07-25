@@ -12,8 +12,7 @@ function HomePageBanner() {
     <section className={styles.container}>
       <div className={styles.contents}>
         <h1 className={headingClasses}>
-          Jump into <span className={styles.smart_text}>smart</span>{' '}
-          <span className={styles.contracts_text}>contracts</span> development
+          <span>Jump into</span> smart contracts <span>development</span>
         </h1>
         <div className={descriptionClasses}>
           Learn the essentials, become familiar with popular dev stacks, and define your journey to becoming a

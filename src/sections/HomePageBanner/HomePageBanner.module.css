@@ -16,19 +16,15 @@
 }
 
 .heading {
-  color: var(--white);
+  background: var(--green-gradient-100);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   width: 100%;
   max-width: 42rem;
 }
 
-.smart_text {
-  background: var(--green-gradient-100);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.contracts_text {
-  background: var(--green-gradient-100);
+.heading > span{
+   background: var(--white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
