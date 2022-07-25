@@ -1,32 +1,47 @@
 .container {
-  background-color: var(--neural-100-color);
+  background-color: var(--primary-950);
+  backdrop-filter: blur(64px);
   padding: 4rem 2rem;
-  
 }
 
-.innerContainer {
+.inner_container {
   max-width: var(--xl);
   margin: 0 auto;
 }
 
-.header {
+.header, .header__left {
   display: flex;
   justify-content: space-between;
+}
+.header {
   padding-right: 2rem;
   flex-direction: column;
 }
 
 .header__left {
-  max-width: var(--sm);
+  margin-bottom: 6.25rem;
 }
 
 .title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 100%;
-  margin-bottom: 2rem;
-  color: var(--neural-950-color);
-  max-width: 30rem;
+  color: var(--primary-50);
+  max-width: 32.5625rem;
+  background: var(--pink-gradient-100);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 1.6rem;
+}
+
+.title span {
+  background: var(--primary-50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  width: 100%;
+  max-width: 21.25rem;
+  color: var(--primary-300);
+  padding-right: 1rem;
 }
 
 .links {
@@ -43,7 +58,11 @@
   align-items: center;
 }
 
-.tracksLabel {
+.learn_tracks {
+  border-top: 1px solid var(--primary-700);
+  padding-top: 0.5rem;
+}
+.tracks_label {
   color: var(--neural-500-color);
   font-size: 0.7rem;
   font-weight: 600;
@@ -88,7 +107,7 @@
 @media (min-width: 768px) {
   .header {
 
-    flex-direction: row;
+    /* flex-direction: row; */
 
   }
 

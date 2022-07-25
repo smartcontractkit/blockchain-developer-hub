@@ -28,16 +28,18 @@ function HomeExplore() {
 
   return (
     <section className={styles.container}>
-      <div className={styles.innerContainer}>
+      <div className={styles.inner_container}>
         <div className={styles.header}>
           <div className={styles.header__left}>
-            <h2 className={styles.title}>Explore how you can develop your skills</h2>
-            <p className="body-long-01">
+            <h2 className={clsx('h-300', styles.title)}>
+              <span>Explore how you can develop your</span> blockchain dev skills
+            </h2>
+            <div className={clsx('text-lg--long', styles.description)}>
               Jump in with these top tutorials, projects, and courses, or browse the full library on Learn.
-            </p>
+            </div>
           </div>
-          <div>
-            <span className={styles.tracksLabel}>Learn tracks</span>
+          <div className={styles.learn_tracks}>
+            <span className={styles.tracks_label}>Learn tracks</span>
             <div className={styles.links}>
               {learnData.resources.map((resource) => (
                 <Link href={`/learn#${resource.id}`} key={resource.name} passHref>
