@@ -1,18 +1,19 @@
 .card {
-  width: 100%;
-  max-width: 32.625rem;
+  flex: 1;
   margin: 1rem;
+  width: 100%;
+  min-height: 16rem;
+  max-width: 32.625rem;
+  min-width: 21rem;
 }
 
 .card__inner {
   position: relative;
   background-color: var(--white-40);
   border: 1px solid var(--white-40);
-  min-height: 16rem;
-  width: 100%;
   color: var(--primary-50);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: all 0.2s ease-in-out;
 }
 
@@ -28,19 +29,30 @@
   transform: rotate(-45deg);
 }
 
-.subtitle {
+.subtitle, .icon  {
   margin-bottom: 1rem;
 }
 
+.link_text {
+  margin-top: 2.5625rem;
+  color: var(--green-200);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.link_text img {
+  margin-left: 0.5rem;
+}
+
 .title {
-  font-weight: 700;
   transition: all 0.2s ease-in-out;
 }
 
 .description {
-  font-weight: 400;
   margin-top: 0.5rem;
   color: var(--primary-300);
   width: 100%;
   max-width: 28.625rem;
+  padding-right: 1rem;
 }

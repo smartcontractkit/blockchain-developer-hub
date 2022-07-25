@@ -2,7 +2,6 @@
 import styles from './HomepageBlockchain.module.css';
 import data from '@/data/home.yaml';
 import CardWithArrow from '@/components/CardWithArrow';
-import padNumber from '@/helpers/padNumber';
 
 function HomepageBlockchain() {
   const cardItems = data.hero.featured_articles;
@@ -14,10 +13,12 @@ function HomepageBlockchain() {
           <CardWithArrow
             href={card.href}
             title={card.title}
+            link_text={card.link_text}
             description={card.description}
-            subtitle={padNumber(index, 9)}
             key={index}
-          />
+          >
+            <img src={card.icon} alt={`${card.title} icon`} />
+          </CardWithArrow>
         ))}
       </div>
     </div>
