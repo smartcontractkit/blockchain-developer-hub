@@ -4,7 +4,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: content-box;
-  transform: translateY(-5rem);
 }
 .contents {
   display: flex;
