@@ -10,7 +10,7 @@
 .card__inner {
   position: relative;
   background-color: var(--white-40);
-  border: 1px solid var(--white-40);
+  border: 1px solid var(--primary-700);
   color: var(--primary-50);
   border-radius: 1rem;
   padding: 1.5rem;
@@ -18,7 +18,7 @@
 }
 
 .card__inner:hover {
-  border: 1px solid var(--primary-700);
+  border: 1px solid var(--primary-600);
   background-color: var(--white-80);
 }
 
