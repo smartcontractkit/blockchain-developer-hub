@@ -67,8 +67,8 @@
 /* Texts */
 .text-md--long,
 .text-md--short,
-.text-lg--long,
-.text-lg--short {
+.text-lg--short,
+.text-lg--long {
   font-weight: 400;
 }
 
@@ -89,6 +89,7 @@
 
 .text-md--long,
 .text-md--short,
+.text-md--short-semi,
 .btn--extra-bold {
   font-size: 0.833rem;
 }
