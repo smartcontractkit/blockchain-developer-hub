@@ -1,15 +1,15 @@
 .nav {
   background-color: transparent;
-  backdrop-filter: blur(96px);
   width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
 }
 
 .nav.skicky{
   background-color: var(--black-50);
   position: sticky;
-  top: 0;
   border-bottom: 1px solid var(--primary-700);
-  z-index: 9999;
 }
 
 .container {
