@@ -1,22 +1,24 @@
 .card {
-  flex: 1;
+  width: 100%;
+  max-width: 32.625rem;
+  margin: 1rem;
 }
 
 .card__inner {
   position: relative;
-  background-color: var(--neural-100-color);
-  border: 1px solid var(--neural-100-color);
+  background-color: var(--white-40);
+  border: 1px solid var(--white-40);
   min-height: 16rem;
   width: 100%;
-  color: var(--neural-800-color);
-  border-radius: 0.75rem;
-  padding: 1rem;
+  color: var(--primary-50);
+  border-radius: 1rem;
+  padding: 2rem;
   transition: all 0.2s ease-in-out;
 }
 
 .card__inner:hover {
-  border: 1px solid var(--tertiary-400-color);
-  background-color: var(--white-color);
+  border: 1px solid var(--primary-700);
+  background-color: var(--white-80);
 }
 
 .arrow {
@@ -27,22 +29,18 @@
 }
 
 .subtitle {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .title {
   font-weight: 700;
-  color: var(--neural-950-color);
-  max-width: 13.5625rem;
   transition: all 0.2s ease-in-out;
-}
-
-.title:hover {
-  color: var(--tertiary-600-color);
 }
 
 .description {
   font-weight: 400;
   margin-top: 0.5rem;
-  max-width: 19.25rem;
+  color: var(--primary-300);
+  width: 100%;
+  max-width: 28.625rem;
 }

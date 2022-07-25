@@ -1,33 +1,23 @@
-.container, .quote_wrapper{
+.container, .cards {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .container {
-  background-color: var(--white-color);
+  background-color: var(--bg);
   padding: 2rem;
+  height: 100%;
+  max-height: 28rem;
 }
 
-.quote_wrapper {
-  flex-direction: column;
-  align-items: start;
-  color: var(--neural-950-color);
+.cards {
+
 }
 
-.quote {
-  font-weight: 500;
-  font-size: 1.875rem;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-}
 
-.label {
-  font-weight: 400;
-}
-
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .container {
     height: 28rem;
   }
-}
+} */

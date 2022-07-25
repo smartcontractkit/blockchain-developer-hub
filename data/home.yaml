@@ -2,6 +2,8 @@ hero:
   featured_articles:
     - title: Why Blockchain?
       href: 'blockchain101/blockchain'
+      description: 'By decentralizing data, we no longer rely on trust in centralized intermediaries in order to conduct economic activity.'
 
     - title: Intro to Smart Contracts
       href: 'blockchain101/smart-contracts'
+      description: 'A smart contract is a tamper-proof program that runs on a blockchain network when certain predefined conditions are met.'
