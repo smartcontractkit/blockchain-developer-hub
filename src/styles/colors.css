@@ -11,6 +11,13 @@
   --light-08: #FFFFFF14;
   --light-12: #FFFFFF1F;
 
+  --beginner-level: rgba(30, 80, 91, 0.59);
+  --beginner-level-indicator: #33DAFF;
+  --intermediate-level: rgba(99, 64, 46, 0.5);
+  --intermediate-level-indicator: #FF7733;
+  --advanced-level: rgba(79, 41, 109, 0.5);
+  --advanced-level-indicator: #A733FF;
+
   --primary-50: #FAFCFC;
   --primary-100: #F2F4F5;
   --primary-200: #DCE5E5;

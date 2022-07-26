@@ -56,8 +56,8 @@ function HomeExplore() {
           </div>
         </div>
         <div className={styles.body}>
-          <div>
-            <h3 className={clsx('h-200', styles.subtitle)}>Dive in learning with courses</h3>
+          <div className={styles.main_contents}>
+            <h3 className={clsx('overline--extra-bold', styles.subtitle)}>Dive in learning with courses</h3>
             <div className={styles.courses}>
               {randomCourses.map((course, index) => (
                 <Card
@@ -72,8 +72,8 @@ function HomeExplore() {
               ))}
             </div>
           </div>
-          <div>
-            <h3 className={clsx('h-200', styles.subtitle)}>Or check tutorials</h3>
+          <div className={styles.main_contents}>
+            <h3 className={clsx('overline--extra-bold', styles.subtitle)}>Or check tutorials</h3>
             <div className={styles.tutorials}>
               {randomTutorials.map((tutorial, index) => (
                 <TutorialCard
