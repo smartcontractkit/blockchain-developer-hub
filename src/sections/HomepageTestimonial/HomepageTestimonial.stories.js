@@ -1,7 +1,7 @@
 import HomepageTestimonial from './HomepageTestimonial';
 
 export default {
-  title: 'section/Homepage Blockchain',
+  title: 'section/Homepage Testimonial',
   component: HomepageTestimonial,
 };
 
