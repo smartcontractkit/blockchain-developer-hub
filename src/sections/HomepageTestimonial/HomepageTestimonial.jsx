@@ -5,8 +5,6 @@ import data from '@/data/home.yaml';
 function HomepageTestimonial() {
   const testimonial = data.testimonial;
 
-  console.log('testimonial', testimonial);
-
   return (
     <div className={styles.container}>
       <Testimonial
