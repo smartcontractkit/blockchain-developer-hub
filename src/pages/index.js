@@ -4,6 +4,7 @@ import HomePageBanner from '@/sections/HomePageBanner';
 import HomepageBlockchain from '@/sections/HomePageBlockchain';
 import HomePageImproveSkillsStories from '@/sections/HomePageImproveSkills';
 import HomePageLifecycleBanner from '@/sections/HomePageLifecycleBanner';
+import HomePageTestimonial from '@/sections/HomePageTestimonial';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         linkText="Explore Map"
         link="https://smartcontractecosystem.com/"
       />
+      <HomePageTestimonial />
       <CaseStudyBanner />
       <HomePageImproveSkillsStories />
     </div>
