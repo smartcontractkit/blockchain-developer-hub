@@ -60,6 +60,8 @@
 
   --pink-gradient-40: linear-gradient(90deg, rgba(255, 66, 224, 0.4) 0%, rgba(94, 13, 135, 0.4) 100%);
   --pink-gradient-100:  linear-gradient(90deg, #FF42E0 0%, #5E0D87 100%);
+  --pink-gradient-200: linear-gradient(90deg, #FF42E0 0%, #4D0EFF 100%);
+
 
   --bg-gradient: radial-gradient(57.03% 57.03% at 50% 0%, rgba(202, 255, 130, 0.1) 0%, rgba(55, 166, 103, 0.016) 100%);
 
