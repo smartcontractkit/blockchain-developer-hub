@@ -46,27 +46,32 @@
 
 .links {
   display: flex;
-  flex-direction: column;
-  margin: 1rem 0;
-  gap: 1rem;
-}
-
-.link {
-  color: var(--tertiary-500-color);
-  display: flex;
-  gap: 0.4rem;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
 .learn_tracks {
   border-top: 1px solid var(--primary-700);
   padding-top: 0.5rem;
 }
+
 .tracks_label {
   color: var(--neural-500-color);
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.resource_logo {
+  height: 120px;
+}
+
+.resource_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .body {

@@ -8,6 +8,8 @@ import styles from './HomeExplore.module.css';
 import TutorialCard from '@/components/TutorialCard';
 import Card from '@/components/Card';
 import Svg from '@/components/Svg';
+import CardWithArrow from '@/components/CardWithArrow';
+import CardWithLogo from '@/components/CardWithLogo/CardWithLogo';
 
 function HomeExplore() {
   const [randomCourses, setRandomCourses] = useState([]);
@@ -42,17 +44,14 @@ function HomeExplore() {
             <span className={styles.tracks_label}>Learn tracks</span>
             <div className={styles.links}>
               {learnData.resources.map((resource) => (
-                <Link href={`/learn#${resource.id}`} key={resource.name} passHref>
-                  <a className={styles.link}>
-                    <Svg
-                      height="20"
-                      width="20"
-                      href="/icons/arrow-right-lightblue.svg"
-                      title="arrow right lightblue icon"
-                    />{' '}
-                    {resource.name}
-                  </a>
-                </Link>
+                <CardWithLogo
+                  key={resource.id}
+                  href={`/learn#${resource.id}`}
+                  height={120}
+                  link_text={resource.name}
+                  logo={resource.logo}
+                  isHomePage={true}
+                />
               ))}
             </div>
           </div>

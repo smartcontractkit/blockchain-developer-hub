@@ -4,6 +4,11 @@
   justify-content: center;
 }
 
+.inner_container {
+  max-width: var(--xl);
+  margin: 0 auto;
+}
+
 .container {
   background-color: var(--bg);
   padding: 2rem 2rem 4rem;
@@ -11,4 +16,5 @@
 
 .cards {
   flex-wrap: wrap;
+  width: 100%
 }

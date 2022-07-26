@@ -1,6 +1,6 @@
 resources:
   - id: evm-chains
-    name: EVM Chains
+    name: EVM (ethereum)
     logo: /logos/ethereum.png
     courses:
       href: '/learn#evm-chains-courses'
