@@ -40,12 +40,20 @@
 }
 
 .content {
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 148%;
-    letter-spacing: -0.01em;
+    font-weight: 700;
+    width: 100%;
     color: var(--primary-50);
-}   
+    background: var(--pink-gradient-200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+.content span {
+    font-weight: 400;
+    background: var(--primary-50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}  
 
 .pink-gradient-200 {
     color: var(--pink-gradient-200);
