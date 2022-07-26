@@ -6,9 +6,11 @@ function Testimonial({ title, content, source, icon }) {
     <>
       <div>{title}</div>
       <div>{content}</div>
-      <div>{source}</div>
       <div>
-        <Svg height="18" width="18" href={`/icons/${icon}`} title="prize icon" />
+        source: <span>{source}</span>
+      </div>
+      <div>
+        <Svg height="18" width="18" href={icon} title="testimonial icon" />
       </div>
     </>
   );

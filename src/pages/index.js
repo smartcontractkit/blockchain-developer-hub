@@ -12,13 +12,13 @@ export default function Home() {
       <HomePageBanner />
       <HomepageBlockchain />
       <HomeExplore />
+      <HomePageTestimonial />
       <HomePageLifecycleBanner
         title="Get to know the development cycle"
         overview="The ecosystem tools map outlines the entire smart contract developer ecosystem, and all of the tools and products smart contract developers may need to rely on."
         linkText="Explore Map"
         link="https://smartcontractecosystem.com/"
       />
-      <HomePageTestimonial />
       <CaseStudyBanner />
       <HomePageImproveSkillsStories />
     </div>
