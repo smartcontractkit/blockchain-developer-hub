@@ -13,6 +13,6 @@ hero:
       link_text: 'Intro to Smart contracts'
 testimonial:
   title: 'Did you know that...'
-  content: 'Blockchain development skills are rated as the fastest-growing in-demand skills, with an increase of 60x in 2020.'
+  content: 'Blockchain development skills are rated as the fastest-growing in-demand skills, with an <span className="pink-gradient-200">increase of 60x</span> in 2020.'
   source: 'blockchainjobs.com'
   icon: '/icons/chart.svg'
