@@ -42,10 +42,10 @@
 }
 
 .title {
-    font-weight: 800;
+    /* font-weight: 800;
     font-size: .75rem;
     line-height: .875rem;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.04em; */
     text-transform: uppercase;
     color: var(--primary-500);
 }
@@ -72,8 +72,5 @@
 
 .source {
     font-weight: 400;
-    font-size: .875rem;
-    line-height: 128%;
-    letter-spacing: -0.01em;
     color: var(--primary-500);
 }
