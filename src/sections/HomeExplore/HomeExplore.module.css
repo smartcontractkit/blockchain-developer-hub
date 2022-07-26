@@ -14,21 +14,24 @@
   justify-content: space-between;
 }
 .header {
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   flex-direction: column;
 }
 
 .header__left {
-  margin-bottom: 6.25rem;
+  margin-bottom: 4.25rem;
+  flex-flow: row wrap;
 }
 
 .title {
+  width: 100%;
   color: var(--primary-50);
   max-width: 32.5625rem;
   background: var(--pink-gradient-100);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-right: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .title span {
@@ -40,16 +43,19 @@
 .description {
   width: 100%;
   max-width: 21.25rem;
+  min-width: 12rem;
   color: var(--primary-300);
   padding-right: 1rem;
+  flex: 1;
 }
 
 .links {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin-top: 1rem;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-flow: row wrap;
 }
 
 .learn_tracks {
@@ -110,12 +116,7 @@
 }
 
 @media (min-width: 768px) {
-  .header {
-
-    /* flex-direction: row; */
-
-  }
-
+  
   .body {
     grid-template-columns: 2fr 1fr;
   }

@@ -18,9 +18,11 @@ Default.args = {
   cards: [
     {
       title: 'Intorduction to Blockchain',
+      href: '#',
     },
     {
       title: 'Intorduction to Smart Contracts',
+      href: '#',
     },
   ],
 };

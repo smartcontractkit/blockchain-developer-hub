@@ -20,7 +20,14 @@
   height: 100%;
   max-width: 32.625rem;
   min-width: 21rem;
+  flex: 1;
 }
+
+.blockchain_card:hover {
+  background-color: var(--white-80);
+  border: 1px solid var(--primary-600);
+}
+
 
 .link_text, .blockchain_card {
   display: flex;

@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import clsx from 'clsx';
-import Link from 'next/link';
 import learnData from '@/data/learn.yaml';
 import { getRandomItemsFromArray } from '@/helpers/getRandomItemsFromArray';
 import styles from './HomeExplore.module.css';
 import TutorialCard from '@/components/TutorialCard';
 import Card from '@/components/Card';
-import Svg from '@/components/Svg';
-import CardWithArrow from '@/components/CardWithArrow';
-import CardWithLogo from '@/components/CardWithLogo/CardWithLogo';
+import CardWithLogo from '@/components/CardWithLogo';
 
 function HomeExplore() {
   const [randomCourses, setRandomCourses] = useState([]);
