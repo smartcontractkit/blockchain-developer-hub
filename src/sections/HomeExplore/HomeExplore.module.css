@@ -59,11 +59,9 @@
 
 .subtitle {
   color: var(--primary-500);
-  display: flex;
   white-space: nowrap;
-  gap: 1rem;
-  align-items: center;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .main_contents {
@@ -82,6 +80,19 @@
   grid-template-columns: 1fr;
   gap: 0.5rem;
 }
+
+.more_link_text {
+  margin-top: 0.6rem;
+  color: var(--green-200);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.more_link_text img {
+  margin-left: 0.5rem;
+}
+
 
 @media (min-width: 768px) {
   .header {
