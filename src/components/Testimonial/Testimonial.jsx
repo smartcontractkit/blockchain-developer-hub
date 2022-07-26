@@ -10,7 +10,8 @@ function Testimonial({ title, source, icon }) {
         <div className={styles.card__info}>
           <span className={styles.title}>{title}</span>
           <span className={clsx('subtitle-01', styles.content)}>
-            <span>Blockchain development skills are rated as the fastest-growing in-demand skills, with an</span> increase of 60x <span>in 2020.</span>
+            <span>Blockchain development skills are rated as the fastest-growing in-demand skills, with an</span>{' '}
+            increase of 60x <span>in 2020.</span>
           </span>
           <span className={styles.source}>
             source: <span>{source}</span>
