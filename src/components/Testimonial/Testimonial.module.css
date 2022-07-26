@@ -56,6 +56,7 @@
     color: var(--primary-50);
     background: var(--pink-gradient-200);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
   
@@ -63,6 +64,7 @@
     font-weight: 400;
     background: var(--primary-50);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }  
 
