@@ -7,6 +7,7 @@ import styles from './HomeExplore.module.css';
 import TutorialCard from '@/components/TutorialCard';
 import Card from '@/components/Card';
 import CardWithLogo from '@/components/CardWithLogo';
+import Link from 'next/link';
 
 function HomeExplore() {
   const [randomCourses, setRandomCourses] = useState([]);

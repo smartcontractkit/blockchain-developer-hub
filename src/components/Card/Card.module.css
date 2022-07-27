@@ -50,6 +50,10 @@
   color: var(--primary-50);
 }
 
+.title > span:first-child {
+  padding-right: 1rem;
+}
+
 .title:hover {
   color: var(--green-200);
 }
