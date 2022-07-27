@@ -15,8 +15,8 @@ const CardWithArrow = ({ title, description, subtitle, link_text, href, target, 
       <a target={target} className={styles.card}>
         <div className={styles.card__inner}>
           {subtitle && <small className={subtitleClasses}>{subtitle}</small>}
-          <div className={styles.icon}>{children}</div>
-          <h4 className={titleClasses}>{title}</h4>
+          <div>{children}</div>
+          {title && <h4 className={titleClasses}>{title}</h4>}
           {description && <div className={descriptionClasses}> {description} </div>}
 
           {link_text && (
@@ -32,7 +32,7 @@ const CardWithArrow = ({ title, description, subtitle, link_text, href, target, 
 };
 
 CardWithArrow.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   href: PropTypes.string.isRequired,
   description: PropTypes.string,
   subtitle: PropTypes.string,

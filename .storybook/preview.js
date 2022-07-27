@@ -21,7 +21,7 @@ export const parameters = {
     Provider: RouterContext.Provider,
   },
   backgrounds: {
-    default: 'white',
+    default: 'dark',
     values: [
       {
         name: 'white',
@@ -33,7 +33,7 @@ export const parameters = {
       },
       {
         name: 'dark',
-        value: '#191C1D',
+        value: '#0E1212',
       },
     ],
   },
