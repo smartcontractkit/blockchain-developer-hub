@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import clsx from 'clsx';
-import Link from 'next/link';
 import learnData from '@/data/learn.yaml';
 import { getRandomItemsFromArray } from '@/helpers/getRandomItemsFromArray';
 import styles from './HomeExplore.module.css';
 import TutorialCard from '@/components/TutorialCard';
 import Card from '@/components/Card';
-import Svg from '@/components/Svg';
+import CardWithLogo from '@/components/CardWithLogo';
 
 function HomeExplore() {
   const [randomCourses, setRandomCourses] = useState([]);
@@ -29,29 +28,28 @@ function HomeExplore() {
 
   return (
     <section className={styles.container}>
-      <div className={styles.innerContainer}>
+      <div className={styles.inner_container}>
         <div className={styles.header}>
           <div className={styles.header__left}>
-            <h2 className={styles.title}>Explore how you can develop your skills</h2>
-            <p className="body-long-01">
+            <h2 className={clsx('h-300', styles.title)}>
+              <span>Explore how you can develop your</span> blockchain dev skills
+            </h2>
+            <div className={clsx('text-lg--long', styles.description)}>
               Jump in with these top tutorials, projects, and courses, or browse the full library on Learn.
-            </p>
+            </div>
           </div>
-          <div>
-            <span className={styles.tracksLabel}>Learn tracks</span>
+          <div className={styles.learn_tracks}>
+            <span className={styles.tracks_label}>Learn tracks</span>
             <div className={styles.links}>
               {learnData.resources.map((resource) => (
-                <Link href={`/learn#${resource.id}`} key={resource.name} passHref>
-                  <a className={styles.link}>
-                    <Svg
-                      height="20"
-                      width="20"
-                      href="/icons/arrow-right-lightblue.svg"
-                      title="arrow right lightblue icon"
-                    />{' '}
-                    {resource.name}
-                  </a>
-                </Link>
+                <CardWithLogo
+                  key={resource.id}
+                  href={`/learn#${resource.id}`}
+                  height={120}
+                  link_text={resource.name}
+                  logo={resource.logo}
+                  isHomePage={true}
+                />
               ))}
             </div>
           </div>
