@@ -1,5 +1,5 @@
 categories:
-  - name: Hackathons
+  - name: Hackathon
     href: '/build#hackathons'
     link_text: 'Find a hackathon'
     icon: '/icons/hackaton.svg'
@@ -387,7 +387,7 @@ categories:
         start_date: '2022-11-07'
         end_date: '2022-11-11'
 
-  - name: Workshops
+  - name: Workshop
     href: '/build#workshops'
     link_text: 'Find a Workshop'
     icon: '/icons/workshop.svg'

@@ -15,7 +15,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-right: 1.6rem;
+  padding-right: 1.8rem;
   margin-bottom: 2rem;
 }
 
@@ -37,7 +37,6 @@
 
 .headings, .categories {
   display: flex;
-  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -47,6 +46,7 @@
 }
 
 .categories {
+  align-items: center;
   justify-content: center;
   width: 100%;
   gap: 1.5rem;
