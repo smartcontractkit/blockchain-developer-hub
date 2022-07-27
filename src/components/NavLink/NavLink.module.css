@@ -15,7 +15,7 @@
 }
 .link:hover,
 .activeLink {
-  color: var(--tertiary-700-color);
+  color: var(--green-300);
 }
 
 .outline {

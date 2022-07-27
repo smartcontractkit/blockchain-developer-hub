@@ -7,7 +7,7 @@
 }
 
 .nav.skicky{
-  background-color: var(--black-50);
+  background-color: var(--bg);
   position: sticky;
   border-bottom: 1px solid var(--primary-700);
 }
