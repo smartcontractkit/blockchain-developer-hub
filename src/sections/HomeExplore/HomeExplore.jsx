@@ -8,11 +8,13 @@ import styles from './HomeExplore.module.css';
 import TutorialCard from '@/components/TutorialCard';
 import Card from '@/components/Card';
 import CardWithLogo from '@/components/CardWithLogo';
+import Link from 'next/link';
 import Testimonial from '@/components/Testimonial';
 
 function HomeExplore() {
   const [randomCourses, setRandomCourses] = useState([]);
   const [randomTutorials, setRandomTutorials] = useState([]);
+  const linkTextClasses = clsx('btn-sm--extra-bold', styles.more_link_text);
 
   const testimonial = homeData.testimonial;
 
@@ -23,7 +25,7 @@ function HomeExplore() {
 
     const tutorials = learnData.resources.map((resource) => resource.tutorials.data);
     const tutorialsArray = [].concat(...tutorials);
-    const randomTutorials = getRandomItemsFromArray(tutorialsArray, 3);
+    const randomTutorials = getRandomItemsFromArray(tutorialsArray, 4);
 
     setRandomCourses(randomCourses);
     setRandomTutorials(randomTutorials);
@@ -66,8 +68,8 @@ function HomeExplore() {
           />
         </div>
         <div className={styles.body}>
-          <div>
-            <h3 className={clsx('h-200', styles.subtitle)}>Dive in learning with courses</h3>
+          <div className={styles.main_contents}>
+            <h3 className={clsx('overline--extra-bold', styles.subtitle)}>Dive in learning with courses</h3>
             <div className={styles.courses}>
               {randomCourses.map((course, index) => (
                 <Card
@@ -81,9 +83,15 @@ function HomeExplore() {
                 />
               ))}
             </div>
+            <Link href="/learn" passHref>
+              <a className={linkTextClasses}>
+                {' '}
+                {'More courses'} <img src="/icons/arrow-right-white-rounded.svg" alt="text link icon" />
+              </a>
+            </Link>
           </div>
-          <div>
-            <h3 className={clsx('h-200', styles.subtitle)}>Or check tutorials</h3>
+          <div className={styles.main_contents}>
+            <h3 className={clsx('overline--extra-bold', styles.subtitle)}>check tutorials</h3>
             <div className={styles.tutorials}>
               {randomTutorials.map((tutorial, index) => (
                 <TutorialCard
@@ -95,6 +103,12 @@ function HomeExplore() {
                 />
               ))}
             </div>
+            <Link href="/learn" passHref>
+              <a className={linkTextClasses}>
+                {' '}
+                {'More tutorials'} <img src="/icons/arrow-right-white-rounded.svg" alt="text link icon" />
+              </a>
+            </Link>
           </div>
         </div>
       </div>
