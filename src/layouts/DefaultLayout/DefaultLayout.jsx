@@ -3,6 +3,7 @@ import Head from 'next/head';
 import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+import Footer from '@/components/Footer';
 
 export default function DefaultLayout({ children }) {
   const { pathname } = useRouter();
@@ -29,6 +30,7 @@ export default function DefaultLayout({ children }) {
       </Head>
       <NavBar isSticky={isSticky} />
       <main>{children}</main>
+      <Footer />
     </>
   );
 }
