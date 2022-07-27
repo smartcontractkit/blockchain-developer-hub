@@ -7,6 +7,9 @@
 .inner_container {
   max-width: var(--xl);
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .header, .header__left {
@@ -29,6 +32,7 @@
   max-width: 32.5625rem;
   background: var(--pink-gradient-100);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-right: 1.6rem;
   margin-bottom: 2rem;
@@ -37,6 +41,7 @@
 .title span {
   background: var(--primary-50);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -124,4 +129,10 @@
   .courses {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.testimonial_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,7 +1,6 @@
 .card {
     flex: 1;
     width: 100%;
-    margin: 1rem;
     max-width: 32.625rem;
     min-height: 11.75rem;
 }
@@ -20,9 +19,9 @@
     gap: 2rem;
 }
 
-@media (min-width: 798px) {
+@media (min-width: 762px) {
     .card {
-        max-width: 65.250rem;
+        max-width: 67.250rem;
     }
     .card__inner {
         flex-direction: row;
@@ -42,10 +41,6 @@
 }
 
 .title {
-    /* font-weight: 800;
-    font-size: .75rem;
-    line-height: .875rem;
-    letter-spacing: 0.04em; */
     text-transform: uppercase;
     color: var(--primary-500);
 }
