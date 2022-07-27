@@ -1,29 +1,28 @@
 .container {
-  background-color: var(--neural-100-color);
-  border-radius: 0.75rem;
-  padding: 1rem;
-  width: 100%;
+  background-color: var(--white-40);
+  border: 1px solid var(--primary-700);
+  border-radius: 1rem;width: 100%;
   height: 100%;
   font-size: 0.9rem;
-  border: 1px solid var(--neural-100-color);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  overflow: hidden;
+}
+
+.contents {
+  padding: 1rem;
 }
 
 .container:hover {
-  border: 1px solid var(--tertiary-400-color);
-  background-color: var(--white-color);
-}
-
-.container.light {
-  background-color: var(--white-color);
+  border: 1px solid var(--primary-600);
+  background-color: var(--white-80);
 }
 
 .image {
   max-width: 100%;
-  height: auto;
-  max-height: 150px;
-  border-radius: 0.5rem;
+  height: 100%;
+  max-height: 200px;
+  border-radius: 0 0 1rem 1rem;
   object-fit: cover;
   aspect-ratio: 2/1;
 }
@@ -37,29 +36,30 @@
 .shareBtn {
   background-color: transparent;
   border: none;
-  color: var(--tertiary-700-color);
-  font-weight: 600;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
   cursor: pointer;
 }
 
 .title {
   margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-block-start: 0.5rem;
   margin-block-end: 0;
-  width: fit-content;
   transition: all 0.2s ease-in-out;
+  color: var(--primary-50);
+}
+
+.title > span:first-child {
+  padding-right: 1rem;
 }
 
 .title:hover {
-  color: var(--tertiary-600-color);
+  color: var(--green-200);
 }
 
 .description {
-  color: var(--neural-900-color);
+  color: var(--primary-400);
 }
 
 .prize {
@@ -71,25 +71,54 @@
 }
 
 .subtitle {
-  color: var(--neural-600-color);
+  color: var(--primary-500);
+  margin-top: 1rem;
 }
 
 .level {
-  color: var(--tertiary-600-color);
   display: flex;
+  width: fit-content;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   margin-top: 1rem;
+  color: var(--primary-100);
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+.level.extra_margin_top {
+  transform: translateY(1.3rem);
+}
+
+.level.beginner {
+  background: var(--beginner-level);
+}
+.level.intermediate {
+  background: var(--intermediate-level);
+}
+.level.advanced {
+  background: var(--advanced-level);
 }
 
 .level::before {
   content: "";
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.357rem;
+  height: 0.357rem;
   display: inline-block;
-  background-color: var(--tertiary-600-color);
   border-radius: 50%;
 }
+
+.level.beginner::before {
+   background: var(--beginner-level-indicator);
+}
+.level.intermediate::before {
+   background: var(--intermediate-level-indicator);
+}
+.level.advanced::before {
+   background: var(--advanced-level-indicator);
+}
+
+
 
 .footer {
   color: var(--neural-700-color);
