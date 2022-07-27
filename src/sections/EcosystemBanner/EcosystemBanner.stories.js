@@ -1,4 +1,4 @@
-import CaseStudyBanner from './CaseStudyBanner';
+import CaseStudyBanner from './EcosystemBanner';
 
 export default {
   title: 'section/HomePage Banner',
