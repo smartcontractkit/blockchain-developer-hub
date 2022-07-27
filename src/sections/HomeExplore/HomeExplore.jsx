@@ -36,9 +36,9 @@ function HomeExplore() {
       <div className={styles.inner_container}>
         <div className={styles.header}>
           <div className={styles.header__left}>
-            <h2 className={clsx('h-300', styles.title)}>
+            <h3 className={clsx('h-300', styles.title)}>
               <span>Explore how you can develop your</span> blockchain dev skills
-            </h2>
+            </h3>
             <div className={clsx('text-lg--long', styles.description)}>
               Jump in with these top tutorials, projects, and courses, or browse the full library on Learn.
             </div>
