@@ -85,6 +85,10 @@
   border-radius: 0.3rem;
 }
 
+.level.extra_margin_top {
+  transform: translateY(1.3rem);
+}
+
 .level.beginner {
   background: var(--beginner-level);
 }

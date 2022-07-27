@@ -22,10 +22,13 @@ function Card({
 }) {
   const classes = clsx(styles.container, { [styles.light]: variant === 'light' });
   const levelText = level ? level.toLowerCase() : '';
+  const MAX_EXPECTED_TITLE_LENGTH_TO_ADD_EXTRA_MARGIN_TOP_TO_LEVEL = 42;
   const titleClasses = clsx('text-lg--short-semi', styles.title);
   const subTitleClasses = clsx('caption--semi-bold', styles.subtitle);
   const descriptionClasses = clsx('body-long-02', styles.description);
-  const levelClasses = clsx('caption--semi-bold', styles.level, styles[levelText]);
+  const levelClasses = clsx('caption--semi-bold', styles.level, styles[levelText], {
+    [styles.extra_margin_top]: title.length <= MAX_EXPECTED_TITLE_LENGTH_TO_ADD_EXTRA_MARGIN_TOP_TO_LEVEL,
+  });
   const prizeClasses = clsx('caption--semi-bold', styles.prize);
   const footerClasses = clsx('caption--semi-bold', styles.footer);
   const hasDate = end_date && start_date;
