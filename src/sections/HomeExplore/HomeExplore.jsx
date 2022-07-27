@@ -2,17 +2,21 @@ import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import clsx from 'clsx';
 import learnData from '@/data/learn.yaml';
+import homeData from '@/data/home.yaml';
 import { getRandomItemsFromArray } from '@/helpers/getRandomItemsFromArray';
 import styles from './HomeExplore.module.css';
 import TutorialCard from '@/components/TutorialCard';
 import Card from '@/components/Card';
 import CardWithLogo from '@/components/CardWithLogo';
 import Link from 'next/link';
+import Testimonial from '@/components/Testimonial';
 
 function HomeExplore() {
   const [randomCourses, setRandomCourses] = useState([]);
   const [randomTutorials, setRandomTutorials] = useState([]);
   const linkTextClasses = clsx('btn-sm--extra-bold', styles.more_link_text);
+
+  const testimonial = homeData.testimonial;
 
   useEffect(() => {
     const courses = learnData.resources.map((resource) => resource.courses.data);
@@ -54,6 +58,14 @@ function HomeExplore() {
               ))}
             </div>
           </div>
+        </div>
+        <div className={styles.testimonial_wrapper}>
+          <Testimonial
+            title={testimonial.title}
+            content={testimonial.content}
+            source={testimonial.source}
+            icon={testimonial.icon}
+          />
         </div>
         <div className={styles.body}>
           <div className={styles.main_contents}>
