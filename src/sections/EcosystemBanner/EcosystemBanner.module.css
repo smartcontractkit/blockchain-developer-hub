@@ -9,7 +9,7 @@
 .container {
   background-color: var(--primary-950);
   backdrop-filter: blur(64px);
-  padding: 3rem 0;
+  padding: 3rem 0 7.5rem;
 }
 
 .content_wrapper {
