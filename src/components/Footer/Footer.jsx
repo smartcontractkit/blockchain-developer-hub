@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className={styles.container}>
       <img src="/images/logo-footer.png" alt="blockchain logo" />
-      <p className={clsx('body-short-02', styles.copyright)}>{new Date().getFullYear()} @Blockchain Education</p>
+      <p className={clsx('.text-md--short', styles.copyright)}>{new Date().getFullYear()} @Blockchain Education</p>
     </footer>
   );
 }
