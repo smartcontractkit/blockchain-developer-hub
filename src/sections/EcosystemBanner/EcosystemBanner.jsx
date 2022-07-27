@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import NavLink from '@/components/NavLink';
-import styles from './CaseStudyBanner.module.css';
+import styles from './EcosystemBanner.module.css';
 
 export default function CaseStudyBanner() {
   return (

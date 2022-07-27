@@ -1,4 +1,4 @@
-import CaseStudyBanner from '@/sections/CaseStudyBanner';
+import EcosystemBanner from '@/sections/EcosystemBanner';
 import HomeExplore from '@/sections/HomeExplore';
 import HomePageBanner from '@/sections/HomePageBanner';
 import HomepageBlockchain from '@/sections/HomePageBlockchain';
@@ -10,7 +10,7 @@ export default function Home() {
       <HomePageBanner />
       <HomepageBlockchain />
       <HomeExplore />
-      <CaseStudyBanner />
+      <EcosystemBanner />
       <HomePageImproveSkillsStories />
     </div>
   );

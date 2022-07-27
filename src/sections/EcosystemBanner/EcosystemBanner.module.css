@@ -25,6 +25,7 @@
 .image {
   border-radius: 1rem;
   height: 21.0625rem;
+  width: 100%;
   margin-bottom: 2rem;
   border: 1px solid var(--primary-700);
   overflow: hidden;
