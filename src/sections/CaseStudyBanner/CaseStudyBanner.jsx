@@ -13,28 +13,20 @@ export default function CaseStudyBanner() {
         />
 
         <div className={styles.info}>
-          <span className={clsx('caption', styles.subtitle)}>NFTs</span>
-          <h3 className={clsx('h-300', styles.title)}>
-            The Currency: Engineering a seamless experience to allocate, mint, and distribute the NFTs
-          </h3>
+          <span className={clsx('overline--extra-bold', styles.subtitle)}>smart contracts ecosystem</span>
+          <h3 className={clsx('h-200', styles.title)}>A growing landscape of tools and technologies</h3>
           <p className={clsx('body-long-01', styles.overview)}>
-            32,492 Collectors from over 130 countries applied to purchase 67,023 NFTs of &apos;The Currency&apos;,
-            Damien Hirst&apos;s first NFT collection.
+            All of the tools and products smart contract developers may need to rely on gathered in one place.
           </p>
           <div className={styles.actions}>
             <NavLink
               to="https://consensys.net/blog/nft/over-32000-users-from-130-countries-applied-to-purchase-damien-hirsts-nfts-on-the-palm-network/"
               target="_blank"
               rel="noopener noreferrer"
-              type="primary"
-              text={'Learn more'}
-            />
-            <NavLink
-              to={'/build#casestudies'}
-              type="secondary"
-              text={'All case studies'}
+              type="link"
+              icon="grid.svg"
               iconPosition="left"
-              icon="union.svg"
+              text={'Explore Ecosystem'}
             />
           </div>
         </div>

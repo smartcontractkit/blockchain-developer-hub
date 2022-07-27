@@ -7,8 +7,11 @@
 }
 
 .container {
-  background-color: var(--neural-950-color);
+  background-color: var(--white-40);
   padding: 2rem;
+  border-radius: 1rem;
+  max-width: var(--xl);
+  margin-inline: auto;
 }
 
 .image, .subtitle {
@@ -23,7 +26,7 @@
 }
 
 .title {
-  color: var(--white-color);
+  color: var(--primary-50);
   margin: 0.75rem auto;
 }
 
@@ -38,14 +41,14 @@
   justify-content: start;
   gap: 0.5rem;
 }
+.actions a {
+  color: var(--pink-900);
+  background: var(--pink-400);
+}
 
 .subtitle {
-  display: block;
-  color: var(--neural-50-color);
-  border: 1px solid var(--neural-variant-600-color);
-  padding: 0.5625rem 0.75rem;
-  border-radius: 0.5rem;
-  width: fit-content;
+  color: var(--pink-400);
+  text-transform: uppercase
 }
 
 @media (min-width: 1024px) {
