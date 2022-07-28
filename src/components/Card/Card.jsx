@@ -63,37 +63,35 @@ function Card({
 
           {level && <span className={levelClasses}>{level}</span>}
 
-          {prize && (
-            <div className={prizeClasses}>
-              <Svg height="18" width="18" href="/icons/prize.svg" title="prize icon" />
-              {prize} in prizes
-            </div>
-          )}
-
           {showFooter && (
             <div className={footerClasses}>
               {/* If online = true or location exist */}
               {(online || location) && (
                 <span>
-                  {online ? (
-                    <Svg height="20" width="20" href="/icons/online.svg" title="online icon" />
-                  ) : (
-                    location && <Svg height="20" width="20" href="/icons/location.svg" title="location icon" />
-                  )}
+                  <Svg height="18" width="18" href="/icons/location.svg" title="location icon" />
                   {location || 'Online'}
                 </span>
               )}
 
-              {/* If date exist and ensure both date and u=on demand don't exist at the same time */}
-              {hasDate && !on_demand && (
-                <span>
-                  <Svg height="20" width="20" href="/icons/calender.svg" title="calender icon" />
-                  {dayjs(start_date).format('MMM D')}
-                  &nbsp; - &nbsp;
-                  {dayjs(end_date).format('MMM D, YYYY')}
+              {/* If date exist and ensure both date and on demand don't exist at the same time */}
+              <span>
+                <Svg height="18" width="18" href="/icons/calender.svg" title="calender icon" />
+                {hasDate && !on_demand && (
+                  <>
+                    {dayjs(start_date).format('MMM D')}
+                    &nbsp; - &nbsp;
+                    {dayjs(end_date).format('MMM D, YYYY')}
+                  </>
+                )}
+                {on_demand && !hasDate && 'On-demand'}
+              </span>
+
+              {prize && (
+                <span className={prizeClasses}>
+                  <Svg height="18" width="18" href="/icons/prize.svg" title="prize icon" />
+                  {prize} in prizes
                 </span>
               )}
-              {on_demand && !hasDate && <span>{'On-demand'}</span>}
             </div>
           )}
         </div>
