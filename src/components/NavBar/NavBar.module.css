@@ -19,21 +19,6 @@
   position: relative;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 1rem;
-  letter-spacing: -0.03em;
-  color: var(--primary-50);
-  user-select: none;
-}
-.logo img {
-  margin-right: 0.5rem;
-}
-
 .nav_links {
   background-color: var(--bg);
   position: fixed;
@@ -43,8 +28,23 @@
   display: none;
 }
 
-.nav_contents, .nav_links.mobile {
+.nav_contents, .nav_links.mobile, .logo, .menu_btn, .githublogo{
   display: flex;
+}
+ 
+.logo {
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1rem;
+  letter-spacing: -0.03em;
+  color: var(--primary-50);
+  user-select: none;
+}
+
+.logo img {
+  margin-right: 0.5rem;
 }
 
 .nav_links.mobile {
@@ -80,7 +80,6 @@
   right: 1rem;
   top: 25%;
   z-index: 10;
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
@@ -101,7 +100,6 @@
 }
 
 .menu_btn {
-  display: flex;
   background: transparent;
   border: none;
   width: 24px;
@@ -115,13 +113,9 @@
 /* Media Query */
 
 @media (min-width: 1024px) {
-
-  
-
   .container {
     padding: 1.5rem 1rem;
   }
-
 
   .menu_btn {
     display: none;
@@ -170,8 +164,6 @@
     position: relative;
   }
 
-  
-
 }
 
 @media (min-width: 1280px) { 
@@ -183,10 +175,6 @@
     padding: 1.5rem 0rem;
   }
 
-  .githublogo {
-    width: 137px;
-  }
-  
   .githublogo img {
     margin-right: 0.59rem;
     width: unset;
