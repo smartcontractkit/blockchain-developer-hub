@@ -16,7 +16,7 @@
 
 .leftSidebar {
   bottom: -1000px;
-  background-color: var(--black);
+  background-color: var(--black-50);
   border-right: 1px solid var(--primary-700);
 }
 

@@ -34,7 +34,6 @@ function BlogLayout({ children, pages }) {
   useEffect(() => {
     const headingsElements = Array.from(document.querySelectorAll('h2'));
     setHeadings(headingsElements);
-    console.log(headingsElements[0]);
 
     if (headingsElements.length) setActiveHeading(headingsElements[0]);
 
