@@ -83,18 +83,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--white);
-  background-color: var(--white-80);
-  border: 1px solid var(--primary-700);
+  flex-direction: row-reverse;
+  color: var(--green-200);
   backdrop-filter: blur(8px);
   border-radius: 1.5rem;
-  width: 137px;
   height: 40px;
   text-transform: uppercase;
 }
 
 .githublogo img {
-  margin-left: 0.2rem;
+  width: 30px;
+  height: 30px;
+}
+
+.githublogo > span{
+  display: none;
 }
 
 .menu_btn {
@@ -112,6 +115,8 @@
 /* Media Query */
 
 @media (min-width: 1024px) {
+
+  
 
   .container {
     padding: 1.5rem 1rem;
@@ -165,10 +170,26 @@
     position: relative;
   }
 
+  
+
 }
 
 @media (min-width: 1280px) { 
+  .githublogo > span {
+    display: block;
+  }
+
   .container {
     padding: 1.5rem 0rem;
+  }
+
+  .githublogo {
+    width: 137px;
+  }
+  
+  .githublogo img {
+    margin-right: 0.59rem;
+    width: unset;
+    height: unset;
   }
 }
