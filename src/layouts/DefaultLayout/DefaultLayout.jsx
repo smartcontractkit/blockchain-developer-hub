@@ -14,11 +14,11 @@ export default function DefaultLayout({ children }) {
     };
     if (pathname === defaultNavbarPathNames.home) {
       setIsSticky(false);
-    } else {
+    } else if (!isSticky) {
       setIsSticky(true);
     }
     return () => setIsSticky(true);
-  }, [pathname]);
+  }, [pathname, isSticky]);
   return (
     <>
       <Head>

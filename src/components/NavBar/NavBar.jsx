@@ -54,7 +54,7 @@ export default function NavBar({ isSticky }) {
         <Overlay showOverlay={showNavLinks} toggleMenu={toggleMenuLink} />
         <div className={styles.nav_contents}>
           <button className={styles.menu_btn} onClick={() => toggleMenuLink(!showNavLinks)}>
-            <img src={`/icons/${showNavLinks ? 'close.png' : 'menu.png'}`} alt="menu icon" />
+            <img src={`/icons/${showNavLinks ? 'close.svg' : 'menu.svg'}`} alt="menu icon" />
           </button>
           <Link href="/">
             <a className={styles.logo} onClick={() => toggleMenuLink(false)}>

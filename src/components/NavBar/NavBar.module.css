@@ -7,31 +7,16 @@
 }
 
 .nav.skicky{
-  background-color: var(--black-50);
+  background-color: var(--bg);
   position: sticky;
   border-bottom: 1px solid var(--primary-700);
 }
 
 .container {
   margin-inline: auto;
-  max-width: 1440px;
+  max-width: var(--xl);
   padding: 1.2rem 1rem;
   position: relative;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 1rem;
-  letter-spacing: -0.03em;
-  color: var(--primary-50);
-  user-select: none;
-}
-.logo img {
-  margin-right: 0.5rem;
 }
 
 .nav_links {
@@ -43,8 +28,23 @@
   display: none;
 }
 
-.nav_contents, .nav_links.mobile {
+.nav_contents, .nav_links.mobile, .logo, .menu_btn, .githublogo{
   display: flex;
+}
+ 
+.logo {
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1rem;
+  letter-spacing: -0.03em;
+  color: var(--primary-50);
+  user-select: none;
+}
+
+.logo img {
+  margin-right: 0.5rem;
 }
 
 .nav_links.mobile {
@@ -55,6 +55,7 @@
 }
 
 .nav_contents {
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -77,27 +78,28 @@
 .githublogo {
   position: absolute;
   right: 1rem;
-  top: 30%;
+  top: 25%;
   z-index: 10;
-  display: none;
   align-items: center;
   justify-content: center;
-  color: var(--white);
-  background-color: var(--white-80);
-  border: 1px solid var(--primary-700);
+  flex-direction: row-reverse;
+  color: var(--green-200);
   backdrop-filter: blur(8px);
   border-radius: 1.5rem;
-  width: 137px;
   height: 40px;
   text-transform: uppercase;
 }
 
 .githublogo img {
-  margin-left: 0.2rem;
+  width: 30px;
+  height: 30px;
+}
+
+.githublogo > span{
+  display: none;
 }
 
 .menu_btn {
-  display: flex;
   background: transparent;
   border: none;
   width: 24px;
@@ -111,11 +113,9 @@
 /* Media Query */
 
 @media (min-width: 1024px) {
-
   .container {
-    padding: 1.5rem;
+    padding: 1.5rem 1rem;
   }
-
 
   .menu_btn {
     display: none;
@@ -123,7 +123,7 @@
 
   .nav_contents {
     flex-wrap: unset;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .nav_links.mobile {
@@ -141,7 +141,6 @@
     right: unset;
     left: unset;
     flex-direction: row;
-    margin-inline: 13rem;
     background-color: transparent;
   }
 
@@ -162,6 +161,23 @@
 
   .githublogo {
     display: flex;
+    position: relative;
   }
 
+}
+
+@media (min-width: 1280px) { 
+  .githublogo > span {
+    display: block;
+  }
+
+  .container {
+    padding: 1.5rem 0rem;
+  }
+
+  .githublogo img {
+    margin-right: 0.59rem;
+    width: unset;
+    height: unset;
+  }
 }
