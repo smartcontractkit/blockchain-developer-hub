@@ -1,12 +1,12 @@
 .headings {
   font-weight: bold;
-  color: var(--neural-950-color);
+  color: var(--primary-100);
   position: relative;
-  transform: translateX(1.2rem);
+  /* transform: translateX(1.2rem); */
 }
 
 .overview {
-  color: var(--neural-800-color);
+  color: var(--primary-400);
   margin: 0.5rem 0 0;
   max-width: 36.8125rem;
 }
