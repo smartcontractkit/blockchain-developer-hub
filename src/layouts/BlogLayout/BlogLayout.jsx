@@ -58,7 +58,6 @@ function BlogLayout({ children, pages }) {
         <div className={clsx(styles.leftSidebar, { [styles.mobile]: articleOverview })}>
           {pages && (
             <>
-              <div className={styles.sidebar__header}>Getting started</div>
               {sortedPages.map((page) => (
                 <Link key={page.slug} href={page.slug} passHref>
                   <a
@@ -73,7 +72,6 @@ function BlogLayout({ children, pages }) {
           )}
         </div>
         <div className={clsx(styles.rightSidebar, { [styles.mobile]: chapterseOverview })}>
-          <div className={styles.sidebar__header}>On this page</div>
           {headings.map((heading) => (
             <Link key={heading.id} href={`#${heading.id}`} passHref>
               <a

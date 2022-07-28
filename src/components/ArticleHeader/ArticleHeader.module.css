@@ -1,14 +1,13 @@
 .container {
   margin: 1.8rem auto 4rem;
-  border-bottom: 1px solid var(--neural-200-color);
 }
 
 .publishDate {
-  color: var(--neural-700-color);
+  color: var(--primary-700);
 }
 
 .title {
-  color: var(--neural-950-color);
+  color: var(--white);
   margin: 1rem 0;
 }
 
@@ -33,5 +32,5 @@
 }
 
 .author__role {
-  color: var(--neural-700-color);
+  color: var(--neural-700);
 }

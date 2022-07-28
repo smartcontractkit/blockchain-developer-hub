@@ -1,13 +1,16 @@
 import Link from 'next/link';
 import styles from '@/styles/MDX.module.css';
 import PropTypes from 'prop-types';
+import clsx from 'clsx';
 
 const CustomH2 = ({ id, ...rest }) => {
+  const blog_heading = clsx('h-100', styles.blog_heading);
   if (id) {
     return (
       <Link href={`#${id}`} passHref>
-        <a className={styles.blog_heading}>
+        <a className={blog_heading}>
           <h2 id={id} {...rest} />
+          <span>#</span>
         </a>
       </Link>
     );

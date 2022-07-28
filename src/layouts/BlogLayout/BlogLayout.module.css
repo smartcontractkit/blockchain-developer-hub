@@ -10,17 +10,18 @@
 .rightSidebar {
   position: fixed;
   flex-direction: column;
-  margin: 2rem 2rem;
+  padding: 2rem 2rem;
   transition: all 0.3s ease-in-out;
 }
 
 .leftSidebar {
   bottom: -1000px;
+  background-color: var(--black-50);
+  border-right: 1px solid var(--primary-700);
 }
 
 .rightSidebar {
   top: -1000px;
-  
 }
 
 .leftSidebar.mobile, 
@@ -30,30 +31,22 @@
   left: 0;
   right: 0;
   z-index: 3;
-  background-color: var(--tertiary-50-color);
+  background-color: var(--black-50);
   margin: unset;
   padding: 1.5rem;
   
 }
 
 .leftSidebar.mobile {
-   bottom: -1px;
+  bottom: -1px;
 }
 
 .rightSidebar.mobile {
-  top: 3.8rem;
-}
-
-.sidebar__header {
-  color: var(--neural-700-color);
-  margin-bottom: 1rem;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  font-weight: 600;
+  top: 4.375rem;
 }
 
 .leftSidebar__link {
-  color: var(--primary-950-color);
+  color: var(--primary-200);
   padding: 0.875rem 0.75rem;
   border-radius: 0.75rem;
   display: none;
@@ -61,13 +54,13 @@
 
 
 .leftSidebar__link.active {
-  background-color: var(--tertiary-100-color);
+  color: var(--green-400);
 }
 
 .rightSidebar__link {
-  color: var(--neural-500-color);
+  color: var(--primary-500);
   padding: 0.6rem 0.8rem;
-  border-left: 2px solid var(--neural-100-color);
+  border-left: 2px solid var(--primary-700);
   margin: 0;
   display: none;
 }
@@ -77,12 +70,16 @@
   display: block;
 }
 .rightSidebar__link.active {
-  color: var(--neural-950-color);
-  border-left: 2px solid var(--tertiary-500-color);
+  color: var(--primary-100);
+  border-left: 2px solid var(--green-500);
+}
+
+.content_wrapper,
+.rightSidebar{
+  margin: 4rem auto auto;
 }
 
 .content {
-  margin: auto;
   width: 100%;
 }
 .content_wrapper {
@@ -149,12 +146,10 @@
   .rightSidebar.mobile {
     display: flex;
     position: sticky;
-    top: 6.25rem;
-    max-height: 100vh;
   }
 
   .leftSidebar, .rightSidebar {
-    margin: 2rem 2rem;
+    padding: 2rem 2rem;
   }
 
   .leftSidebar{
@@ -176,5 +171,12 @@
     width: var(--md);
     grid-area: maincontent;
   }
+}
+
+
+@media (min-width: 1024px){
+  .rightSidebar.mobile {
+    top: 5rem;
+  } 
 }
   
