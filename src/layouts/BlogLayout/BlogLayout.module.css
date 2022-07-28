@@ -31,7 +31,7 @@
   left: 0;
   right: 0;
   z-index: 3;
-  background-color: var(--black);
+  background-color: var(--black-50);
   margin: unset;
   padding: 1.5rem;
   
@@ -146,7 +146,6 @@
   .rightSidebar.mobile {
     display: flex;
     position: sticky;
-    max-height: 100vh;
   }
 
   .leftSidebar, .rightSidebar {
