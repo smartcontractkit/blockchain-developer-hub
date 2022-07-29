@@ -29,7 +29,7 @@ body {
 }
 
 body {
-  background: var(--bg);
+  background: var(--primary-950);
 }
 
 a {

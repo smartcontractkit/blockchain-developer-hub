@@ -1,3 +1,7 @@
 .container {
   margin-inline: auto;
 }
+
+.contents {
+  padding: 7.5rem 0 0;
+}

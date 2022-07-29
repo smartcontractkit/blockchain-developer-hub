@@ -16,6 +16,7 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .container:hover {
@@ -82,10 +83,6 @@
   color: var(--primary-100);
   padding: 0.3rem;
   border-radius: 0.3rem;
-}
-
-.level.extra_margin_top {
-  transform: translateY(1.3rem);
 }
 
 .level.beginner {
