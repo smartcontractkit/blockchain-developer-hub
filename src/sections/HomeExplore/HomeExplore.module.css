@@ -68,7 +68,7 @@
 }
 
 .tracks_label {
-  color: var(--neural-500-color);
+  color: var(--primary-500);
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
