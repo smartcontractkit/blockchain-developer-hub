@@ -20,8 +20,8 @@
 }
 
 .container:hover {
-  border: 1px solid var(--primary-600);
-  background-color: var(--white-80);
+  border: 1px solid var(--primary-500);
+  background-color: var(--white-120);
 }
 
 .image {
