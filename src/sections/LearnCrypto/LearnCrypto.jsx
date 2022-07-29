@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Card from '@/components/Card';
-// import TutorialCard from '@/components/TutorialCard';
 import styles from './LearnCrypto.module.css';
 import ShareModal from '@/components/ShareModal';
 import { useState } from 'react';
@@ -15,12 +14,11 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
 
   return (
     <div id={id} className={styles.container}>
-      <div className={styles.sectionHeading}>
-        <h2 className="subtitle-bold">{name}</h2>
-        <img src={logo} alt={logoAlt} className={styles.logo} />
-      </div>
-
       <div className={styles.mainContent}>
+        <div className={styles.sectionHeading}>
+          <h2 className="subtitle-bold">{name}</h2>
+          <img src={logo} alt={logoAlt} className={styles.logo} />
+        </div>
         {courses && (
           <div id={`${id}-courses`}>
             <h3 className={headingClasses}>
