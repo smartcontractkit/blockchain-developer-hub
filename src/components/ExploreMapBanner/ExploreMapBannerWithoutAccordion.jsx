@@ -4,13 +4,12 @@ import NavLink from '@/components/NavLink';
 
 import styles from './ExploreMapBanner.module.css';
 
-export default function ExploreMapBanner({ isHomePage, title, description }) {
-  const titleClasses = clsx('h-500', styles.title);
-  const descriptionClasses = clsx('body-long-01', styles.description);
+export default function ExploreMapBanner({ isHomePage, description, children }) {
+  const descriptionClasses = clsx('text-lg--long', styles.description);
 
   return (
-    <div className={styles.container}>
-      {isHomePage ? <h2 className={titleClasses}>{title}</h2> : <h1 className={titleClasses}>{title}</h1>}
+    <div className={clsx(styles.container, { [styles.home]: isHomePage })}>
+      {children}
       <p className={descriptionClasses}>{description}</p>
       <div className={styles.btns}>
         <NavLink
@@ -20,9 +19,9 @@ export default function ExploreMapBanner({ isHomePage, title, description }) {
           target="_blank"
           rel="noopener noreferrer"
           type="primary"
-          text={'Explore Map'}
-          iconPosition="right"
-          icon="map-pointer.svg"
+          text={'Explore Ecosystem'}
+          iconPosition="left"
+          icon="grid.svg"
         />
         {!isHomePage && (
           <NavLink
@@ -30,9 +29,9 @@ export default function ExploreMapBanner({ isHomePage, title, description }) {
             target="_blank"
             rel="noopener noreferrer"
             type="outline"
-            text={'Roadmap'}
-            iconPosition="right"
-            icon="map.svg"
+            text={'Check study roadmap'}
+            iconPosition="left"
+            icon="fork.svg"
           />
         )}
       </div>
@@ -41,9 +40,9 @@ export default function ExploreMapBanner({ isHomePage, title, description }) {
 }
 
 ExploreMapBanner.propTypes = {
-  title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   isHomePage: PropTypes.bool,
+  children: PropTypes.node,
 };
 
 ExploreMapBanner.defaultProps = {

@@ -42,30 +42,6 @@
   margin: 0.75rem auto;
 }
 
-.overview {
-  color: var(--primary-200);
-  margin-bottom: 3rem;
-  padding-right: 1rem;
-}
-
-.actions {
-  flex-wrap: nowrap;
-  justify-content: start;
-  gap: 0.5rem;
-}
-.actions a {
-  color: var(--pink-900);
-  background: var(--pink-400);
-  padding: 1.25rem 1.75rem;
-  border-radius: 2.5rem;
-  transition: all 0.2s ease-in-out;
-}
-
-.actions a:hover {
-  color: var(--pink-900);
-  background: var(--pink-600);
-}
-
 .subtitle {
   color: var(--pink-400);
   text-transform: uppercase

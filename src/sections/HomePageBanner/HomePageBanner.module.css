@@ -23,7 +23,7 @@
 }
 
 .heading > span{
-   background: var(--white);
+   background: var(--primary-50);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
