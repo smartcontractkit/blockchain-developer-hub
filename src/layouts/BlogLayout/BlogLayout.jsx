@@ -3,11 +3,11 @@ import styles from './BlogLayout.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
-import NavLink from '@/components/NavLink';
 import { useEffect, useState } from 'react';
 import isElementVisable from '@/helpers/isElementVisable';
 import Overlay from '@/components/Overlay';
 import FloatingButton from '@/components/FloatingButton';
+import PagePagination from '@/components/PagePagination';
 
 function BlogLayout({ children, pages }) {
   const [headings, setHeadings] = useState([]);
@@ -90,40 +90,12 @@ function BlogLayout({ children, pages }) {
             {children}
           </div>
           <div className={styles.footer}>
-            <div>
-              {prev_page && (
-                <NavLink
-                  icon="arrow-left.svg"
-                  type="outline"
-                  iconPosition="left"
-                  text={`Previous: ${prev_page.data.title}`}
-                  to={prev_page.slug}
-                />
-              )}
-            </div>
-            <div>
-              {next_page && (
-                <NavLink
-                  icon="arrow-right.svg"
-                  type="outline"
-                  iconPosition="right"
-                  text={`Next: ${next_page.data.title}`}
-                  to={next_page.slug}
-                />
-              )}
-            </div>
-
-            {!next_page && (
-              <div>
-                <NavLink
-                  icon="arrow-right.svg"
-                  type="outline"
-                  iconPosition="right"
-                  text={`Next: Go to Learn`}
-                  to={'/learn'}
-                />
-              </div>
+            {prev_page && (
+              <PagePagination text={`${prev_page.data.title}`} link={prev_page.slug} navDirection="previous" />
             )}
+            {next_page && <PagePagination text={`${next_page.data.title}`} link={next_page.slug} navDirection="next" />}
+
+            {!next_page && <PagePagination text={`Learn`} link={'/learn'} navDirection="next" />}
           </div>
         </div>
       </div>
