@@ -17,8 +17,8 @@
 }
 
 .blockchain_card:hover {
-  background-color: var(--white-80);
-  border: 1px solid var(--primary-600);
+  border: 1px solid var(--primary-500);
+  background-color: var(--white-120);
 }
 
 

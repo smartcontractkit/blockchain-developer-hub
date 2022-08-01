@@ -18,8 +18,9 @@
 }
 
 .card__inner:hover {
-  border: 1px solid var(--primary-600);
-  background-color: var(--white-80);
+  border: 1px solid var(--primary-500);
+  background-color: var(--white-120);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 8px 17px rgba(0, 0, 0, 0.07), 0px 2px 6px rgba(0, 0, 0, 0.0482987), 0px 1px 3px rgba(0, 0, 0, 0.0389404), 0px 0.6px 1px rgba(0, 0, 0, 0.0310596), 0px 0.2px 0.5px rgba(0, 0, 0, 0.0217013);
 }
 
 .arrow {
