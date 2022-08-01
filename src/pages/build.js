@@ -10,7 +10,7 @@ function Build() {
       {categories.map(({ name, overview, items, href }, index) => (
         <BuildPageSection key={index} name={name} overview={overview} href={href} items={removePastEvent(items)} />
       ))}
-      <PagePagination text="Go to Ship" link="/ship" />
+      <PagePagination text="Ship" link="/ship" />
     </div>
   );
 }

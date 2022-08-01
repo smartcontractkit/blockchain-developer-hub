@@ -1,5 +1,5 @@
 import React from 'react';
-import PagePagination from './PagePagination';
+import PagePagination from './PagePaginationLink';
 
 export default {
   title: 'component/Page Pagination',

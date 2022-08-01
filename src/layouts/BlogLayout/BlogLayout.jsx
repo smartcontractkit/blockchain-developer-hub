@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import isElementVisable from '@/helpers/isElementVisable';
 import Overlay from '@/components/Overlay';
 import FloatingButton from '@/components/FloatingButton';
-import PagePagination from '@/components/PagePagination';
+import PagePaginationLink from '@/components/PagePaginationLink';
 
 function BlogLayout({ children, pages }) {
   const [headings, setHeadings] = useState([]);
@@ -91,11 +91,13 @@ function BlogLayout({ children, pages }) {
           </div>
           <div className={styles.footer}>
             {prev_page && (
-              <PagePagination text={`${prev_page.data.title}`} link={prev_page.slug} navDirection="previous" />
+              <PagePaginationLink text={`${prev_page.data.title}`} link={prev_page.slug} navDirection="previous" />
             )}
-            {next_page && <PagePagination text={`${next_page.data.title}`} link={next_page.slug} navDirection="next" />}
+            {next_page && (
+              <PagePaginationLink text={`${next_page.data.title}`} link={next_page.slug} navDirection="next" />
+            )}
 
-            {!next_page && <PagePagination text={`Learn`} link={'/learn'} navDirection="next" />}
+            {!next_page && <PagePaginationLink text={`Learn`} link={'/learn'} navDirection="next" />}
           </div>
         </div>
       </div>

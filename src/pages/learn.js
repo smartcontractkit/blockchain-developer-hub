@@ -23,7 +23,7 @@ function Learn() {
           />
         ))}
       </section>
-      <PagePagination text="Go to Ecosystem" link="/ecosystem-map" />
+      <PagePagination text="Ecosystem" link="/ecosystem-map" />
     </div>
   );
 }
