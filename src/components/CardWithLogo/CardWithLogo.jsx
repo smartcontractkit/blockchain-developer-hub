@@ -5,11 +5,9 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Link from 'next/link';
 
-export default function CardWithLogo({ href, logo, width, height, link_text, isHomePage }) {
+export default function CardWithLogo({ href, logo, width, height, link_text }) {
   const linkTextClasses = clsx('btn-sm--extra-bold', styles.link_text);
-  const cardClasses = clsx(styles.blockchain_card, {
-    [styles['blockchain_card--home_page']]: isHomePage,
-  });
+  const cardClasses = clsx(styles.blockchain_card);
   return (
     <Link href={href} passHref>
       <a className={cardClasses}>
@@ -29,7 +27,6 @@ CardWithLogo.propTypes = {
   link_text: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
-  isHomePage: PropTypes.bool,
 };
 
 CardWithLogo.defaultProps = {

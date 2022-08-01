@@ -1,6 +1,7 @@
 import styles from './ShareModal.module.css';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import Svg from '@/components/Svg';
 
 const SOCIAL_MEDIA = [
   {
@@ -46,7 +47,7 @@ function ShareModal({ onClose, url }) {
     <div className={styles.container} onClick={handleClickOutside} id="modal">
       <div className={styles.content}>
         <button className={styles.closeBtn} onClick={onClose}>
-          <img src="/icons/close.png" alt="Close" />
+          <Svg src="/icons/close.svg" alt="Close" />
         </button>
         <h2>Share with community</h2>
         <p>and invite other to complete</p>
@@ -68,8 +69,8 @@ function ShareModal({ onClose, url }) {
         </div>
 
         <div className={styles.copyContainer}>
-          <input type="text" value={url} disabled />
-          <button onClick={handleCopy}>{copied ? 'Copied!' : 'Copy'}</button>
+          <p>{url}</p>
+          <span onClick={handleCopy}>{copied ? 'Copied!' : 'Copy'}</span>
         </div>
       </div>
     </div>

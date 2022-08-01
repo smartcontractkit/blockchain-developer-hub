@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
   height: 3.5rem;
-  background-color: var(--black-50);
+  background-color: var(--bg);
   border: none;
   color: var(--green-400);
   box-shadow: 0px -8px 32px rgba(0, 0, 0, 0.04), inset 0px 1px 0px rgba(0, 0, 0, 0.08);

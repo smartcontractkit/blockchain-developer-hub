@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Card from '@/components/Card';
-import TutorialCard from '@/components/TutorialCard';
 import styles from './LearnCrypto.module.css';
 import ShareModal from '@/components/ShareModal';
 import { useState } from 'react';
@@ -9,22 +8,17 @@ import NoItemPlaceholder from '@/components/NoItemPlaceholder';
 import HeadingHash from '@/components/HeadingHash';
 
 function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
-  const headingClasses = clsx('subtitle-01', styles.headings);
-  const overviewClasses = clsx('body-long-02', styles.overview);
+  const headingClasses = clsx('subtitle-bold', styles.headings);
+  const overviewClasses = clsx('text-md--long', styles.overview);
   const [shareItem, setShareItem] = useState(null);
 
   return (
     <div id={id} className={styles.container}>
-      <div className={styles.sectionHeading}>
-        <div className={styles.sectionHeadingContent}>
-          <div>
-            <h2 className="h-300">{name}</h2>
-          </div>
+      <div className={styles.mainContent}>
+        <div className={styles.sectionHeading}>
+          <h2 className="subtitle-bold">{name}</h2>
           <img src={logo} alt={logoAlt} className={styles.logo} />
         </div>
-      </div>
-
-      <div className={styles.mainContent}>
         {courses && (
           <div id={`${id}-courses`}>
             <h3 className={headingClasses}>
@@ -61,18 +55,16 @@ function LearnCrypto({ id, name, logo, logoAlt, courses, tutorials }) {
             </h3>
             {tutorials.overview && <p className={overviewClasses}>{tutorials.overview}</p>}
             {tutorials.data ? (
-              <div>
-                {tutorials.data.map(({ title, author, date, description, href }, index) => (
-                  <div className={styles.tutorial} key={index}>
-                    <TutorialCard
-                      heading={title}
-                      author={author}
-                      date={date}
-                      href={href}
-                      variant="gray"
-                      description={description}
-                    />
-                  </div>
+              <div className={styles.cards}>
+                {tutorials.data.map(({ title, author, description, href }, index) => (
+                  <Card
+                    title={title}
+                    subtitle={author}
+                    href={href}
+                    description={description}
+                    onShare={() => setShareItem(href)}
+                    key={index}
+                  />
                 ))}
               </div>
             ) : (

@@ -16,11 +16,12 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .container:hover {
-  border: 1px solid var(--primary-600);
-  background-color: var(--white-80);
+  border: 1px solid var(--primary-500);
+  background-color: var(--white-120);
 }
 
 .image {
@@ -82,10 +83,6 @@
   color: var(--primary-100);
   padding: 0.3rem;
   border-radius: 0.3rem;
-}
-
-.level.extra_margin_top {
-  transform: translateY(1.3rem);
 }
 
 .level.beginner {

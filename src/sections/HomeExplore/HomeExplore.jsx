@@ -44,7 +44,7 @@ function HomeExplore() {
             </div>
           </div>
           <div className={styles.learn_tracks}>
-            <span className={styles.tracks_label}>Learn tracks</span>
+            <span className={clsx('overline--extra-bold', styles.tracks_label)}>Learn tracks</span>
             <div className={styles.links}>
               {learnData.resources.map((resource) => (
                 <CardWithLogo
@@ -53,7 +53,6 @@ function HomeExplore() {
                   height={120}
                   link_text={resource.name}
                   logo={resource.logo}
-                  isHomePage={true}
                 />
               ))}
             </div>
