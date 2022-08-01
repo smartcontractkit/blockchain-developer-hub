@@ -41,3 +41,8 @@
 .prevDirection img{
   transform: rotate(180deg);
 }
+
+.pagePagination:hover {
+  border: 1px solid var(--primary-500);
+  background-color: var(--white-120);
+}
