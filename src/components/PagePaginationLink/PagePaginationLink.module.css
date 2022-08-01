@@ -1,0 +1,49 @@
+.pagePagination {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--light-04);
+  width: 100%;
+  border: 1px solid var(--primary-700);
+  border-radius: 16px;
+  padding: 1rem 1.5rem 1.5rem;
+  gap: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.prevButton{
+  align-items: flex-start;
+}
+
+.pagePagination span {
+  color: var(--primary-400);
+}
+
+.direction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.direction span {
+  color: var(--green-200);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.prevDirection {
+  flex-direction: row-reverse;
+}
+
+.prevDirection img{
+  transform: rotate(180deg);
+}
+
+.pagePagination:hover {
+  border: 1px solid var(--primary-500);
+  background-color: var(--white-120);
+}

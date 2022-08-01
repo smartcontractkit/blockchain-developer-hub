@@ -91,6 +91,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .footer > div {
@@ -109,7 +110,6 @@
 
   .footer > div {
     margin-bottom: unset;
-    width: unset;
   }
 
   .footer > div > a {
