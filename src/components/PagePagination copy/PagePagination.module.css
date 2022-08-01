@@ -1,8 +1,0 @@
-.pagePagination {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 5rem auto;
-  padding-inline: 2rem;
-  max-width: var(--xl);
-}
