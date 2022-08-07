@@ -12,7 +12,7 @@ categories:
         href: 'https://buidlit.polygon.technology/'
         image: '/images/hackathons/polygon-hackathon.png'
         start_date: '2022-06-15'
-        end_date: '2022-08-01'
+        end_date: '2022-08-22'
 
       - title: 'Chainlink Spring Hackathon'
         description:
@@ -235,7 +235,7 @@ categories:
         href: 'https://web3infinityhackathon.devpost.com/'
         image: '/images/hackathons/web3-infinity.png'
         start_date: '2022-07-01'
-        end_date: '2022-07-22'
+        end_date: '2022-08-17'
 
       - title: 'Ripple CBDC Innovate'
         description:
@@ -265,6 +265,35 @@ categories:
         image: '/images/hackathons/ethcc-hack.png'
         start_date: '2022-07-22'
         end_date: '2022-07-24'
+
+      - title: 'Evmos Momentum Hackathon led by Web3Scholarships'
+        description:
+          Bring the world of Ethereum-based applications and assets to the interoperable networks of the Cosmos
+          ecosystem.
+        prize: $500,000
+        online: true
+        href: 'https://momentumhack.evmos.org/'
+        image: '/images/hackathons/evmos-hackathon.png'
+        start_date: '2022-07-18'
+        end_date: '2022-08-31'
+
+      - title: 'Æternity Universe Two Hæckathon'
+        description: Join the developer community and revolutionize the future of finance!
+        prize: $30,000
+        online: true
+        href: 'https://universe-two-haeckathon.devpost.com/'
+        image: '/images/hackathons/aeternity-hackathon.png'
+        start_date: '2022-08-01'
+        end_date: '2022-09-18'
+
+      - title: 'Web3 Hackathon Puerto Rico'
+        description: Driving adoption of Web3 applications for NFTs, DeFi, Gaming and DAOs.
+        prize: $15,000
+        online: true
+        href: 'https://web3hackathonpr.devpost.com/'
+        image: '/images/hackathons/web3-puerto-rico.png'
+        start_date: '2022-08-26'
+        end_date: '2022-08-28'
 
   - name: Events
     href: '/build#events'
