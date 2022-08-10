@@ -40,3 +40,18 @@
   background: var(--pink-400);
   backdrop-filter: none;
 }
+.btns a:first-child:hover {
+  background: var(--pink-500);
+  box-shadow: 0px 0px 8px rgba(254, 66, 235, 0.32), 0px 0px 32px rgba(254, 66, 235, 0.12);
+}
+.btns a:first-child:active {
+  background: var(--pink-400);
+  color: var(--pink-800);
+}
+
+.btns a:not(:first-child):hover {
+  border: 1px solid var(--primary-500);
+}
+.btns a:not(:first-child):active {
+  border: 1px solid var(--primary-700);
+}

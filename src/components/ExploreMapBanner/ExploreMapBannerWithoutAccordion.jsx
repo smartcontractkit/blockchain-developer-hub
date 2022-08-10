@@ -22,6 +22,7 @@ export default function ExploreMapBanner({ isHomePage, description, children }) 
           text={'Explore Ecosystem'}
           iconPosition="left"
           icon="grid.svg"
+          className="explore"
         />
         {!isHomePage && (
           <NavLink
@@ -32,6 +33,7 @@ export default function ExploreMapBanner({ isHomePage, description, children }) 
             text={'How to become a blockchain engineer'}
             iconPosition="left"
             icon="fork.svg"
+            className={styles.blockchain}
           />
         )}
       </div>
