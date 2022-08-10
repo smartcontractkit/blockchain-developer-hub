@@ -46,7 +46,7 @@ function ShareModal({ onClose, url }) {
   return (
     <div className={styles.container} onClick={handleClickOutside} id="modal">
       <div className={styles.content}>
-        <button className={styles.closeBtn} onClick={onClose}>
+        <button className={styles.closeBtn} onClick={onClose} title="close">
           <Svg src="/icons/close.svg" alt="Close" />
         </button>
         <h2>Share with community</h2>

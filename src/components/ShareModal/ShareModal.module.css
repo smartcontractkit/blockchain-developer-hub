@@ -57,6 +57,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     color: var(--primary-500);
+    transition: all 0.2s ease-in-out;
 }
 
 .socialMedia__item__image {
@@ -69,9 +70,17 @@
     border-radius: 5.5rem;
 }
 
+.socialMedia__item:hover {
+    color: var(--green-400);
+}
+
+.socialMedia__item:hover .socialMedia__item__image {
+    background-color: var(--light-12);
+    border: 1px solid var(--primary-500);
+}
+
 .socialMedia__item_image img {
     object-fit: contain;
-    
 }
 
 .copyContainer {
