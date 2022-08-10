@@ -21,7 +21,6 @@
 }
 
 .btns {
-  flex-direction: row;
   gap: 1rem;
 }
 
@@ -33,9 +32,11 @@
   transition: all 0.2s ease-in-out;
   border: 1px solid var(--primary-700);
   backdrop-filter: blur(8px);
+  text-transform: uppercase;
 }
 
 .btns a:first-child {
   color: var(--pink-900);
   background: var(--pink-400);
+  backdrop-filter: none;
 }
