@@ -69,8 +69,12 @@ function ShareModal({ onClose, url }) {
         </div>
 
         <div className={styles.copyContainer}>
-          <p>{url}</p>
-          <span onClick={handleCopy}>{copied ? 'Copied!' : 'Copy'}</span>
+          <div title={url} className="text-md--short">
+            {url}
+          </div>
+          <span onClick={handleCopy} className="btn-sm--extra-bold">
+            {copied ? 'Copied!' : 'Copy'}
+          </span>
         </div>
       </div>
     </div>
