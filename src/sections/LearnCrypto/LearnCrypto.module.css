@@ -33,7 +33,6 @@
 
 .sectionHeading {
   width: 100%;
-  max-width: 76rem;
   background-color: var(--white-40);
   display: flex;
   align-items: center;
