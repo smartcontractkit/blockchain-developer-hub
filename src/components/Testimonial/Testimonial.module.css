@@ -1,7 +1,6 @@
 .card {
     flex: 1;
     width: 100%;
-    max-width: 32.625rem;
     min-height: 11.75rem;
 }
   
@@ -20,9 +19,6 @@
 }
 
 @media (min-width: 762px) {
-    .card {
-        max-width: 67.250rem;
-    }
     .card__inner {
         flex-direction: row;
         align-items: center;
