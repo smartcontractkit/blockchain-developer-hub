@@ -4,6 +4,7 @@ import styles from './CardWithLogo.module.css';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Link from 'next/link';
+import ArrowRightRounded from 'public/icons/arrow-right-white-rounded.svg';
 
 export default function CardWithLogo({ href, logo, width, height, link_text }) {
   const linkTextClasses = clsx('btn-sm--extra-bold', styles.link_text);
@@ -14,7 +15,7 @@ export default function CardWithLogo({ href, logo, width, height, link_text }) {
         <Image src={logo} alt={link_text} width={width || '100%'} height={height} objectFit="contain" />
         <div className={linkTextClasses}>
           {' '}
-          {link_text} <img src="/icons/arrow-right-white-rounded.svg" alt="text link icon" />
+          {link_text} <ArrowRightRounded />
         </div>
       </a>
     </Link>

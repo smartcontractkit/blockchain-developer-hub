@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import styles from './CardWithArrow.module.css';
 import Link from 'next/link';
+import ArrowRightRounded from 'public/icons/arrow-right-white-rounded.svg';
 
 const CardWithArrow = ({ title, description, subtitle, link_text, href, target, children }) => {
   const subtitleClasses = clsx('body-short-02--bold', styles.subtitle);
@@ -22,7 +23,7 @@ const CardWithArrow = ({ title, description, subtitle, link_text, href, target, 
           {link_text && (
             <div className={linkTextClasses}>
               {' '}
-              {link_text} <img src="/icons/arrow-right-white-rounded.svg" alt="text link icon" />
+              {link_text} <ArrowRightRounded />
             </div>
           )}
         </div>

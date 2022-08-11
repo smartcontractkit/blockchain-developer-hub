@@ -10,6 +10,7 @@ import Card from '@/components/Card';
 import CardWithLogo from '@/components/CardWithLogo';
 import Link from 'next/link';
 import Testimonial from '@/components/Testimonial';
+import ArrowRightRounded from 'public/icons/arrow-right-white-rounded.svg';
 
 function HomeExplore() {
   const [randomCourses, setRandomCourses] = useState([]);
@@ -85,7 +86,7 @@ function HomeExplore() {
             <Link href="/learn" passHref>
               <a className={linkTextClasses}>
                 {' '}
-                {'More courses'} <img src="/icons/arrow-right-white-rounded.svg" alt="text link icon" />
+                {'More courses'} <ArrowRightRounded />
               </a>
             </Link>
           </div>
@@ -105,7 +106,7 @@ function HomeExplore() {
             <Link href="/learn" passHref>
               <a className={linkTextClasses}>
                 {' '}
-                {'More tutorials'} <img src="/icons/arrow-right-white-rounded.svg" alt="text link icon" />
+                {'More tutorials'} <ArrowRightRounded />
               </a>
             </Link>
           </div>

@@ -21,7 +21,7 @@ function HomePageBanner() {
           type="link"
           text="Start here"
           iconPosition="right"
-          icon="arrow-right-rounded-green.svg"
+          icon="magic-star.svg"
           className="btn--extra-bold"
         />
       </div>
