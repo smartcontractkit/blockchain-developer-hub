@@ -93,9 +93,8 @@ height: 40px;
   text-transform: uppercase;
 }
 
-.githublogo img {
-  width: 30px;
-  height: 30px;
+.githublogo:hover {
+  color: var(--green-500);
 }
 
 .githublogo > span{
@@ -181,9 +180,7 @@ height: 40px;
     padding: 1.5rem 2.5rem;
   }
 
-  .githublogo img {
+  .githublogo svg {
     margin-right: 0.59rem;
-    width: unset;
-    height: unset;
   }
 }

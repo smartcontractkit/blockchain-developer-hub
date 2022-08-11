@@ -8,6 +8,8 @@ import { useState, useRef, useEffect } from 'react';
 import Overlay from '@/components/Overlay';
 import navbarLinks from '@/data/navbarLinks.yaml';
 
+import GithubLogo from 'public/icons/github.svg';
+
 const links = navbarLinks.items;
 
 export default function NavBar({ isSticky }) {
@@ -46,11 +48,6 @@ export default function NavBar({ isSticky }) {
           <Link href="/">
             <a className={styles.logo} onClick={() => toggleMenuLink(false)}>
               <img src="/logos/logo.png" alt="blockchain logo" />
-              {/* <span className="text-lg--short-semi">
-                blockchain
-                <br />
-                education
-              </span> */}
             </a>
           </Link>
 
@@ -68,7 +65,7 @@ export default function NavBar({ isSticky }) {
             className={styles.githublogo}
           >
             <span className="btn-sm--extra-bold">Contribute</span>
-            <img src="/icons/github.svg" width="24" height="24" alt="github logo" />
+            <GithubLogo />
           </a>
         </div>
       </div>
