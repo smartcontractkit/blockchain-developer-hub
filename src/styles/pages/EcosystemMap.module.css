@@ -2,14 +2,16 @@
   width: 100%;
   padding-inline: 1rem;
   margin-inline: auto;
-  background-image:  radial-gradient(57.04% 57.03% at 50% 0%, rgba(255, 130, 242, 0.2) 0%, rgba(150, 55, 166, 0.032) 100%),  
-  linear-gradient(180deg, #0E1212 0%, rgba(14, 18, 18, 0.32) 100%), 
-  linear-gradient(180deg, #0E1212 0%, rgba(14, 18, 18, 0.32) 100%), 
-  url(/images/map-img.png);
+ background: radial-gradient(57.04% 57.03% at 50% 0%, rgba(255, 130, 242, 0.2) 0%, rgba(150, 55, 166, 0.032) 100%),
+  linear-gradient(180deg, #0E1212 0%, rgba(14, 18, 18, 0.32) 100%),
+  linear-gradient(180deg, #0E1212 0%, rgba(14, 18, 18, 0.32) 100%),
+  url(/images/bg-icons.png);
   background-position: bottom;
   background-size: auto;
   background-repeat: no-repeat;
-  min-height: 54.6875rem;
+  background-attachment: fixed;
+  background-blend-mode: lighten;
+  height: 100vh;
   display: flex;
 }
 

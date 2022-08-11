@@ -11,7 +11,7 @@ export default function ExploreMapBanner({ isHomePage, description, children }) 
     <div className={clsx(styles.container, { [styles.home]: isHomePage })}>
       {children}
       <p className={descriptionClasses}>{description}</p>
-      <div className={styles.btns}>
+      <div className={clsx(styles.btns, 'btn--extra-bold')}>
         <NavLink
           to={
             'https://www.figma.com/proto/U6iAHSsDlqoJfOaNwRigeO/Ecosystem-Tools-Map?page-id=0%3A1&node-id=2%3A1241&viewport=264%2C48%2C0.68&scaling=scale-down'
@@ -22,6 +22,7 @@ export default function ExploreMapBanner({ isHomePage, description, children }) 
           text={'Explore Ecosystem'}
           iconPosition="left"
           icon="grid.svg"
+          className="explore"
         />
         {!isHomePage && (
           <NavLink
@@ -29,9 +30,10 @@ export default function ExploreMapBanner({ isHomePage, description, children }) 
             target="_blank"
             rel="noopener noreferrer"
             type="outline"
-            text={'Check study roadmap'}
+            text={'How to become a blockchain engineer'}
             iconPosition="left"
             icon="fork.svg"
+            className={styles.blockchain}
           />
         )}
       </div>
