@@ -16,8 +16,8 @@ function BuildPageSection({ name, overview, items, href }) {
   return (
     <div className={styles.mainContent} id={id}>
       <h1 className={headingClasses}>
-        {name}
         <HeadingHash to={href} />
+        {name}
       </h1>
       {overview && <p className={overviewClasses}>{overview}</p>}
       {items.length ? (
