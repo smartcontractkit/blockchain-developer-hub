@@ -2,7 +2,6 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 32.625rem;
   min-width: 21rem;
   padding: 2rem;
   background-color: var(--white-40);

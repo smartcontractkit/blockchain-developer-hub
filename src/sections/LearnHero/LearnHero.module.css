@@ -55,6 +55,7 @@
   width: 100%;
   border-top: 1px solid var(--primary-700);
   padding: 1rem 0;
+  text-transform: uppercase;
 }
 
 .blockchainsContainer {
