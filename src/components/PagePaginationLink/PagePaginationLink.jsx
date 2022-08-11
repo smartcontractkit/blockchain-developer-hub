@@ -9,6 +9,8 @@ import navbarLinks from '@/data/navbarLinks.yaml';
 
 export default function PagePaginationLink({ link, navDirection, text, ...props }) {
   const [isLastLink, setIsLastLink] = React.useState(false);
+  const router = useRouter();
+
   const pagePagination = clsx(styles.pagePagination, {
     [styles.prevButton]: navDirection === 'previous',
   });
@@ -17,11 +19,8 @@ export default function PagePaginationLink({ link, navDirection, text, ...props 
     [styles.prevDirection]: navDirection === 'previous',
   });
 
-  const router = useRouter();
-
   React.useEffect(() => {
     const items = navbarLinks.items;
-    console.log(router.pathname.match(new RegExp(items[items.length - 1].href, 'gi')));
     setIsLastLink(router.pathname.match(new RegExp(items[items.length - 1].href, 'gi')) ? true : false);
   }, [link]);
 
