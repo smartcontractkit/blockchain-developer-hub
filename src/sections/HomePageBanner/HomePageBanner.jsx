@@ -1,8 +1,6 @@
 import NavLink from '@/components/NavLink';
-// import Image from 'next/image';
 import styles from './HomePageBanner.module.css';
 import clsx from 'clsx';
-// import Svg from '@/components/Svg';
 
 function HomePageBanner() {
   const headingClasses = clsx('h-600', styles.heading);

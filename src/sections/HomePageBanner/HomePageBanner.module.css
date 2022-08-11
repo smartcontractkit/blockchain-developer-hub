@@ -1,5 +1,5 @@
 .container {
-  background-image:  var(--bg-gradient), url(/images/hero-bg.png);
+  background-image: url(/images/hero-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 11rem 2rem 4rem;
+  padding: 11rem 2rem;
 }
 
 .heading {
