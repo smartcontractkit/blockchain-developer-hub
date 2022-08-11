@@ -2,7 +2,8 @@
   content: '#';
   top: 5%;
   color: var(--primary-700);
-  margin-left: 0.5rem;
   font-size: inherit;
   font-weight: inherit;
+  transform: translateX(-0.7rem);
+  transition: all 0.2s ease-in-out;
 }

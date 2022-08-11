@@ -1,5 +1,5 @@
 .container {
-  color: var(--primary-400);
+  color: var(--primary-450);
   margin: 0 auto;
 }
 
@@ -89,7 +89,7 @@
 /* Hyperlinks */
 
 .container a {
-  color: var(--green-700);
+  color: var(--green-400);
 }
 
 .container a:hover, .container a:active, .container a:visited {
@@ -144,7 +144,6 @@
   color: var(--primary-100);
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
 a.blog_heading h2{
@@ -157,8 +156,10 @@ a.blog_heading:link {
 
 a.blog_heading span {
   color: var(--primary-700);
+  transform: translateX(-0.7rem);
+  transition: all 0.2s ease-in-out;
 }
 
-a.blog_heading span:hover{
-  opacity: 0.7;
+a.blog_heading:hover span{
+  color: var(--green-500);
 }
