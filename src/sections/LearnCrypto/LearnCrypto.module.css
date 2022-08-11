@@ -7,10 +7,13 @@
 .headings {
   color: var(--primary-100);
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.headings:hover a {
+  color: var(--green-500);
 }
 
 .overview {
@@ -33,7 +36,6 @@
 
 .sectionHeading {
   width: 100%;
-  max-width: 76rem;
   background-color: var(--white-40);
   display: flex;
   align-items: center;

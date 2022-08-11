@@ -9,8 +9,8 @@ const CustomH2 = ({ id, ...rest }) => {
     return (
       <Link href={`#${id}`} passHref>
         <a className={blog_heading}>
-          <h2 id={id} {...rest} />
           <span>#</span>
+          <h2 id={id} {...rest} />
         </a>
       </Link>
     );

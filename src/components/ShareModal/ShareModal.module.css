@@ -57,6 +57,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     color: var(--primary-500);
+    transition: all 0.2s ease-in-out;
 }
 
 .socialMedia__item__image {
@@ -69,9 +70,17 @@
     border-radius: 5.5rem;
 }
 
+.socialMedia__item:hover {
+    color: var(--green-400);
+}
+
+.socialMedia__item:hover .socialMedia__item__image {
+    background-color: var(--light-12);
+    border: 1px solid var(--primary-500);
+}
+
 .socialMedia__item_image img {
     object-fit: contain;
-    
 }
 
 .copyContainer {
@@ -84,19 +93,28 @@
     background-color: var(--light-04);
 }
 
-.copyContainer p {
-    font-size: 0.875rem;
+.copyContainer > div {
     color: var(--pink-400);
     border-bottom: 1px dashed var(--primary-500);
-    margin-top: 0;
+    padding-bottom: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.copyContainer span {
+.copyContainer > span {
     background-color: transparent;
     text-transform: uppercase;
     border: none;
     color: var(--green-200);
-    font-weight: 800;
-    font-size: .75rem;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.copyContainer > span:hover {
+    color: var(--green-500);
+}
+
+.copyContainer > span:active {
+    color: var(--green-600);
 }
