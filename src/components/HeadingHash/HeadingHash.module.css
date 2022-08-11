@@ -6,4 +6,5 @@
   font-weight: inherit;
   transform: translateX(-0.7rem);
   transition: all 0.2s ease-in-out;
+  margin-left: -1rem;
 }

@@ -64,7 +64,7 @@ function BlogLayout({ children, pages }) {
                     onClick={() => toggleOptions(false)}
                     className={clsx('btn', styles.leftSidebar__link, slug === page.slug && styles.active)}
                   >
-                    {page.data.title}
+                    <span>{page.data.title}</span>
                   </a>
                 </Link>
               ))}
