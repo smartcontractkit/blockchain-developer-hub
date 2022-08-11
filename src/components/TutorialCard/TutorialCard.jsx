@@ -12,7 +12,7 @@ export default function TutorialCard({ heading, author, description, variant, hr
     <a href={href} target="_blank" rel="noopener noreferrer">
       <div className={classes}>
         <div className={author_date_classes}>{author}</div>
-        <h3 className={heading_classes}>{heading}</h3>
+        <div className={heading_classes}>{heading}</div>
         {description && <p className={description_classes}>{description}</p>}
       </div>
     </a>
