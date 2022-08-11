@@ -3,8 +3,14 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Svg from '../Svg';
 import Link from 'next/link';
+import React from 'react';
+import { useRouter } from 'next/router';
+import navbarLinks from '@/data/navbarLinks.yaml';
 
 export default function PagePaginationLink({ link, navDirection, text, ...props }) {
+  const [isLastLink, setIsLastLink] = React.useState(false);
+  const router = useRouter();
+
   const pagePagination = clsx(styles.pagePagination, {
     [styles.prevButton]: navDirection === 'previous',
   });
@@ -12,6 +18,13 @@ export default function PagePaginationLink({ link, navDirection, text, ...props 
   const direction = clsx(styles.direction, {
     [styles.prevDirection]: navDirection === 'previous',
   });
+
+  React.useEffect(() => {
+    const items = navbarLinks.items;
+    setIsLastLink(router.pathname.match(new RegExp(items[items.length - 1].href, 'gi')) ? true : false);
+  }, [link]);
+
+  if (isLastLink) return null;
 
   return (
     <Link href={link} passHref>
