@@ -32,6 +32,10 @@ body {
   background: var(--primary-950);
 }
 
+.home {
+  background: var(--bg-gradient);
+}
+
 a {
   color: inherit;
   text-decoration: none;

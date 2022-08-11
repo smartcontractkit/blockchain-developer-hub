@@ -1,9 +1,8 @@
 import NavLink from '@/components/NavLink';
 import styles from './HomePageBanner.module.css';
 import clsx from 'clsx';
-import PropTypes from 'prop-types';
 
-function HomePageBanner({ children }) {
+function HomePageBanner() {
   const headingClasses = clsx('h-600', styles.heading);
   const descriptionClasses = clsx('text-lg--long', styles.description);
 
@@ -26,13 +25,8 @@ function HomePageBanner({ children }) {
           className="btn--extra-bold"
         />
       </div>
-      {children}
     </section>
   );
 }
-
-HomePageBanner.propTypes = {
-  children: PropTypes.node,
-};
 
 export default HomePageBanner;

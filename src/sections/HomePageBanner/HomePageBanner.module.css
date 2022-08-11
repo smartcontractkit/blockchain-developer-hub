@@ -1,9 +1,8 @@
 .container {
-  background-image:  var(--bg-gradient), url(/images/hero-bg.png);
-  background-position: top;
-  background-size: auto;
+  background-image: url(/images/hero-bg.png);
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-origin: content-box;
 }
 .contents {
@@ -12,7 +11,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 11rem 2rem 4rem;
+  padding: 11rem 2rem;
 }
 
 .heading {
@@ -49,10 +48,4 @@
   display: flex;
   justify-content: center;
   box-shadow: 0px 18px 22px rgba(255, 255, 255, 0.08), 0px 7px 9px rgba(255, 255, 255, 0.0575083), 0px 4px 4px rgba(255, 255, 255, 0.0476886), 0px 2px 2px rgba(255, 255, 255, 0.04), 0px 1px 1px rgba(255, 255, 255, 0.0323114), 0px 0.5px 0.6px rgba(255, 255, 255, 0.0224916);
-}
-
-@media (min-width: 1280px) {
-  .container {
-    background-size: cover;
-  }
 }
