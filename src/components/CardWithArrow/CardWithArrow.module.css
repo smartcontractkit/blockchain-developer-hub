@@ -3,7 +3,6 @@
   margin: 1rem 0;
   width: 100%;
   min-height: 16rem;
-  max-width: 32.625rem;
   min-width: 21rem;
 }
 
@@ -54,6 +53,5 @@
   margin-top: 0.5rem;
   color: var(--primary-300);
   width: 100%;
-  max-width: 28.625rem;
   padding-right: 1rem;
 }
