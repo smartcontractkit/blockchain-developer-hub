@@ -32,6 +32,6 @@
   align-self: flex-start;
 }
 
-.link_text img {
+.link_text svg {
   margin-left: 0.5rem;
 }
