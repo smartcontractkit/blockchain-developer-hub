@@ -90,14 +90,14 @@ function BlogLayout({ children, pages }) {
             {children}
           </div>
           <div className={styles.footer}>
-            {prev_page && (
+            {prev_page && pages && (
               <PagePaginationLink text={`${prev_page.data.title}`} link={prev_page.slug} navDirection="previous" />
             )}
-            {next_page && (
+            {next_page && pages && (
               <PagePaginationLink text={`${next_page.data.title}`} link={next_page.slug} navDirection="next" />
             )}
 
-            {!next_page && <PagePaginationLink text={`Learn`} link={'/learn'} navDirection="next" />}
+            {!next_page && pages && <PagePaginationLink text={`Learn`} link={'/learn'} navDirection="next" />}
           </div>
         </div>
       </div>
