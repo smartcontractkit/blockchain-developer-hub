@@ -1,4 +1,5 @@
 const path = require('path');
+const pathToInlineSvg = path.resolve(__dirname, '../public/icons');
 
 module.exports = {
   stories: ['../**/*.stories.@(js|jsx|ts|tsx|mdx)'],
@@ -22,11 +23,19 @@ module.exports = {
     builder: 'webpack5',
   },
   webpackFinal: async (config) => {
-    config.module.rules.push({
-      test: /\.ya?ml$/,
-      // type: 'json', // Required by Webpack v4
-      use: 'yaml-loader',
-    });
+    const fileLoaderRule = config.module.rules.find((rule) => rule.test && rule.test.test('.svg'));
+    fileLoaderRule.exclude = pathToInlineSvg;
+    config.module.rules.push(
+      {
+        test: /\.ya?ml$/,
+        use: 'yaml-loader',
+      },
+      {
+        test: /\.svg$/,
+        include: pathToInlineSvg,
+        use: ['@svgr/webpack'],
+      }
+    );
 
     config.resolve.alias = {
       ...config.resolve.alias,

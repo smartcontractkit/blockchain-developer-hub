@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Svg from '@/components/Svg';
 import dayjs from 'dayjs';
+import ShareIcon from 'public/icons/share.svg';
 
 function Card({
   variant = 'gray',
@@ -41,8 +42,8 @@ function Card({
         )}
         <div className={styles.contents}>
           <div>
-            {subtitle && <h3 className={subTitleClasses}>{subtitle}</h3>}
-            <h2 className={titleClasses}>
+            {subtitle && <span className={subTitleClasses}>{subtitle}</span>}
+            <h3 className={titleClasses}>
               <span>{title}</span>
               {onShare && (
                 <button
@@ -52,10 +53,10 @@ function Card({
                     onShare();
                   }}
                 >
-                  <img src="/icons/share.svg" alt="Share" />
+                  <ShareIcon />
                 </button>
               )}
-            </h2>
+            </h3>
 
             {description && <p className={descriptionClasses}>{description}</p>}
           </div>
