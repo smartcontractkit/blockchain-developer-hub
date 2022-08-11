@@ -15,8 +15,13 @@
 }
 .link:hover,
 .activeLink {
-  color: var(--green-300);
+  color: var(--green-500);
 }
+
+.link:active {
+  color: var(--green-600);
+}
+
 
 .outline {
   background: #FBFDFE;
