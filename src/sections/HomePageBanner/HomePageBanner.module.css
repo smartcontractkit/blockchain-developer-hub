@@ -1,8 +1,9 @@
 .container {
   background-image:  var(--bg-gradient), url(/images/hero-bg.png);
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: auto;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-origin: content-box;
 }
 .contents {

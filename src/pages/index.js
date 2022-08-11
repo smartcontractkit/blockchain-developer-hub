@@ -7,8 +7,9 @@ import HomePageImproveSkillsStories from '@/sections/HomePageImproveSkills';
 export default function Home() {
   return (
     <div>
-      <HomePageBanner />
-      <HomepageBlockchain />
+      <HomePageBanner>
+        <HomepageBlockchain />
+      </HomePageBanner>
       <HomeExplore />
       <EcosystemBanner />
       <HomePageImproveSkillsStories />
