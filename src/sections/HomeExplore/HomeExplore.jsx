@@ -10,7 +10,7 @@ import Card from '@/components/Card';
 import CardWithLogo from '@/components/CardWithLogo';
 import Link from 'next/link';
 import Testimonial from '@/components/Testimonial';
-import ArrowRightRounded from 'public/icons/arrow-right-white-rounded.svg';
+import ArrowRightRounded from '@/icons/arrow-right-white-rounded.svg';
 
 function HomeExplore() {
   const [randomCourses, setRandomCourses] = useState([]);

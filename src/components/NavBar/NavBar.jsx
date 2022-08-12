@@ -8,7 +8,7 @@ import { useState, useRef, useEffect } from 'react';
 import Overlay from '@/components/Overlay';
 import navbarLinks from '@/data/navbarLinks.yaml';
 
-import GithubLogo from 'public/icons/github.svg';
+import GithubLogo from '@/icons/github.svg';
 
 const links = navbarLinks.items;
 

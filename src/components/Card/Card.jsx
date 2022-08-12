@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Svg from '@/components/Svg';
 import dayjs from 'dayjs';
-import ShareIcon from 'public/icons/share.svg';
+import ShareIcon from '@/icons/share.svg';
 
 function Card({
   variant = 'gray',
