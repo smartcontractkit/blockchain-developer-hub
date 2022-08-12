@@ -2,7 +2,7 @@
   width: 100%;
   padding-inline: 1rem;
   margin-inline: auto;
- background: radial-gradient(57.04% 57.03% at 50% 0%, rgba(255, 130, 242, 0.2) 0%, rgba(150, 55, 166, 0.032) 100%),
+  background: radial-gradient(57.04% 57.03% at 50% 0%, rgba(255, 130, 242, 0.2) 0%, rgba(150, 55, 166, 0.032) 100%),
   linear-gradient(180deg, #0E1212 0%, rgba(14, 18, 18, 0.32) 100%),
   linear-gradient(180deg, #0E1212 0%, rgba(14, 18, 18, 0.32) 100%),
   url(/images/bg.png);
@@ -18,7 +18,7 @@
   width: 100%;
   max-width: 44rem;
   height: 100%;
-  margin: 6.5rem auto 0;
+  margin: 6.5rem auto;
 }
 .content > * {
   margin-inline: auto;
