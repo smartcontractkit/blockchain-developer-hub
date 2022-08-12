@@ -9,7 +9,8 @@
       "@/pages/*": ["src/pages/*"],
       "@/helpers/*": ["src/helpers/*"],
       "@/styles/*": ["src/styles/*"],
-      "@/hooks/*": ["src/hooks/*"]
+      "@/hooks/*": ["src/hooks/*"],
+      "@/icons/*": ["public/icons/*"]
     }
   }
 }

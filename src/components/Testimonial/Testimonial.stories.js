@@ -1,4 +1,4 @@
-import Testimnoial from './Testimnoial';
+import Testimnoial from './Testimonial';
 
 export default {
   title: 'component/Testimnoial',
