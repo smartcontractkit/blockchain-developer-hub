@@ -10,7 +10,6 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-blend-mode: lighten;
-  height: 100vh;
   display: flex;
 }
 
@@ -42,6 +41,11 @@
 }
 
 
+@media (min-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+}
 @media (min-width: 1280px) {
   .container {
     background-size: contain;
