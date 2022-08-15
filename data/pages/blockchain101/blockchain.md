@@ -42,9 +42,10 @@ code in a smart contract, and users can start leveraging the application’s cap
 ## Why should I learn blockchain development?
 
 Many companies are investing in blockchain development, even if they’re just in the early research stages. A recent
-[PWC study](https://theblockchainacademy.com/wp-content/uploads/sites/6/2021/04/2021-Global-Blockchain-Employment-Report.pdf)
+[PWC study](https://www.pwc.com/gx/en/industries/technology/publications/blockchain-report-transform-business-economy.html)
 shows that 77% of companies developing software are involved with blockchain in some capacity. This translates into high
-demand for jobs in the sector. The same study shows an increase in demand for blockchain developers by 6000% in 2020.
+demand for jobs in the sector. The same study shows an increase in demand for blockchain developers by 6000% over the
+next couple of years.
 
 ![How far along are companies with blockchain?](/posts/blockchain101/blockchain/image2.png)
 
