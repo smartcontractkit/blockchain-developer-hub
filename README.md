@@ -2,7 +2,7 @@
 
 Your roadmap to start web3 and blockchain development is here.
 
-**https://smartcontracthub.dev/**
+**https://blockchain.education/**
 
 ## Contribute to the content
 
