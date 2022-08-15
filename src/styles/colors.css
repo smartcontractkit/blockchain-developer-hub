@@ -1,6 +1,80 @@
 :root {
-  --white-color: #ffffff;
-  --black-color: #000000;
+  --white: #ffffff;
+  --white-40: rgba(255, 255, 255, 0.04);
+  --white-80: rgba(255, 255, 255, 0.08);
+  --white-120: rgba(255, 255, 255, 0.12);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --black: #000000;
+
+  --bg: #0E1212;
+
+  --light-04: #FFFFFF0A;
+  --light-08: #FFFFFF14;
+  --light-12: #FFFFFF1F;
+
+  --beginner-level: rgba(30, 80, 91, 0.59);
+  --beginner-level-indicator: #33DAFF;
+  --intermediate-level: rgba(99, 64, 46, 0.5);
+  --intermediate-level-indicator: #FF7733;
+  --advanced-level: rgba(79, 41, 109, 0.5);
+  --advanced-level-indicator: #A733FF;
+
+  --primary-50: #FAFCFC;
+  --primary-100: #F2F4F5;
+  --primary-200: #DCE5E5;
+  --primary-300: #C5CFD1;
+  --primary-400: #A8B1B2;
+  --primary-450: #A8B1B3;
+  --primary-500: #808B8C;
+  --primary-600: #555E61;
+  --primary-700: #3F4747;
+  --primary-800: #2A3234;
+  --primary-850: #212729;
+  --primary-900: #1A1E20;
+  --primary-950: #141819;
+
+  --green-100: #F7FFEF;
+  --green-200: #EAFFD4;
+  --green-300: #DCFFB4;
+  --green-400: #CAFF82;
+  --green-500: #B2FF42;
+  --green-600: #77BC23;
+  --green-700: #588E1A;
+  --green-800: #3B6413;
+  --green-900: #243C0C;
+
+  --dark-green-100: #E6F4F3;
+  --dark-green-200: #BCE4DF;
+  --dark-green-300: #90CDC7;
+  --dark-green-400: #59AEA3;
+  --dark-green-500: #0D8773;
+  --dark-green-600: #085B4C;
+  --dark-green-700: #064438;
+  --dark-green-800: #043029;
+  --dark-green-900: #021D19;
+
+
+  --pink-100: #FFEDFD;
+  --pink-200: #FFD5FB;
+  --pink-300: #FFB1F7;
+  --pink-400: #FE80F2;
+  --pink-500: #FE42EB;
+  --pink-600: #A923B1;
+  --pink-700: #7E1A82;
+  --pink-800: #54125F;
+  --pink-900: #340B3A;
+
+  --green-gradient-40:  linear-gradient(90deg, rgba(178, 255, 66, 0.4) 0%, rgba(13, 135, 115, 0.4) 100%);
+  --green-gradient-100:  linear-gradient(90deg, #B2FF42 0%, #0D8773 100%);
+
+  --pink-gradient-40: linear-gradient(90deg, rgba(255, 66, 224, 0.4) 0%, rgba(94, 13, 135, 0.4) 100%);
+  --pink-gradient-100:  linear-gradient(90deg, #FF42E0 0%, #7811FF 100%);
+  --pink-gradient-200: linear-gradient(90deg, #FF42E0 0%, #4D0EFF 100%);
+
+
+  --bg-gradient: radial-gradient(57.03% 57.03% at 50% 0%, rgba(202, 255, 130, 0.1) 0%, rgba(55, 166, 103, 0.016) 100%);
+
+  /* Old design Colors starts here */
 
   --primary-50-color: #F6FDFF;
   --primary-100-color: #D5F6FF;
@@ -73,4 +147,6 @@
   --neural-variant-800-color: #3F484B;
   --neural-variant-900-color: #293234;
   --neural-variant-950-color: #141D1F;
+
+  /* Old design Colors ends here */
 }

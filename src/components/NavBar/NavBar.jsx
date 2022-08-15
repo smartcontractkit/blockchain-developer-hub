@@ -3,38 +3,22 @@ import { useRouter } from 'next/router';
 import NavLink from '@/components/NavLink';
 import styles from './NavBar.module.css';
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
 import { useState, useRef, useEffect } from 'react';
 import Overlay from '@/components/Overlay';
+import navbarLinks from '@/data/navbarLinks.yaml';
 
-const links = [
-  {
-    to: '/blockchain101/blockchain',
-    text: 'Why Blockchain',
-  },
-  {
-    to: '/learn',
-    text: 'Learn',
-  },
-  {
-    to: '/ecosystem-map',
-    text: 'Ecosystem',
-  },
-  {
-    to: '/build',
-    text: 'Build',
-  },
-  {
-    to: '/ship',
-    text: 'Ship',
-  },
-];
+import GithubLogo from '@/icons/github.svg';
 
-export default function NavBar() {
+const links = navbarLinks.items;
+
+export default function NavBar({ isSticky }) {
   const bodyRef = useRef();
   const [showNavLinks, setShowNavLinks] = useState(false);
+  const [isBlogPage, setIsBlogPage] = useState(false);
   const { pathname } = useRouter();
-  const isActive = (path, to) => {
-    if (path.split('/')[1] === to.split('/')[1]) {
+  const isActive = (path, href) => {
+    if (path.split('/')[1] === href.split('/')[1]) {
       return true;
     }
     return false;
@@ -45,26 +29,32 @@ export default function NavBar() {
   };
 
   useEffect(() => {
+    const blogLinks = ['/blockchain101', '/ship'];
+    const result = blogLinks.find((res) => pathname.match(new RegExp(res, 'gi')));
+    setIsBlogPage(result ? true : false);
+  }, [pathname]);
+
+  useEffect(() => {
     bodyRef.current = document.body;
   }, []);
   return (
-    <nav className={styles.nav}>
-      <div className={styles.container}>
+    <nav className={clsx(styles.nav, { [styles.skicky]: isSticky })}>
+      <div className={clsx(styles.container, { [styles.blog]: isBlogPage })}>
         <Overlay showOverlay={showNavLinks} toggleMenu={toggleMenuLink} />
         <div className={styles.nav_contents}>
           <button className={styles.menu_btn} onClick={() => toggleMenuLink(!showNavLinks)}>
-            <img src={`/icons/${showNavLinks ? 'close.png' : 'menu.png'}`} alt="menu icon" />
+            <img src={`/icons/${showNavLinks ? 'close.svg' : 'menu.svg'}`} alt="menu icon" />
           </button>
           <Link href="/">
             <a className={styles.logo} onClick={() => toggleMenuLink(false)}>
-              Blockchain Developer Hub
+              <img src="/logos/logo.png" alt="blockchain logo" />
             </a>
           </Link>
 
           <ul className={clsx(styles.nav_links, { [styles.mobile]: showNavLinks })}>
             {links.map((res, index) => (
               <li key={index} onClick={() => toggleMenuLink(false)}>
-                <NavLink text={res.text} to={res.to} type="link" active={isActive(pathname, res.to)} />
+                <NavLink text={res.name} to={res.href} type="link" active={isActive(pathname, res.href)} />
               </li>
             ))}
           </ul>
@@ -74,10 +64,19 @@ export default function NavBar() {
             rel="noopener noreferrer"
             className={styles.githublogo}
           >
-            <img src="/icons/github-logo.svg" width="24" height="24" alt="github logo" />
+            <span className="btn-sm--extra-bold">Contribute</span>
+            <GithubLogo />
           </a>
         </div>
       </div>
     </nav>
   );
 }
+
+NavBar.propTypes = {
+  isSticky: PropTypes.bool,
+};
+
+NavBar.defaultProps = {
+  isSticky: false,
+};

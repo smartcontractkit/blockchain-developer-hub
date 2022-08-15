@@ -2,6 +2,17 @@ hero:
   featured_articles:
     - title: Why Blockchain?
       href: 'blockchain101/blockchain'
+      description: 'By decentralizing data, we no longer rely on trust in centralized intermediaries in order to conduct economic activity.'
+      icon: '/icons/why-blockchain.svg'
+      link_text: 'Intro to blockchain'
 
     - title: Intro to Smart Contracts
       href: 'blockchain101/smart-contracts'
+      description: 'A smart contract is a tamper-proof program that runs on a blockchain network when certain predefined conditions are met.'
+      icon: '/icons/what-is-smart-contract.svg'
+      link_text: 'Intro to Smart contracts'
+testimonial:
+  title: 'Did you know that...'
+  content: 'Blockchain development skills are rated as the fastest-growing in-demand skills, with an increase of 60x in 2020.'
+  source: 'blockchainjobs.com'
+  icon: '/icons/chart.svg'

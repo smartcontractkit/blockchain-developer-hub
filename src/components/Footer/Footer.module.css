@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    gap: .75rem;
+    background: var(--bg);
+}
+
+.copyright {
+    color: var(--primary-500);
+}

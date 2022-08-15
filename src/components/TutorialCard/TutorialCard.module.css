@@ -1,47 +1,42 @@
-.tut_card {
+.tutorial_card {
   width: 100%;
-  min-height: 74px;
-  background-color: var(--neural-50-color);
-  border: 1px solid var(--neural-50-color);
+  min-height: 70px;
+  background-color: var(--white-40);
+  border: 1px solid var(--primary-700);
   padding: 1rem;
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.tut_card_content {
-  margin-top: 0.5rem;
-}
-
-.tur_card_heading {
-  margin-top: 0;
-  color: var(--black-color);
+.tutorial_card_heading {
+  margin-top: 0.375rem;
+  color: var(--primary-50);
   transition: all 0.2s ease-in-out;
 }
 
-.tur_card_heading:hover {
-  color: var(--tertiary-600-color);
+.tutorial_card_author_date {
+ color: var(--primary-500);
 }
 
-.tur_card_author_date {
-  color: var(--neural-600-color);
-}
-
-.tur_card_author_date > span {
+.tutorial_card_author_date > span {
   margin-inline: 0.2rem;
 }
 
-.tut_card_description {
+.tutorial_card_description {
   line-height: 142%;
   color: var(--neural-900-color);
 }
 
-.tut_card_gray {
+.tutorial_card_gray {
   background-color: var(--neural-100-color);
   border: 1px solid var(--neural-100-color);
 }
 
-.tut_card:hover {
-  border: 1px solid var(--tertiary-400-color);
-  background-color: var(--white-color);
+.tutorial_card:hover {
+  border: 1px solid var(--primary-500);
+  background-color: var(--light-12);
 }

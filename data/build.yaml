@@ -1,6 +1,8 @@
 categories:
-  - name: Hackathons
+  - name: Hackathon
     href: '/build#hackathons'
+    link_text: 'Find a hackathon'
+    icon: '/icons/hackaton.svg'
     overview:
       Competing in both in-person and online hackathons offers opportunities for you to learn blockchain development and
       win amazing prizes.
@@ -414,11 +416,12 @@ categories:
         start_date: '2022-11-07'
         end_date: '2022-11-11'
 
-  - name: Workshops
+  - name: Workshop
     href: '/build#workshops'
+    link_text: 'Find a Workshop'
+    icon: '/icons/workshop.svg'
     overview:
-      Workshops allow you to learn the ins and outs of blockchain development alongside experienced blockchain
-      developers, artists, and mentors.
+      In today's digital world, Blockchain technologies are now being embraced with confidence as it becomes commonplace to use them.
     items:
       - title: 'Chainlink Solana Bootcamp'
         description:

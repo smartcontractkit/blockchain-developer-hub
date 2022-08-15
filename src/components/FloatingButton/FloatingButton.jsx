@@ -12,7 +12,7 @@ export default function FloatingButton({ title, triggerPanel }) {
   return (
     <button className={btnClasses} onClick={() => triggerPanel(true)}>
       <span>{title} overview</span>
-      <img src="/icons/dropdown-blue.svg" alt="dropdown icon" />
+      <img src="/icons/dropdown-green.svg" alt="dropdown icon" />
     </button>
   );
 }

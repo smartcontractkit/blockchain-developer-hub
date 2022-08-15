@@ -3,11 +3,11 @@ import styles from './BlogLayout.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
-import NavLink from '@/components/NavLink';
 import { useEffect, useState } from 'react';
 import isElementVisable from '@/helpers/isElementVisable';
 import Overlay from '@/components/Overlay';
 import FloatingButton from '@/components/FloatingButton';
+import PagePaginationLink from '@/components/PagePaginationLink';
 
 function BlogLayout({ children, pages }) {
   const [headings, setHeadings] = useState([]);
@@ -58,14 +58,13 @@ function BlogLayout({ children, pages }) {
         <div className={clsx(styles.leftSidebar, { [styles.mobile]: articleOverview })}>
           {pages && (
             <>
-              <div className={styles.sidebar__header}>Getting started</div>
               {sortedPages.map((page) => (
                 <Link key={page.slug} href={page.slug} passHref>
                   <a
                     onClick={() => toggleOptions(false)}
                     className={clsx('btn', styles.leftSidebar__link, slug === page.slug && styles.active)}
                   >
-                    {page.data.title}
+                    <span>{page.data.title}</span>
                   </a>
                 </Link>
               ))}
@@ -73,7 +72,6 @@ function BlogLayout({ children, pages }) {
           )}
         </div>
         <div className={clsx(styles.rightSidebar, { [styles.mobile]: chapterseOverview })}>
-          <div className={styles.sidebar__header}>On this page</div>
           {headings.map((heading) => (
             <Link key={heading.id} href={`#${heading.id}`} passHref>
               <a
@@ -92,40 +90,14 @@ function BlogLayout({ children, pages }) {
             {children}
           </div>
           <div className={styles.footer}>
-            <div>
-              {prev_page && (
-                <NavLink
-                  icon="arrow-left.svg"
-                  type="outline"
-                  iconPosition="left"
-                  text={`Previous: ${prev_page.data.title}`}
-                  to={prev_page.slug}
-                />
-              )}
-            </div>
-            <div>
-              {next_page && (
-                <NavLink
-                  icon="arrow-right.svg"
-                  type="outline"
-                  iconPosition="right"
-                  text={`Next: ${next_page.data.title}`}
-                  to={next_page.slug}
-                />
-              )}
-            </div>
-
-            {!next_page && (
-              <div>
-                <NavLink
-                  icon="arrow-right.svg"
-                  type="outline"
-                  iconPosition="right"
-                  text={`Next: Go to Learn`}
-                  to={'/learn'}
-                />
-              </div>
+            {prev_page && (
+              <PagePaginationLink text={`${prev_page.data.title}`} link={prev_page.slug} navDirection="previous" />
             )}
+            {next_page && (
+              <PagePaginationLink text={`${next_page.data.title}`} link={next_page.slug} navDirection="next" />
+            )}
+
+            {!next_page && <PagePaginationLink text={`Learn`} link={'/learn'} navDirection="next" />}
           </div>
         </div>
       </div>

@@ -1,12 +1,18 @@
 .headings {
+  display: inline-flex;
+  align-items: center;
   font-weight: bold;
-  color: var(--neural-950-color);
+  color: var(--primary-100);
   position: relative;
-  transform: translateX(1.2rem);
+  cursor: pointer;
+}
+
+.headings:hover a {
+  color: var(--green-500);
 }
 
 .overview {
-  color: var(--neural-800-color);
+  color: var(--primary-400);
   margin: 0.5rem 0 0;
   max-width: 36.8125rem;
 }
@@ -38,11 +44,4 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-}
-
-@media (min-width: 1300px) {
-
-  .headings {
-    transform: translateX(0);
-  }
 }

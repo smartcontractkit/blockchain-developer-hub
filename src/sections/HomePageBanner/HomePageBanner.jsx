@@ -1,55 +1,29 @@
 import NavLink from '@/components/NavLink';
-import Image from 'next/image';
 import styles from './HomePageBanner.module.css';
 import clsx from 'clsx';
-import Svg from '@/components/Svg';
 
 function HomePageBanner() {
-  const titleClasses = clsx('h-500', styles.title);
+  const headingClasses = clsx('h-600', styles.heading);
+  const descriptionClasses = clsx('text-lg--long', styles.description);
 
   return (
     <section className={styles.container}>
-      <div className={styles.banner}>
-        <div className={styles.banner_left}>
-          <div>
-            <h1 className={titleClasses}>
-              <p className={styles.title_a}>
-                <span className={styles.arrow}>{'-->'}</span>
-                <span>{'Dive into'}</span>
-              </p>
-              <p>{'smart contract development'}</p>
-            </h1>
-
-            <ul className={styles.list}>
-              <li className={clsx('body-short-01', styles.list_item)}>
-                <Svg className={styles.list_icon} height="24" width="24" href="/icons/school.svg" title="school icon" />
-                <small>
-                  <strong>Learn the essentials</strong> of blockchain and smart contract development.
-                </small>
-              </li>
-              <li className={clsx('body-short-01', styles.list_item)}>
-                <Svg className={styles.list_icon} height="24" width="24" href="/icons/memory.svg" title="memory icon" />
-                <small>
-                  <strong>Get familiar</strong> with the tools and resources you need to start building your own
-                  project.
-                </small>
-              </li>
-              <li className={clsx('body-short-01', styles.list_item)}>
-                <Svg className={styles.list_icon} height="24" width="24" href="/icons/map.svg" title="map icon" />
-                <small>
-                  <strong>Lay the foundations</strong> for your journey to becoming a blockchain developer.
-                </small>
-              </li>
-            </ul>
-
-            <NavLink to={'/blockchain101/blockchain'} type="primary" text="Get Started" />
-          </div>
+      <div className={styles.contents}>
+        <h1 className={headingClasses}>
+          <span>Jump into</span> smart contracts <span>development</span>
+        </h1>
+        <div className={descriptionClasses}>
+          Learn the essentials, become familiar with popular dev stacks, and define your journey to becoming a
+          blockchain developer.
         </div>
-        <div className={styles.imageContainer}>
-          <div className={styles.image}>
-            <Image src={'/demo/banner-right.png'} alt={'Banner image'} layout="fill" objectFit="contain" />
-          </div>
-        </div>
+        <NavLink
+          to={'/blockchain101/blockchain'}
+          type="link"
+          text="Start here"
+          iconPosition="right"
+          icon="magic-star.svg"
+          className="btn--extra-bold"
+        />
       </div>
     </section>
   );

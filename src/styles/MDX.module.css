@@ -1,5 +1,5 @@
 .container {
-  color: var(--neural-800-color);
+  color: var(--primary-450);
   margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@
 .container h4{
  font-weight: 700;
  margin: 2rem auto;
-  color: var(--neural-950-color);
+  color: var(--primary-100);
 }
 .container h2 {
   font-size: 1.8rem;
@@ -27,13 +27,15 @@
 }
 
 .container p{
+  font-weight: 400;
   font-size: 1rem;
-  line-height: 24px;
+  line-height: 164%;
+  letter-spacing: -0.01em;
   margin-bottom: 1rem;
 }
 
 .container p code {
-  color: var(--secondary-300-color);
+  color: var(--primary-300);
 }
 
 .container hr {
@@ -62,19 +64,19 @@
   width: 100%;
   border-spacing: 0;
   margin: 2rem auto;
-  border: 1px solid var(--neural-200-color);
+  border: 1px solid var(--primary-200);
   border-collapse: collapse;
 }
 
 .container tr th {
   text-align: left;
   padding: 1rem;
-  border: 1px solid var(--neural-200-color);
+  border: 1px solid var(--primary-200);
 }
 
 .container tr td {
   padding: 1rem;
-  border: 1px solid var(--neural-200-color);
+  border: 1px solid var(--primary-200);
 }
 
 .container tr {
@@ -83,13 +85,13 @@
 }
 
 .container thead {
-  border-bottom: 2px solid var(--neural-200-color);
+  border-bottom: 2px solid var(--primary-200);
 }
 
 /* Hyperlinks */
 
 .container a {
-  color: var(--tertiary-700-color);
+  color: var(--green-400);
 }
 
 .container a:hover, .container a:active, .container a:visited {
@@ -102,7 +104,7 @@
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: var(--neural-900-color);
+  background-color: var(--primary-900);
   user-select: all;
 }
 
@@ -111,13 +113,13 @@
 }
 
 .container pre code {
-  color: var(--white-color);
+  color: var(--white);
 }
 
 .container blockquote {
   padding: 0.5rem 1rem;
-  border-left: 0.3rem solid var(--neural-700-color);
-  background-color: var(--neural-100-color);
+  border-left: 0.3rem solid var(--primary-700);
+  background-color: var(--primary-100);
   display: flex;
   align-items: center;
   margin: 0.5rem auto;
@@ -134,35 +136,33 @@
 
 .container p mark {
  color: var(--white-color);
- background-color: var(--secondary-300-color);
+ background-color: var(--primary-300);
 }
 
 .blog_heading { 
   position: relative;
-  /* transform: translateX(1.2rem); */
   font-size: 1.8rem;
   font-weight: bold;
-  color: var(--neural-950-color);
+  color: var(--primary-100);
+  display: inline-flex;
+  align-items: center;
 }
 
+a.blog_heading h2{
+  margin: 2rem 0;
+}
 
 a.blog_heading:link {
   text-decoration: none;
 }
 
-.blog_heading::before {
-  content: '#';
-  position: absolute;
-  left: -1.5rem;
-  top: 2%;
-  opacity: 0.3;
-  color: inherit;
-  font-size: inherit;
-  font-weight: inherit;
+a.blog_heading span {
+  color: var(--primary-700);
+  transform: translateX(-0.7rem);
   transition: all 0.2s ease-in-out;
-  z-index: 0;
+  margin-left: -1.5rem;
 }
 
-.blog_heading:hover::before{
-  opacity: 0.7;
+a.blog_heading:hover span{
+  color: var(--green-500);
 }

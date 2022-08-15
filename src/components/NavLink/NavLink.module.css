@@ -8,14 +8,20 @@
 }
 
 .link {
-  color: #000000;
+  color: var(--green-200);
   padding: unset;
   border-radius: unset;
+  text-transform: uppercase;
 }
 .link:hover,
 .activeLink {
-  color: var(--tertiary-700-color);
+  color: var(--green-500);
 }
+
+.link:active {
+  color: var(--green-600);
+}
+
 
 .outline {
   background: #FBFDFE;

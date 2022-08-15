@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Svg from '@/components/Svg';
 import dayjs from 'dayjs';
+import ShareIcon from '@/icons/share.svg';
 
 function Card({
   variant = 'gray',
@@ -21,12 +22,13 @@ function Card({
   onShare,
 }) {
   const classes = clsx(styles.container, { [styles.light]: variant === 'light' });
-  const titleClasses = clsx('body-short-01--bold', styles.title);
-  const subTitleClasses = clsx('caption', styles.subtitle);
-  const descriptionClasses = clsx('body-long-02', styles.description);
-  const levelClasses = clsx('caption', styles.level);
-  const prizeClasses = clsx('caption', styles.prize);
-  const footerClasses = clsx('caption', styles.footer);
+  const levelText = level ? level.toLowerCase() : '';
+  const titleClasses = clsx('text-lg--short-semi', styles.title);
+  const subTitleClasses = clsx('caption--semi-bold', styles.subtitle);
+  const descriptionClasses = clsx('text-md--long', styles.description);
+  const levelClasses = clsx('caption--semi-bold', styles.level, styles[levelText]);
+  const prizeClasses = clsx('caption--semi-bold', styles.prize);
+  const footerClasses = clsx('caption--semi-bold', styles.footer);
   const hasDate = end_date && start_date;
   const showFooter = online || location || on_demand || hasDate;
 
@@ -35,63 +37,66 @@ function Card({
       <div className={classes}>
         {image && (
           <div className={styles.header}>
-            <img src={image} alt="" width="200" height="150" className={styles.image} />
-            {onShare && (
-              <button
-                className={styles.shareBtn}
-                onClick={(e) => {
-                  e.preventDefault();
-                  onShare();
-                }}
-              >
-                <img src="/icons/share.svg" alt="Share" />
-                Share
-              </button>
-            )}
+            <img src={image} alt="" width="100%" height="150" className={styles.image} />
           </div>
         )}
+        <div className={styles.contents}>
+          <div>
+            {subtitle && <span className={subTitleClasses}>{subtitle}</span>}
+            <h3 className={titleClasses}>
+              <span>{title}</span>
+              {onShare && (
+                <button
+                  className={styles.shareBtn}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onShare();
+                  }}
+                >
+                  <ShareIcon />
+                </button>
+              )}
+            </h3>
 
-        <h2 className={titleClasses}>{title}</h2>
-
-        {subtitle && <h3 className={subTitleClasses}>{subtitle}</h3>}
-
-        {description && <p className={descriptionClasses}>{description}</p>}
-
-        {level && <div className={levelClasses}>{level}</div>}
-
-        {prize && (
-          <div className={prizeClasses}>
-            <Svg height="18" width="18" href="/icons/prize.svg" title="prize icon" />
-            {prize} in prizes
+            {description && <p className={descriptionClasses}>{description}</p>}
           </div>
-        )}
 
-        {showFooter && (
-          <div className={footerClasses}>
-            {/* If online = true or location exist */}
-            {(online || location) && (
-              <span>
-                {online ? (
-                  <Svg height="20" width="20" href="/icons/online.svg" title="online icon" />
-                ) : (
-                  location && <Svg height="20" width="20" href="/icons/location.svg" title="location icon" />
+          <div>
+            {level && <span className={levelClasses}>{level}</span>}
+
+            {showFooter && (
+              <div className={footerClasses}>
+                {/* If online = true or location exist */}
+                {(online || location) && (
+                  <span>
+                    <Svg height="18" width="18" href="/icons/location.svg" title="location icon" />
+                    {location || 'Online'}
+                  </span>
                 )}
-                {location || 'Online'}
-              </span>
-            )}
 
-            {/* If date exist and ensure both date and u=on demand don't exist at the same time */}
-            {hasDate && !on_demand && (
-              <span>
-                <Svg height="20" width="20" href="/icons/calender.svg" title="calender icon" />
-                {dayjs(start_date).format('MMM D')}
-                &nbsp; - &nbsp;
-                {dayjs(end_date).format('MMM D, YYYY')}
-              </span>
+                {/* If date exist and ensure both date and on demand don't exist at the same time */}
+                <span>
+                  <Svg height="18" width="18" href="/icons/calender.svg" title="calender icon" />
+                  {hasDate && !on_demand && (
+                    <>
+                      {dayjs(start_date).format('MMM D')}
+                      &nbsp; - &nbsp;
+                      {dayjs(end_date).format('MMM D, YYYY')}
+                    </>
+                  )}
+                  {on_demand && !hasDate && 'On-demand'}
+                </span>
+
+                {prize && (
+                  <span className={prizeClasses}>
+                    <Svg height="18" width="18" href="/icons/prize.svg" title="prize icon" />
+                    {prize} in prizes
+                  </span>
+                )}
+              </div>
             )}
-            {on_demand && !hasDate && <span>{'On-demand'}</span>}
           </div>
-        )}
+        </div>
       </div>
     </a>
   );

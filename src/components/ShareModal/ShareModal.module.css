@@ -13,7 +13,7 @@
 }
 
 .content {
-    background-color: white;
+    background-color: var(--primary-850);
     width: 30rem;
     padding: 2rem;
     border-radius: 0.75rem;
@@ -22,13 +22,13 @@
 
 .content h2 {
     font-size: 1.5rem;
-    color: var(--neural-950-color);
+    color: var(--primary-100);
     font-weight: 700;
     margin-top: 1rem;
 }
 
 .content p {
-    color: var(--neural-800-color);
+    color: var(--primary-500);
     margin-top: 0.25rem;
 }
 
@@ -56,7 +56,8 @@
     font-size: 0.625rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    color: var(--neural-500-color);
+    color: var(--primary-500);
+    transition: all 0.2s ease-in-out;
 }
 
 .socialMedia__item__image {
@@ -65,35 +66,55 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--neural-100-color);
-    border-radius: 0.5rem;
+    background-color: var(--light-04);
+    border-radius: 5.5rem;
+}
+
+.socialMedia__item:hover {
+    color: var(--green-400);
+}
+
+.socialMedia__item:hover .socialMedia__item__image {
+    background-color: var(--light-12);
+    border: 1px solid var(--primary-500);
 }
 
 .socialMedia__item_image img {
     object-fit: contain;
-    
 }
 
 .copyContainer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 0.5rem;
+    padding: .75rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--light-04);
 }
 
-.copyContainer input {
-    flex: 1;
-    font-size: 0.875rem;
-    color: var(--neural-500-color);
-    border: 1px solid var(--neural-300-color);
-    padding: 1rem;
-    border-radius: 0.5rem;
+.copyContainer > div {
+    color: var(--pink-400);
+    border-bottom: 1px dashed var(--primary-500);
+    padding-bottom: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.copyContainer button {
-    background-color: white;
+.copyContainer > span {
+    background-color: transparent;
+    text-transform: uppercase;
     border: none;
-    color: var(--tertiary-700-color);
-    font-weight: 600;
-    font-size: 1rem;
+    color: var(--green-200);
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.copyContainer > span:hover {
+    color: var(--green-500);
+}
+
+.copyContainer > span:active {
+    color: var(--green-600);
 }

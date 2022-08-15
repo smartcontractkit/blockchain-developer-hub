@@ -10,7 +10,7 @@ function Learn() {
   return (
     <div className={styles.container}>
       <LearnHero />
-      <section>
+      <section className={styles.contents}>
         {resources.map(({ id, name, logo, courses, tutorials }) => (
           <LearnCrypto
             key={id}
@@ -23,7 +23,7 @@ function Learn() {
           />
         ))}
       </section>
-      <PagePagination text="Go to Ecosystem" link="/ecosystem-map" />
+      <PagePagination text="Ecosystem" link="/ecosystem-map" />
     </div>
   );
 }

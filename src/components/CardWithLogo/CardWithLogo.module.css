@@ -1,0 +1,37 @@
+.blockchain_card {
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 21rem;
+  padding: 2rem;
+  background-color: var(--white-40);
+  border: 1px solid var(--primary-700);
+  color: var(--primary-50);
+  border-radius: 1rem;
+  gap: 0rem;
+  flex-shrink: 1;
+  flex: 1;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.blockchain_card:hover {
+  border: 1px solid var(--primary-500);
+  background-color: var(--white-120);
+}
+
+
+.link_text, .blockchain_card {
+  display: flex;
+  align-items: center;
+}
+.link_text {
+  margin-top: 2.5625rem;
+  color: var(--green-200);
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.link_text svg {
+  margin-left: 0.5rem;
+}

@@ -1,22 +1,25 @@
 .card {
   flex: 1;
+  margin: 1rem 0;
+  width: 100%;
+  min-height: 16rem;
+  min-width: 21rem;
 }
 
 .card__inner {
   position: relative;
-  background-color: var(--neural-100-color);
-  border: 1px solid var(--neural-100-color);
-  min-height: 16rem;
-  width: 100%;
-  color: var(--neural-800-color);
-  border-radius: 0.75rem;
-  padding: 1rem;
+  background-color: var(--white-40);
+  border: 1px solid var(--primary-700);
+  color: var(--primary-50);
+  border-radius: 1rem;
+  padding: 1.5rem;
   transition: all 0.2s ease-in-out;
 }
 
 .card__inner:hover {
-  border: 1px solid var(--tertiary-400-color);
-  background-color: var(--white-color);
+  border: 1px solid var(--primary-500);
+  background-color: var(--white-120);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 8px 17px rgba(0, 0, 0, 0.07), 0px 2px 6px rgba(0, 0, 0, 0.0482987), 0px 1px 3px rgba(0, 0, 0, 0.0389404), 0px 0.6px 1px rgba(0, 0, 0, 0.0310596), 0px 0.2px 0.5px rgba(0, 0, 0, 0.0217013);
 }
 
 .arrow {
@@ -26,23 +29,30 @@
   transform: rotate(-45deg);
 }
 
-.subtitle {
-  margin-bottom: 0.5rem;
+.subtitle, .icon  {
+  margin-bottom: 1rem;
+}
+
+.link_text {
+  margin-top: 2.5625rem;
+  color: var(--green-200);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.link_text svg {
+  margin-left: 0.5rem;
 }
 
 .title {
-  font-weight: 700;
-  color: var(--neural-950-color);
-  max-width: 13.5625rem;
   transition: all 0.2s ease-in-out;
-}
-
-.title:hover {
-  color: var(--tertiary-600-color);
+  margin-top: 1rem;
 }
 
 .description {
-  font-weight: 400;
   margin-top: 0.5rem;
-  max-width: 19.25rem;
+  color: var(--primary-300);
+  width: 100%;
+  padding-right: 1rem;
 }

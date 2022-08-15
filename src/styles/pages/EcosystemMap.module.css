@@ -1,26 +1,53 @@
 .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
-  min-height: 85vh;
   padding-inline: 1rem;
-  max-width: 1440px;
   margin-inline: auto;
+  background: radial-gradient(57.04% 57.03% at 50% 0%, rgba(255, 130, 242, 0.2) 0%, rgba(150, 55, 166, 0.032) 100%),
+  linear-gradient(180deg, #0E1212 0%, rgba(14, 18, 18, 0.32) 100%),
+  linear-gradient(180deg, #0E1212 0%, rgba(14, 18, 18, 0.32) 100%),
+  url(/images/bg.png);
+  background-position: bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+  display: flex;
 }
 
+.content {
+  width: 100%;
+  max-width: 44rem;
+  height: 100%;
+  margin: 6.5rem auto;
+}
 .content > * {
   margin-inline: auto;
 }
 
-@media (min-width: 1024px) {
-  .content {
-    width: 44rem;
-    margin: 3rem auto;
+.content p {
+  width: 100%;
+  max-width: 37.75rem;
+}
 
+.title {
+  background: var(--pink-gradient-100);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title > span{
+   background: var(--primary-50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    height: 100vh;
   }
-  .content p {
-    width: 37.75rem;
+}
+@media (min-width: 1280px) {
+  .container {
+    background-size: contain;
   }
 }

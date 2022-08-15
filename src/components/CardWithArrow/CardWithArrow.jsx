@@ -2,22 +2,30 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import styles from './CardWithArrow.module.css';
-import Svg from '@/components/Svg';
 import Link from 'next/link';
+import ArrowRightRounded from '@/icons/arrow-right-white-rounded.svg';
 
-const CardWithArrow = ({ title, description, subtitle, href, target }) => {
+const CardWithArrow = ({ title, description, subtitle, link_text, href, target, children }) => {
   const subtitleClasses = clsx('body-short-02--bold', styles.subtitle);
-  const titleClasses = clsx('subtitle-01', styles.title);
-  const descriptionClasses = clsx('body-long-02', styles.description);
+  const titleClasses = clsx('text-lg--short-semi', styles.title);
+  const descriptionClasses = clsx('text-lg--long', styles.description);
+  const linkTextClasses = clsx('btn-sm--extra-bold', styles.link_text);
 
   return (
     <Link href={href} passHref>
       <a target={target} className={styles.card}>
         <div className={styles.card__inner}>
           {subtitle && <small className={subtitleClasses}>{subtitle}</small>}
-          <h4 className={titleClasses}>{title}</h4>
-          {description && <p className={descriptionClasses}> {description} </p>}
-          <Svg className={styles.arrow} width="20" height="20" href="/icons/arrow-right.svg" />
+          <div>{children}</div>
+          {title && <h4 className={titleClasses}>{title}</h4>}
+          {description && <div className={descriptionClasses}> {description} </div>}
+
+          {link_text && (
+            <div className={linkTextClasses}>
+              {' '}
+              {link_text} <ArrowRightRounded />
+            </div>
+          )}
         </div>
       </a>
     </Link>
@@ -25,11 +33,13 @@ const CardWithArrow = ({ title, description, subtitle, href, target }) => {
 };
 
 CardWithArrow.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   href: PropTypes.string.isRequired,
   description: PropTypes.string,
   subtitle: PropTypes.string,
+  link_text: PropTypes.string,
   target: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default CardWithArrow;

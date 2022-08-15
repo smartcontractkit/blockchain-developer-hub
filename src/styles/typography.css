@@ -4,36 +4,132 @@
 .h-500,
 .h-400,
 .h-300,
-.h-200 {
-  font-weight: bold;
+.h-200,
+.h-100,
+.subtitle-bold {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.h-600,
+.h-500,
+.h-300,
+.subtitle-bold  {
+  line-height: 1.2em;
+}
+
+.h-200,
+.h-100 {
+  line-height: 1.24em;
   letter-spacing: -0.02em;
-  line-height: 108%;
+}
+
+
+.subtitle-bold,
+.text-lg--short,
+.text-lg--long, 
+.text-md--short,
+.text-md--long,
+.caption--semi-bold {
+  letter-spacing: -0.01em;
 }
 
 .h-600 {
-  font-size: 4rem;
-  line-height: 106%;
+  font-size: 3.583rem;
 }
-
 .h-500 {
-  font-size: 3.25rem;
-  line-height: 111%;
+  font-size: 2.986rem;
 }
 
 .h-400 {
-  font-size: 2.5rem;
+  font-size: 2.488rem;
+  line-height: 1.18em;
 }
 
 .h-300 {
-  font-size: 1.875rem;
+  font-size: 2.074rem;
 }
 
 .h-200 {
-  font-size: 1.5rem;
-  line-height: 116%;
+  font-size: 1.728rem;
+}
+
+.h-100 {
+  font-size: 1.440rem;
 }
 
 /* Subtitles */
+
+.subtitle-bold {
+  font-size: 1.200rem;
+}
+
+/* Texts */
+.text-md--long,
+.text-md--short,
+.text-lg--short,
+.text-lg--long {
+  font-weight: 400;
+}
+
+.text-lg--short, 
+.text-md--short {
+  line-height: 1.28em;
+}
+
+.text-lg--long,
+.text-lg--short,
+.text-lg--short-semi {
+  font-size: 1rem;
+}
+
+.text-lg--long{
+  line-height: 1.64em;
+}
+
+.text-md--long,
+.text-md--short,
+.text-md--short-semi,
+.btn--extra-bold {
+  font-size: 0.833rem;
+}
+
+.text-md--long{
+  line-height: 1.7em;
+}
+
+.caption--semi-bold, 
+.overline--extra-bold,
+.btn-sm--extra-bold {
+  font-size: 0.694rem;
+}
+
+.caption--semi-bold,
+.btn--extra-bold {
+  line-height: 1.14em;
+}
+/* Caption */
+
+.caption--semi-bold,
+.text-md--short-semi,
+.text-lg--short-semi {
+  font-weight: 600;
+}
+
+.btn--extra-bold, 
+.overline--extra-bold,
+.btn-sm--extra-bold {
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+/* Overline */
+.overline--extra-bold,
+.btn-sm--extra-bold {
+  line-height: 1.16em;
+}
+
+/* Old typography starts here */
 
 .subtitle-01,
 .subtitle-02 {
@@ -141,3 +237,4 @@
   font-size: 0.75rem;
   line-height: 0.75rem;
 }
+/* Old typography ends here */

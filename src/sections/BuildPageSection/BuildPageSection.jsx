@@ -8,8 +8,8 @@ import NoItemPlaceholder from '@/components/NoItemPlaceholder';
 import HeadingHash from '@/components/HeadingHash';
 
 function BuildPageSection({ name, overview, items, href }) {
-  const headingClasses = clsx('subtitle-01', styles.headings);
-  const overviewClasses = clsx('body-long-02', styles.overview);
+  const headingClasses = clsx('subtitle-bold', styles.headings);
+  const overviewClasses = clsx('text-md--long', styles.overview);
   const id = name.replace(' ', '').toLowerCase();
   const [shareItem, setShareItem] = useState(null);
 

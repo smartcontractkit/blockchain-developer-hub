@@ -1,47 +1,64 @@
 .nav {
-  background-color: var(--white-color);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.078);
-  position: sticky;
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
   top: 0;
   z-index: 9999;
 }
+
+.nav.skicky{
+  background-color: var(--bg);
+  position: sticky;
+  border-bottom: 1px solid var(--primary-700);
+}
+
 .container {
   margin-inline: auto;
-  max-width: 1440px;
+  max-width: var(--xl);
   padding: 1.2rem 1rem;
   position: relative;
 }
 
-.logo {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 1rem;
-  letter-spacing: -0.03em;
-  color: var(--black-color);
-  user-select: none;
+.container.blog {
+  max-width: 100%;
 }
+
 .nav_links {
+  background-color: var(--bg);
   position: fixed;
   top: 63px;
   left: 0;
   right: 0;
-  background-color: var(--white-color);
   display: none;
 }
 
-.nav_contents, .nav_links.mobile {
+.nav_contents, .nav_links.mobile, .logo, .menu_btn, .githublogo{
   display: flex;
+}
+ 
+.logo {
+  align-items: center;
+  text-decoration: none;
+  user-select: none;
+  width: 125px;
+height: 40px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .nav_links.mobile {
   flex-direction: column;
   align-items: start;
   padding: 3rem 1.5rem 1rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav_contents {
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -64,13 +81,27 @@
 .githublogo {
   position: absolute;
   right: 1rem;
-  top: 30%;
+  top: 25%;
   z-index: 10;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  color: var(--green-200);
+  backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  height: 40px;
+  text-transform: uppercase;
+}
+
+.githublogo:hover {
+  color: var(--green-500);
+}
+
+.githublogo > span{
   display: none;
 }
 
 .menu_btn {
-  display: flex;
   background: transparent;
   border: none;
   width: 24px;
@@ -84,11 +115,9 @@
 /* Media Query */
 
 @media (min-width: 1024px) {
-
   .container {
-    padding: 1.5rem;
+    padding: 1.5rem 1rem;
   }
-
 
   .menu_btn {
     display: none;
@@ -96,6 +125,7 @@
 
   .nav_contents {
     flex-wrap: unset;
+    justify-content: space-between;
   }
 
   .nav_links.mobile {
@@ -107,13 +137,13 @@
   .nav_links {
     display: flex;
     position: relative;
-    flex: auto;
     justify-content: center;
     margin-top: unset;
     top: unset;
     right: unset;
     left: unset;
     flex-direction: row;
+    background-color: transparent;
   }
 
   .nav_links li {
@@ -127,12 +157,30 @@
 
   .nav_links li:not(:last-child)::after {
     content: url('/icons/keyboard-arrow-right.svg');
-    margin-inline: 1.5rem;
+    margin-inline: 1.2rem;
     opacity: 0.2;
   }
 
   .githublogo {
+    display: flex;
+    position: relative;
+  }
+
+}
+
+@media (min-width: 1280px) { 
+  .githublogo > span {
     display: block;
   }
 
+  .container {
+    padding: 1.5rem 0rem;
+  }
+  .container.blog {
+    padding: 1.5rem 2.5rem;
+  }
+
+  .githublogo svg {
+    margin-right: 0.59rem;
+  }
 }
