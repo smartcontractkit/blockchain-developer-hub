@@ -26,7 +26,7 @@ export default function ExploreMapBanner({ isHomePage, description, children }) 
         />
         {!isHomePage && (
           <NavLink
-            to={'https://developer-roadmap-1.vercel.app/blockchain'}
+            to={'https://roadmap.sh/blockchain'}
             target="_blank"
             rel="noopener noreferrer"
             type="outline"
