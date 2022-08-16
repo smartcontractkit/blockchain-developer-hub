@@ -6,6 +6,13 @@ resources:
       href: '/learn#evm-chains-courses'
       overview: "Introductory short form content to help you get up and running quickly. Deploy contracts and see them in action."
       data:
+       - title: "Learn Blockchain, Solidity, and Full Stack Web3 Development with JavaScript – 32-Hour Course"
+        author: FreeCodeCamp
+        image: "https://github.com/smartcontractkit/full-blockchain-solidity-course-js/blob/main/img/blockchain1.png?raw=true"
+        level: Beginner
+        href: https://www.youtube.com/watch?v=gyMwXuJrbJQ
+        description: The \#1 resource for learning smart contracts & professional blockchain development. From zero experience to master. 
+        
       - title: "Deploy your first smart contract"
         author: Chainlink
         image: "https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5fa2e075cfcf344baa0e9063_chainlink-open-graph-images_home%20(with%20illustration).png"
