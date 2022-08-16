@@ -8,7 +8,7 @@ export default {
     site_name: 'Blockchain Developer Hub',
     images: [
       {
-        url: 'https://blockchain-developer-hub.vercel.app/images/og-image.png',
+        url: 'https://blockchain.education/images/og-image.png',
         width: 800,
         height: 600,
         alt: 'Blockchain Developer Hub',

@@ -5,7 +5,7 @@
   description: 'Explore the ecosystem map to get familiar with the tooling landscape.'
 
 - id: 'roadmap'
-  url: 'https://developer-roadmap-1.vercel.app/blockchain'
+  url: 'https://roadmap.sh/blockchain'
   title: 'Roadmap'
   subtitle: '02'
   description: 'View the Blockchain developer roadmap to learn how to become a blockchain developer.'
