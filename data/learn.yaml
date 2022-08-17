@@ -11,7 +11,7 @@ resources:
         image: "https://github.com/smartcontractkit/full-blockchain-solidity-course-js/blob/main/img/blockchain1.png?raw=true"
         level: Beginner
         href: https://www.youtube.com/watch?v=gyMwXuJrbJQ
-        description: The \#1 resource for learning smart contracts & professional blockchain development. From zero experience to master. 
+        description: The \#1 resource for learning smart contracts & professional blockchain development. From zero experience to master.
         
       - title: "Deploy your first smart contract"
         author: Chainlink
