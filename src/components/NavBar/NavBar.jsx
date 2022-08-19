@@ -9,6 +9,7 @@ import Overlay from '@/components/Overlay';
 import navbarLinks from '@/data/navbarLinks.yaml';
 
 import GithubLogo from '@/icons/github.svg';
+import Logo from '@/icons/logo.svg';
 
 const links = navbarLinks.items;
 
@@ -47,7 +48,8 @@ export default function NavBar({ isSticky }) {
           </button>
           <Link href="/">
             <a className={styles.logo} onClick={() => toggleMenuLink(false)}>
-              <img src="/logos/logo.png" alt="blockchain logo" />
+              {/* <img src="/logos/logo.svg" alt="blockchain logo" /> */}
+              <Logo />
             </a>
           </Link>
 
