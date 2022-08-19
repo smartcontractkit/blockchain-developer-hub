@@ -30,7 +30,7 @@ export default function ExploreMapBanner({ isHomePage, description, children }) 
             target="_blank"
             rel="noopener noreferrer"
             type="outline"
-            text={'How to become a blockchain engineer'}
+            text={'How to become a blockchain developer'}
             iconPosition="left"
             icon="fork.svg"
             className={styles.blockchain}
