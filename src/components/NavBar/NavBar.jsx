@@ -48,7 +48,6 @@ export default function NavBar({ isSticky }) {
           </button>
           <Link href="/">
             <a className={styles.logo} onClick={() => toggleMenuLink(false)}>
-              {/* <img src="/logos/logo.svg" alt="blockchain logo" /> */}
               <Logo />
             </a>
           </Link>
