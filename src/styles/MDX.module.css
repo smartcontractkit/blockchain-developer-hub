@@ -1,6 +1,7 @@
 .container {
   color: var(--primary-450);
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 .container img {
