@@ -11,6 +11,10 @@
   color: var(--green-500);
 }
 
+.headings:hover > a:last-child {
+  color: var(--primary-100);
+}
+
 .overview {
   color: var(--primary-400);
   margin: 0.5rem 0 0;
