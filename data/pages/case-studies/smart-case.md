@@ -1,5 +1,6 @@
 ---
 title: Smart Case
+heading: Smart Case
 description: Here is a small description about Build Case
 href: case-studies/smart-case
 image: 'https://cdn.consensys.net/uploads/2021/09/16181652/damien-1.7923f061-958x460.png'
