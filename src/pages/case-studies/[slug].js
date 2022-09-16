@@ -15,13 +15,7 @@ import BlogCustomComponents from '@/components/BlogCustomComponents';
 function CaseStudies({ data, content, pagesInfo }) {
   return (
     <BlogLayout pages={pagesInfo}>
-      <ArticleHeader
-        title={data.title}
-        author={data.author}
-        role={data.author_role}
-        image={data.author_image}
-        datetime={data.date}
-      />
+      <ArticleHeader title={data.heading} />
       <div className={styles.container}>
         <MDXRemote components={BlogCustomComponents} {...content} />
       </div>
