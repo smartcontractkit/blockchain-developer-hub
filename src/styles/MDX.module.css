@@ -119,8 +119,8 @@
 
 .container blockquote {
   padding: 0.5rem 1rem;
-  border-left: 0.3rem solid var(--primary-700);
-  background-color: var(--primary-100);
+  border-left: 0.3rem solid var(--pink-600);
+  background-color: var(--black-50);
   display: flex;
   align-items: center;
   margin: 0.5rem auto;
@@ -135,9 +135,9 @@
   top: 0;
 }
 
-.container p mark {
- color: var(--white-color);
- background-color: var(--primary-300);
+.container p mark, .container mark p {
+ color: var(--white);
+ background-color: var(--pink-800);
 }
 
 .blog_heading { 
