@@ -18,7 +18,6 @@ function BlogLayout({ children, pages }) {
     text: 'Learn',
     link: '/learn',
   });
-
   const router = useRouter();
   const { slug } = router.query;
 
