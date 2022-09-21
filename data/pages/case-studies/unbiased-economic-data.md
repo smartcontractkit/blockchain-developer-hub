@@ -6,7 +6,7 @@ description:
   But after realizing that he could pay his developer’s salary instantly without fees, and with complete finality, he
   was hooked
 href: case-studies/unbiased-economic-data
-image: 'https://cdn.consensys.net/uploads/2021/09/16181652/damien-1.7923f061-958x460.png'
+image: '/posts/internal-case-studies/truflation-2.png'
 
 sidebar_title: Case Studies
 sidebar_position: 2
@@ -66,6 +66,8 @@ those contracts. Leveraging these tools in concert provides a seamless developer
 similarities between Solidity and JavaScript, and reduces the onboarding curve for new developers working in smart
 contract technologies. Other libraries are deployed manually with lordKelvin, a Python web3 toolkit built atop Web3.py.
 
+![Truflation Platform Architecture](/posts/internal-case-studies/truflation-1.png)
+
 Truflation was initially launched on the Ethereum (ETH) blockchain network, and the team now supports the Binance Smart
 Contract (BSC), Avalanche (AVAX), and Polygon (MATIC) networks, as well as all Ethereum Virtual Machine (EVM) networks
 supported by Chainlink (LINK).
@@ -80,6 +82,8 @@ beverages, housing, transportation, utilities, education, clothing, and more.
 Truflation is the key to Nuon’s success, providing fully transparent and cryptographically verifiable data on-chain to
 peg Nuon’s price, ensuring that the token’s holders maintain hedged purchasing power that reflects the growing costs of
 the world’s most widely utilized goods and services.
+
+![The Future of Truflation](/posts/internal-case-studies/truflation-2.png)
 
 ## The Future of Truflation in the Words of Stefan Rust
 

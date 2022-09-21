@@ -6,7 +6,7 @@ description:
   issue NFT bond securities, allowing fans to invest in their favorite artists and build catalogs of non-fungible
   digital music
 href: case-studies/protecting-musician-ip
-image: 'https://cdn.consensys.net/uploads/2021/09/16181652/damien-1.7923f061-958x460.png'
+image: '/posts/internal-case-studies/musician-ip-1.png'
 
 sidebar_title: Case Studies
 sidebar_position: 1
@@ -40,6 +40,8 @@ NUSIC’s user interface is built using JavaScript, and operates with a TypeScri
 have created the smart contracts that power NUSIC’s platform utilities, and those contracts exist on the Ethereum
 blockchain, supported by Chainlink’s oracle network.
 
+![NUSIC Platform meetups](/posts/internal-case-studies/musician-ip-2.png)
+
 When deploying, the team currently uses Hardhat and Alchemy, and the platform is monitored using Block Explorer while
 Open Zeppelin secures it.
 
@@ -49,6 +51,8 @@ According to Place, NUSIC was shaped through cooperation with musicians, labels,
 for better solutions to secure their valuable intellectual properties, and give fans new and exciting opportunities to
 collect music in a way never before offered to the market. The team is confident that the market is ready for this
 digital revolution, and is thrilled to offer services on its cutting edge.
+
+![NUSIC Platform meetups](/posts/internal-case-studies/musician-ip-1.png)
 
 Place and his team at NUSIC have a lot to look forward to as they expand their platform, including their Genesis
 collection of NFTs which will soon be available to music enthusiasts!
