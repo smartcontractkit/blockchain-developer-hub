@@ -1,5 +1,5 @@
 ---
-title: 'Nusic: Protecting Artist's Intelectual Property'
+title: "Nusic: Protecting Artist's Intelectual Property"
 description:
   Nusic is helping musicians secure their intelectual property and their fans to invest in their favorite artists by
   building catalogs of NFT digital music.
