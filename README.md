@@ -77,7 +77,6 @@ In other for us to be able to generate internal case studies, there are few thin
 ```markdown
 ---
 title: Deep Learning Case
-heading: Deep Learning Case
 description: Here is a small description about Build Case
 href: case-studies/deep-learning-case
 image: 'https://cdn.consensys.net/uploads/2021/09/16181652/damien-1.7923f061-958x460.png'
@@ -94,8 +93,8 @@ sidebar_position: 2
 
 - **sidebar_title**: Case Studies because we the markdown is for Case Studies
 - **sidebar_position**: Where the link will be positions on the side bar when you are on the blog pag.
-- **heading**: Blog main heading
-- **title**: Used when the card is case study is generated for display on the case studies page.
+- **title**: Used when the card is case study is generated for display on the case studies page and also serves as blog
+  heading.
 - **href**: same as title
 - **description**: same as title
 - **image**: same as title

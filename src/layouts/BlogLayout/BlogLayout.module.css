@@ -145,7 +145,7 @@
   }
 
   .leftSidebar__link > span {
-    transform: translateX(4rem);
+    padding-left: 3rem;
   }
 
   .leftSidebar.mobile, 

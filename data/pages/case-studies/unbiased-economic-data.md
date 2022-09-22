@@ -1,12 +1,8 @@
 ---
 title: Unbiased Economic Data
-heading: Unbiased Economic Data for Smart Contract Developers
-description:
-  Rust had heard of the emergent project, which by then, had only recently transitioned from its proof-of-concept stage.
-  But after realizing that he could pay his developer’s salary instantly without fees, and with complete finality, he
-  was hooked
+description: Independent censorship resistant financial and economic data on-chain.
 href: case-studies/unbiased-economic-data
-image: '/posts/internal-case-studies/truflation-2.png'
+image: '/posts/internal-case-studies/unbiased-data-1.png'
 
 sidebar_title: Case Studies
 sidebar_position: 2

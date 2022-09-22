@@ -1,12 +1,10 @@
 ---
-title: Protecting Musician
-heading: Protecting Musician IP with the Blockchain
+title: Protecting Artist's Intelectual Property
 description:
-  The music metadata layer offering a host of web3 utilities aimed at helping musicians secure intellectual property and
-  issue NFT bond securities, allowing fans to invest in their favorite artists and build catalogs of non-fungible
-  digital music
-href: case-studies/protecting-musician-ip
-image: '/posts/internal-case-studies/musician-ip-1.png'
+  Nusic is helping musicians secure their intelectual property and their fans to invest in their favorite artists by
+  building catalogs of NFT digital music.
+href: case-studies/protecting-artists-ip
+image: '/posts/internal-case-studies/artists-ip-1.png'
 
 sidebar_title: Case Studies
 sidebar_position: 1
