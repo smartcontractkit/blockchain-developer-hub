@@ -16,7 +16,7 @@ function CaseStudies({ internal_case_studies }) {
   return (
     <div className={styles.container}>
       <BuildPageSection name={name} overview={overview} href={href} items={removePastEvent(items)} />
-      <PagePagination hasPadding={false} text="Ship" link="/ship" />
+      <PagePagination hasPadding={false} text="Build" link="/build" />
     </div>
   );
 }
