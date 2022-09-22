@@ -49,8 +49,8 @@ function BlogLayout({ children, pages }) {
       const { pathname } = router;
       if (pathname.includes('case-studies')) {
         setNextRoute({
-          text: 'Ship',
-          link: '/ship',
+          text: 'Build',
+          link: '/build',
         });
       } else {
         setNextRoute({
