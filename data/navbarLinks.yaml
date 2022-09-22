@@ -13,9 +13,6 @@ items:
 
   - name: Build
     href: /build
-  
-  - name: Case Studies
-    href: /case-studies
 
   - name: Ship
     href: /ship
