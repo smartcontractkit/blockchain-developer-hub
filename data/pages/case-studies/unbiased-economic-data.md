@@ -1,5 +1,5 @@
 ---
-title: Unbiased Economic Data
+title: Truflation: Unbiased Economic Data
 description: Independent censorship resistant financial and economic data on-chain.
 href: case-studies/unbiased-economic-data
 image: '/posts/internal-case-studies/unbiased-data-1.png'
