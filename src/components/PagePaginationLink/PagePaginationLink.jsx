@@ -28,7 +28,7 @@ export default function PagePaginationLink({ link, navDirection, text, ...props 
 
   return (
     <Link href={link} passHref>
-      <a {...props} className={pagePagination} {...props}>
+      <a {...props} className={pagePagination} {...props} title={text}>
         <div className={direction}>
           <span>{navDirection}</span>
           <Svg
@@ -38,7 +38,7 @@ export default function PagePaginationLink({ link, navDirection, text, ...props 
             title={`${navDirection} icon`}
           />
         </div>
-        <span>{`Go to "${text}"`}</span>
+        <span className={styles.text} title={text}>{`Go to "${text}"`}</span>
       </a>
     </Link>
   );

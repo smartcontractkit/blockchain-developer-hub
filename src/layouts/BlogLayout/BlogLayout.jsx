@@ -14,7 +14,10 @@ function BlogLayout({ children, pages }) {
   const [activeHeading, setActiveHeading] = useState(null);
   const [articleOverview, setArticleOverview] = useState(false);
   const [chapterseOverview, setChaptersOverview] = useState(false);
-
+  const [nextRoute, setNextRoute] = useState({
+    text: 'Learn',
+    link: '/learn',
+  });
   const router = useRouter();
   const { slug } = router.query;
 
@@ -41,6 +44,23 @@ function BlogLayout({ children, pages }) {
       const activeHeadingElement = headingsElements.find((heading) => isElementVisable(heading));
       if (activeHeadingElement) setActiveHeading(activeHeadingElement);
     };
+
+    const getNextRoute = () => {
+      const { pathname } = router;
+      if (pathname.includes('case-studies')) {
+        setNextRoute({
+          text: 'Build',
+          link: '/build',
+        });
+      } else {
+        setNextRoute({
+          text: 'Learn',
+          link: '/learn',
+        });
+      }
+    };
+    //This is usefull for the bottom navigation when we are at the last tab of a blog page
+    getNextRoute();
 
     document.addEventListener('scroll', handleScroll);
 
@@ -97,7 +117,7 @@ function BlogLayout({ children, pages }) {
               <PagePaginationLink text={`${next_page.data.title}`} link={next_page.slug} navDirection="next" />
             )}
 
-            {!next_page && <PagePaginationLink text={`Learn`} link={'/learn'} navDirection="next" />}
+            {!next_page && <PagePaginationLink text={nextRoute.text} link={nextRoute.link} navDirection="next" />}
           </div>
         </div>
       </div>

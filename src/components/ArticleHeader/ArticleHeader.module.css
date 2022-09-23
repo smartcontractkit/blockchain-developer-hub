@@ -34,3 +34,12 @@
 .author__role {
   color: var(--neural-700);
 }
+
+
+.banner {
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+  margin: 2rem 0;
+}

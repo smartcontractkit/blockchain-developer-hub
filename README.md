@@ -65,6 +65,42 @@ _Example_ :
 </div>
 ```
 
+## Internal Case studies
+
+In other for us to be able to generate internal case studies, there are few things we have to do
+
+- create a markdown file inside `data/pages/case-studies`. (the name of the markdown file is important for the URL, as
+  it much match the path on the url).
+- The content on the markdown reuires some variable, which are also used to generate the case studies on the case
+  studies page. Below is a template you should use
+
+```markdown
+---
+title: Deep Learning Case
+description: Here is a small description about Build Case
+href: case-studies/deep-learning-case
+image: 'https://cdn.consensys.net/uploads/2021/09/16181652/damien-1.7923f061-958x460.png'
+
+sidebar_title: Case Studies
+sidebar_position: 2
+---
+
+<!-- Then you can add the contents here -->
+<!-- remember to use ## for the header -->
+```
+
+### Code explanation
+
+- **sidebar_title**: Case Studies because we the markdown is for Case Studies
+- **sidebar_position**: Where the link will be positions on the side bar when you are on the blog pag.
+- **title**: Used when the card is case study is generated for display on the case studies page and also serves as blog
+  heading.
+- **href**: same as title
+- **description**: same as title
+- **image**: same as title
+
+Above you notice `deep-learning-case` in the href, it is also the name of the markdown file.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the

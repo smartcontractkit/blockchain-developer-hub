@@ -8,11 +8,11 @@ items:
   - name: Ecosystem Map
     href: /ecosystem-map
 
-  - name: Build
-    href: /build
-  
   - name: Case Studies
     href: /case-studies
+
+  - name: Build
+    href: /build
 
   - name: Ship
     href: /ship
