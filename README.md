@@ -65,7 +65,7 @@ _Example_ :
 </div>
 ```
 
-## Internal Case studies
+## Case studies
 
 In other for us to be able to generate internal case studies, there are few things we have to do
 
