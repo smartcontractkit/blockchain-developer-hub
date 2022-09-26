@@ -10,7 +10,7 @@ import HeadingHash from '@/components/HeadingHash';
 function BuildPageSection({ name, overview, items, href }) {
   const headingClasses = clsx('subtitle-bold', styles.headings);
   const overviewClasses = clsx('text-md--long', styles.overview);
-  const id = name.replaceAll(' ', '').toLowerCase();
+  const id = name.replace(/[" "]/g, '').toLowerCase();
   const [shareItem, setShareItem] = useState(null);
 
   return (
