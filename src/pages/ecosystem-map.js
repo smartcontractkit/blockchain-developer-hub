@@ -13,7 +13,7 @@ function EcosystemMap() {
           isHomePage={false}
         >
           <h1 className={titleClasses}>
-            <span>The smart contract</span> ecosystem map
+            <span>The smart contract</span> Blockchain Ecosystem
           </h1>
         </ExploreMapBanner>
       </div>
