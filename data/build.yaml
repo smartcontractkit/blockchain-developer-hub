@@ -110,14 +110,14 @@ categories:
         start_date: '2022-05-16'
         end_date: '2022-07-25'
 
-      - title: 'XRPL Hackathon: Creating Real World Impact'
-        description: real impact on people's lives
+      - title: 'XRPL Hackathon: NFT Launch Party'
+        description: Build scalable, sustainable, functional NFTs with XRPL.
         prize: $50,000
         online: true
-        href: 'https://xrplimpact.devpost.com/?ref_feature=challenge&ref_medium=discover'
+        href: 'https://xrplnft.devpost.com/'
         image: '/images/hackathons/xprl-hack.png'
-        start_date: '2022-05-26'
-        end_date: '2022-07-11'
+        start_date: '2022-10-31'
+        end_date: '2022-12-05'
 
       - title: 'Technology at the service of sustainable and inclusive finance'
         description: Hackathon 2022 of the Fintech Chair of Paris Dauphine University
@@ -350,8 +350,8 @@ categories:
         online: true
         href: 'https://codeup-hack-22.devpost.com/'
         image: '/images/hackathons/codeup.png'
-        start_date: '2022-09-05'
-        end_date: '2022-09-10'
+        start_date: '2022-10-03'
+        end_date: '2022-10-08'
 
       - title: 'NEAR Hacks NYC'
         description: The hackathon for the NEAR Ecosystem in NYC during Messari Mainnet
@@ -390,6 +390,46 @@ categories:
         image: '/images/hackathons/moralis-filecoin.png'
         start_date: '2022-08-29'
         end_date: '2022-09-30'
+
+      - title: 'EVMxIdeathon'
+        description: Ideas that inspire, hacking that transcends.
+        prize: $125,000
+        online: true
+        href: 'https://evmxideathon.devpost.com/'
+        image: '/images/hackathons/evmxld.png'
+        start_date: '2022-09-19'
+        end_date: '2022-10-31'
+
+      - title: 'TRON Grand Hackathon - Season 3'
+        description: HackaTRON
+        prize: $1,200,000
+        online: true
+        href: 'https://trons3.devpost.com/'
+        image: '/images/hackathons/tron3-hack.png'
+        start_date: '2022-09-20'
+        end_date: '2022-11-14'
+
+      - title: 'CodeDAO Web3 Hackathon'
+        description:
+          Develop a next-generation fully decentralized Web3 application with CYFS, feel the power of a fully
+          decentralized and free web.
+        prize: $26,572
+        online: true
+        href: 'https://codedao-web3-hackathon.devpost.com/'
+        image: '/images/hackathons/code-dao.png'
+        start_date: '2022-10-15'
+        end_date: '2022-10-21'
+
+      - title: 'Chainlink Hackathon Fall 2022'
+        description:
+          No matter your experience level, the Chainlink Fall 2022 Hackathon has the resources and mentorship you need
+          to take your development journey to the next level.
+        prize: $300,000
+        online: true
+        href: 'https://chain.link/hackathon?utm_medium=paid-search&utm_source=cpc&utm_campaign=FY22Q3-fall-hackathon&utm_content=&utm_term=brand'
+        image: '/images/hackathons/chainlink-fall2022.png'
+        start_date: '2022-10-14'
+        end_date: '2022-11-21'
 
   - name: Events
     href: '/build#events'
