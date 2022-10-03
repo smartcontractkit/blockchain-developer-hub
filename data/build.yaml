@@ -590,15 +590,6 @@ categories:
         start_date: '2022-10-31'
         end_date: '2022-10-31'
 
-      - title: 'ETH Denver 2023'
-        description: WELCOME TO THE LARGEST AND LONGEST RUNNING ETH EVENT IN THE WORLD
-        location: Denver
-        online: true
-        href: 'https://www.ethdenver.com/'
-        image: '/images/events/denver.png'
-        start_date: '2023-02-24'
-        end_date: '2023-03-05'
-
   - name: Workshops
     href: '/build#workshops'
     link_text: 'Find a Workshop'
