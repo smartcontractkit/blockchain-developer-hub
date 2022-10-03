@@ -550,6 +550,46 @@ categories:
         start_date: '2022-11-07'
         end_date: '2022-11-11'
 
+      - title: 'Web3 Conference EU'
+        description: The web3 conference for Developers.
+        location: Amsterdan
+        online: true
+        href: 'https://web3conference.eu'
+        image: '/images/events/web3-eu.png'
+        start_date: '2022-12-02'
+        end_date: '2022-12-02'
+
+      - title: 'Crypto Expo Dubai'
+        description: Join the Premier Cryptocurrency Event
+        location: Dubai
+        online: false
+        href: 'https://cryptoexpodubai.com'
+        image: '/images/events/crypto-expo.png'
+        start_date: '2022-10-05'
+        end_date: '2022-10-06'
+
+      - title: 'World Blockchain Summit'
+        description:
+          World Blockchain Summit is a global series of elite gatherings that take place in 19+ destinations across the
+          world.
+        location: Dubai
+        online: false
+        href: 'https://worldblockchainsummit.com/dubai/index'
+        image: '/images/events/blockchain-summit.png'
+        start_date: '2022-10-17'
+        end_date: '2022-10-19'
+
+      - title: 'NFT San Francisco'
+        description:
+          The conference will be the first of its kind in the Bay Area and aims to bring together a diverse group of NFT
+          community members, including artists, investors, and entrepreneurs.
+        location: San Francisco
+        online: true
+        href: 'https://nftsanfrancisco.xyz'
+        image: '/images/events/nft-sf.png'
+        start_date: '2022-10-31'
+        end_date: '2022-10-31'
+
   - name: Workshops
     href: '/build#workshops'
     link_text: 'Find a Workshop'
