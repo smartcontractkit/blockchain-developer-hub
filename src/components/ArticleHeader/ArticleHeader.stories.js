@@ -14,5 +14,5 @@ Default.args = {
   title: 'Blockchain 101',
   author: 'James Bond',
   role: 'Software Engineer at Chainlink',
-  image: 'https://randomuser.me/api/portraits/men/76.jpg',
+  image: '/logos/ethereum.png',
 };

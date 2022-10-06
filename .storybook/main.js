@@ -49,6 +49,7 @@ module.exports = {
       '@/hooks': path.resolve(__dirname, '../src/hooks'),
       '@/icons': path.resolve(__dirname, '../public/icons'),
       '/icons': path.resolve(__dirname, '../public/icons'),
+      '/images': path.resolve(__dirname, '../public/images'),
       '/logos': path.resolve(__dirname, '../public/logos'),
     };
     return config;

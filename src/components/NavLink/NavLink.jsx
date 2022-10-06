@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Svg from '../Svg';
 
-export default function NavLink({ to, type, icon, iconPosition, text, active, ...props }) {
-  const classes = clsx('btn-sm--extra-bold', styles.navLink, styles[type], {
+export default function NavLink({ to, type, icon, iconPosition, text, active, className, ...props }) {
+  const classes = clsx('btn-sm--extra-bold', className, styles.navLink, styles[type], {
     active: active && type === 'link',
     [styles.iconLeft]: iconPosition === 'left',
     [styles.activeLink]: active,
@@ -36,6 +36,7 @@ NavLink.propTypes = {
   active: PropTypes.bool,
   type: PropTypes.oneOf(['primary', 'secondary', 'outline', 'link']).isRequired,
   icon: PropTypes.string,
+  className: PropTypes.string,
   iconPosition: PropTypes.oneOf(['left', 'right']),
   text: PropTypes.string.isRequired,
 };
