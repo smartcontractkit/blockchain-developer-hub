@@ -3,6 +3,7 @@ title: 'Truflation: Unbiased Economic Data'
 description: Independent censorship resistant financial and economic data on-chain.
 href: case-studies/unbiased-economic-data
 image: '/posts/internal-case-studies/unbiased-data-1.png'
+tags: 'Market and Data Feeds'
 
 sidebar_title: Case Studies
 sidebar_position: 2
