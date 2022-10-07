@@ -10,14 +10,14 @@ import HeadingHash from '@/components/HeadingHash';
 function BuildPageSection({ name, overview, items, href }) {
   const headingClasses = clsx('subtitle-bold', styles.headings);
   const overviewClasses = clsx('text-md--long', styles.overview);
-  const id = name.replace(' ', '').toLowerCase();
+  const id = name.replace(/[" "]/g, '').toLowerCase();
   const [shareItem, setShareItem] = useState(null);
 
   return (
     <div className={styles.mainContent} id={id}>
       <h1 className={headingClasses}>
         <HeadingHash to={href} />
-        {name}
+        <a href={href}>{name}</a>
       </h1>
       {overview && <p className={overviewClasses}>{overview}</p>}
       {items.length ? (

@@ -17,8 +17,8 @@ As is the `case` with any software workflow, you must ensure that your smart con
 development and test environments (testnets), but in addition, you must be aware of common attack types and the
 solutions and best practices that can be used to mitigate attacks and help you deploy secure smart contracts.
 
-In addition to the tools listed in the ecosystem map, it’s important to be familiar with the most common attack types.
-These include;
+In addition to the tools listed in the Blockchain Ecosystem, it’s important to be familiar with the most common attack
+types. These include;
 
 - Re-entrancy
 - Source of randomness

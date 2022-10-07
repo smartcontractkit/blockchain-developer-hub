@@ -5,8 +5,11 @@ items:
   - name: Learn
     href: /learn
 
-  - name: Ecosystem Map
+  - name: Blockchain Ecosystem
     href: /ecosystem-map
+
+  - name: Case Studies
+    href: /case-studies
 
   - name: Build
     href: /build

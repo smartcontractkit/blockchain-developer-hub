@@ -5,7 +5,7 @@ import styles from './HomePageImproveSkills.module.css';
 import clsx from 'clsx';
 
 function HomePageImproveSkills() {
-  const data = ['Hackathon', 'Workshop'];
+  const data = ['Hackathons', 'Workshops'];
 
   return (
     <section className={styles.container}>

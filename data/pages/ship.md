@@ -23,9 +23,8 @@ give you the chance to participate in Web3.
 - **Use boring solutions**. Dan McKinley has some wise words for us in his
   [Choose Boring Technology](https://mcfunley.com/choose-boring-technology) post. If you come across a problem while
   building your dApp, it’s likely that others before you have come across it and have found a solution that works well.
-  To iterate faster, choose those solutions. The
-  [Ecosystem Map](https://www.figma.com/proto/U6iAHSsDlqoJfOaNwRigeO/Ecosystem-Tools-Map?page-id=0%3A1&node-id=2%3A1242&viewport=264%2C48%2C0.68&scaling=scale-down)
-  is a great place to learn about all the products in the blockchain space.
+  To iterate faster, choose those solutions. The [Blockchain Ecosystem](https://ecosystem.blockchain.education) is a
+  great place to learn about all the products in the blockchain space.
 
 ## Stack
 
@@ -64,8 +63,8 @@ As is the case with any software workflow, you must ensure that your smart contr
 development and test environments (testnets), but in addition, you must be aware of common attack types and the
 solutions and best practices that can be used to mitigate attacks and help you deploy secure smart contracts.
 
-In addition to the tools listed in the ecosystem map, it’s important to be familiar with the most common attack types.
-These include;
+In addition to the tools listed in the Blockchain Ecosystem, it’s important to be familiar with the most common attack
+types. These include;
 
 - Re-entrancy
 - Source of randomness

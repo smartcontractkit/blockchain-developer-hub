@@ -31,9 +31,10 @@ function Card({
   const footerClasses = clsx('caption--semi-bold', styles.footer);
   const hasDate = end_date && start_date;
   const showFooter = online || location || on_demand || hasDate;
+  const itsExternalLink = href.startsWith('https://') || href.startsWith('http://') ? true : false;
 
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a href={href} target={itsExternalLink ? '_blank' : null} rel="noopener noreferrer">
       <div className={classes}>
         {image && (
           <div className={styles.header}>

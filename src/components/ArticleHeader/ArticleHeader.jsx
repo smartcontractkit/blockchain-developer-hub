@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import styles from './ArticleHeader.module.css';
 
-function ArticleHeader({ datetime, title, image, author, role }) {
+function ArticleHeader({ datetime, title, image, author, role, banner }) {
   const publishDateClasses = clsx('body-short-02', styles.publishDate);
   const authorNameClasses = clsx('body-short-01--bold', styles.author__name);
   const authorRoleClasses = clsx('body-short-02', styles.author__role);
@@ -31,6 +31,11 @@ function ArticleHeader({ datetime, title, image, author, role }) {
           </div>
         </div>
       )}
+      {banner && (
+        <div className={styles.banner}>
+          <Image src={banner} layout="fill" alt={`${title} image`} />
+        </div>
+      )}
     </section>
   );
 }
@@ -41,6 +46,11 @@ ArticleHeader.propTypes = {
   author: PropTypes.string,
   role: PropTypes.string,
   image: PropTypes.string,
+  banner: PropTypes.string,
+};
+
+ArticleHeader.defaultProps = {
+  banner: '',
 };
 
 export default ArticleHeader;

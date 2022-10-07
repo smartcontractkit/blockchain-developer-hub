@@ -13,13 +13,11 @@ export default function ExploreMapBanner({ isHomePage, description, children }) 
       <p className={descriptionClasses}>{description}</p>
       <div className={clsx(styles.btns, 'btn--extra-bold')}>
         <NavLink
-          to={
-            'https://www.figma.com/proto/U6iAHSsDlqoJfOaNwRigeO/Ecosystem-Tools-Map?page-id=0%3A1&node-id=2%3A1241&viewport=264%2C48%2C0.68&scaling=scale-down'
-          }
+          to={'https://ecosystem.blockchain.education'}
           target="_blank"
           rel="noopener noreferrer"
           type="primary"
-          text={'Explore Ecosystem'}
+          text={'Blockchain Ecosystem'}
           iconPosition="left"
           icon="grid.svg"
           className="explore"
@@ -30,7 +28,7 @@ export default function ExploreMapBanner({ isHomePage, description, children }) 
             target="_blank"
             rel="noopener noreferrer"
             type="outline"
-            text={'How to become a blockchain engineer'}
+            text={'How to become a blockchain developer'}
             iconPosition="left"
             icon="fork.svg"
             className={styles.blockchain}

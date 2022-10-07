@@ -41,7 +41,7 @@
   text-decoration: none;
   user-select: none;
   width: 125px;
-height: 40px;
+  height: 40px;
 }
 
 .logo img {
@@ -164,6 +164,7 @@ height: 40px;
   .githublogo {
     display: flex;
     position: relative;
+    right: 0;
   }
 
 }

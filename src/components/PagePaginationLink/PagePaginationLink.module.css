@@ -47,3 +47,9 @@
   border: 1px solid var(--primary-500);
   background-color: var(--white-120);
 }
+.text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
