@@ -15,7 +15,7 @@ function HomePageImproveSkills() {
             <span>Want to</span> test your skills, <span>and ask questions later?</span>
           </h3>
           <div className={clsx('text-lg--long', styles.description)}>
-            Improve skills on the field by gathering with cryto community members
+            Improve your skills by gathering with blockchain community members.
           </div>
         </div>
         <div className={styles.categories}>
