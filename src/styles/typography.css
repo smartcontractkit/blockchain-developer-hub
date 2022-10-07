@@ -170,7 +170,9 @@
 }
 
 .body-short-01--bold, 
-.body-short-02--bold {
+.body-short-02--bold,
+.body-short-03, 
+.body-long-03 {
   font-weight: 600;
 }
 
