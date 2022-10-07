@@ -8,7 +8,6 @@
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  flex: 1;
 }
 .card_heading {
   padding: 1rem 1rem 0;
@@ -33,7 +32,13 @@
 .card_image {
   position: relative;
   width: 100%;
-  min-height: 12.5rem;
+  height: 12.5rem;
   margin-top: 3.75rem;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex: 1;
+  }
 }
