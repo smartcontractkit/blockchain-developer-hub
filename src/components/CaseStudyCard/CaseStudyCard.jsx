@@ -13,23 +13,25 @@ export default function CaseStudyCard({ tags, image, title, href }) {
   const itsExternalLink = href.startsWith('https://') || href.startsWith('http://') ? true : false;
 
   return (
-    <Link href={href} passHref>
-      <a className={styles.card} target={itsExternalLink ? '_blank' : null} rel="noopener noreferrer">
-        <div className={styles.card_heading}>
-          <div className={styles.tags}>
-            {tagLists.map((tag, index) => (
-              <span className={tagClasses} key={index}>
-                {tag}
-              </span>
-            ))}
+    <li className={styles.card}>
+      <Link href={href} passHref>
+        <a target={itsExternalLink ? '_blank' : null} rel="noopener noreferrer">
+          <div className={styles.card_heading}>
+            <div className={styles.tags}>
+              {tagLists.map((tag, index) => (
+                <span className={tagClasses} key={index}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <div className={titleClasses}>{title}</div>
           </div>
-          <div className={titleClasses}>{title}</div>
-        </div>
-        <div className={styles.card_image}>
-          <Image src={image} alt="case image" layout="fill" />
-        </div>
-      </a>
-    </Link>
+          <div className={styles.card_image}>
+            <Image src={image} alt="case image" layout="fill" />
+          </div>
+        </a>
+      </Link>
+    </li>
   );
 }
 

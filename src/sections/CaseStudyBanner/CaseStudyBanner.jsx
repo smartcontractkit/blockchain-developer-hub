@@ -22,7 +22,7 @@ export default function CaseStudyBanner({ internal_case_studies }) {
       <div className={styles.content_wrapper}>
         <div className={styles.content}>
           <div className={styles.info}>
-            <h4 className={headingClasses}>Seeking inspiration? </h4>
+            <h3 className={headingClasses}>Seeking inspiration? </h3>
             <div className={descriptionClasses}>
               Learn why and how other developers have used the web to create amazing web experiences for their users.
             </div>
@@ -36,11 +36,11 @@ export default function CaseStudyBanner({ internal_case_studies }) {
               className={styles.cases_btn}
             />
           </div>
-          <div className={styles.cards}>
+          <ul className={styles.cards}>
             {cases.map(({ title, href, image, tags }, index) => (
               <CaseStudyCard key={index} tags={tags} title={title} href={href} image={image} />
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </section>
