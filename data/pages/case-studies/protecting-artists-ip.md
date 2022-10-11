@@ -5,6 +5,7 @@ description:
   building catalogs of NFT digital music.
 href: case-studies/protecting-artists-ip
 image: '/posts/internal-case-studies/artists-ip-1.png'
+tags: 'Music, NFT'
 
 sidebar_title: Case Studies
 sidebar_position: 1

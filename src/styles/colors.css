@@ -70,9 +70,13 @@
   --pink-gradient-40: linear-gradient(90deg, rgba(255, 66, 224, 0.4) 0%, rgba(94, 13, 135, 0.4) 100%);
   --pink-gradient-100:  linear-gradient(90deg, #FF42E0 0%, #7811FF 100%);
   --pink-gradient-200: linear-gradient(90deg, #FF42E0 0%, #4D0EFF 100%);
-
-
+  
+  
   --bg-gradient: radial-gradient(57.03% 57.03% at 50% 0%, rgba(202, 255, 130, 0.1) 0%, rgba(55, 166, 103, 0.016) 100%);
+  --bg-gradient-2: radial-gradient(50% 50% at 50% 50%, rgba(202, 255, 130, 0.3) 0%, rgba(8, 91, 76, 0) 100%), #141819;
+  --bg-gradient-3: radial-gradient(43.26% 43.26% at 49.62% 100.29%, rgba(255, 130, 242, 0.2) 0%, rgba(150, 55, 166, 0.032) 100%);
+
+  --green-box-shadow: 0px 0px 12px rgba(178, 255, 66, 0.48), 0px 2px 48px rgba(178, 255, 66, 0.16);
 
   /* Old design Colors starts here */
 
