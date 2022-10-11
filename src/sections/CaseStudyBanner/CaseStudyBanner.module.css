@@ -27,6 +27,7 @@
   flex-flow: row wrap;
   gap: 1.5rem;
   flex: 1;
+  padding-left: 0;
 }
 
 .info {
