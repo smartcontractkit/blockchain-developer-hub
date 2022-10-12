@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  position: fixed;
+  bottom: -10rem;
+  right: 0;
+  left: 0;
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: var(--dark-green-800);
+  transition: bottom 0.3s, background-color 0.3s ease-in-out;
+}
+
+.active {
+  bottom: 0;
+}
+
+.success {
+  background: var(--green-500);
+  color: var(--dark-green-900);
+}
+
+.fail {
+  background: var(--error-500-color);
+}

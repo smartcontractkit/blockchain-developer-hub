@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     if (req.method === 'POST') {
       // Validate request body
       if (!req.body.email) {
-        res.status(400).send('Missing email');
+        res.status(400).send({ message: 'Missing email', status: 400 });
         return;
       }
 
@@ -15,7 +15,7 @@ export default async function handler(req, res) {
       const emailRegex =
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       if (!emailRegex.test(req.body.email)) {
-        res.status(400).send('Invalid email');
+        res.status(400).send({ message: 'Invalid Email Address', status: 400 });
         return;
       }
 
@@ -36,7 +36,12 @@ export default async function handler(req, res) {
           let data = {};
           if (response.status === 200) {
             data = {
-              message: 'Subscribed',
+              message: 'Subscription Successful',
+              status: response.status,
+            };
+          } else if (response.status === 409) {
+            data = {
+              message: 'Email already subscribed',
               status: response.status,
             };
           } else {
