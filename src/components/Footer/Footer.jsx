@@ -5,8 +5,9 @@ import Logo from '@/icons/logo.svg';
 import Notification from '@/components/Notification';
 import { useState } from 'react';
 import subscribeTo from '@/helpers/subscribeTo';
+import PropTypes from 'prop-types';
 
-function Footer() {
+function Footer({ showNewsLetter }) {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
@@ -58,23 +59,25 @@ function Footer() {
         </div>
         <div className={styles.footer_bottom}>
           <p className={clsx('text-md--short', styles.copyright)}>{new Date().getFullYear()} @Blockchain Education</p>
-          <div className={styles.sub}>
-            <input
-              onChange={input}
-              onKeyUp={keyPress}
-              value={email}
-              className={styles.sub_input}
-              type="text"
-              placeholder="Your Email Address"
-            />
-            <button
-              onClick={sendSubscription}
-              disabled={sending || !email}
-              className={clsx(styles.sub_btn, 'body-short-03')}
-            >
-              {sending ? 'Sending...' : 'Subscribe'}
-            </button>
-          </div>
+          {showNewsLetter && (
+            <div className={styles.sub}>
+              <input
+                onChange={input}
+                onKeyUp={keyPress}
+                value={email}
+                className={styles.sub_input}
+                type="text"
+                placeholder="Your Email Address"
+              />
+              <button
+                onClick={sendSubscription}
+                disabled={sending || !email}
+                className={clsx(styles.sub_btn, 'body-short-03')}
+              >
+                {sending ? 'Sending...' : 'Subscribe'}
+              </button>
+            </div>
+          )}
         </div>
       </div>
       <Notification isActive={showNotification} message={message} type={status} />
@@ -82,4 +85,11 @@ function Footer() {
   );
 }
 
+Footer.propTypes = {
+  showNewsLetter: PropTypes.bool,
+};
+
+Footer.defaultProps = {
+  showNewsLetter: false,
+};
 export default Footer;
