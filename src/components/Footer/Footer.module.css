@@ -1,13 +1,121 @@
 .container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 4rem;
-    gap: .75rem;
+    padding: 4rem 1.5rem 2rem;
     background: var(--bg);
+    position: relative;
+}
+
+.footer_heading {
+    font-weight: 800;
+    color: var(--pink-300);
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.footer_description {
+    color: var(--primary-50);
+    line-height: 170%;
+}
+
+.container_wrapper {
+    width: 100%;
+    max-width: var(--xl);
+    margin: 0 auto;
 }
 
 .copyright {
     color: var(--primary-500);
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer_top, .footer_bottom, .sub {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.footer_bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.footer_top {
+    margin-bottom: 2.5rem;
+}
+
+.sub {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.sub .sub_input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--primary-300);
+    padding: 0.75rem 0.5rem;
+    background: transparent;
+    color: var(--white);
+    width: 100%;
+}
+
+.sub_input:focus {
+    border-bottom-color: var(--green-400);
+}
+
+.sub_btn {
+    background-color: var(--pink-400);
+    color: var(--pink-900);
+    border-radius: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: none;
+    padding: 0.8125rem 1.25rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sub_btn:hover {
+    background-color: var(--pink-500);
+    box-shadow: var(--pink-box-shadow);
+}
+.sub_btn:disabled {
+    cursor: not-allowed;
+    background-color: var(--pink-400);
+}
+
+@media (min-width: 768px) {
+    .sub .sub_input, .sub_btn {
+        flex: 1;
+    }
+
+    .footer_description {
+        width: 385px;
+    }
+}
+@media (min-width: 1024px) {
+    .copyright {
+        width: unset;
+        margin-top: 0;
+    }
+    .footer_bottom {
+        flex-direction: row;
+    }
+    .sub .sub_input, .sub_btn {
+        flex: unset;
+        width: unset;
+    }
+    .sub .sub_input {
+        width: 204px;
+    }
+    
+     .footer_description {
+        width: 340px;
+    }
 }
