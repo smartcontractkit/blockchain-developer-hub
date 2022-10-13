@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 export default function DefaultLayout({ children }) {
   const { pathname } = useRouter();
   const [isSticky, setIsSticky] = useState(false);
-  const [showNewsLetter, setShowNewsLetter] = useState(false);
+
   useEffect(() => {
     const defaultNavbarPathNames = {
       home: '/',
@@ -22,14 +22,6 @@ export default function DefaultLayout({ children }) {
     return () => setIsSticky(true);
   }, [pathname, isSticky]);
 
-  useEffect(() => {
-    fetch('api/getenv')
-      .then((data) => data.json())
-      .then((data) => {
-        setShowNewsLetter(data.hasEnv);
-      })
-      .catch(() => setShowNewsLetter(false));
-  }, []);
   return (
     <>
       <Head>
@@ -41,7 +33,7 @@ export default function DefaultLayout({ children }) {
       </Head>
       <NavBar isSticky={isSticky} />
       <main>{children}</main>
-      <Footer showNewsLetter={showNewsLetter} />
+      <Footer />
     </>
   );
 }

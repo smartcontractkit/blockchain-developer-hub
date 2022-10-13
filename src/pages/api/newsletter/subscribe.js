@@ -56,11 +56,11 @@ export default async function handler(req, res) {
           res.status(500).send({ message: 'An error has occured, please try again', status: 500, ...error });
         });
     } else {
-      res.status(405).send({ message: 'Only POST requests allowed', status: 405 });
+      res.status(405).send({ message: 'An error occurred', status: 405 });
     }
   } else {
     res.status(404).send({
-      message: 'access key or api url missing',
+      message: 'An error occurred',
       status: 404,
     });
   }
