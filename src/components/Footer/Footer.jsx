@@ -36,9 +36,9 @@ function Footer() {
     setTimeout(() => resetNotification(), 3000);
   };
 
-  const input = (e) => setEmail(e.target.value);
+  const handleInput = (e) => setEmail(e.target.value);
 
-  const keyPress = (e) => e.key === 'Enter' && email && sendSubscription();
+  const handleKeyPress = (e) => e.key === 'Enter' && email && sendSubscription();
 
   return (
     <footer className={styles.container}>
@@ -60,8 +60,8 @@ function Footer() {
           <p className={clsx('text-md--short', styles.copyright)}>{new Date().getFullYear()} @Blockchain Education</p>
           <div className={styles.sub}>
             <input
-              onChange={input}
-              onKeyUp={keyPress}
+              onChange={handleInput}
+              onKeyUp={handleKeyPress}
               value={email}
               className={styles.sub_input}
               type="text"
