@@ -431,6 +431,78 @@ categories:
         start_date: '2022-10-14'
         end_date: '2022-11-21'
 
+      - title: 'Web3 Stack Hack'
+        description: Create applications powered by utilizing a layer of distributed storage.
+        prize: $15,000
+        online: true
+        href: 'https://web3-stack-hack.devpost.com/'
+        image: '/images/hackathons/web3-stack.png'
+        start_date: '2022-10-21'
+        end_date: '2022-12-06'
+
+      - title: 'Ultra Uniq NFT PFP Hackathon'
+        description:
+          Create a collection of awesome art and have it deployed as Uniqs on Ultra's amazing, new Uniq Marketplace!
+        prize: $30,000
+        online: true
+        href: 'https://ultrauniqhackathon.devpost.com/'
+        image: '/images/hackathons/ultra-nft.png'
+        start_date: '2022-10-03'
+        end_date: '2022-11-07'
+
+      - title: 'XDC DeFi Hackathon'
+        description: Build it on XDC. Build your dream DeFi project on XDC Network
+        prize: $50,000
+        online: true
+        href: 'https://xdc.devpost.com/'
+        image: '/images/hackathons/xdc-defi.png'
+        start_date: '2022-10-11'
+        end_date: '2022-12-19'
+
+      - title: 'Zero-Knowledge Proof Hackathon'
+        description:
+          Bitcoin has been associated only with simple payments. But it can also run arbitrarily complex smart
+          contracts, just as other blockchains, and do so more efficiently.
+        prize: $45,000
+        online: true
+        href: 'https://bsvhackathon.devpost.com/'
+        image: '/images/hackathons/zero-hackathon.png'
+        start_date: '2022-11-02'
+        end_date: '2022-12-02'
+
+      - title: 'HackOnChain'
+        description:
+          Web3 Hackathon backed by the best protocols. Benefit from free admission to NBX - the biggest blockchain
+          conference in Europe.
+        prize: $36,000
+        online: true
+        href: 'https://hackonchain.devpost.com/'
+        image: '/images/hackathons/hackonchain.png'
+        start_date: '2022-11-23'
+        end_date: '2022-11-24'
+
+      - title: 'Open Web House'
+        description:
+          Open Web House is a two-day offline event focused on software developers from Mexico who want to build web
+          3.0, as well as a space to mentor how to develop a smart contract and +.
+        prize: $1,500
+        online: true
+        href: 'https://open-web-house.devpost.com/'
+        image: '/images/hackathons/open-web.png'
+        start_date: '2022-11-25'
+        end_date: '2022-11-26'
+
+      - title: 'BlockHack Global FE 2022'
+        description:
+          Bridging the gap between entrepreneurs and blockchain technology, promoting growth for blockchain-related
+          projects and ventures
+        prize: $1,900
+        online: true
+        href: 'https://blockhack-global-fe-2022.devpost.com/'
+        image: '/images/hackathons/blockhack.png'
+        start_date: '2022-11-04'
+        end_date: '2022-11-06'
+
   - name: Events
     href: '/build#events'
     overview:
