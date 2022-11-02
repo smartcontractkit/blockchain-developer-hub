@@ -11,6 +11,7 @@
   text-transform: uppercase;
   background-color: var(--dark-green-800);
   transition: bottom 0.3s, background-color 0.3s ease-in-out;
+  z-index: 99999;
 }
 
 .active {
