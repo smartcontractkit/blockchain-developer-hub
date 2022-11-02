@@ -1,41 +1,30 @@
-import styles from './Footer.module.css';
+import NewsLetterTextContent from '@/components/NewsLetterTextContent';
+import React, { useState } from 'react';
+import styles from './HomepageNewsLetter.module.css';
 import clsx from 'clsx';
-import Link from 'next/link';
-import Logo from '@/icons/logo.svg';
 import Notification from '@/components/Notification';
-import { useState } from 'react';
-import NewsLetterTextContent from '../NewsLetterTextContent';
 import useSubscription from '@/hooks/useSubscription';
 
-function Footer() {
+export default function HomepageNewsLetter() {
   const [email, setEmail] = useState('');
   const [sendSubscription, sending, message, status, showNotification] = useSubscription({ email, setEmail });
 
   const handleInput = (e) => setEmail(e.target.value);
 
   const handleKeyPress = (e) => e.key === 'Enter' && email && sendSubscription();
-
   return (
-    <footer className={styles.container}>
-      <div className={styles.container_wrapper}>
-        <div className={styles.footer_top}>
-          <Link href="/">
-            <a className={styles.logo}>
-              <Logo />
-            </a>
-          </Link>
-          <NewsLetterTextContent isHomePage={false} />
-        </div>
-        <div className={styles.footer_bottom}>
-          <p className={clsx('text-md--short', styles.copyright)}>{new Date().getFullYear()} @Blockchain Education</p>
-          <div className={styles.sub}>
+    <div className={styles.container}>
+      <div className={styles.inner_container}>
+        <NewsLetterTextContent isHomePage={true} />
+        <div className={styles.sub}>
+          <div className={styles.sub_container}>
             <input
               onChange={handleInput}
               onKeyUp={handleKeyPress}
               value={email}
               className={styles.sub_input}
               type="text"
-              placeholder="Your Email Address"
+              placeholder="Email Address"
             />
             <button
               onClick={sendSubscription}
@@ -45,11 +34,10 @@ function Footer() {
               {sending ? 'Sending...' : 'Subscribe'}
             </button>
           </div>
+          <div className={clsx(styles.no_spam, 'body-short-02')}>No spam. Unsubscribe any time</div>
         </div>
       </div>
       <Notification isActive={showNotification} message={message} type={status} />
-    </footer>
+    </div>
   );
 }
-
-export default Footer;
