@@ -1,9 +1,9 @@
 /* eslint-disable no-useless-escape */
 
 export default async function handler(req, res) {
-  const { NEXT_HUBSPOT_API_KEY, NEXT_HUBSPOT_API_URL } = process.env;
+  const { NEXT_HUBSPOT_FORM_ID, NEXT_HUBSPOT_PORTAL_ID, NEXT_HUBSPOT_API_URL } = process.env;
 
-  if (NEXT_HUBSPOT_API_KEY && NEXT_HUBSPOT_API_URL) {
+  if (NEXT_HUBSPOT_FORM_ID && NEXT_HUBSPOT_PORTAL_ID && NEXT_HUBSPOT_API_URL) {
     if (req.method === 'POST') {
       // Validate request body
       if (!req.body.email) {
@@ -20,16 +20,20 @@ export default async function handler(req, res) {
       }
 
       // Subscribe user
-      await fetch(NEXT_HUBSPOT_API_URL, {
+      await fetch(`${NEXT_HUBSPOT_API_URL}/${NEXT_HUBSPOT_PORTAL_ID}/${NEXT_HUBSPOT_FORM_ID}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${NEXT_HUBSPOT_API_KEY}`,
         },
         redirect: 'follow',
         referrerPolicy: 'no-referrer',
         body: JSON.stringify({
-          properties: [{ property: 'email', value: req.body.email }],
+          fields: [
+            {
+              name: 'email',
+              value: req.body.email,
+            },
+          ],
         }),
       })
         .then((response) => {
