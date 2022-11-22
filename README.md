@@ -95,9 +95,9 @@ sidebar_position: 2
 - **sidebar_position**: Where the link will be positions on the side bar when you are on the blog pag.
 - **title**: Used when the card is case study is generated for display on the case studies page and also serves as blog
   heading.
-- **href**: same as title
-- **description**: same as title
-- **image**: same as title
+- **href**: same as title.
+- **description**: same as title.
+- **image**: same as title.
 
 Above you notice `deep-learning-case` in the href, it is also the name of the markdown file.
 
