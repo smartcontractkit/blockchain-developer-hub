@@ -503,6 +503,33 @@ categories:
         start_date: '2022-11-04'
         end_date: '2022-11-06'
 
+      - title: 'Web3 Hackathon Puerto Rico 2.0'
+        description: Driving the mass adoption of Web3 technologies in Puerto Rico.
+        prize: $39,000
+        online: true
+        href: 'https://web3-hackathon-pr-2-0.devpost.com/'
+        image: '/images/hackathons/puerto-rico.png'
+        start_date: '2022-11-11'
+        end_date: '2022-12-04'
+
+      - title: 'Castlethon 4.0'
+        description: Innovation and entrepreneurship on the metaverse.
+        prize: $1,000
+        online: true
+        href: 'https://castlethon-4.devpost.com/'
+        image: '/images/hackathons/castle.png'
+        start_date: '2022-12-16'
+        end_date: '2022-12-18'
+
+      - title: 'Hack The League Chapter 2'
+        description: Heroes Reborn
+        prize: $145,000
+        online: true
+        href: 'https://hack-the-league-chapter-2.devpost.com/'
+        image: '/images/hackathons/league-2.png'
+        start_date: '2023-01-21'
+        end_date: '2023-01-22'
+
   - name: Events
     href: '/build#events'
     overview:
