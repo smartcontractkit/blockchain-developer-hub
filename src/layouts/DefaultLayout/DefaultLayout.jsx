@@ -4,21 +4,28 @@ import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import Footer from '@/components/Footer';
+import HomeFooter from '@/components/Footer/HomeFooter';
 
 export default function DefaultLayout({ children }) {
   const { pathname } = useRouter();
   const [isSticky, setIsSticky] = useState(false);
+  const [showHomeFooter, setShowHomeFooter] = useState(false);
+
   useEffect(() => {
     const defaultNavbarPathNames = {
       home: '/',
     };
     if (pathname === defaultNavbarPathNames.home) {
       setIsSticky(false);
+      setShowHomeFooter(true);
     } else if (!isSticky) {
       setIsSticky(true);
+      setShowHomeFooter(false);
     }
+
     return () => setIsSticky(true);
-  }, [pathname, isSticky]);
+  }, [pathname, isSticky, showHomeFooter]);
+
   return (
     <>
       <Head>
@@ -30,7 +37,7 @@ export default function DefaultLayout({ children }) {
       </Head>
       <NavBar isSticky={isSticky} />
       <main>{children}</main>
-      <Footer />
+      {showHomeFooter ? <HomeFooter /> : <Footer />}
     </>
   );
 }
