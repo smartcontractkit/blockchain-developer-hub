@@ -530,6 +530,58 @@ categories:
         start_date: '2023-01-21'
         end_date: '2023-01-22'
 
+      - title: 'Hackathon X'
+        description: Create a crypto app with its own unique voting for changes feature
+        prize: TBD
+        online: true
+        href: 'https://x-hackathon.devpost.com/'
+        image: '/images/hackathons/hackathon-x.png'
+        start_date: '2022-12-30'
+        end_date: '2023-02-01'
+
+      - title: 'Icon Hyperbuild'
+        description:
+          Transcend blockchain barriers and build your dream cross-chain project using one of the world’s most connected
+          networks, ICON.
+        prize: $40,000
+        online: true
+        href: 'https://iconhyperbuild.devpost.com/'
+        image: '/images/hackathons/icon-hack.png'
+        start_date: '2023-01-26'
+        end_date: '2023-03-16'
+
+      - title: 'Ready Player 3'
+        description:
+          Join thousands of other builders for thirdweb's Gaming Hackathon! Build innovative web3 games with thirdweb's
+          GamingKit and UnitySDK. Win up to $15,000 in prizes!
+        prize: $15,000
+        online: true
+        href: 'https://readyplayer3.devpost.com/'
+        image: '/images/hackathons/player3-hack.png'
+        start_date: '2023-01-16'
+        end_date: '2023-01-31'
+
+      - title: 'Hacka-Soroban-athon'
+        description:
+          Experiment, write smart contracts, build tools, and get familiar with Soroban's developer environment.
+        prize: TBD
+        online: true
+        href: 'https://hacka-soroban-athon.devpost.com/'
+        image: '/images/hackathons/soroban-hack.png'
+        start_date: '2023-01-13'
+        end_date: '2023-01-22'
+
+      - title: 'Filecoin Space Warp'
+        description:
+          Space Warp is a jam-packed program leading up to the launch of Filecoin’s Virtual Machine on mainnet in Feb
+          2023.
+        prize: $150,000
+        online: true
+        href: 'https://spacewarp.fvm.dev/'
+        image: '/images/hackathons/space-hack.png'
+        start_date: '2023-01-20'
+        end_date: '2023-02-10'
+
   - name: Events
     href: '/build#events'
     overview:
@@ -538,8 +590,8 @@ categories:
     items:
       - title: 'ETH Community Conference 5'
         description:
-          The Ethereum Community Conference (EthCC) is the largest annual European Ethereum event focused on technology
-          and community. Three intense days of conferences, networking and learning.
+          The Ethereum Communitcd y Conference (EthCC) is the largest annual European Ethereum event focused on
+          technology and community. Three intense days of conferences, networking and learning.
         location: Paris - France
         online: false
         href: 'https://ethcc.io/'
@@ -688,6 +740,15 @@ categories:
         image: '/images/events/nft-sf.png'
         start_date: '2022-10-31'
         end_date: '2022-10-31'
+
+      - title: 'ETH Denver 2023'
+        description: WELCOME TO THE LARGEST AND LONGEST RUNNING ETH EVENT IN THE WORLD
+        location: Denver
+        online: true
+        href: 'https://www.ethdenver.com/'
+        image: '/images/events/denver.png'
+        start_date: '2023-02-24'
+        end_date: '2023-03-05'
 
   - name: Workshops
     href: '/build#workshops'
