@@ -573,14 +573,69 @@ categories:
 
       - title: 'Filecoin Space Warp'
         description:
-          Space Warp is a jam-packed program leading up to the launch of Filecoin’s Virtual Machine on mainnet in Feb
-          2023.
+          Space Warp is a jam-packed program leading up to the launch of Filecoin’s Virtual Machine on mainnet in Feb 2023.
         prize: $150,000
         online: true
         href: 'https://spacewarp.fvm.dev/'
         image: '/images/hackathons/space-hack.png'
         start_date: '2023-01-20'
         end_date: '2023-02-10'
+      
+      - title: 'Fantom Hackathon Q1 2023'
+        description:
+          Create innovative, scalable, and functional apps on Fantom.
+        prize: $50,000
+        online: true
+        href: 'https://fantomq12023.devpost.com/'
+        image: '/images/hackathons/fantom-hack.png'
+        start_date: '2023-01-25'
+        end_date: '2023-03-08'
+      
+      - title: 'Hackfest - Advaita'
+        description: Build Great, Learn Larger
+        prize: $2150
+        online: true
+        href: 'https://hackfest-advaita.devpost.com/'
+        image: '/images/hackathons/hackfest.png'
+        start_date: '2023-01-23'
+        end_date: '2023-02-10'
+      
+      - title: '#SHR Hack 2023'
+        description: Create identity solutions that would affect your day-to-day lives on campus.
+        prize: $6,750
+        online: true
+        href: 'https://shrhack2023.devpost.com/'
+        image: '/images/hackathons/shr-hack.png'
+        start_date: '2023-02-06'
+        end_date: '2023-03-06'
+      
+      - title: 'Building on Bitcoin Hackathon'
+        description: A Smart Contract Challenge that lets you experiment and get familiar with Clarity's developer environment.
+        prize: $1,750
+        online: true
+        href: 'https://building-on-btc-hack.devpost.com/'
+        image: '/images/hackathons/clarity-hack.png'
+        start_date: '2023-02-24'
+        end_date: '2023-03-08'
+      
+      - title: 'Open Web House GDL'
+        description: OWH es un Hackathon Presencial de 3 días enfocado a desarrolladores de software de Latonoamérica que quieran construir en WEB 3, desarrollar Smart Contracts, DApps, y mucho más.
+        prize: $3,500
+        online: true
+        href: 'https://open-web-house-gdl.devpost.com/'
+        image: '/images/hackathons/openweb-hack.png'
+        start_date: '2023-03-06'
+        end_date: '2023-03-08'
+      
+      - title: 'TreeHack 2023'
+        description: Stanford University's Premier Hackathon - Join us to build apps, machines, and communities on Stanford Campus.
+        prize: $109,030
+        online: true
+        href: 'https://treehacks-2023.devpost.com/'
+        image: '/images/hackathons/treehack.png'
+        start_date: '2023-02-17'
+        end_date: '2023-02-19'
+
 
   - name: Events
     href: '/build#events'
