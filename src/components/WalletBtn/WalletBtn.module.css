@@ -20,7 +20,7 @@
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-iteration-count: infinite;
   animation-fill-mode: backwards;
-  box-shadow: 0px 0px 50px -10px #ccc;
+  box-shadow: 0px 0px 50px -10px #7fe89d;
 }
 
 .wallet_btn_dropdown img {
@@ -31,12 +31,18 @@
 
 @keyframes blinks {
   0% {
-    box-shadow: 0px 0px 10px -10px #ccc;
+    box-shadow: 0px 0px 10px -10px #7fe89d;
+  }
+  25% {
+    box-shadow: 0px 0px 20px -10px #7fe89d;
   }
   50% {
-    box-shadow: 0px 0px 30px -10px #ccc;
+    box-shadow: 0px 0px 30px -10px #7fe89d;
   }
-  50% {
-    box-shadow: 0px 0px 50px -10px #ccc;
+  75% {
+    box-shadow: 0px 0px 40px -10px #7fe89d;
+  }
+  100% {
+    box-shadow: 0px 0px 50px -10px #7fe89d;
   }
 }
