@@ -4,15 +4,18 @@ import SEO from '../next-seo.config';
 import PropTypes from 'prop-types';
 import DefaultLayout from '@/layouts/DefaultLayout';
 import useGoogleTagManager from '@/hooks/useGoogleTagManager';
+import SolanaWalletProvider from 'src/context/SolanaWalletProvider';
 
 function MyApp({ Component, pageProps }) {
   useGoogleTagManager(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TRACKING);
 
   return (
-    <DefaultLayout>
-      <DefaultSeo {...SEO} />
-      <Component {...pageProps} />
-    </DefaultLayout>
+    <SolanaWalletProvider>
+      <DefaultLayout>
+        <DefaultSeo {...SEO} />
+        <Component {...pageProps} />
+      </DefaultLayout>
+    </SolanaWalletProvider>
   );
 }
 
