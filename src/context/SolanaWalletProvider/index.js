@@ -12,7 +12,6 @@ const SolanaWalletProvider = ({ children }) => {
   // The network can be set to process.env.NEXT_SOLANA_CLUSTER_NETWORK, 'testnet', or 'mainnet-beta'.
   const network = process.env.NEXT_SOLANA_CLUSTER_NETWORK;
 
-  // You can also provide a custom RPC endpoint.
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
   const wallets = useMemo(
