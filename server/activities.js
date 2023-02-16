@@ -1,5 +1,5 @@
-export const user_activitie = {
-  favourites: 'favourite',
+export const user_activities = {
+  favourites: 'favourites',
   courses: 'courses',
   hackathons: 'hackathons',
 };

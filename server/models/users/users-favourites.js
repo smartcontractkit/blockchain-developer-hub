@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema,
   ObjectId = Schema.ObjectId;
 
-const USERSFAVOURITE = new Schema({
+const USERSFAVOURITES = new Schema({
   userID: {
     type: ObjectId,
     required: true,
@@ -17,12 +17,12 @@ const USERSFAVOURITE = new Schema({
     type: Array,
     default: [],
   },
-  hackatons: {
+  hackathons: {
     type: Array,
     default: [],
   },
 });
 
-const dbUSERSFAVOURITE = mongoose.model('usersfavourites', USERSFAVOURITE);
+const dbUSERSFAVOURITES = mongoose.model('usersfavourites', USERSFAVOURITES);
 
-module.exports = dbUSERSFAVOURITE;
+module.exports = dbUSERSFAVOURITES;

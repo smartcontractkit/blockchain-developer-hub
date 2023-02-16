@@ -17,7 +17,7 @@ const USERSREAD = new Schema({
     type: Array,
     default: [],
   },
-  hackatons: {
+  hackathons: {
     type: Array,
     default: [],
   },
