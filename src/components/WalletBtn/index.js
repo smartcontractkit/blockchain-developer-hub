@@ -31,6 +31,10 @@ const WalletBtn = () => {
     setActive(false);
   }, []);
 
+  const isWalletInstalled = useCallback(() => {
+    return wallet && wallet.readyState === 'Installed';
+  }, [wallet]);
+
   useEffect(() => {
     const listener = (event) => {
       const node = ref.current;
@@ -63,8 +67,8 @@ const WalletBtn = () => {
       >
         {
           <img
-            src={wallet ? wallet.adapter.icon : '/icons/disconnected.svg'}
-            alt={`${wallet ? wallet.adapter.name : 'disconnected'}` + 'image'}
+            src={isWalletInstalled() ? wallet.adapter.icon : '/icons/disconnected.svg'}
+            alt={`${isWalletInstalled() ? wallet.adapter.name : 'disconnected'}` + 'image'}
           />
         }
       </button>
@@ -72,7 +76,7 @@ const WalletBtn = () => {
         {!wallet && (
           <WalletModalBtn className={clsx(styles.btn_connect, 'wallet-adapter-dropdown-list-item')} role="menuitem" />
         )}
-        {!base58 && wallet && (
+        {!base58 && isWalletInstalled() && (
           <WalletConnectBtn className={clsx(styles.btn_connect, 'wallet-adapter-dropdown-list-item')} role="menuitem" />
         )}
         {wallet && base58 && (
