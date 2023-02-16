@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 
 import styles from '@/styles/pages/HomePage.module.css';
 import HomepageNewsLetter from '@/sections/HomepageNewsLetter';
+import WalletBtn from '@/components/WalletBtn';
 
 export default function Home({ internal_case_studies }) {
   return (
@@ -20,6 +21,7 @@ export default function Home({ internal_case_studies }) {
       <HomePageImproveSkillsStories />
       <CaseStudyBanner internal_case_studies={internal_case_studies} />
       <HomepageNewsLetter />
+      <WalletBtn />
     </div>
   );
 }

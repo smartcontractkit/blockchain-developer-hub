@@ -1,0 +1,48 @@
+.dropdown_list {
+  top: unset;
+  bottom: 150%;
+}
+
+.btn_connect {
+  background-color: transparent;
+}
+
+
+.wallet_btn_dropdown {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50vh;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  animation-name: blinks;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  box-shadow: 0px 0px 50px -10px #7fe89d;
+}
+
+.wallet_btn_dropdown img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes blinks {
+  0% {
+    box-shadow: 0px 0px 10px -10px #7fe89d;
+  }
+  25% {
+    box-shadow: 0px 0px 20px -10px #7fe89d;
+  }
+  50% {
+    box-shadow: 0px 0px 30px -10px #7fe89d;
+  }
+  75% {
+    box-shadow: 0px 0px 40px -10px #7fe89d;
+  }
+  100% {
+    box-shadow: 0px 0px 50px -10px #7fe89d;
+  }
+}
