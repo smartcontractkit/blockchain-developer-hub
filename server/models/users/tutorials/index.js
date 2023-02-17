@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema,
   ObjectId = Schema.ObjectId;
 
-const FAVOURITETUTORIALS = new Schema({
+const USERTUTORIALS = new Schema({
   userID: {
     type: ObjectId,
     required: true,
@@ -11,8 +11,12 @@ const FAVOURITETUTORIALS = new Schema({
     type: Array,
     default: [],
   },
+  read: {
+    type: Array,
+    default: [],
+  },
 });
 
-const dbFAVOURITETUTORIALS = mongoose.model('favouritetutorials', FAVOURITETUTORIALS);
+const dbUSERTUTORIALS = mongoose.model('usertutorials', USERTUTORIALS);
 
-module.exports = dbFAVOURITETUTORIALS;
+module.exports = dbUSERTUTORIALS;
