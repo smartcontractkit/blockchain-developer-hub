@@ -21,7 +21,7 @@ export default async function (req, res) {
         }
       );
       if (user) {
-        const courses = await dbUSERTUTORIALS.findOne(
+        const tutorials = await dbUSERTUTORIALS.findOne(
           {
             userID: ObjectId(user._id),
           },
@@ -31,7 +31,7 @@ export default async function (req, res) {
           }
         );
 
-        if (courses) {
+        if (tutorials) {
           const matchesTitle = await dbUSERTUTORIALS.findOne(
             {
               userID: ObjectId(user._id),
@@ -46,14 +46,14 @@ export default async function (req, res) {
               _id: 1,
             }
           );
-
+          //checking for duplicate title
           if (matchesTitle) {
             status = 404;
             resp = {
               message: 'Duplicate title found',
             };
           } else {
-            const result = await courses.updateOne({
+            const result = await tutorials.updateOne({
               $push: {
                 read: {
                   title,
@@ -67,11 +67,12 @@ export default async function (req, res) {
               };
             } else {
               resp = {
-                message: 'Failed to track course',
+                message: 'Failed to track tutorial',
               };
             }
           }
         } else {
+          //Initiate tutorial in case either read or favoutites are all empty
           const result = await new dbUSERTUTORIALS({
             userID: ObjectId(user._id),
             read: [
@@ -88,17 +89,20 @@ export default async function (req, res) {
             };
           } else {
             resp = {
-              message: 'Failed to track course',
+              message: 'Failed to track tutorial',
             };
           }
         }
       } else {
         resp = {
-          message: 'Expected userid and title',
+          message: 'User not found',
         };
       }
-
-      res.status(status).json(resp);
+    } else {
+      resp = {
+        message: 'Expected userid and title',
+      };
     }
+    res.status(status).json(resp);
   }
 }

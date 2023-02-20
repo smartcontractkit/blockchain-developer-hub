@@ -11,37 +11,46 @@ export default async function (req, res) {
   let resp = {};
   if (req.method === 'POST') {
     const { userid, target } = JSON.parse(req.body);
-    const user = await dbUSERS.findOne({ userID: userid }, { _id: 1 });
+    if (userid && target) {
+      const user = await dbUSERS.findOne({ userID: userid }, { _id: 1 });
 
-    if (user) {
-      const courses = await dbUSERTUTORIALS.findOne({ userID: ObjectId(user._id) }, { favourites: 1, read: 1, _id: 0 });
-      if (courses) {
-        let data = {};
-        if (target === user_activities.read) {
-          // only read
-          data = courses.read;
-        } else if (target === user_activities.favourites) {
-          // only favourites
-          data = courses.favourites;
+      if (user) {
+        const courses = await dbUSERTUTORIALS.findOne(
+          { userID: ObjectId(user._id) },
+          { favourites: 1, read: 1, _id: 0 }
+        );
+        if (courses) {
+          let data = {};
+          if (target === user_activities.read) {
+            // only read
+            data = courses.read;
+          } else if (target === user_activities.favourites) {
+            // only favourites
+            data = courses.favourites;
+          } else {
+            // both read and favourites
+            data = courses;
+          }
+          status = 200;
+          resp = {
+            message: 'Ok',
+            data,
+          };
         } else {
-          // both read and favourites
-          data = courses;
+          status = 204;
+          resp = {
+            message: 'Nothing here',
+          };
         }
-        status = 200;
-        resp = {
-          message: 'Ok',
-          data,
-        };
       } else {
-        status = 204;
+        status = 400;
         resp = {
-          message: 'Nothing here',
+          message: 'User not found',
         };
       }
     } else {
-      status = 400;
       resp = {
-        message: 'User not found',
+        message: 'userid and target required',
       };
     }
 

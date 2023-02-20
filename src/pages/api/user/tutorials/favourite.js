@@ -34,7 +34,7 @@ export default async function (req, res) {
               _id: 1,
             }
           );
-
+          //Preventing duplicate titles from being added
           if (matchesTitle && action === 1) {
             status = 404;
             resp = {
@@ -59,6 +59,7 @@ export default async function (req, res) {
               };
             }
           } else if (!matchesTitle && action === 1) {
+            //add title if title does exist
             const result = await courses.updateOne({
               $push: {
                 favourites: { title },
@@ -67,20 +68,21 @@ export default async function (req, res) {
             if (result && result.modifiedCount > 0) {
               status = 200;
               resp = {
-                message: 'Favourite added updated',
+                message: 'Favourite added',
               };
             } else {
               resp = {
-                message: 'Failed to add Favourite course',
+                message: 'Failed to add Favourite tutorial',
               };
             }
           } else {
             status = 404;
             resp = {
-              message: 'Seems ypu are trying to remove a course that does not exist',
+              message: 'Seems you are trying to remove a tutorial that does not exist',
             };
           }
         } else {
+          //Initiate tutorial in case either read or favoutites are all empty
           const result = await new dbUSERTUTORIALS({
             userID: ObjectId(user._id),
             favourites: [{ title }],
@@ -93,17 +95,21 @@ export default async function (req, res) {
             };
           } else {
             resp = {
-              message: 'Failed to add Favourite course',
+              message: 'Failed to add Favourite tutorial',
             };
           }
         }
       } else {
+        status = 404;
         resp = {
-          message: 'Expected userid, title and the action you wanna perform',
+          message: 'User not found',
         };
       }
-
-      res.status(status).json(resp);
+    } else {
+      resp = {
+        message: 'userid, title and action required',
+      };
     }
+    res.status(status).json(resp);
   }
 }
