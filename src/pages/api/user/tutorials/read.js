@@ -72,7 +72,7 @@ export default async function (req, res) {
             }
           }
         } else {
-          //Initiate tutorial in case either read or favoutites are all empty
+          //Initiate tutorial in case either read or favourites are all empty
           const result = await new dbUSERTUTORIALS({
             userID: ObjectId(user._id),
             read: [

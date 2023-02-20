@@ -22,8 +22,8 @@ export default async function (req, res) {
     if (userid && title && action) {
       const user = await dbUSERS.findOne({ userID: userid }, { _id: 1 });
       if (user) {
-        const courses = await dbUSERTUTORIALS.findOne({ userID: ObjectId(user._id) }, { favourites: 1, _id: 1 });
-        if (courses) {
+        const tutorials = await dbUSERTUTORIALS.findOne({ userID: ObjectId(user._id) }, { favourites: 1, _id: 1 });
+        if (tutorials) {
           const matchesTitle = await dbUSERTUTORIALS.findOne(
             {
               userID: ObjectId(user._id),
@@ -42,7 +42,7 @@ export default async function (req, res) {
             };
           } else if (matchesTitle && action === 0) {
             // Remove as favourite
-            const result = await courses.updateOne({
+            const result = await tutorials.updateOne({
               $pull: {
                 favourites: { title },
               },
@@ -60,7 +60,7 @@ export default async function (req, res) {
             }
           } else if (!matchesTitle && action === 1) {
             //add title if title does exist
-            const result = await courses.updateOne({
+            const result = await tutorials.updateOne({
               $push: {
                 favourites: { title },
               },
@@ -82,7 +82,7 @@ export default async function (req, res) {
             };
           }
         } else {
-          //Initiate tutorial in case either read or favoutites are all empty
+          //Initiate tutorial in case either read or favourites are all empty
           const result = await new dbUSERTUTORIALS({
             userID: ObjectId(user._id),
             favourites: [{ title }],

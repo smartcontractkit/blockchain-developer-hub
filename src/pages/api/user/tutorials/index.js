@@ -15,21 +15,21 @@ export default async function (req, res) {
       const user = await dbUSERS.findOne({ userID: userid }, { _id: 1 });
 
       if (user) {
-        const courses = await dbUSERTUTORIALS.findOne(
+        const tutorials = await dbUSERTUTORIALS.findOne(
           { userID: ObjectId(user._id) },
           { favourites: 1, read: 1, _id: 0 }
         );
-        if (courses) {
+        if (tutorials) {
           let data = {};
           if (target === user_activities.read) {
             // only read
-            data = courses.read;
+            data = tutorials.read;
           } else if (target === user_activities.favourites) {
             // only favourites
-            data = courses.favourites;
+            data = tutorials.favourites;
           } else {
             // both read and favourites
-            data = courses;
+            data = tutorials;
           }
           status = 200;
           resp = {
