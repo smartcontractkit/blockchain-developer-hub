@@ -8,11 +8,13 @@ const USERCOURSES = new Schema({
     required: true,
   },
   favourites: {
-    type: Array,
+    type: Array({
+      title: String,
+    }),
     default: [],
   },
   read: {
-    type: Array,
+    type: Array({ title: String }),
     default: [],
   },
 });
