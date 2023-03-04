@@ -636,6 +636,42 @@ categories:
         start_date: '2023-02-17'
         end_date: '2023-02-19'
 
+      - title: 'Sustainable Blockchain Hackathon'
+        description: Bringing together sustainability gurus and developers to build new solutions at the intersection of web3 and the environment!
+        prize: $35,500
+        online: true
+        href: 'https://sbsboston.devpost.com/'
+        image: '/images/hackathons/sustain.png'
+        start_date: '2023-02-20'
+        end_date: '2023-04-02'
+
+      - title: 'ETHDubai x SushiSwap x Mantle Hackathon'
+        description: The Middle-East's biggest Ethereum hackathon
+        prize: $26,500
+        online: true
+        href: 'https://ethdubai-sushiswap-hackathon.devpost.com/'
+        image: '/images/hackathons/eth-dubai.png'
+        start_date: '2023-02-08'
+        end_date: '2023-03-15'
+      
+      - title: 'Scrypto DeFi Challenge'
+        description: Build the next billion dollar decentralized application (dApp), built using Scrypto on Radix
+        prize: $50,000
+        online: true
+        href: 'https://scryptodefi.devpost.com/'
+        image: '/images/hackathons/radix.png'
+        start_date: '2023-02-20'
+        end_date: '2023-03-24'
+      
+      - title: 'Unlocking the Potential of XRP Ledger'
+        description: Build a functional app using the XRPL's powerful features
+        prize: $30,000
+        online: true
+        href: 'https://unlockingxrpl.devpost.com/'
+        image: '/images/hackathons/ledger.png'
+        start_date: '2023-02-15'
+        end_date: '2023-03-24'
+
 
   - name: Events
     href: '/build#events'
