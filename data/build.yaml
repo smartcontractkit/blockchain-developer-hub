@@ -573,24 +573,24 @@ categories:
 
       - title: 'Filecoin Space Warp'
         description:
-          Space Warp is a jam-packed program leading up to the launch of Filecoin’s Virtual Machine on mainnet in Feb 2023.
+          Space Warp is a jam-packed program leading up to the launch of Filecoin’s Virtual Machine on mainnet in Feb
+          2023.
         prize: $150,000
         online: true
         href: 'https://spacewarp.fvm.dev/'
         image: '/images/hackathons/space-hack.png'
         start_date: '2023-01-20'
         end_date: '2023-02-10'
-      
+
       - title: 'Fantom Hackathon Q1 2023'
-        description:
-          Create innovative, scalable, and functional apps on Fantom.
+        description: Create innovative, scalable, and functional apps on Fantom.
         prize: $50,000
         online: true
         href: 'https://fantomq12023.devpost.com/'
         image: '/images/hackathons/fantom-hack.png'
         start_date: '2023-01-25'
         end_date: '2023-03-08'
-      
+
       - title: 'Hackfest - Advaita'
         description: Build Great, Learn Larger
         prize: $2150
@@ -599,7 +599,7 @@ categories:
         image: '/images/hackathons/hackfest.png'
         start_date: '2023-01-23'
         end_date: '2023-02-10'
-      
+
       - title: '#SHR Hack 2023'
         description: Create identity solutions that would affect your day-to-day lives on campus.
         prize: $6,750
@@ -608,27 +608,31 @@ categories:
         image: '/images/hackathons/shr-hack.png'
         start_date: '2023-02-06'
         end_date: '2023-03-06'
-      
+
       - title: 'Building on Bitcoin Hackathon'
-        description: A Smart Contract Challenge that lets you experiment and get familiar with Clarity's developer environment.
+        description:
+          A Smart Contract Challenge that lets you experiment and get familiar with Clarity's developer environment.
         prize: $1,750
         online: true
         href: 'https://building-on-btc-hack.devpost.com/'
         image: '/images/hackathons/clarity-hack.png'
         start_date: '2023-02-24'
         end_date: '2023-03-08'
-      
+
       - title: 'Open Web House GDL'
-        description: OWH es un Hackathon Presencial de 3 días enfocado a desarrolladores de software de Latonoamérica que quieran construir en WEB 3, desarrollar Smart Contracts, DApps, y mucho más.
+        description:
+          OWH es un Hackathon Presencial de 3 días enfocado a desarrolladores de software de Latonoamérica que quieran
+          construir en WEB 3, desarrollar Smart Contracts, DApps, y mucho más.
         prize: $3,500
         online: true
         href: 'https://open-web-house-gdl.devpost.com/'
         image: '/images/hackathons/openweb-hack.png'
         start_date: '2023-03-06'
         end_date: '2023-03-08'
-      
+
       - title: 'TreeHack 2023'
-        description: Stanford University's Premier Hackathon - Join us to build apps, machines, and communities on Stanford Campus.
+        description:
+          Stanford University's Premier Hackathon - Join us to build apps, machines, and communities on Stanford Campus.
         prize: $109,030
         online: true
         href: 'https://treehacks-2023.devpost.com/'
@@ -637,7 +641,9 @@ categories:
         end_date: '2023-02-19'
 
       - title: 'Sustainable Blockchain Hackathon'
-        description: Bringing together sustainability gurus and developers to build new solutions at the intersection of web3 and the environment!
+        description:
+          Bringing together sustainability gurus and developers to build new solutions at the intersection of web3 and
+          the environment!
         prize: $35,500
         online: true
         href: 'https://sbsboston.devpost.com/'
@@ -653,7 +659,7 @@ categories:
         image: '/images/hackathons/eth-dubai.png'
         start_date: '2023-02-08'
         end_date: '2023-03-15'
-      
+
       - title: 'Scrypto DeFi Challenge'
         description: Build the next billion dollar decentralized application (dApp), built using Scrypto on Radix
         prize: $50,000
@@ -662,7 +668,7 @@ categories:
         image: '/images/hackathons/radix.png'
         start_date: '2023-02-20'
         end_date: '2023-03-24'
-      
+
       - title: 'Unlocking the Potential of XRP Ledger'
         description: Build a functional app using the XRPL's powerful features
         prize: $30,000
@@ -672,6 +678,47 @@ categories:
         start_date: '2023-02-15'
         end_date: '2023-03-24'
 
+      - title: 'DAO-Fi Fusion: The DAO and DeFi Code Challenge'
+        description: Join this unique code challenge and revolutionize the way people collaborate in the future!
+        prize: $50,000
+        online: true
+        href: 'https://dao-fi-fusion-code-challenge.devpost.com/'
+        image: '/images/hackathons/dao-fusion.png'
+        start_date: '2023-03-15'
+        end_date: '2023-05-22'
+
+      - title: 'Protocol Labs (Filecoin Green)-Sustainable Blockchain Hackathon'
+        description:
+          Bringing together sustainability gurus and developers to build new solutions at the intersection of web3 and
+          the environment!
+        prize: $43,500
+        online: true
+        href: 'https://sbsboston.devpost.com/'
+        image: '/images/hackathons/hack-boston.png'
+        start_date: '2023-02-20'
+        end_date: '2023-04-06'
+
+      - title: 'Theta Network 2023 Hackathon'
+        description:
+          Theta is the leading blockchain in the media and entertainment space. Join us in building products,
+          integrations and tools for the Theta ecosystem!
+        prize: $254,144
+        online: true
+        href: 'https://theta2023.devpost.com/'
+        image: '/images/hackathons/theta.png'
+        start_date: '2023-03-27'
+        end_date: '2023-05-26'
+
+      - title: 'Chainlink Spring 2023 Hackathon'
+        description:
+          New tools. Bigger ideas. Limitless opportunities. Web3 builders have more tools than ever before. Now is the
+          time to build the next breakthrough dApp.
+        prize: $350,000
+        online: true
+        href: 'https://chain.link/hackathon'
+        image: '/images/hackathons/chainlink-spring.png'
+        start_date: '2023-04-28'
+        end_date: '2023-06-09'
 
   - name: Events
     href: '/build#events'
