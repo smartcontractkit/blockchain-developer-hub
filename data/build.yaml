@@ -719,6 +719,16 @@ categories:
         image: '/images/hackathons/chainlink-spring.png'
         start_date: '2023-04-28'
         end_date: '2023-06-09'
+      
+      - title: 'FVM Dataverse Hack'
+        description:
+          Build the new data economy with the Filecoin Virtual Machine
+        prize: $40,000
+        online: true
+        href: 'https://fvmdataverse.devpost.com'
+        image: '/images/hackathons/fvm-hack.png'
+        start_date: '2023-05-01'
+        end_date: '2023-05-24'
 
   - name: Events
     href: '/build#events'
@@ -887,6 +897,33 @@ categories:
         image: '/images/events/denver.png'
         start_date: '2023-02-24'
         end_date: '2023-03-05'
+      
+      - title: 'Consensus 2023'
+        description: Consensus is organized by CoinDesk, a leading crypto wallet used to trade multiple digital currencies. It is the longest-running gathering of blockchain, crypto, and Web3 enthusiasts.
+        location: Austin, Texas
+        online: false
+        href: 'https://consensus.coindesk.com'
+        image: '/images/events/coindesk.png'
+        start_date: '2023-04-26'
+        end_date: '2023-04-28'
+      
+      - title: 'Blockchain Economy Istanbul Summit'
+        description: This year’s speakers include the Managing Director of Financial Market at OKX, the CMO at BIT.com. It’s guaranteed to be a fun-filled, value-laden two-day summit where you can forge new connections and gain valuable insights.
+        location: Istanbul, Turkey
+        online: false
+        href: 'https://blockchaineconomy.istanbul/en'
+        image: '/images/events/blockchain-economy.png'
+        start_date: '2023-05-08'
+        end_date: '2023-05-11'
+      
+      - title: 'Blockchain Expo North America'
+        description: After a successful 2022 run, the Blockchain Expo North America is back for its 2023 edition. Leading digital experts will grace the event to explore critical blockchain technologies and approaches that will help businesses use this emerging tech for their business growth.
+        location: Santa Clara Convention Centre (California, USA)
+        online: false
+        href: 'https://blockchain-expo.com/northamerica/'
+        image: '/images/events/blockchain-expo.png'
+        start_date: '2023-05-17'
+        end_date: '2023-05-18'
 
   - name: Workshops
     href: '/build#workshops'
