@@ -730,6 +730,46 @@ categories:
         start_date: '2023-05-01'
         end_date: '2023-05-24'
 
+      - title: 'Delphi Labs Cosmos Hackathon'
+        description:
+          Pitch your idea and team for a chance to win prizes and a spot in the upcoming Delphi Labs Accelerator
+        prize: $150,000
+        online: true
+        href: 'https://delphilabs.devpost.com'
+        image: '/images/hackathons/delphi.png'
+        start_date: '2023-05-01'
+        end_date: '2023-06-09'
+
+      - title: 'HackOnChain Blockchain Hackathon'
+        description: 'Build the future of blockchain: L2s, privacy and analytics'
+        prize: $28,000
+        online: true
+        href: 'https://hackonchain-warsaw.devpost.com'
+        image: '/images/hackathons/hackonchain.png'
+        start_date: '2023-05-26'
+        end_date: '2023-06-28'
+
+      - title: 'OlympiHacks'
+        description: 'Improvise, adapt, overcome. Olympians advancing the adoption of technology.'
+        prize: $19,000
+        online: true
+        href: 'https://olympihacks.devpost.com'
+        image: '/images/hackathons/olympi.png'
+        start_date: '2023-05-19'
+        end_date: '2023-06-21'
+      
+      - title: 'Open Web House MTY ft. CriptoMexico'
+        description: 'Open Web House es un evento IRL enfocado a entusiastas de la blockchain que quieran sumarse como constructores de la web 3.0. No te pierdas esta edición ft CriptoMéxico'
+        prize: $2,000
+        online: true
+        href: 'https://owh-mty-ft-criptomexico.devpost.com'
+        image: '/images/hackathons/openweb.png'
+        start_date: '2023-05-23'
+        end_date: '2023-06-27'
+
+
+
+
   - name: Events
     href: '/build#events'
     overview:
