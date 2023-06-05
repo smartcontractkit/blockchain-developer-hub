@@ -767,6 +767,33 @@ categories:
         start_date: '2023-05-23'
         end_date: '2023-06-27'
 
+      - title: 'Ripple CBDC Innovate'
+        description: 'You are invited to build or update an original fintech or payments solution utilizing Ripple’s CBDC solutions. Winners of Phase 1 will be invited to a Winners Only Phase II event!'
+        prize: $200,000
+        online: true
+        href: 'https://ripplecbdc.devpost.com/'
+        image: '/images/hackathons/rippple.png'
+        start_date: '2023-05-15'
+        end_date: '2023-08-21'  
+      
+      - title: 'Fantom Hackathon Q2 2023'
+        description: 'Build quick and secure apps on Fantom Mainnet'
+        prize: $306,000 
+        online: true
+        href: 'https://fantomq22023.devpost.com/'
+        image: '/images/hackathons/fantom.png'
+        start_date: '2023-05-08'
+        end_date: '2023-07-06'  
+
+      - title: 'Eth Waeterloo Canada'
+        description: 'Meet builders on the space, hands-on woroshops and more!'
+        prize: $200,000 
+        online: true
+        href: 'https://ethglobal.com/events/waterloo2023'
+        image: '/images/hackathons/waterloo.png'
+        start_date: '2023-06-23'
+        end_date: '2023-06-25'  
+
 
 
 
