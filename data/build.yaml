@@ -481,16 +481,7 @@ categories:
         start_date: '2022-11-23'
         end_date: '2022-11-24'
 
-      - title: 'Open Web House'
-        description:
-          Open Web House is a two-day offline event focused on software developers from Mexico who want to build web
-          3.0, as well as a space to mentor how to develop a smart contract and +.
-        prize: $1,500
-        online: true
-        href: 'https://open-web-house.devpost.com/'
-        image: '/images/hackathons/open-web.png'
-        start_date: '2022-11-25'
-        end_date: '2022-11-26'
+      
 
       - title: 'BlockHack Global FE 2022'
         description:
@@ -758,14 +749,47 @@ categories:
         start_date: '2023-05-19'
         end_date: '2023-06-21'
       
-      - title: 'Open Web House MTY ft. CriptoMexico'
-        description: 'Open Web House es un evento IRL enfocado a entusiastas de la blockchain que quieran sumarse como constructores de la web 3.0. No te pierdas esta edición ft CriptoMéxico'
-        prize: $2,000
+     
+
+      - title: 'Ripple CBDC Innovate'
+        description: 'You are invited to build or update an original fintech or payments solution utilizing Ripple’s CBDC solutions. Winners of Phase 1 will be invited to a Winners Only Phase II event!'
+        prize: $200,000
         online: true
-        href: 'https://owh-mty-ft-criptomexico.devpost.com'
-        image: '/images/hackathons/openweb.png'
-        start_date: '2023-05-23'
-        end_date: '2023-06-27'
+        href: 'https://ripplecbdc.devpost.com/'
+        image: '/images/hackathons/rippple.png'
+        start_date: '2023-05-15'
+        end_date: '2023-08-21'  
+      
+      - title: 'Fantom Hackathon Q2 2023'
+        description: 'Build quick and secure apps on Fantom Mainnet'
+        prize: $306,000 
+        online: true
+        href: 'https://fantomq22023.devpost.com/'
+        image: '/images/hackathons/fantom.png'
+        start_date: '2023-05-08'
+        end_date: '2023-07-06'
+      
+      - title: 'ETHAccra'
+        description: 'Build quick and secure apps on Fantom Mainnet'
+       
+        location: Ghana
+        online: false
+        href: 'https://www.ethaccra.xyz/'
+        image: '/images/hackathons/accra.png'
+        start_date: '2023-09-07'
+        end_date: '2023-09-09'
+      
+      - title: 'ETHOnline'
+        description: ETHGlobal's biggest global online event will happen again this October with hundreds of projects and weekly summits!
+        online: true
+        href: 'https://ethglobal.com/events/ethonline2023/'
+        image: '/images/events/online.png'
+        start_date: '2023-10-06'
+        end_date: '2023-10-27'    
+
+               
+
+      
 
 
 
@@ -965,6 +989,179 @@ categories:
         start_date: '2023-05-17'
         end_date: '2023-05-18'
 
+      - title: 'Eth Waeterloo Canada'
+        description: 'Meet builders on the space, hands-on woroshops and more!'
+        location: Canada
+        online: true
+        href: 'https://ethglobal.com/events/waterloo2023'
+        image: '/images/hackathons/waterloo.png'
+        start_date: '2023-06-23'
+        end_date: '2023-06-25' 
+
+      - title: 'Open Web House MTY ft. CriptoMexico'
+        description: 'Open Web House es un evento IRL enfocado a entusiastas de la blockchain que quieran sumarse como constructores de la web 3.0. No te pierdas esta edición ft CriptoMéxico'
+        location: México
+        online: true
+        href: 'https://owh-mty-ft-criptomexico.devpost.com'
+        image: '/images/hackathons/openweb.png'
+        start_date: '2023-05-23'
+        end_date: '2023-06-27'   
+
+      - title: 'ETH Prague'
+        description: ETHPrague is focusing on exploring solarpunk visions, solving sustainability issues, and addressing societal challenges by utilizing Ethereum, and discovering potential concepts or applications that do not yet exist.
+        location: Prague, Czech Republic
+        online: true
+        href: 'https://ethprague.com/'
+        image: '/images/events/prague.png'
+        start_date: '2023-06-09'
+        end_date: '2023-06-11'
+
+      - title: 'ETHereumSP 23'
+        description: EthereumSP 2023 is a four-day event to educate and boost the Brazilian Web3 community. Participants will have free access to advanced workshops, bootcamps, and an international Hackathon.
+        location: Campus USP, São Paulo, Brazil
+        online: true
+        href: 'https://www.ethereumbrasil.com/ethereum-sp23'
+        image: '/images/events/brazil.png'
+        start_date: '2023-06-22'
+        end_date: '2023-06-25'
+
+      - title: 'ETHGlobal Paris'
+        description: ETHGlobal is coming to Paris this summer! Join thousands of developers and creatives in one of the coolest cities in Europe this July, paired with ETHCC.
+        location: Paris, France
+        online: true
+        href: 'https://ethglobal.com/events/paris2023'
+        image: '/images/events/paris.png'
+        start_date: '2023-07-21'
+        end_date: '2023-07-23'
+
+      - title: 'ETHToronto'
+        description: 2nd annual ETHToronto, in the birthplace of Ethereum. Official Hackathon of Blockchain Futurist Conference.
+        location: Toronto, Canada
+        online: true
+        href: 'https://www.ethtoronto.ca/'
+        image: '/images/events/toronto.png'
+        start_date: '2023-08-13'
+        end_date: '2023-08-16'
+
+      - title: 'AB-Summit'
+        description: Solutions For Disempowered Economies. We support the Blockchain revolution and we are establishing a movement to promote its use out of love for our African Continent and the nations that make it up.
+        location: Accra, Ghana
+        online: true
+        href: 'https://blockchainsummit.africa/'
+        image: '/images/events/africa.png'
+        start_date: '2023-08-26'
+        end_date: '2023-08-27'
+
+      - title: 'ETHcon Korea'
+        description: Ethereum Developer Conference Run by Community Volunteers
+        location: Seoul, Korea
+        online: true
+        href: 'https://ethcon.kr/'
+        image: '/images/events/korea.png'
+        start_date: '2023-09-01'
+        end_date: '2023-09-03'
+      
+      - title: 'Ethereum Singapore'
+        description: Ethereum Singapore is taking flight -- this meetup (supported by over 9000 members!) that was founded in 2016 is coming back in 2023 with both a hackathon to tackle real-life challenge statements curated from Singaporean non-profits and social enterprises, as well as a conference featuring curated community hubs.
+        location: Singapore, Singapore
+        online: true
+        href: 'https://www.ethereumsingapore.com/'
+        image: '/images/events/singapour.png'
+        start_date: '2023-09-10'
+        end_date: '2023-09-12'
+
+      - title: 'ETHMobile Miami'
+        description: We are the first Ethereum festival expanding the global ecosystem through the mobile experience.
+        online: true
+        href: 'https://www.ethmobile.io/'
+        image: '/images/events/miami.png'
+        start_date: '2023-09-15'
+        end_date: '2023-09-17' 
+
+      - title: 'Protocol Berg'
+        description: The decentralized protocol and infrastructure conference. Protocol Berg is a one-day technical conference for protocol/system/network engineers, decentralized-infrastructure administrators, researchers, and other curious minds from different ecosystems.
+        location: Berlin, Germany
+        online: true
+        href: 'https://protocol.berlin/'
+        image: '/images/events/germany.png'
+        start_date: '2023-09-15'
+        end_date: '2023-09-15'
+
+      - title: 'ETH Montréal'
+        description: Conference and hackathon with the aim to onboard to Ethereum the students and junior devs from Montréal's world class universities
+        location: Montréal, Canada
+        online: true
+        href: 'https://ethmontreal.xyz/'
+        image: '/images/events/montreal.png'
+        start_date: '2023-09-18'
+        end_date: '2023-09-21' 
+
+      - title: 'ETHSafari'
+        description: Welcome to the latest greatest Ethereum event happening in Africa! Join the BlockTrain from Nairobi to celebrate an ETH-festival held underneath ancient Boabab trees in Kilifi.
+        location: Nairobi & Kilifi, Kenya
+        online: true
+        href: 'https://ethsafari.xyz/'
+        image: '/images/events/safari.png'
+        start_date: '2023-09-18'
+        end_date: '2023-09-24'        
+
+      - title: 'ETHGlobal New Yorki'
+        description: ETHGlobal returns to New York City for the first time since 2019.
+        location: New York City, USA
+        online: true
+        href: 'https://ethglobal.com/events/newyork2023/'
+        image: '/images/events/newyork.png'
+        start_date: '2023-09-22'
+        end_date: '2023-09-24'
+
+      - title: 'ETHMilan'
+        description: The conference will take place in the heart of Milan, in a location rich in history and culture. Join us to discuss all things Ethereum, DeFi, Account Abstraction, DAOs & NFTs.
+        location: Milan, Italy
+        online: true
+        href: 'https://www.ethmilan.xyz/'
+        image: '/images/events/milan.png'
+        start_date: '2023-10-05'
+        end_date: '2023-10-06'
+      
+      - title: 'ETHVenice'
+        description: The event takes place in one of the most beautiful and historic cities in the world, Venice! A conference and hackathon open to all people who want to expand their knowledge, learn about this amazing world or get involved. We are waiting for you in many, let's connect.
+        location: Venice, Italy
+        online: true
+        href: 'https://ethvenice.com/'
+        image: '/images/events/venice.png'
+        start_date: '2023-10-20'
+        end_date: '2023-10-22'
+
+      - title: 'ETHVietnam'
+        description: ETH Community in SEA to build, learn and share together.
+        location: Hanoi, Vietnam
+        online: true
+        href: 'https://www.eth-vietnam.com/'
+        image: '/images/events/vietnam.png'
+        start_date: '2023-10-20'
+        end_date: '2023-10-22'
+      
+      - title: 'Eth Lisbon'
+        description: ETHLisbon is an Ethereum-focused hackathon bringing together the best Web 3.0 builders to the crypto capital of Europe.'
+        location: Lisbon
+        online: true
+        href: 'https://www.ethlisbon.org/'
+        image: '/images/hackathons/lisbon.png'
+        start_date: '2023-11-03'
+        end_date: '2023-11-05'
+      
+      - title: 'ETHGlobal Istanbul'
+        description: ETHGlobal Istanbul is going to be an event full of hacking, networking, side events and fun activites.
+        location: Istanbul, Türkiye
+        online: true
+        href: 'https://ethglobal.com/events/istanbul'
+        image: '/images/events/istanbul.png'
+        start_date: '2023-11-17'
+        end_date: '2023-11-19'
+
+                  
+                      
+
   - name: Workshops
     href: '/build#workshops'
     link_text: 'Find a Workshop'
@@ -997,3 +1194,5 @@ categories:
         online: true
         href: 'https://chain.link/bootcamp/bootcamp-2021-on-demand'
         on_demand: true
+
+ 
