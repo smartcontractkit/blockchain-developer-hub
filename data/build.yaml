@@ -785,7 +785,39 @@ categories:
         href: 'https://ethglobal.com/events/ethonline2023/'
         image: '/images/events/online.png'
         start_date: '2023-10-06'
-        end_date: '2023-10-27'    
+        end_date: '2023-10-27'
+
+      - title: 'Speed hackathon'
+        description: To know the knowledge of people on coding and involves in doing projects
+        online: true
+        href: 'https://speed-hackathon.devpost.com/'
+        image: '/images/hackathons/speed-hack.png'
+        start_date: '2023-06-16'
+        end_date: '2023-08-30'
+
+      - title: 'Linera Developer Summer School 2023'
+        description: Become an early adopter and pioneer the future of web3 with Linera
+        online: true
+        href: 'https://linerasummer2023.devpost.com/'
+        image: '/images/hackathons/linera.png'
+        start_date: '2023-06-23'
+        end_date: '2023-07-24'     
+
+      - title: 'NEARCON IRL Hackathon'
+        description: Step Into The Open Web
+        online: true
+        href: 'https://nearcon-hackathon.devpost.com/'
+        image: '/images/hackathons/nearcon.png'
+        start_date: '2023-11-07'
+        end_date: '2023-11-17'     
+       
+      - title: 'ZENCON'
+        description: Join the Global Hackathon to Shape the Future of Finance
+        online: true
+        href: 'https://zencon-.devpost.com//'
+        image: '/images/hackathons/zencon.png'
+        start_date: '2023-09-16'
+        end_date: '2023-09-21' 
 
                
 
