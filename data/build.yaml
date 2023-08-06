@@ -817,7 +817,56 @@ categories:
         href: 'https://zencon-.devpost.com//'
         image: '/images/hackathons/zencon.png'
         start_date: '2023-09-16'
-        end_date: '2023-09-21' 
+        end_date: '2023-09-21'
+
+      - title: 'Privacy4Web3 Hackathon'
+        description: Unlock the Full Potential of Web3. Join the Privacy4Web3 Hackathon.
+        online: true
+        href: 'https://p4w3.devpost.com/'
+        image: '/images/hackathons/oasis.png'
+        start_date: '2023-07-19'
+        end_date: '2023-09-13'
+
+      - title: 'Arweave Community Hackathon'
+        description: Build on the permanent web. Arweave is a protocol designed to store data and apps permanently.
+        online: true
+        href: 'https://arweave-community-hackathon.devpost.com/'
+        image: '/images/hackathons/arwave.png'
+        start_date: '2023-07-28'
+        end_date: '2023-08-08'
+
+      - title: 'Web3 Code Challenge'
+        description: The Web3 Code Challenge is a 36-hour IRL event with full of fun, awards, knowledge, skills, and challenges for all developers including Web2 and Web3 developers.
+        online: true
+        href: 'https://web3-code-challenge.devpost.com/'
+        image: '/images/hackathons/web3-challenge.png'
+        start_date: '2023-07-15'
+        end_date: '2023-09-10'
+
+      - title: 'Sorobanathon: Road to Mainnet'
+        description: Connect, Code, Conquer
+        online: true
+        href: 'https://sororbanathon.devpost.com/'
+        image: '/images/hackathons/sorobaton.png'
+        start_date: '2023-08-18'
+        end_date: '2023-09-18'
+
+      - title: 'dApp-A-thon Season 2'
+        description: Create and Migrate Apps/dApps using web3 infrastrcuture
+        online: true
+        href: 'https://dappathon2.devpost.com/'
+        image: '/images/hackathons/dappathon.png'
+        start_date: '2023-08-21'
+        end_date: '2023-09-04'
+
+      - title: 'Global Hack Week: Web3'
+        description: Join us for a week dedicated to all things Web3!
+        online: true
+        href: 'https://global-hack-week-web3.devpost.com/'
+        image: '/images/hackathons/global-hack-week.png'
+        start_date: '2023-09-04'
+        end_date: '2023-09-11'        
+ 
 
                
 
